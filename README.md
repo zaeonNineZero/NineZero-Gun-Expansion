@@ -8,4 +8,4 @@ NineZero's Gun Mod Addon is an addon for MrCrayfish's Gun Mod that adds addition
 * Three attachments: the Solid Stock, Stabilizing Stock, and a dyeable version of the Tactical Stock.
 * Crafting recipes for all items, allowing them to be used in survival mode.
 
-All weapons support stat modifications through datapacks and visual modifications through resource packs.
+All weapons can be dyed and take attachments from the gun mod and this addon, and possibly other addons as well.
