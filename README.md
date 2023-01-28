@@ -9,3 +9,12 @@ NineZero's Gun Mod Addon is an addon for MrCrayfish's Gun Mod that adds addition
 * Crafting recipes for all items, allowing them to be used in survival mode.
 
 All weapons can be dyed and take attachments from the gun mod and this addon, and possibly other addons as well.
+
+
+This addon and github page are both a work in progress - more changes and updates can be expected in the future.
+
+
+### Currently Planned Additions:
+* Hunting Shotgun, Double Barreled Shotgun, Semi-Automatic Rifle, and Machine Gun. Possibly other weapons later on.
+* A few more attachments - sights, stocks, grips, etc.
+* Animations for the Revolver, Hunting Rifle, and Sniper Rifle.
