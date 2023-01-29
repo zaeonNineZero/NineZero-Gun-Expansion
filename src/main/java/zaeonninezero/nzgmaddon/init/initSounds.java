@@ -27,6 +27,7 @@ public class initSounds {
 	
 	public static final RegistryObject<SoundEvent> ITEM_UZI_FIRE = register("item.uzi.fire");
 	public static final RegistryObject<SoundEvent> ITEM_UZI_ENCHANTED_FIRE = register("item.uzi.enchanted_fire");
+	public static final RegistryObject<SoundEvent> ITEM_UZI_SILENCED_FIRE = register("item.uzi.silenced_fire");
 	public static final RegistryObject<SoundEvent> ITEM_UZI_COCK = register("item.uzi.cock");
 	
 	public static final RegistryObject<SoundEvent> ITEM_SMG_FIRE = register("item.smg.fire");

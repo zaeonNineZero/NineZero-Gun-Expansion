@@ -54,6 +54,10 @@
       "nzgmaddon:item/uzi/enchanted_fire3"
     ]
   },
+"item.uzi.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"nzgmaddon:item/uzi/silenced_fire"}]
+  },
 "item.uzi.cock": {
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/uzi/cock"}]

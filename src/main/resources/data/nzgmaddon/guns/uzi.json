@@ -22,7 +22,7 @@
     "fire": "nzgmaddon:item.uzi.fire",
     "reload": "cgm:item.pistol.reload",
     "cock": "nzgmaddon:item.uzi.cock",
-    "silencedFire": "cgm:item.machine_pistol.silenced_fire",
+    "silencedFire": "nzgmaddon:item.uzi.silenced_fire",
     "enchantedFire": "nzgmaddon:item.uzi.enchanted_fire"
   },
   "display": {
@@ -50,9 +50,9 @@
         "scale": 0.5
       },
       "stock": {
-        "yOffset": 2.95,
+        "yOffset": 3.0,
         "zOffset": 9.95,
-        "scale": 0.84
+        "scale": 0.85
       }
     }
   }
