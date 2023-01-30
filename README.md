@@ -10,6 +10,6 @@ NineZero's Gun Mod Addon is an addon for MrCrayfish's Gun Mod that adds addition
 This addon and github page are both a work in progress - more changes and updates can be expected in the future.
 
 ### Currently Planned Additions:
-* Hunting Shotgun, Double Barreled Shotgun, Semi-Automatic Rifle, and Machine Gun. Possibly other weapons later on.
+* Hunting Shotgun, Double Barreled Shotgun, Infantry Rifle, and Machine Gun. Possibly other weapons later on.
 * A few more attachments - sights, stocks, grips, etc.
 * Animations for the Revolver.
