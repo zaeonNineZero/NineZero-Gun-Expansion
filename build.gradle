@@ -150,10 +150,10 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "NineZero's Gun Mod Addon",
+                "Specification-Title"     : "NineZero's Gun Expansion",
                 "Specification-Vendor"    : "zaeonNineZero",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
-                "Implementation-Title"    : "NineZero's Gun Mod Addon",
+                "Implementation-Title"    : "NineZero's Gun Expansion",
                 "Implementation-Version"  : project.version,
                 "Implementation-Vendor"   : "zaeonNineZero",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")

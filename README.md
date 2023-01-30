@@ -1,5 +1,5 @@
-# NineZero's Gun Mod Addon
-NineZero's Gun Mod Addon is an addon for MrCrayfish's Gun Mod that adds additional weapons and attachments in the style of the gun mod's original nine weapons.
+# NineZero's Gun Expansion
+NineZero's Gun Expansion is an addon for MrCrayfish's Gun Mod that adds additional weapons and attachments in an aesthetically simple style.
 
 ### Addon Features:
 * Currently seven weapons: the Revolver, Uzi, Submachine Gun, Heavy Assault Rifle, Battle Rifle, Hunting Rifle, and Sniper Rifle.

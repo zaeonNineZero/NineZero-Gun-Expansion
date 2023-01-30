@@ -1,6 +1,6 @@
 {
     "pack": {
-        "description": "Base resources for NineZero's Gun Mod Addon",
+        "description": "Base resources for NineZero's Gun Expansion",
         "pack_format": 9,
         "forge:resource_pack_format": 9,
         "forge:data_pack_format": 10
