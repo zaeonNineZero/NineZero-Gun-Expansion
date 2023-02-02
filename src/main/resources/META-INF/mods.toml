@@ -8,10 +8,10 @@ version="1.0.0"
 displayName="NineZero's Gun Expansion"
 updateJSONURL=""
 displayURL=""
-logoFile="nzgmaddon_icon.png"
+logoFile="nzgmaddon_banner.png"
 authors="zaeonNineZero"
 description='''
-An addon for MrCrayfish's Gun Mod that adds additional weapons and attachments in the style of the gun mod's original nine weapons.
+An addon for MrCrayfish's Gun Mod, adding additional weapons and attachments in an aesthetically simple style.
 '''
 
 [[dependencies.nzgmaddon]]
