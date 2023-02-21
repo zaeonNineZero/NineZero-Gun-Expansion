@@ -151,7 +151,7 @@
   },
 "item.sniper_rifle.silenced_fire": {
     "subtitle":"subtitle.cgm.fire.silenced",
-    "sounds": [{"name":"nzgmaddon:item/hunting_rifle/silenced_fire"}]
+    "sounds": [{"name":"nzgmaddon:item/sniper_rifle/silenced_fire"}]
   },
 "item.sniper_rifle.enchanted_fire": {
     "subtitle":"subtitle.cgm.fire",

@@ -5,7 +5,7 @@
     "gripType": "cgm:two_handed",
     "maxAmmo": 30,
     "reloadAmount": 8,
-    "recoilAngle": 8.0,
+    "recoilAngle": 7.0,
     "recoilKick": 1.5,
     "recoilAdsReduction": 0.4,
     "alwaysSpread": true,
