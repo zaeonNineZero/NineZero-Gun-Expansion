@@ -37,12 +37,6 @@ public class ExtraGunModifiers
     public static final IGunModifier FLASH_HIDER_EFFECT = new IGunModifier()
     {
         @Override
-        public float modifyMuzzleFlashScale()
-        {
-            return 0.6F;
-        }
-		
-        @Override
         public double modifyFireSoundRadius(double radius)
         {
             return radius * 0.8;
@@ -57,15 +51,9 @@ public class ExtraGunModifiers
     public static final IGunModifier MUZZLE_BRAKE_EFFECT = new IGunModifier()
     {
         @Override
-        public float modifyMuzzleFlashScale()
-        {
-            return 1.05F;
-        }
-		
-        @Override
         public float recoilModifier()
         {
-            return 0.85F;
+            return 0.87F;
         }
 
         @Override
@@ -77,15 +65,9 @@ public class ExtraGunModifiers
     public static final IGunModifier HEAVY_MUZZLE_EFFECT = new IGunModifier()
     {
         @Override
-        public float modifyMuzzleFlashScale()
-        {
-            return 1.3F;
-        }
-		
-        @Override
         public float recoilModifier()
         {
-            return 0.7F;
+            return 0.75F;
         }
 
         @Override

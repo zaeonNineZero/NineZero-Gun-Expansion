@@ -1,6 +1,6 @@
 {
   "general": {
-    "rate": 40,
+    "rate": 33,
     "gripType": "cgm:two_handed",
     "maxAmmo": 1,
     "reloadAmount": 1,
@@ -13,7 +13,7 @@
   },
   "projectile": {
     "item": "nzgmaddon:medium_bullet",
-    "damage": 15,
+    "damage": 17,
     "size": 0.0625,
     "speed": 28.0,
     "life": 20,
