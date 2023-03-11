@@ -78,19 +78,19 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.39F;
+            return 0.3F;
         }
 
         @Override
         public float kickModifier()
         {
-            return 0.31F;
+            return 0.45F;
         }
 
         @Override
         public float modifyProjectileSpread(float spread)
         {
-            return spread * 0.48F;
+            return spread * 0.5F;
         }
 
         @Override
@@ -104,7 +104,7 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.3F;
+            return 0.25F;
         }
 
         @Override
