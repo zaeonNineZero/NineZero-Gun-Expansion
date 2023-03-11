@@ -1,0 +1,12 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 2,
+      "tag": "forge:nuggets/iron"
+    }
+  ],
+  "result": {
+    "item": "nzgmaddon:flash_hider"
+  }
+}
