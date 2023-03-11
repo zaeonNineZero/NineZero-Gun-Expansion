@@ -23,6 +23,7 @@ public class initSounds {
 	
 	public static final RegistryObject<SoundEvent> ITEM_REVOLVER_FIRE = register("item.revolver.fire");
 	public static final RegistryObject<SoundEvent> ITEM_REVOLVER_ENCHANTED_FIRE = register("item.revolver.enchanted_fire");
+	public static final RegistryObject<SoundEvent> ITEM_REVOLVER_SILENCED_FIRE = register("item.revolver.silenced_fire");
 	public static final RegistryObject<SoundEvent> ITEM_REVOLVER_COCK = register("item.revolver.cock");
 	
 	public static final RegistryObject<SoundEvent> ITEM_UZI_FIRE = register("item.uzi.fire");

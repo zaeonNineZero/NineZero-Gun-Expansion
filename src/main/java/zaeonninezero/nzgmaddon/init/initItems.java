@@ -12,6 +12,7 @@ import com.mrcrayfish.guns.item.attachment.impl.Stock;
 import com.mrcrayfish.guns.item.attachment.impl.UnderBarrel;
 import com.mrcrayfish.guns.common.GunModifiers;
 import zaeonninezero.nzgmaddon.common.ExtraGunModifiers;
+import zaeonninezero.nzgmaddon.common.Scopes;
 import zaeonninezero.nzgmaddon.nzgmAddon;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.RegistryObject;
@@ -46,13 +47,17 @@ public class initItems {
 	//Ammo
 	public static final RegistryObject<Item> MEDIUM_BULLET = ITEMS.register("medium_bullet", () -> new AmmoItem(new Item.Properties().tab(GunMod.GROUP)));
 	
+	//Scopes / Sights
+	public static final RegistryObject<Item> DOT_SIGHT = ITEMS.register("dot_sight", () -> new ScopeItem(Scopes.DOT_SIGHT, new Item.Properties().stacksTo(1)));
+	
 	//Barrels
-    //public static final RegistryObject<Item> EXTENDED_BARREL  = ITEMS.register("extended_barrel", () -> new BarrelItem(Barrel.create(ExtraGunModifiers.EXTENDED_BARREL_EFFECT), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
-    //public static final RegistryObject<Item> FLASH_HIDER  = ITEMS.register("flash_hider", () -> new BarrelItem(Barrel.create(ExtraGunModifiers.FLASH_HIDER_EFFECT), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
-    public static final RegistryObject<Item> MUZZLE_BRAKE  = ITEMS.register("muzzle_brake", () -> new BarrelItem(Barrel.create(7,ExtraGunModifiers.MUZZLE_BRAKE_EFFECT), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
-    //public static final RegistryObject<Item> HEAVY_MUZZLE_BRAKE  = ITEMS.register("heavy_muzzle_brake", () -> new BarrelItem(Barrel.create(ExtraGunModifiers.HEAVY_MUZZLE_EFFECT), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+    //public static final RegistryObject<Item> EXTENDED_BARREL  = ITEMS.register("extended_barrel", () -> new BarrelItem(Barrel.create(10,ExtraGunModifiers.EXTENDED_BARREL_EFFECT), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+    public static final RegistryObject<Item> FLASH_HIDER  = ITEMS.register("flash_hider", () -> new BarrelItem(Barrel.create(4,ExtraGunModifiers.FLASH_HIDER_EFFECT), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+    public static final RegistryObject<Item> MUZZLE_BRAKE  = ITEMS.register("muzzle_brake", () -> new BarrelItem(Barrel.create(5.3f,ExtraGunModifiers.MUZZLE_BRAKE_EFFECT), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+    //public static final RegistryObject<Item> HEAVY_MUZZLE_BRAKE  = ITEMS.register("heavy_muzzle_brake", () -> new BarrelItem(Barrel.create(6,ExtraGunModifiers.HEAVY_MUZZLE_EFFECT), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 	
 	//Stocks
+    public static final RegistryObject<Item> SHORT_STOCK  = ITEMS.register("short_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.SLIGHT_BETTER_CONTROL), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<Item> DYEABLE_TACTICAL_STOCK  = ITEMS.register("dyeable_tactical_stock", () -> new StockItem(Stock.create(GunModifiers.STABILISED), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<Item> SOLID_STOCK = ITEMS.register("solid_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.SOLIDLY_STABILISED), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<Item> STABILIZING_STOCK = ITEMS.register("stabilizing_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.EXTRA_STABILISED), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));

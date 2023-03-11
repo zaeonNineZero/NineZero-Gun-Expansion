@@ -1,0 +1,20 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 2,
+      "tag": "forge:nuggets/iron"
+    },
+    {
+      "tag": "forge:glass_panes",
+      "count": 1
+    },
+    {
+      "count": 1,
+      "tag": "forge:dusts/redstone"
+    }
+  ],
+  "result": {
+    "item": "nzgmaddon:dot_sight"
+  }
+}

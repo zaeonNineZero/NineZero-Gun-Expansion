@@ -4,15 +4,15 @@
     "gripType": "cgm:one_handed",
     "maxAmmo": 6,
     "reloadAmount": 2,
-    "recoilAngle": 6.0,
+    "recoilAngle": 5.0,
 	"recoilKick": 0.3,
     "recoilAdsReduction": 0.25,
     "alwaysSpread": true,
-    "spread": 4.0
+    "spread": 1.0
   },
   "projectile": {
     "item": "cgm:basic_bullet",
-    "damage": 11.0,
+    "damage": 12.0,
     "size": 0.2,
     "speed": 21.0,
     "life": 10
@@ -21,7 +21,7 @@
     "fire": "nzgmaddon:item.revolver.fire",
     "reload": "cgm:item.pistol.reload",
     "cock": "nzgmaddon:item.revolver.cock",
-    "silencedFire": "nzgmaddon:item.hunting_rifle.silenced_fire",
+    "silencedFire": "nzgmaddon:item.revolver.silenced_fire",
     "enchantedFire": "nzgmaddon:item.revolver.enchanted_fire"
   },
   "display": {
@@ -41,6 +41,11 @@
         "yOffset": 4.2,
         "zOffset": 4.7,
         "scale": 0.79
+      },
+      "barrel": {
+        "yOffset": 3.3,
+        "zOffset": 3.75,
+        "scale": 0.5
       }
     }
   }
