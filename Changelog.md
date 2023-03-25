@@ -3,10 +3,9 @@
 
 ### 1.1.0 "Accessorized" (3/-/23)
 * Added Hunting Shotgun.
-* Added Flash Hider and Muzzle Break barrel attachments.
-* Added Advanced Grip attachment.
-* Added Carbine Stock and Short Stock attachments.
+* Added Flash Hider, Muzzle Break, Extended Barrel, Dot Sight, Carbine Stock, Short Stock, Marksman Stock, and Horizontal Grip attachments.
 * Modified the stats of pretty much every gun to make them more competitive with the CGM guns - generally increased damage, reduced recoil, and decreased spread where needed. Check the github commits for more details on changed stats. (bc5419b)
+* Updated stat modifers for several attachments.
 * Changed the fire sounds of the Uzi and SMG.
 * Tweaked several gun models.
 

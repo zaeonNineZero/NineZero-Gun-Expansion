@@ -6,10 +6,10 @@
     "maxAmmo": 20,
     "reloadAmount": 5,
     "recoilAngle": 4.5,
-    "recoilKick": 1.25,
+    "recoilKick": 1.0,
     "recoilAdsReduction": 0.5,
     "alwaysSpread": false,
-    "spread": 7.0
+    "spread": 5.0
   },
   "projectile": {
     "item": "cgm:advanced_bullet",

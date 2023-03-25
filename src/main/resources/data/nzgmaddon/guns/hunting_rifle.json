@@ -8,8 +8,8 @@
     "recoilKick": 1.0,
     "recoilDurationOffset": 0.4,
     "recoilAdsReduction": 0.45,
-    "alwaysSpread": true,
-    "spread": 0.5
+    "alwaysSpread": false,
+    "spread": 0.0
   },
   "projectile": {
     "item": "nzgmaddon:medium_bullet",
