@@ -64,5 +64,5 @@ public class initItems {
     public static final RegistryObject<Item> MARKSMAN_STOCK  = ITEMS.register("marksman_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.MARKSMAN_STABILISED), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 	
 	//Grips / Under Barrel
-    //public static final RegistryObject<Item> HORIZONTAL_GRIP  = ITEMS.register("horizontal_grip", () -> new UnderBarrelItem(UnderBarrel.create(ExtraGunModifiers.HORIZONTAL_CONTROL), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+    public static final RegistryObject<Item> HORIZONTAL_GRIP  = ITEMS.register("horizontal_grip", () -> new UnderBarrelItem(UnderBarrel.create(ExtraGunModifiers.HORIZONTAL_CONTROL), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 }
