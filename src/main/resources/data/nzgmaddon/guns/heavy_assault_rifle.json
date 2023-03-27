@@ -6,14 +6,14 @@
     "maxAmmo": 30,
     "reloadAmount": 8,
     "recoilAngle": 4.5,
-    "recoilKick": 1.6,
+    "recoilKick": 1.5,
     "recoilAdsReduction": 0.3,
     "alwaysSpread": false,
     "spread": 8.0
   },
   "projectile": {
     "item": "nzgmaddon:medium_bullet",
-    "damage": 7.5,
+    "damage": 7.7,
     "size": 0.2,
     "speed": 22.0,
     "life": 21,
