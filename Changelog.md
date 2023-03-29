@@ -2,7 +2,7 @@
 
 
 ### 1.1.1 (3/29/23)
-* Renamed the Uzi to the Micro SMG to better fit the mod's naming conventions. The ingame ID is unchanged to prevent loss of existing Uzi items.
+* Renamed the Uzi to the Micro SMG to better fit the mod's naming conventions. The ingame ID is unchanged to prevent the loss of existing Uzi items.
 * Changed all sound names and references related to 'Uzi' to 'Micro SMG.'
 * Updated Micro SMG model.
 * Changed SMG model - it now has a thinner magazine.
