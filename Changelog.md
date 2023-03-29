@@ -1,12 +1,17 @@
 # Changelog
 
 
-### 1.1.0 "Accessorized" (3/27/23)
+### 1.1.1 (3/29/23)
+* Renamed the Uzi to the Micro SMG to better fit the mod's naming conventions. The ingame ID is unchanged to prevent loss of existing Uzi items.
+* Changed SMG model - it now has a thinner magazine.
+* Corrected Marksman Stock recipe to output the correct item.
+
+### 1.1.0 'Accessorized' (3/27/23)
 * Added Hunting Shotgun.
 * Added Flash Hider, Muzzle Break, Extended Barrel, Dot Sight, Carbine Stock, Short Stock, Marksman Stock, and Horizontal Grip attachments.
 * Crafting recipes for all new items, allowing them to be acquired and used in survival mode.
-* Modified the stats of pretty much every gun to make them more competitive with the CGM guns - generally increased damage, reduced recoil, and decreased spread where needed. Check the github commits for more details on changed stats. (bc5419b)
-* Updated stat modifers for several attachments.
+* Modified the stats of pretty much every gun to make them more competitive with the CGM guns - generally increased damage, reduced recoil, and decreased spread where needed. Check the GitHub  commits for more details on changed stats. (bc5419b)
+* Updated stat modifiers for several attachments.
 * Changed the fire sounds of the Uzi and SMG.
 * Tweaked several gun models.
 

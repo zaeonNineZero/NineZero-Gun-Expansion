@@ -4,7 +4,7 @@ NineZero's Gun Expansion is an addon mod for MrCrayfish's Gun Mod that adds addi
 ### Addon Features:
 * Eight new weapons to use. By default, these weapons are balanced to fit in with the default CGM weapons.
 * One ammo item: the Medium Bullet, used by some of the rifles in this addon.
-* An assortment of attachments, including barrels, stocks, the Dot Sight, and the Horizontal Grip.
+* An assortment of attachments, including barrels, stocks, a sight, and a grip.
 * Crafting recipes for all items, allowing them to be used in survival mode.
 
 This addon and github page are both a work in progress - more changes and updates can be expected in the future.
