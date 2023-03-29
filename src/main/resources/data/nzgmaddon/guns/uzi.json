@@ -19,11 +19,11 @@
     "life": 10
   },
   "sounds": {
-    "fire": "nzgmaddon:item.uzi.fire",
+    "fire": "nzgmaddon:item.micro_smg.fire",
     "reload": "cgm:item.pistol.reload",
-    "cock": "nzgmaddon:item.uzi.cock",
-    "silencedFire": "nzgmaddon:item.uzi.silenced_fire",
-    "enchantedFire": "nzgmaddon:item.uzi.enchanted_fire"
+    "cock": "nzgmaddon:item.micro_smg.cock",
+    "silencedFire": "nzgmaddon:item.micro_smg.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.micro_smg.enchanted_fire"
   },
   "display": {
     "flash": {

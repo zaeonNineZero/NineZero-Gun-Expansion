@@ -26,10 +26,10 @@ public class initSounds {
 	public static final RegistryObject<SoundEvent> ITEM_REVOLVER_SILENCED_FIRE = register("item.revolver.silenced_fire");
 	public static final RegistryObject<SoundEvent> ITEM_REVOLVER_COCK = register("item.revolver.cock");
 	
-	public static final RegistryObject<SoundEvent> ITEM_UZI_FIRE = register("item.uzi.fire");
-	public static final RegistryObject<SoundEvent> ITEM_UZI_ENCHANTED_FIRE = register("item.uzi.enchanted_fire");
-	public static final RegistryObject<SoundEvent> ITEM_UZI_SILENCED_FIRE = register("item.uzi.silenced_fire");
-	public static final RegistryObject<SoundEvent> ITEM_UZI_COCK = register("item.uzi.cock");
+	public static final RegistryObject<SoundEvent> ITEM_MICRO_SMG_FIRE = register("item.micro_smg.fire");
+	public static final RegistryObject<SoundEvent> ITEM_MICRO_SMG_ENCHANTED_FIRE = register("item.micro_smg.enchanted_fire");
+	public static final RegistryObject<SoundEvent> ITEM_MICRO_SMG_SILENCED_FIRE = register("item.micro_smg.silenced_fire");
+	public static final RegistryObject<SoundEvent> ITEM_MICRO_SMG_COCK = register("item.micro_smg.cock");
 	
 	public static final RegistryObject<SoundEvent> ITEM_SMG_FIRE = register("item.smg.fire");
 	public static final RegistryObject<SoundEvent> ITEM_SMG_ENCHANTED_FIRE = register("item.smg.enchanted_fire");

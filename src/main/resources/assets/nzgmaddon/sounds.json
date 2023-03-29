@@ -42,29 +42,29 @@
     "sounds": [{"name":"nzgmaddon:item/revolver/cock"}]
   },
 
-"item.uzi.fire": {
+"item.micro_smg.fire": {
     "subtitle":"subtitle.cgm.fire",
 	"sounds": [
-      "nzgmaddon:item/uzi/fire",
-      "nzgmaddon:item/uzi/fire2",
-      "nzgmaddon:item/uzi/fire3"
+      "nzgmaddon:item/micro_smg/fire",
+      "nzgmaddon:item/micro_smg/fire2",
+      "nzgmaddon:item/micro_smg/fire3"
     ]
   },
-"item.uzi.enchanted_fire": {
+"item.micro_smg.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
 	"sounds": [
-      "nzgmaddon:item/uzi/enchanted_fire",
-      "nzgmaddon:item/uzi/enchanted_fire2",
-      "nzgmaddon:item/uzi/enchanted_fire3"
+      "nzgmaddon:item/micro_smg/enchanted_fire",
+      "nzgmaddon:item/micro_smg/enchanted_fire2",
+      "nzgmaddon:item/micro_smg/enchanted_fire3"
     ]
   },
-"item.uzi.silenced_fire": {
+"item.micro_smg.silenced_fire": {
     "subtitle":"subtitle.cgm.fire.silenced",
-    "sounds": [{"name":"nzgmaddon:item/uzi/silenced_fire"}]
+    "sounds": [{"name":"nzgmaddon:item/micro_smg/silenced_fire"}]
   },
-"item.uzi.cock": {
+"item.micro_smg.cock": {
     "subtitle":"subtitle.cgm.cock",
-    "sounds": [{"name":"nzgmaddon:item/uzi/cock"}]
+    "sounds": [{"name":"nzgmaddon:item/micro_smg/cock"}]
   },
 
 "item.smg.fire": {
