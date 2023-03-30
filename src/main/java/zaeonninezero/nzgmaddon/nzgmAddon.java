@@ -1,7 +1,6 @@
 package zaeonninezero.nzgmaddon;
 
-import zaeonninezero.nzgmaddon.init.initItems;
-import zaeonninezero.nzgmaddon.init.initSounds;
+import zaeonninezero.nzgmaddon.init.*;
 import zaeonninezero.nzgmaddon.client.ClientHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
