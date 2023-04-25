@@ -28,7 +28,7 @@ public class nzgmAddon {
 	
 	//Common setup
 	private void setup(final FMLCommonSetupEvent event) {
-		System.out.println("NineZero's Gun Mod Addon pre-initialized.");
+		System.out.println("NineZero's Gun Expansion pre-initialized.");
 	}
 	
 	//Client setup
