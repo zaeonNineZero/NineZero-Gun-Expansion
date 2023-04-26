@@ -1,6 +1,9 @@
 # Changelog
 
 
+### 1.1.2 (4/26/23)
+* Fixed muzzle flash position of the Micro SMG.
+
 ### 1.1.1 (3/29/23)
 * Renamed the Uzi to the Micro SMG to better fit the mod's naming conventions. The ingame ID is unchanged to prevent the loss of existing Uzi items.
 * Changed all sound names and references related to 'Uzi' to 'Micro SMG.'
