@@ -1,9 +1,11 @@
 # Build and Bins
 .gradle/
+bin/
 build/
 run/*
 
 # IDEs
+.settings/
 .classpath
 .project
 

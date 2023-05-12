@@ -4,7 +4,6 @@ import com.mrcrayfish.guns.client.render.gun.ModelOverrides;
 import com.mrcrayfish.guns.client.render.gun.model.SimpleModel;
 import zaeonninezero.nzgmaddon.nzgmAddon;
 import zaeonninezero.nzgmaddon.init.initItems;
-import zaeonninezero.nzgmaddon.client.SpecialModels;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.common.Mod;
 

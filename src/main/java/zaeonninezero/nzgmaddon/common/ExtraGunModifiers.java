@@ -101,7 +101,7 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.35F;
+            return 0.3F;
         }
 
         @Override
@@ -120,6 +120,32 @@ public class ExtraGunModifiers
         public double modifyAimDownSightSpeed(double speed)
         {
             return speed * 0.8F;
+        }
+    };
+	public static final IGunModifier CARBINE_STABILISED = new IGunModifier()
+    {
+        @Override
+        public float recoilModifier()
+        {
+            return 0.35F;
+        }
+
+        @Override
+        public float kickModifier()
+        {
+            return 0.4F;
+        }
+
+        @Override
+        public float modifyProjectileSpread(float spread)
+        {
+            return spread * 0.5F;
+        }
+
+        @Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.85F;
         }
     };
 	public static final IGunModifier EXTRA_STABILISED = new IGunModifier()
@@ -159,7 +185,7 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.25F;
+            return 0.3F;
         }
 
         @Override

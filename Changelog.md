@@ -1,6 +1,9 @@
 # Changelog
 
 
+### 1.1.3 (5/12/23)
+* Altered stat modifiers of the Carbine Stock to make it feel slightly lighter than the Solid Stock.
+
 ### 1.1.2 (4/26/23)
 * Fixed muzzle flash position of the Micro SMG.
 

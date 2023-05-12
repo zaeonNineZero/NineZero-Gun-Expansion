@@ -60,7 +60,7 @@ public class initItems {
     public static final RegistryObject<Item> DYEABLE_TACTICAL_STOCK  = ITEMS.register("dyeable_tactical_stock", () -> new StockItem(Stock.create(GunModifiers.STABILISED), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<Item> SOLID_STOCK = ITEMS.register("solid_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.SOLIDLY_STABILISED), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<Item> STABILIZING_STOCK = ITEMS.register("stabilizing_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.EXTRA_STABILISED), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
-    public static final RegistryObject<Item> CARBINE_STOCK  = ITEMS.register("carbine_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.SOLIDLY_STABILISED), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+    public static final RegistryObject<Item> CARBINE_STOCK  = ITEMS.register("carbine_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.CARBINE_STABILISED), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<Item> MARKSMAN_STOCK  = ITEMS.register("marksman_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.MARKSMAN_STABILISED), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 	
 	//Grips / Under Barrel
