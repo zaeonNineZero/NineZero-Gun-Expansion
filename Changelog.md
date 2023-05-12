@@ -1,8 +1,11 @@
-# Changelog
+# Changelog (1.19.2 Releases)
 
 
 ### 1.1.3 (5/12/23)
 * Altered stat modifiers of the Carbine Stock to make it feel slightly lighter than the Solid Stock.
+* Updated the model of the Medium Bullet.
+* Added a link to the NZGE CurseForge page on the mod's entry in the mods menu.
+* Cleaned up some unnecessary imports in the source code.
 
 ### 1.1.2 (4/26/23)
 * Fixed muzzle flash position of the Micro SMG.
