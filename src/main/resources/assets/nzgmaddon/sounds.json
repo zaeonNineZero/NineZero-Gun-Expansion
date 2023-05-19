@@ -97,6 +97,19 @@
     "sounds": [{"name":"nzgmaddon:item/hunting_shotgun/enchanted_fire"}]
   },
 
+"item.double_barreled.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [{"name":"nzgmaddon:item/double_barreled/fire"}]
+  },
+"item.double_barreled.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+    "sounds": [{"name":"nzgmaddon:item/double_barreled/enchanted_fire"}]
+  },
+"item.double_barreled.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/double_barreled/cock"}]
+  },
+
 "item.heavy_ar.fire": {
     "subtitle":"subtitle.cgm.fire",
     "sounds": [
