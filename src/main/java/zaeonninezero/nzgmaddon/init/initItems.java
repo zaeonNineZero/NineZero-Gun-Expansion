@@ -50,6 +50,7 @@ public class initItems {
 	
 	//Scopes / Sights
 	public static final RegistryObject<Item> DOT_SIGHT = ITEMS.register("dot_sight", () -> new ScopeItem(Scopes.DOT_SIGHT, new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+	public static final RegistryObject<Item> BALLISTIC_SCOPE = ITEMS.register("ballistic_scope", () -> new ScopeItem(Scopes.BALLISTIC_SCOPE, new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 	
 	//Barrels
     public static final RegistryObject<Item> FLASH_HIDER  = ITEMS.register("flash_hider", () -> new BarrelItem(Barrel.create(4,ExtraGunModifiers.FLASH_HIDER_EFFECT), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
