@@ -17,6 +17,7 @@ public enum SpecialModels
     SUBMACHINE_GUN("gun/submachine_gun"),
     HUNTING_SHOTGUN("gun/hunting_shotgun"),
     DOUBLE_BARRELED_SHOTGUN("gun/double_barreled_shotgun"),
+    AUTOMATIC_SHOTGUN("gun/automatic_shotgun"),
     HEAVY_ASSAULT_RIFLE("gun/heavy_assault_rifle"),
     BATTLE_RIFLE("gun/battle_rifle"),
     HUNTING_RIFLE("gun/hunting_rifle"),

@@ -3,10 +3,10 @@
   "materials": [
     {
       "tag": "forge:ingots/iron",
-      "count": 28
+      "count": 30
     }
   ],
   "result": {
-    "item": "nzgmaddon:battle_rifle"
+    "item": "nzgmaddon:automatic_shotgun"
   }
 }
