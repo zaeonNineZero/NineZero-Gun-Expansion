@@ -22,7 +22,7 @@
   "sounds": {
     "fire": "nzgmaddon:item.automatic_shotgun.fire",
     "reload": "nzgmaddon:item.shotgun.reload",
-    "cock": "nzgmaddon:item.battle_rifle.cock",
+    "cock": "nzgmaddon:item.automatic_shotgun.cock",
     "silencedFire": "nzgmaddon:item.automatic_shotgun.silenced_fire",
     "enchantedFire": "nzgmaddon:item.automatic_shotgun.enchanted_fire"
   },
