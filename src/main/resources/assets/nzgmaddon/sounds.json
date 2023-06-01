@@ -177,5 +177,14 @@
 "item.sniper_rifle.cock": {
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/sniper_rifle/cock"}]
+  },
+
+  "item.9a91.intsup": {
+    "subtitle":"subtitle.cgm.intsup",
+    "sounds": [
+      "nzgmaddon:item/9a91/intsup"
+    ]
   }
 }
+
+

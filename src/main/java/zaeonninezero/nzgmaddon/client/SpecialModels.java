@@ -20,7 +20,8 @@ public enum SpecialModels
     HEAVY_ASSAULT_RIFLE("gun/heavy_assault_rifle"),
     BATTLE_RIFLE("gun/battle_rifle"),
     HUNTING_RIFLE("gun/hunting_rifle"),
-    SNIPER_RIFLE("gun/sniper_rifle");
+    SNIPER_RIFLE("gun/sniper_rifle"),
+    NINE_A_NINE_ONE("gun/9a91");
 
     /**
      * The location of an item model in the [MOD_ID]/models/special/[NAME] folder

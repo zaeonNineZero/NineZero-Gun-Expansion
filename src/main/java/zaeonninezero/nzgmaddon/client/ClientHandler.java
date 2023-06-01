@@ -26,5 +26,6 @@ public class ClientHandler
 		ModelOverrides.register(initItems.BATTLE_RIFLE.get(), new SimpleModel(SpecialModels.BATTLE_RIFLE::getModel));
 		ModelOverrides.register(initItems.HUNTING_RIFLE.get(), new SimpleModel(SpecialModels.HUNTING_RIFLE::getModel));
 		ModelOverrides.register(initItems.SNIPER_RIFLE.get(), new SimpleModel(SpecialModels.SNIPER_RIFLE::getModel));
+		ModelOverrides.register(initItems.NINE_A_NINE_ONE.get(), new SimpleModel(SpecialModels.NINE_A_NINE_ONE::getModel));
     }
 }

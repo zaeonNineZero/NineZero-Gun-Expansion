@@ -62,6 +62,9 @@ public class initSounds {
 	public static final RegistryObject<SoundEvent> ITEM_SNIPER_RIFLE_ENCHANTED_FIRE = register("item.sniper_rifle.enchanted_fire");
 	public static final RegistryObject<SoundEvent> ITEM_SNIPER_RIFLE_SILENCED_FIRE = register("item.sniper_rifle.silenced_fire");
 	public static final RegistryObject<SoundEvent> ITEM_SNIPER_RIFLE_COCK = register("item.sniper_rifle.cock");
+
+
+	public static final RegistryObject<SoundEvent> INTSUP_FIRE = register("item.9a91.intsup.fire");
 	
 	//Method to help us register sounds
 	private static RegistryObject<SoundEvent> register(String key) {
