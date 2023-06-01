@@ -9,10 +9,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 
 public class initSounds {
-	/*
-     * This creates a Deferred Register where all of the sounds will be registered
-     * This is called and added to the event bus in the main mod file.
-     */
+
 	public static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, nzgmAddon.MOD_ID);
 
 	public static final RegistryObject<SoundEvent> ITEM_ASSAULT_RIFLE_RELOAD = register("item.assault_rifle.reload");
@@ -63,8 +60,7 @@ public class initSounds {
 	public static final RegistryObject<SoundEvent> ITEM_SNIPER_RIFLE_SILENCED_FIRE = register("item.sniper_rifle.silenced_fire");
 	public static final RegistryObject<SoundEvent> ITEM_SNIPER_RIFLE_COCK = register("item.sniper_rifle.cock");
 
-
-	public static final RegistryObject<SoundEvent> INTSUP_FIRE = register("item.9a91.intsup.fire");
+	public static final RegistryObject<SoundEvent> ITEM_9a91_INTSUP = register("item.9a91.intsup");
 	
 	//Method to help us register sounds
 	private static RegistryObject<SoundEvent> register(String key) {
