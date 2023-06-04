@@ -5,15 +5,15 @@
     "gripType": "cgm:two_handed",
     "maxAmmo": 100,
     "reloadAmount": 10,
-    "recoilAngle": 4.0,
-    "recoilKick": 0.25,
-    "recoilAdsReduction": 0.4,
+    "recoilAngle": 3.5,
+    "recoilKick": 0.35,
+    "recoilAdsReduction": 0.3,
     "alwaysSpread": true,
     "spread": 6.0
   },
   "projectile": {
     "item": "nzgmaddon:medium_bullet",
-    "damage": 5.2,
+    "damage": 5.0,
     "size": 0.2,
     "speed": 23.0,
     "life": 21
