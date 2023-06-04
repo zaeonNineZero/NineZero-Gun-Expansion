@@ -165,6 +165,26 @@
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/battle_rifle/cock"}]
   },
+  
+"item.machine_gun.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [
+      "nzgmaddon:item/machine_gun/fire",
+      "nzgmaddon:item/machine_gun/fire2"
+    ]
+  },
+"item.machine_gun.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"nzgmaddon:item/machine_gun/silenced_fire"}]
+  },
+"item.machine_gun.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+    "sounds": [{"name":"nzgmaddon:item/machine_gun/enchanted_fire"}]
+  },
+"item.machine_gun.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/machine_gun/cock"}]
+  },
 
 "item.hunting_rifle.fire": {
     "subtitle":"subtitle.cgm.fire",

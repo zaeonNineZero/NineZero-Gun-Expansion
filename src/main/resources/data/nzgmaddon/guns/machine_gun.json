@@ -19,7 +19,7 @@
   },
   "sounds": {
     "fire": "nzgmaddon:item.machine_gun.fire",
-    "reload": "nzgmaddon:item.assault_rifle.reload",
+    "reload": "nzgmaddon:item.rifle.reload",
     "cock": "nzgmaddon:item.machine_gun.cock",
     "silencedFire": "nzgmaddon:item.machine_gun.silenced_fire",
     "enchantedFire": "nzgmaddon:item.machine_gun.enchanted_fire"
