@@ -3,7 +3,7 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "cgm:items/rifle",
-		"2": "cgm:items/pump_shotgun",
+		"2": "nzgmaddon:items/pump_shotgun",
 		"3": "cgm:items/shotgun",
 		"particle": "cgm:items/pump_shotgun"
 	},
