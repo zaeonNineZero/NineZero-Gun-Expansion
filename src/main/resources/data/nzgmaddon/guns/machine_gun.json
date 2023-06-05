@@ -5,11 +5,11 @@
     "gripType": "cgm:two_handed",
     "maxAmmo": 100,
     "reloadAmount": 10,
-    "recoilAngle": 3.5,
-    "recoilKick": 0.35,
+    "recoilAngle": 3.0,
+    "recoilKick": 0.5,
     "recoilAdsReduction": 0.3,
     "alwaysSpread": true,
-    "spread": 6.0
+    "spread": 7.0
   },
   "projectile": {
     "item": "nzgmaddon:medium_bullet",
@@ -20,7 +20,7 @@
   },
   "sounds": {
     "fire": "nzgmaddon:item.machine_gun.fire",
-    "reload": "nzgmaddon:item.rifle.reload",
+    "reload": "nzgmaddon:item.assault_rifle.reload",
     "cock": "nzgmaddon:item.machine_gun.cock",
     "silencedFire": "nzgmaddon:item.machine_gun.silenced_fire",
     "enchantedFire": "nzgmaddon:item.machine_gun.enchanted_fire"
