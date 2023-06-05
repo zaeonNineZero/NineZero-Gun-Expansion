@@ -9,14 +9,14 @@
     "recoilKick": 0.5,
     "recoilAdsReduction": 0.3,
     "alwaysSpread": true,
-    "spread": 7.0
+    "spread": 7.5
   },
   "projectile": {
     "item": "nzgmaddon:medium_bullet",
-    "damage": 5.0,
+    "damage": 4.8,
     "size": 0.2,
-    "speed": 23.0,
-    "life": 21
+    "speed": 24.0,
+    "life": 20
   },
   "sounds": {
     "fire": "nzgmaddon:item.machine_gun.fire",
