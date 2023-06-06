@@ -1,6 +1,15 @@
 # Changelog (1.19.2 Releases)
 
 
+### 1.2.0 (6/6/23)
+* Added the Double Barreled Shotgun, Automatic Shotgun, and Machine Gun.
+* Added the high-zoom Ballistic Scope.
+* Added Simplified Chinese (zh_cn) translation, courtesy of chemlzh on github. Thanks!
+* Updated a few sounds.
+* Small adjustments to a few item recipes.
+
+As usual, all new items have usable recipes in the CGM Workbench.
+
 ### 1.1.3 (5/12/23)
 * Altered stat modifiers of the Carbine Stock to make it feel slightly lighter than the Solid Stock.
 * Updated the model of the Medium Bullet.
