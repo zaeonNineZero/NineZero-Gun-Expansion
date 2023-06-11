@@ -1,10 +1,15 @@
 # Changelog (1.19.2 Releases)
 
 
+### 1.2.1 (6/11/23)
+* Added Russian (ru_ru) localization, courtesy of PortalRU on GitHub. Thanks!
+* Corrected an incorrect item key in zh_cn.json - 'item.nzgmaddon.uzi' was uncorrectly labeled as 'item.nzgmaddon.micro_smg'.
+* Increased ammo per reload cycle of the Machine Gun to 15.
+
 ### 1.2.0 (6/6/23)
 * Added the Double Barreled Shotgun, Automatic Shotgun, and Machine Gun.
 * Added the high-zoom Ballistic Scope.
-* Added Simplified Chinese (zh_cn) translation, courtesy of chemlzh on github. Thanks!
+* Added Simplified Chinese (zh_cn) translation, courtesy of chemlzh on GitHub. Thanks!
 * Updated a few sounds.
 * Small adjustments to a few item recipes.
 
