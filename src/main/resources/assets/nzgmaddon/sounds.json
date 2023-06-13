@@ -31,7 +31,11 @@
   },
 "item.revolver.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
-    "sounds": [{"name":"nzgmaddon:item/revolver/enchanted_fire"}]
+    "sounds": [
+      "nzgmaddon:item/revolver/enchanted_fire",
+      "nzgmaddon:item/revolver/enchanted_fire2",
+      "nzgmaddon:item/revolver/enchanted_fire3"
+    ]
   },
 "item.revolver.silenced_fire": {
     "subtitle":"subtitle.cgm.fire.silenced",
@@ -142,7 +146,12 @@
   },
 "item.heavy_ar.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
-    "sounds": [{"name":"nzgmaddon:item/heavy_ar/enchanted_fire"}]
+	"sounds": [
+      "nzgmaddon:item/heavy_ar/enchanted_fire",
+      "nzgmaddon:item/heavy_ar/enchanted_fire2",
+      "nzgmaddon:item/heavy_ar/enchanted_fire3",
+      "nzgmaddon:item/heavy_ar/enchanted_fire4"
+    ]
   },
 "item.heavy_ar.cock": {
     "subtitle":"subtitle.cgm.cock",
@@ -179,7 +188,10 @@
   },
 "item.machine_gun.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
-    "sounds": [{"name":"nzgmaddon:item/machine_gun/enchanted_fire"}]
+	"sounds": [
+      "nzgmaddon:item/machine_gun/enchanted_fire",
+      "nzgmaddon:item/machine_gun/enchanted_fire2"
+    ]
   },
 "item.machine_gun.cock": {
     "subtitle":"subtitle.cgm.cock",
