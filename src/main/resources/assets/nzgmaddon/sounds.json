@@ -208,7 +208,7 @@
     "sounds": [{"name":"nzgmaddon:item/sniper_rifle/silenced_fire"}]
   },
 "item.sniper_rifle.enchanted_fire": {
-    "subtitle":"subtitle.cgm.fire",
+    "subtitle":"subtitle.cgm.enchanted_fire",
     "sounds": [{"name":"nzgmaddon:item/sniper_rifle/enchanted_fire"}]
   },
 "item.sniper_rifle.cock": {
