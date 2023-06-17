@@ -1,6 +1,9 @@
 # Changelog (1.19.2 Releases)
 
 
+### 1.2.2 (6/*/23)
+* Updated enchanted gun fire sounds to reduce the volume of the 'laser gun' sound samples.
+
 ### 1.2.1 (6/11/23)
 * Added Russian (ru_ru) localization, courtesy of PortalRU on GitHub. Thanks!
 * Corrected an incorrect item key in zh_cn.json - 'item.nzgmaddon.uzi' was uncorrectly labeled as 'item.nzgmaddon.micro_smg'.
