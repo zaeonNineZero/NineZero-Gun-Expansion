@@ -1,7 +1,7 @@
 # Changelog (1.19.2 Releases)
 
 
-### 1.2.2 (6/*/23)
+### 1.2.2 (6/17/23)
 * Updated enchanted gun fire sounds to reduce the volume of the 'laser gun' sound samples.
 
 ### 1.2.1 (6/11/23)
