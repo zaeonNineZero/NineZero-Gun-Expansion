@@ -1,0 +1,33 @@
+{
+	"item.nzgexpansion.revolver": "左轮手枪",
+	"item.nzgexpansion.micro_smg": "微型冲锋枪",
+	"item.nzgexpansion.submachine_gun": "冲锋枪",
+	"item.nzgexpansion.hunting_shotgun": "狩猎霰弹枪",
+	"item.nzgexpansion.double_barreled_shotgun": "双管霰弹枪",
+	"item.nzgexpansion.automatic_shotgun": "自动霰弹枪",
+	"item.nzgexpansion.heavy_assault_rifle": "重型突击步枪",
+	"item.nzgexpansion.battle_rifle": "战斗步枪",
+	"item.nzgexpansion.machine_gun": "机枪",
+	"item.nzgexpansion.infantry_rifle": "步兵步枪",
+	"item.nzgexpansion.hunting_rifle": "狩猎步枪",
+	"item.nzgexpansion.sniper_rifle": "狙击步枪",
+	
+	"item.nzgexpansion.medium_bullet": "中型子弹",
+	
+	"item.nzgexpansion.extended_barrel": "加长枪管",
+	"item.nzgexpansion.flash_hider": "消焰器",
+	"item.nzgexpansion.muzzle_brake": "枪口制退器",
+	"item.nzgexpansion.heavy_muzzle_brake": "重型枪口制退器",
+	
+	"item.nzgexpansion.dot_sight": "红点瞄准镜",
+	"item.nzgexpansion.ballistic_scope": "狙击镜",
+	
+	"item.nzgexpansion.short_stock": "短枪托",
+	"item.nzgexpansion.dyeable_tactical_stock": "可染色战术枪托",
+	"item.nzgexpansion.solid_stock": "实心枪托",
+	"item.nzgexpansion.stabilizing_stock": "稳定枪托",
+	"item.nzgexpansion.carbine_stock": "卡宾枪枪托",
+	"item.nzgexpansion.marksman_stock": "精确射手枪托",
+	
+	"item.nzgexpansion.horizontal_grip": "水平握把"
+}

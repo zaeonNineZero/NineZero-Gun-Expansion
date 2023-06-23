@@ -1,0 +1,33 @@
+{
+	"item.nzgexpansion.revolver": "Revolver",
+	"item.nzgexpansion.micro_smg": "Micro SMG",
+	"item.nzgexpansion.submachine_gun": "Submachine Gun",
+	"item.nzgexpansion.hunting_shotgun": "Hunting Shotgun",
+	"item.nzgexpansion.double_barreled_shotgun": "Double Barreled Shotgun",
+	"item.nzgexpansion.automatic_shotgun": "Automatic Shotgun",
+	"item.nzgexpansion.heavy_assault_rifle": "Heavy Assault Rifle",
+	"item.nzgexpansion.battle_rifle": "Battle Rifle",
+	"item.nzgexpansion.machine_gun": "Machine Gun",
+	"item.nzgexpansion.infantry_rifle": "Infantry Rifle",
+	"item.nzgexpansion.hunting_rifle": "Hunting Rifle",
+	"item.nzgexpansion.sniper_rifle": "Sniper Rifle",
+	
+	"item.nzgexpansion.medium_bullet": "Medium Bullet",
+	
+	"item.nzgexpansion.extended_barrel": "Extended Barrel",
+	"item.nzgexpansion.flash_hider": "Flash Hider",
+	"item.nzgexpansion.muzzle_brake": "Muzzle Brake",
+	"item.nzgexpansion.heavy_muzzle_brake": "Heavy Muzzle Brake",
+	
+	"item.nzgexpansion.dot_sight": "Dot Sight",
+	"item.nzgexpansion.ballistic_scope": "Ballistic Scope",
+	
+	"item.nzgexpansion.short_stock": "Short Stock",
+	"item.nzgexpansion.dyeable_tactical_stock": "Tactical Stock",
+	"item.nzgexpansion.solid_stock": "Solid Stock",
+	"item.nzgexpansion.stabilizing_stock": "Stabilizing Stock",
+	"item.nzgexpansion.carbine_stock": "Carbine Stock",
+	"item.nzgexpansion.marksman_stock": "Marksman Stock",
+	
+	"item.nzgexpansion.horizontal_grip": "Horizontal Grip"
+}

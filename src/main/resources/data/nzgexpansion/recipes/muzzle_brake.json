@@ -1,0 +1,12 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 5,
+      "tag": "forge:nuggets/iron"
+    }
+  ],
+  "result": {
+    "item": "nzgexpansion:muzzle_brake"
+  }
+}
