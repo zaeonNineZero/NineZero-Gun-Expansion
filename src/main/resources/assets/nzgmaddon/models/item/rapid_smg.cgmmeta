@@ -12,8 +12,8 @@
                 "translation": [8.0, 3.15, 16.45]
             },
             "underBarrel": {
-                "translation": [8.0, 1.849, 8.6],
-                "scale": [0.8, 0.8, 0.8]
+                "translation": [8.0, 1.85, 8.55],
+                "scale": [0.81, 0.81, 0.81]
             }
         },
         "ironSight": {
