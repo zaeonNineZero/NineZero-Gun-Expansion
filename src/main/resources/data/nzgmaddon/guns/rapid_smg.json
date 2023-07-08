@@ -1,34 +1,34 @@
 {
   "general": {
     "auto": true,
-    "rate": 2,
+    "rate": 1,
     "gripType": "cgm:two_handed",
-    "maxAmmo": 30,
-    "reloadAmount": 10,
-    "recoilAngle": 3.5,
+    "maxAmmo": 40,
+    "reloadAmount": 15,
+    "recoilAngle": 3.0,
     "recoilKick": 0.4,
-    "recoilAdsReduction": 0.35,
-    "alwaysSpread": true,
-    "spread": 6.0
+    "recoilAdsReduction": 0.3,
+    "alwaysSpread": false,
+    "spread": 20.0
   },
   "projectile": {
     "item": "cgm:basic_bullet",
-    "damage": 4.0,
+    "damage": 2.5,
     "size": 0.2,
-    "speed": 18.0,
-    "life": 12
+    "speed": 20.0,
+    "life": 10
   },
   "sounds": {
-    "fire": "nzgmaddon:item.smg.fire",
+    "fire": "nzgmaddon:item.rapid_smg.fire",
     "reload": "cgm:item.pistol.reload",
-    "cock": "nzgmaddon:item.smg.cock",
-    "silencedFire": "nzgmaddon:item.smg.silenced_fire",
-    "enchantedFire": "nzgmaddon:item.smg.enchanted_fire"
+    "cock": "nzgmaddon:item.rapid_smg.cock",
+    "silencedFire": "nzgmaddon:item.rapid_smg.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.rapid_smg.enchanted_fire"
   },
   "display": {
     "flash": {
-      "yOffset": 3.2,
-      "zOffset": -1.75,
+      "yOffset": 2.625,
+      "zOffset": -2,
       "size": 0.35
     }
   },
@@ -45,16 +45,16 @@
 		"scale": 0.9
       },
       "barrel": {
-        "yOffset": 3.2,
-        "zOffset": -1.25,
+        "yOffset": 2.625,
+        "zOffset": -1.5,
         "scale": 0.45
       },
       "stock": {
         "yOffset": 3.15,
-        "zOffset": 8.2
+        "zOffset": 8.45
       },
       "underBarrel": {
-        "yOffset": 2.349,
+        "yOffset": 2.799,
         "zOffset": 1.25,
         "scale": 0.89
       }

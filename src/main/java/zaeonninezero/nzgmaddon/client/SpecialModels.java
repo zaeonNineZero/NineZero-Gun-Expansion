@@ -15,7 +15,7 @@ public enum SpecialModels
     REVOLVER("gun/revolver"),
     UZI("gun/uzi"),
     SUBMACHINE_GUN("gun/submachine_gun"),
-    HUNTING_SHOTGUN("gun/hunting_shotgun"),
+    RAPID_SMG("gun/rapid_smg"),
     DOUBLE_BARRELED_SHOTGUN("gun/double_barreled_shotgun"),
     AUTOMATIC_SHOTGUN("gun/automatic_shotgun"),
     HEAVY_ASSAULT_RIFLE("gun/heavy_assault_rifle"),
