@@ -9,7 +9,7 @@
     "recoilKick": 0.5,
     "recoilAdsReduction": 0.3,
     "alwaysSpread": false,
-    "spread": 20.0
+    "spread": 12.0
   },
   "projectile": {
     "item": "cgm:basic_bullet",
@@ -28,7 +28,7 @@
   "display": {
     "flash": {
       "yOffset": 2.625,
-      "zOffset": -2,
+      "zOffset": -2.5,
       "size": 0.35
     }
   },
@@ -45,7 +45,7 @@
       },
       "barrel": {
         "yOffset": 2.625,
-        "zOffset": -1.5,
+        "zOffset": -2.1,
         "scale": 0.45
       },
       "stock": {
@@ -54,8 +54,8 @@
       },
       "underBarrel": {
         "yOffset": 2.799,
-        "zOffset": 1.25,
-        "scale": 0.8
+        "zOffset": 0.25,
+        "scale": 0.77
       }
     }
   }
