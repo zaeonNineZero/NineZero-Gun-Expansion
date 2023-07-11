@@ -4,7 +4,7 @@
     "rate": 1,
     "gripType": "cgm:two_handed",
     "maxAmmo": 40,
-    "reloadAmount": 15,
+    "reloadAmount": 12,
     "recoilAngle": 3.3,
     "recoilKick": 0.5,
     "recoilAdsReduction": 0.3,
@@ -13,10 +13,10 @@
   },
   "projectile": {
     "item": "cgm:basic_bullet",
-    "damage": 2.5,
+    "damage": 3.0,
     "size": 0.2,
-    "speed": 20.0,
-    "life": 10
+    "speed": 18.0,
+    "life": 12
   },
   "sounds": {
     "fire": "nzgmaddon:item.rapid_smg.fire",
