@@ -107,7 +107,7 @@ public class ExtraGunModifiers
         @Override
         public float kickModifier()
         {
-            return 0.4F;
+            return 0.35F;
         }
 
         @Override
@@ -159,45 +159,45 @@ public class ExtraGunModifiers
         @Override
         public float kickModifier()
         {
-            return 0.4F;
+            return 0.3F;
         }
 
         @Override
         public float modifyProjectileSpread(float spread)
         {
-            return spread * 0.6F;
+            return spread * 0.65F;
         }
 
         @Override
         public double modifyAimDownSightSpeed(double speed)
         {
-            return speed * 0.75F;
+            return speed * 0.8F;
         }
 
-        @Override
+        /*@Override
         public int modifyFireRate(int rate)
         {
             return Mth.clamp((int) (rate * 1.1), rate + 1, Integer.MAX_VALUE);
-        }
+        }*/
     };
 	public static final IGunModifier MARKSMAN_STABILISED = new IGunModifier()
     {
         @Override
         public float recoilModifier()
         {
-            return 0.3F;
+            return 0.25F;
         }
 
         @Override
         public float kickModifier()
         {
-            return 0.35F;
+            return 0.4F;
         }
 
         @Override
         public float modifyProjectileSpread(float spread)
         {
-            return spread * 0.25F;
+            return spread * 0.2F;
         }
 
         @Override
