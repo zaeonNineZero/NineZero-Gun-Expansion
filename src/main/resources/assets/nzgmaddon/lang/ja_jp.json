@@ -1,33 +1,32 @@
 {
-	"item.nzgmaddon.revolver": "リボルバー",
-	"item.nzgmaddon.uzi": "マイクロSMG",
-	"item.nzgmaddon.submachine_gun": "サブマシンガン",
-	"item.nzgmaddon.hunting_shotgun": "ハンティングショットガン",
-	"item.nzgmaddon.double_barreled_shotgun": "ダブルバレルショットガン",
 	"item.nzgmaddon.automatic_shotgun": "オートマチックショットガン",
-	"item.nzgmaddon.heavy_assault_rifle": "ヘビーアサルトライフル",
 	"item.nzgmaddon.battle_rifle": "バトルライフル",
-	"item.nzgmaddon.machine_gun": "マシンガン",
-	"item.nzgmaddon.infantry_rifle": "インファントリーライフル",
+	"item.nzgmaddon.double_barreled_shotgun": "ダブルバレルショットガン",
+	"item.nzgmaddon.heavy_assault_rifle": "ヘビーアサルトライフル",
 	"item.nzgmaddon.hunting_rifle": "ハンティングライフル",
+	"item.nzgmaddon.hunting_shotgun": "ハンティングショットガン",
+	"item.nzgmaddon.infantry_rifle": "インファントリーライフル",
+	"item.nzgmaddon.machine_gun": "マシンガン",
+	"item.nzgmaddon.uzi": "マイクロSMG",
+	"item.nzgmaddon.revolver": "リボルバー",
 	"item.nzgmaddon.sniper_rifle": "スナイパーライフル",
+	"item.nzgmaddon.submachine_gun": "サブマシンガン",
 	
 	"item.nzgmaddon.medium_bullet": "ミディアムバレット",
 	
 	"item.nzgmaddon.extended_barrel": "拡張バレル",
 	"item.nzgmaddon.flash_hider": "フラッシュハイダー",
 	"item.nzgmaddon.muzzle_brake": "マズルブレーキ",
-	"item.nzgmaddon.heavy_muzzle_brake": "ヘビーマズルブレーキ",
 	
-	"item.nzgmaddon.dot_sight": "ドットサイト",
 	"item.nzgmaddon.ballistic_scope": "バリスティックスコープ",
+	"item.nzgmaddon.dot_sight": "ドットサイト",
 	
-	"item.nzgmaddon.short_stock": "ショートストック",
+	"item.nzgmaddon.carbine_stock": "カービンストック",
 	"item.nzgmaddon.dyeable_tactical_stock": "タクティカルストック",
+	"item.nzgmaddon.marksman_stock": "マークスマンストック",
+	"item.nzgmaddon.short_stock": "ショートストック",
 	"item.nzgmaddon.solid_stock": "ソリッドストック",
 	"item.nzgmaddon.stabilizing_stock": "スタビライズストック",
-	"item.nzgmaddon.carbine_stock": "カービンストック",
-	"item.nzgmaddon.marksman_stock": "マークスマンストック",
 	
 	"item.nzgmaddon.horizontal_grip": "水平グリップ"
 }
