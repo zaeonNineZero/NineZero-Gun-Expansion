@@ -9,6 +9,7 @@
 	"item.nzgmaddon.infantry_rifle": "Infantry Rifle",
 	"item.nzgmaddon.machine_gun": "Machine Gun",
 	"item.nzgmaddon.uzi": "Micro SMG",
+	"item.nzgmaddon.pump_shotgun": "Pump Shotgun",
 	"item.nzgmaddon.rapid_smg": "Rapid SMG",
 	"item.nzgmaddon.revolver": "Revolver",
 	"item.nzgmaddon.sniper_rifle": "Sniper Rifle",
@@ -21,6 +22,7 @@
 	"item.nzgmaddon.muzzle_brake": "Muzzle Brake",
 	
 	"item.nzgmaddon.ballistic_scope": "Ballistic Scope",
+	"item.nzgmaddon.chevron_scope": "Chevron Scope",
 	"item.nzgmaddon.dot_sight": "Dot Sight",
 	
 	"item.nzgmaddon.carbine_stock": "Carbine Stock",

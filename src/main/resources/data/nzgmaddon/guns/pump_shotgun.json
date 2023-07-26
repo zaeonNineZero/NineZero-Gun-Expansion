@@ -1,30 +1,30 @@
 {
   "general": {
-    "rate": 20,
+    "rate": 17,
     "gripType": "cgm:two_handed",
-    "maxAmmo": 4,
+    "maxAmmo": 8,
     "reloadAmount": 1,
-    "recoilAngle": 5.0,
-    "recoilKick": 0.7,
+    "recoilAngle": 10.0,
+    "recoilKick": 1.5,
     "recoilDurationOffset": 0.1,
-    "recoilAdsReduction": 0.2,
+    "recoilAdsReduction": 0.1,
     "projectileAmount": 8,
     "alwaysSpread": true,
-    "spread": 6.0
+    "spread": 18.0
   },
   "projectile": {
     "item": "cgm:shell",
-    "damage": 24.0,
+    "damage": 21.0,
     "size": 1.0,
     "speed": 15.0,
     "life": 10
   },
   "sounds": {
-    "fire": "nzgmaddon:item.hunting_shotgun.fire",
+    "fire": "nzgmaddon:item.pump_shotgun.fire",
     "reload": "nzgmaddon:item.shotgun.reload",
     "cock": "nzgmaddon:item.pump_shotgun.cock",
-    "silencedFire": "nzgmaddon:item.hunting_shotgun.silenced_fire",
-    "enchantedFire": "nzgmaddon:item.hunting_shotgun.enchanted_fire"
+    "silencedFire": "nzgmaddon:item.pump_shotgun.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.pump_shotgun.enchanted_fire"
   },
   "display": {
     "flash": {
@@ -47,6 +47,14 @@
         "yOffset": 3.6506,
         "zOffset": -3.8,
         "scale": 0.5
+      },
+      "stock": {
+        "yOffset": 3.6506,
+        "zOffset": 8.4
+      },
+      "underBarrel": {
+        "yOffset": 1.8,
+        "zOffset": -0.5
       }
     }
   }
