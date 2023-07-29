@@ -9,6 +9,7 @@
 	"item.nzgmaddon.infantry_rifle": "步兵步枪",
 	"item.nzgmaddon.machine_gun": "机枪",
 	"item.nzgmaddon.micro_smg": "微型冲锋枪",
+	"item.nzgmaddon.pump_shotgun": "泵动霰弹枪",
 	"item.nzgmaddon.rapid_smg": "高射速冲锋枪",
 	"item.nzgmaddon.revolver": "左轮手枪",
 	"item.nzgmaddon.sniper_rifle": "狙击步枪",
@@ -22,6 +23,7 @@
 	"item.nzgmaddon.muzzle_brake": "枪口制退器",
 
 	"item.nzgmaddon.ballistic_scope": "狙击瞄准镜",
+	"item.nzgmaddon.chevron_scope": "V型分划瞄准镜",
 	"item.nzgmaddon.dot_sight": "红点瞄准镜",
 
 	"item.nzgmaddon.carbine_stock": "卡宾枪枪托",
