@@ -55,6 +55,18 @@ public class ExtraGunModifiers
         {
             return spread * 0.67F;
         }
+        
+        @Override
+        public double modifyProjectileSpeed(double speed)
+        {
+            return speed * 1.25;
+        }
+        
+        @Override
+        public float modifyProjectileDamage(float damage)
+        {
+            return damage * 1.1F;
+        }
 		
 		@Override
         public double modifyAimDownSightSpeed(double speed)
