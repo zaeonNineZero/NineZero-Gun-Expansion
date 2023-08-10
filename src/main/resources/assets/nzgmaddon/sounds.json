@@ -232,6 +232,31 @@
     "sounds": [{"name":"nzgmaddon:item/machine_gun/cock"}]
   },
 
+"item.auto_marksman_rifle.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [
+      "nzgmaddon:item/auto_marksman_rifle/fire",
+      "nzgmaddon:item/auto_marksman_rifle/fire2",
+      "nzgmaddon:item/auto_marksman_rifle/fire3"
+    ]
+  },
+"item.auto_marksman_rifle.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"nzgmaddon:item/auto_marksman_rifle/silenced_fire"}]
+  },
+"item.auto_marksman_rifle.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+	"sounds": [
+      "nzgmaddon:item/auto_marksman_rifle/enchanted_fire",
+      "nzgmaddon:item/auto_marksman_rifle/enchanted_fire2",
+      "nzgmaddon:item/auto_marksman_rifle/enchanted_fire3"
+    ]
+  },
+"item.auto_marksman_rifle.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/auto_marksman_rifle/cock"}]
+  },
+
 "item.hunting_rifle.fire": {
     "subtitle":"subtitle.cgm.fire",
     "sounds": [{"name":"nzgmaddon:item/hunting_rifle/fire"}]

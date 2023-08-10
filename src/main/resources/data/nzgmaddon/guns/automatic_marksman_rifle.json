@@ -1,0 +1,61 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 5,
+    "gripType": "cgm:two_handed",
+    "maxAmmo": 16,
+    "reloadAmount": 5,
+    "recoilAngle": 6.5,
+    "recoilKick": 1.5,
+    "recoilAdsReduction": 0.3,
+    "alwaysSpread": false,
+    "spread": 8.0
+  },
+  "projectile": {
+    "item": "cgm:advanced_bullet",
+    "damage": 11.0,
+    "size": 0.2,
+    "speed": 24.0,
+    "life": 22,
+    "gravity": true
+  },
+  "sounds": {
+    "fire": "nzgmaddon:item.auto_marksman_rifle.fire",
+    "reload": "nzgmaddon:item.rifle.reload",
+    "cock": "nzgmaddon:item.auto_marksman_rifle.cock",
+    "silencedFire": "nzgmaddon:item.auto_marksman_rifle.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.auto_marksman_rifle.enchanted_fire"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.4,
+      "zOffset": -8.91
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 5.2,
+      "zOffset": 3.2,
+      "fovModifier": 0.6
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 4.4,
+        "zOffset": 4.0
+      },
+      "barrel": {
+        "yOffset": 3.4,
+        "zOffset": -7.9,
+        "scale": 0.5
+      },
+      "stock": {
+        "yOffset": 3.6,
+        "zOffset": 8.2
+      },
+      "underBarrel": {
+        "yOffset": 2.599,
+        "zOffset": -1.0
+      }
+    }
+  }
+}
