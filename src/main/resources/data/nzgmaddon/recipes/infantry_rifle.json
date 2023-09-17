@@ -3,7 +3,7 @@
   "materials": [
     {
       "tag": "forge:ingots/iron",
-      "count": 21
+      "count": 22
     },
 	{
       "tag": "minecraft:planks",
@@ -11,6 +11,6 @@
     }
   ],
   "result": {
-    "item": "nzgmaddon:hunting_rifle"
+    "item": "nzgmaddon:infantry_rifle"
   }
 }

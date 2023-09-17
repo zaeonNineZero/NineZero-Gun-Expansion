@@ -22,9 +22,11 @@ public enum SpecialModels
     AUTOMATIC_SHOTGUN("gun/automatic_shotgun"),
     HEAVY_ASSAULT_RIFLE("gun/heavy_assault_rifle"),
     BATTLE_RIFLE("gun/battle_rifle"),
+    INFANTRY_RIFLE("gun/infantry_rifle"),
     MACHINE_GUN("gun/machine_gun"),
-    AUTOMATIC_MARKSMAN_RIFLE("gun/automatic_marksman_rifle"),
+    AUTOMATIC_SNIPER_RIFLE("gun/automatic_sniper_rifle"),
     HUNTING_RIFLE("gun/hunting_rifle"),
+    BOLT_ACTION_RIFLE("gun/bolt_action_rifle"),
     SNIPER_RIFLE("gun/sniper_rifle");
 
     /**

@@ -3,7 +3,11 @@
   "materials": [
     {
       "tag": "forge:ingots/iron",
-      "count": 21
+      "count": 18
+    },
+	{
+      "tag": "forge:nuggets/iron",
+      "count": 1
     },
 	{
       "tag": "minecraft:planks",
@@ -11,6 +15,6 @@
     }
   ],
   "result": {
-    "item": "nzgmaddon:hunting_rifle"
+    "item": "nzgmaddon:bolt_action_rifle"
   }
 }

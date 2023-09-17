@@ -1,8 +1,8 @@
 {
   "general": {
-    "rate": 45,
+    "rate": 30,
     "gripType": "cgm:two_handed",
-    "maxAmmo": 1,
+    "maxAmmo": 4,
     "reloadAmount": 1,
     "recoilAngle": 6.0,
     "recoilKick": 1.0,
@@ -12,19 +12,19 @@
     "spread": 0.0
   },
   "projectile": {
-    "item": "cgm:advanced_bullet",
-    "damage": 18.0,
+    "item": "nzgmaddon:medium_bullet",
+    "damage": 16.0,
     "size": 0.0625,
     "speed": 32.0,
     "life": 24,
     "gravity": true
   },
   "sounds": {
-    "fire": "nzgmaddon:item.hunting_rifle.fire",
+    "fire": "nzgmaddon:item.bolt_action_rifle.fire",
     "reload": "nzgmaddon:item.rifle.reload",
-    "cock": "nzgmaddon:item.hunting_rifle.cock",
-    "silencedFire": "nzgmaddon:item.hunting_rifle.silenced_fire",
-    "enchantedFire": "nzgmaddon:item.hunting_rifle.enchanted_fire"
+    "cock": "nzgmaddon:item.sniper_rifle.cock",
+    "silencedFire": "nzgmaddon:item.bolt_action_rifle.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.bolt_action_rifle.enchanted_fire"
   },
   "display": {
     "flash": {
@@ -47,6 +47,11 @@
         "yOffset": 3.8365,
         "zOffset": -10.2,
         "scale": 0.46
+      },
+      "underBarrel": {
+        "yOffset": 2.8,
+        "zOffset": -1.0,
+        "scale": 0.95
       }
     }
   }

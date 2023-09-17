@@ -208,6 +208,23 @@
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/battle_rifle/cock"}]
   },
+
+"item.infantry_rifle.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/fire"}]
+  },
+"item.infantry_rifle.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/silenced_fire"}]
+  },
+"item.infantry_rifle.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/enchanted_fire"}]
+  },
+"item.infantry_rifle.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/cock"}]
+  },
   
 "item.machine_gun.fire": {
     "subtitle":"subtitle.cgm.fire",
@@ -232,29 +249,29 @@
     "sounds": [{"name":"nzgmaddon:item/machine_gun/cock"}]
   },
 
-"item.auto_marksman_rifle.fire": {
+"item.auto_sniper_rifle.fire": {
     "subtitle":"subtitle.cgm.fire",
     "sounds": [
-      "nzgmaddon:item/auto_marksman_rifle/fire",
-      "nzgmaddon:item/auto_marksman_rifle/fire2",
-      "nzgmaddon:item/auto_marksman_rifle/fire3"
+      "nzgmaddon:item/auto_sniper_rifle/fire",
+      "nzgmaddon:item/auto_sniper_rifle/fire2",
+      "nzgmaddon:item/auto_sniper_rifle/fire3"
     ]
   },
-"item.auto_marksman_rifle.silenced_fire": {
+"item.auto_sniper_rifle.silenced_fire": {
     "subtitle":"subtitle.cgm.fire.silenced",
-    "sounds": [{"name":"nzgmaddon:item/auto_marksman_rifle/silenced_fire"}]
+    "sounds": [{"name":"nzgmaddon:item/auto_sniper_rifle/silenced_fire"}]
   },
-"item.auto_marksman_rifle.enchanted_fire": {
+"item.auto_sniper_rifle.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
 	"sounds": [
-      "nzgmaddon:item/auto_marksman_rifle/enchanted_fire",
-      "nzgmaddon:item/auto_marksman_rifle/enchanted_fire2",
-      "nzgmaddon:item/auto_marksman_rifle/enchanted_fire3"
+      "nzgmaddon:item/auto_sniper_rifle/enchanted_fire",
+      "nzgmaddon:item/auto_sniper_rifle/enchanted_fire2",
+      "nzgmaddon:item/auto_sniper_rifle/enchanted_fire3"
     ]
   },
-"item.auto_marksman_rifle.cock": {
+"item.auto_sniper_rifle.cock": {
     "subtitle":"subtitle.cgm.cock",
-    "sounds": [{"name":"nzgmaddon:item/auto_marksman_rifle/cock"}]
+    "sounds": [{"name":"nzgmaddon:item/auto_sniper_rifle/cock"}]
   },
 
 "item.hunting_rifle.fire": {
@@ -263,11 +280,28 @@
   },
 "item.hunting_rifle.silenced_fire": {
     "subtitle":"subtitle.cgm.fire.silenced",
-    "sounds": [{"name":"nzgmaddon:item/hunting_rifle/silenced_fire"}]
+    "sounds": [{"name":"cgm:item/rifle/silenced_fire"}]
   },
 "item.hunting_rifle.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
     "sounds": [{"name":"nzgmaddon:item/hunting_rifle/enchanted_fire"}]
+  },
+"item.hunting_rifle.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/hunting_rifle/cock"}]
+  },
+
+"item.bolt_action_rifle.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [{"name":"nzgmaddon:item/bolt_action_rifle/fire"}]
+  },
+"item.bolt_action_rifle.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"nzgmaddon:item/bolt_action_rifle/silenced_fire"}]
+  },
+"item.bolt_action_rifle.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+    "sounds": [{"name":"nzgmaddon:item/bolt_action_rifle/enchanted_fire"}]
   },
 
 "item.sniper_rifle.fire": {

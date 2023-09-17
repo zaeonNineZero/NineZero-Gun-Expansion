@@ -6,11 +6,10 @@
                 "scale": [0.46, 0.46, 0.46]
             },
             "scope": {
-                "translation": [8.0, 4.32, 9.8],
-                "scale": [0.9, 0.9, 0.9]
+                "translation": [8.0, 4.32, 11.3]
             },
             "underBarrel": {
-                "translation": [8.0, 2.8, 6.6],
+                "translation": [8.0, 2.7, 7.6],
                 "scale": [0.9, 0.9, 0.9]
             }
         },
