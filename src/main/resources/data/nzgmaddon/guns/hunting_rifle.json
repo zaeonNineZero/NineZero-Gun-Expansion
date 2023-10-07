@@ -8,12 +8,12 @@
     "recoilKick": 1.0,
     "recoilDurationOffset": 0.4,
     "recoilAdsReduction": 0.45,
-    "alwaysSpread": false,
-    "spread": 0.0
+    "alwaysSpread": true,
+    "spread": 1.0
   },
   "projectile": {
     "item": "cgm:advanced_bullet",
-    "damage": 18.0,
+    "damage": 22.0,
     "size": 0.0625,
     "speed": 32.0,
     "life": 24,

@@ -1,6 +1,6 @@
 {
   "general": {
-    "rate": 30,
+    "rate": 29,
     "gripType": "cgm:two_handed",
     "maxAmmo": 4,
     "reloadAmount": 1,
