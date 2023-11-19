@@ -1,6 +1,20 @@
 # Changelog (1.19.2 Releases)
 
 
+### 1.3.0 (**/**/23)
+* Added the Rapid SMG, Automatic Sniper Rifle, and Infantry Rifle.
+* Overhauled the Hunting Rifle with a new model, sounds, and stats.
+* Added the Bolt-Action Rifle, which uses the sounds and model of the old Hunting Rifle with reworked stats.
+* Added the Pump Shotgun and Chevron Scope, using the Shotgun and Medium Scope models from CGM Audio/Visual Enhancements.
+  -  The Chevron Scope has received a new reticle that more closely matches the Long/Ballistic Scopes' reticles.
+  -  CGM AVE will be updated with new models for these items to reflect this addition.
+* Added Japanese (ja_jp) translation, created by Nyattou and submitted by Omokage-R. Thanks!
+* Updated Submachine Gun and Heavy Assault Rifle models.
+* Buffed the damage of the Micro SMG to compensate for its high ammo consumption.
+* Adjusted some stat modifiers for some of the stocks. The Stabilizing Stock no longer reduces rate of fire.
+* Fixed instances of enchantment glint z-fighting with several models. (Issue #7)
+
+
 ### 1.2.2 (6/17/23)
 * Updated enchanted gun fire sounds to reduce the volume of the 'laser gun' sound samples.
 
@@ -17,6 +31,7 @@
 * Small adjustments to a few item recipes.
 
 As usual, all new items have usable recipes in the CGM Workbench.
+
 
 ### 1.1.3 (5/12/23)
 * Altered stat modifiers of the Carbine Stock to make it feel slightly lighter than the Solid Stock.
