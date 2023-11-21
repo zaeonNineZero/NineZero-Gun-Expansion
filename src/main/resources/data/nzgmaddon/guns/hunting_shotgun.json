@@ -1,6 +1,6 @@
 {
   "general": {
-    "rate": 20,
+    "rate": 21,
     "gripType": "cgm:two_handed",
     "maxAmmo": 4,
     "reloadAmount": 1,
@@ -14,9 +14,9 @@
   },
   "projectile": {
     "item": "cgm:shell",
-    "damage": 24.0,
+    "damage": 25.0,
     "size": 1.0,
-    "speed": 15.0,
+    "speed": 10.0,
     "life": 10
   },
   "sounds": {

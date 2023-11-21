@@ -15,7 +15,7 @@
     "item": "nzgmaddon:medium_bullet",
     "damage": 7.7,
     "size": 0.2,
-    "speed": 22.0,
+    "speed": 10.0,
     "life": 21,
     "gravity": true
   },

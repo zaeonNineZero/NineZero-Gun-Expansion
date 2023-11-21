@@ -16,8 +16,8 @@
     "item": "cgm:shell",
     "damage": 14.0,
     "size": 1.0,
-    "speed": 15.0,
-    "life": 10
+    "speed": 10.0,
+    "life": 5
   },
   "sounds": {
     "fire": "nzgmaddon:item.automatic_shotgun.fire",

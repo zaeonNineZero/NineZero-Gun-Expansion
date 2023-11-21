@@ -15,8 +15,8 @@
     "item": "nzgmaddon:medium_bullet",
     "damage": 12.0,
     "size": 0.2,
-    "speed": 28.0,
-    "life": 24,
+    "speed": 16.0,
+    "life": 30,
     "gravity": true
   },
   "sounds": {

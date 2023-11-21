@@ -15,8 +15,8 @@
     "item": "cgm:shell",
     "damage": 16.0,
     "size": 1.0,
-    "speed": 16.0,
-    "life": 9
+    "speed": 12.0,
+    "life": 5
   },
   "sounds": {
     "fire": "nzgmaddon:item.double_barreled.fire",

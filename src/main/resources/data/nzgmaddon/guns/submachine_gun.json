@@ -15,8 +15,8 @@
     "item": "cgm:basic_bullet",
     "damage": 4.0,
     "size": 0.2,
-    "speed": 18.0,
-    "life": 12
+    "speed": 10.0,
+    "life": 18
   },
   "sounds": {
     "fire": "nzgmaddon:item.smg.fire",

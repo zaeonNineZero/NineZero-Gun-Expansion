@@ -6,8 +6,8 @@
                 "scale": [0.55, 0.55, 0.55]
             },
             "scope": {
-                "translation": [8.0, 4.39, 8.0],
-                "scale": [1.0, 1.0, 1.0]
+                "translation": [8.0, 4.39, 8.7],
+                "scale": [0.8, 0.8, 0.8]
             },
             "underBarrel": {
                 "translation": [8.0, 2.69, 5.3]

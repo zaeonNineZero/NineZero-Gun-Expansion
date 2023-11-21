@@ -15,8 +15,8 @@
     "item": "cgm:advanced_bullet",
     "damage": 11.0,
     "size": 0.2,
-    "speed": 24.0,
-    "life": 22,
+    "speed": 15.0,
+    "life": 30,
     "gravity": true
   },
   "sounds": {

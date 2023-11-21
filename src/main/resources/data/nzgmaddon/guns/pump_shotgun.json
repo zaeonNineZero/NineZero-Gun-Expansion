@@ -7,17 +7,17 @@
     "recoilAngle": 10.0,
     "recoilKick": 1.5,
     "recoilDurationOffset": 0.2,
-    "recoilAdsReduction": 0.1,
+    "recoilAdsReduction": 0.3,
     "projectileAmount": 8,
     "alwaysSpread": true,
     "spread": 18.0
   },
   "projectile": {
     "item": "cgm:shell",
-    "damage": 21.0,
+    "damage": 22.0,
     "size": 1.0,
-    "speed": 15.0,
-    "life": 10
+    "speed": 10.0,
+    "life": 6
   },
   "sounds": {
     "fire": "nzgmaddon:item.pump_shotgun.fire",
