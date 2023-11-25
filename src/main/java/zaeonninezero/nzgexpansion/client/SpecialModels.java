@@ -17,13 +17,18 @@ public enum SpecialModels
     REVOLVER("gun/revolver"),
     MICRO_SMG("gun/micro_smg"),
     SUBMACHINE_GUN("gun/submachine_gun"),
+    RAPID_SMG("gun/rapid_smg"),
+    PUMP_SHOTGUN("gun/pump_shotgun"),
     HUNTING_SHOTGUN("gun/hunting_shotgun"),
     DOUBLE_BARRELED_SHOTGUN("gun/double_barreled_shotgun"),
     AUTOMATIC_SHOTGUN("gun/automatic_shotgun"),
     HEAVY_ASSAULT_RIFLE("gun/heavy_assault_rifle"),
     BATTLE_RIFLE("gun/battle_rifle"),
     MACHINE_GUN("gun/machine_gun"),
+    INFANTRY_RIFLE("gun/infantry_rifle"),
+    AUTOMATIC_SNIPER_RIFLE("gun/automatic_sniper_rifle"),
     HUNTING_RIFLE("gun/hunting_rifle"),
+    BOLT_ACTION_RIFLE("gun/bolt_action_rifle"),
     SNIPER_RIFLE("gun/sniper_rifle");
 
     /**

@@ -38,13 +38,18 @@ public class initItems {
     public static final RegistryObject<GunItem> REVOLVER = ITEMS.register("revolver", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<GunItem> MICRO_SMG = ITEMS.register("micro_smg", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<GunItem> SUBMACHINE_GUN = ITEMS.register("submachine_gun", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+    public static final RegistryObject<GunItem> RAPID_SMG = ITEMS.register("rapid_smg", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+    public static final RegistryObject<GunItem> PUMP_SHOTGUN = ITEMS.register("pump_shotgun", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<GunItem> HUNTING_SHOTGUN = ITEMS.register("hunting_shotgun", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<GunItem> DOUBLE_BARRELED_SHOTGUN = ITEMS.register("double_barreled_shotgun", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 	public static final RegistryObject<GunItem> AUTOMATIC_SHOTGUN = ITEMS.register("automatic_shotgun", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<GunItem> HEAVY_ASSAULT_RIFLE = ITEMS.register("heavy_assault_rifle", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<GunItem> BATTLE_RIFLE = ITEMS.register("battle_rifle", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 	public static final RegistryObject<GunItem> MACHINE_GUN = ITEMS.register("machine_gun", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+	public static final RegistryObject<GunItem> INFANTRY_RIFLE = ITEMS.register("infantry_rifle", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+	public static final RegistryObject<GunItem> AUTOMATIC_SNIPER_RIFLE = ITEMS.register("automatic_sniper_rifle", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<GunItem> HUNTING_RIFLE = ITEMS.register("hunting_rifle", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+    public static final RegistryObject<GunItem> BOLT_ACTION_RIFLE = ITEMS.register("bolt_action_rifle", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<GunItem> SNIPER_RIFLE = ITEMS.register("sniper_rifle", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 	
 	//Ammo
@@ -52,6 +57,7 @@ public class initItems {
 	
 	//Scopes / Sights
 	public static final RegistryObject<Item> DOT_SIGHT = ITEMS.register("dot_sight", () -> new ScopeItem(Scopes.DOT_SIGHT, new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+	public static final RegistryObject<Item> CHEVRON_SCOPE = ITEMS.register("chevron_scope", () -> new ScopeItem(Scopes.CHEVRON_SCOPE, new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 	public static final RegistryObject<Item> BALLISTIC_SCOPE = ITEMS.register("ballistic_scope", () -> new ScopeItem(Scopes.BALLISTIC_SCOPE, new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 	
 	//Barrels

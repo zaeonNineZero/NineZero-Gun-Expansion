@@ -1,0 +1,33 @@
+{
+	"item.nzgexpansion.revolver": "リボルバー",
+	"item.nzgexpansion.micro_smg": "マイクロSMG",
+	"item.nzgexpansion.submachine_gun": "サブマシンガン",
+	"item.nzgexpansion.hunting_shotgun": "ハンティングショットガン",
+	"item.nzgexpansion.double_barreled_shotgun": "ダブルバレルショットガン",
+	"item.nzgexpansion.automatic_shotgun": "オートマチックショットガン",
+	"item.nzgexpansion.heavy_assault_rifle": "ヘビーアサルトライフル",
+	"item.nzgexpansion.battle_rifle": "バトルライフル",
+	"item.nzgexpansion.machine_gun": "マシンガン",
+	"item.nzgexpansion.infantry_rifle": "インファントリーライフル",
+	"item.nzgexpansion.hunting_rifle": "ハンティングライフル",
+	"item.nzgexpansion.sniper_rifle": "スナイパーライフル",
+	
+	"item.nzgexpansion.medium_bullet": "ミディアムバレット",
+	
+	"item.nzgexpansion.extended_barrel": "拡張バレル",
+	"item.nzgexpansion.flash_hider": "フラッシュハイダー",
+	"item.nzgexpansion.muzzle_brake": "マズルブレーキ",
+	"item.nzgexpansion.heavy_muzzle_brake": "ヘビーマズルブレーキ",
+	
+	"item.nzgexpansion.dot_sight": "ドットサイト",
+	"item.nzgexpansion.ballistic_scope": "バリスティックスコープ",
+	
+	"item.nzgexpansion.short_stock": "ショートストック",
+	"item.nzgexpansion.dyeable_tactical_stock": "タクティカルストック",
+	"item.nzgexpansion.solid_stock": "ソリッドストック",
+	"item.nzgexpansion.stabilizing_stock": "スタビライズストック",
+	"item.nzgexpansion.carbine_stock": "カービンストック",
+	"item.nzgexpansion.marksman_stock": "マークスマンストック",
+	
+	"item.nzgexpansion.horizontal_grip": "水平グリップ"
+}

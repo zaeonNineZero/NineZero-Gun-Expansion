@@ -88,6 +88,40 @@
     "sounds": [{"name":"nzgexpansion:item/smg/cock"}]
   },
 
+"item.rapid_smg.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [{"name":"nzgexpansion:item/rapid_smg/fire"}]
+  },
+"item.rapid_smg.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"nzgexpansion:item/rapid_smg/silenced_fire"}]
+  },
+"item.rapid_smg.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+    "sounds": [{"name":"nzgexpansion:item/rapid_smg/enchanted_fire"}]
+  },
+"item.rapid_smg.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgexpansion:item/rapid_smg/cock"}]
+  },
+
+"item.pump_shotgun.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [{"name":"nzgexpansion:item/pump_shotgun/fire"}]
+  },
+"item.pump_shotgun.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"nzgexpansion:item/pump_shotgun/silenced_fire"}]
+  },
+"item.pump_shotgun.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+    "sounds": [{"name":"nzgexpansion:item/pump_shotgun/enchanted_fire"}]
+  },
+"item.pump_shotgun.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgexpansion:item/pump_shotgun/cock"}]
+  },
+
 "item.hunting_shotgun.fire": {
     "subtitle":"subtitle.cgm.fire",
     "sounds": [{"name":"nzgexpansion:item/hunting_shotgun/fire"}]
@@ -198,17 +232,76 @@
     "sounds": [{"name":"nzgexpansion:item/machine_gun/cock"}]
   },
 
+"item.infantry_rifle.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [{"name":"nzgexpansion:item/infantry_rifle/fire"}]
+  },
+"item.infantry_rifle.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"nzgexpansion:item/infantry_rifle/silenced_fire"}]
+  },
+"item.infantry_rifle.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+    "sounds": [{"name":"nzgexpansion:item/infantry_rifle/enchanted_fire"}]
+  },
+"item.infantry_rifle.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgexpansion:item/infantry_rifle/cock"}]
+  },
+
+"item.auto_sniper_rifle.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [
+      "nzgexpansion:item/auto_sniper_rifle/fire",
+      "nzgexpansion:item/auto_sniper_rifle/fire2",
+      "nzgexpansion:item/auto_sniper_rifle/fire3"
+    ]
+  },
+"item.auto_sniper_rifle.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"nzgexpansion:item/auto_sniper_rifle/silenced_fire"}]
+  },
+"item.auto_sniper_rifle.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+	"sounds": [
+      "nzgexpansion:item/auto_sniper_rifle/enchanted_fire",
+      "nzgexpansion:item/auto_sniper_rifle/enchanted_fire2",
+      "nzgexpansion:item/auto_sniper_rifle/enchanted_fire3"
+    ]
+  },
+"item.auto_sniper_rifle.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgexpansion:item/auto_sniper_rifle/cock"}]
+  },
+
 "item.hunting_rifle.fire": {
     "subtitle":"subtitle.cgm.fire",
     "sounds": [{"name":"nzgexpansion:item/hunting_rifle/fire"}]
   },
 "item.hunting_rifle.silenced_fire": {
     "subtitle":"subtitle.cgm.fire.silenced",
-    "sounds": [{"name":"nzgexpansion:item/hunting_rifle/silenced_fire"}]
+    "sounds": [{"name":"cgm:item/rifle/silenced_fire"}]
   },
 "item.hunting_rifle.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
     "sounds": [{"name":"nzgexpansion:item/hunting_rifle/enchanted_fire"}]
+  },
+"item.hunting_rifle.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgexpansion:item/hunting_rifle/cock"}]
+  },
+
+"item.bolt_action_rifle.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [{"name":"nzgexpansion:item/bolt_action_rifle/fire"}]
+  },
+"item.bolt_action_rifle.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"nzgexpansion:item/bolt_action_rifle/silenced_fire"}]
+  },
+"item.bolt_action_rifle.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+    "sounds": [{"name":"nzgexpansion:item/bolt_action_rifle/enchanted_fire"}]
   },
 
 "item.sniper_rifle.fire": {
