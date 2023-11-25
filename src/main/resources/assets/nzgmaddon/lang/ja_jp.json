@@ -1,6 +1,8 @@
 {
 	"item.nzgmaddon.automatic_shotgun": "オートマチックショットガン",
+    "item.nzgmaddon.automatic_sniper_rifle": "自動狙撃銃",
 	"item.nzgmaddon.battle_rifle": "バトルライフル",
+    "item.nzgmaddon.bolt_action_rifle": "ボルトアクションライフル",
 	"item.nzgmaddon.double_barreled_shotgun": "ダブルバレルショットガン",
 	"item.nzgmaddon.heavy_assault_rifle": "ヘビーアサルトライフル",
 	"item.nzgmaddon.hunting_rifle": "ハンティングライフル",
@@ -8,6 +10,8 @@
 	"item.nzgmaddon.infantry_rifle": "インファントリーライフル",
 	"item.nzgmaddon.machine_gun": "マシンガン",
 	"item.nzgmaddon.uzi": "マイクロSMG",
+    "item.nzgmaddon.pump_shotgun": "ポンプショットガン",
+    "item.nzgmaddon.rapid_smg": "迅速なSMG",
 	"item.nzgmaddon.revolver": "リボルバー",
 	"item.nzgmaddon.sniper_rifle": "スナイパーライフル",
 	"item.nzgmaddon.submachine_gun": "サブマシンガン",
@@ -19,6 +23,7 @@
 	"item.nzgmaddon.muzzle_brake": "マズルブレーキ",
 	
 	"item.nzgmaddon.ballistic_scope": "バリスティックスコープ",
+    "item.nzgmaddon.chevron_scope": "シェブロンスコープ",
 	"item.nzgmaddon.dot_sight": "ドットサイト",
 	
 	"item.nzgmaddon.carbine_stock": "カービンストック",

@@ -17,14 +17,6 @@
 			}
 		},
 		{
-			"name": "lit_sight",
-			"from": [7.995, 9.395, 7.652],
-			"to": [8.005, 9.405, 7.652],
-			"faces": {
-				"south": {"uv": [15.625, 15.625, 15.75, 15.75], "texture": "#2", "tintindex": 2, "emissivity": 4}
-			}
-		},
-		{
 			"from": [7.79289, 10.25, 7.1],
 			"to": [8.20711, 10.699, 8.1],
 			"rotation": {"angle": 45, "axis": "y", "origin": [8, 7.95, 7.6]},
@@ -892,6 +884,14 @@
 				"south": {"uv": [1, 0, 0, 2], "rotation": 180, "texture": "#1", "tintindex": 0},
 				"west": {"uv": [6, 9, 5, 11], "rotation": 180, "texture": "#1", "tintindex": 0},
 				"down": {"uv": [5, 12, 3, 13], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "lit_sight",
+			"from": [7.995, 9.395, 7.652],
+			"to": [8.005, 9.405, 7.652],
+			"faces": {
+				"south": {"uv": [15.625, 15.625, 15.75, 15.75], "texture": "#2", "tintindex": 2, "emissivity": 4}
 			}
 		}
 	],

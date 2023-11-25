@@ -1,7 +1,7 @@
 # Changelog (1.19.2 Releases)
 
 
-### 1.3.0 (**/**/23)
+### 1.3.0 'Specialists' (11/**/23)
 * Added the Rapid SMG, Automatic Sniper Rifle, and Infantry Rifle.
 * Overhauled the Hunting Rifle with a new model, sounds, and stats.
 * Added the Bolt-Action Rifle, which uses the sounds and model of the old Hunting Rifle with reworked stats.
@@ -11,8 +11,10 @@
 * Added Japanese (ja_jp) translation, created by Nyattou and submitted by Omokage-R. Thanks!
 * Updated Submachine Gun and Heavy Assault Rifle models.
 * Buffed the damage of the Micro SMG to compensate for its high ammo consumption.
+* Slightly increased the Double Barreled Shotgun's fire rate to reduce the minimum delay between shots.
 * Adjusted some stat modifiers for some of the stocks. The Stabilizing Stock no longer reduces rate of fire.
 * Fixed instances of enchantment glint z-fighting with several models. (Issue #7)
+* Possibly fixed a compatibility issue with Rubidium, in which the Dot Sight and Ballistic Scope had glowing textures where there shouldn't be any. (Issue #14)
 
 
 ### 1.2.2 (6/17/23)

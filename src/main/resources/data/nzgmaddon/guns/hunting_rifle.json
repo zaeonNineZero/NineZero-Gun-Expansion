@@ -6,7 +6,7 @@
     "reloadAmount": 1,
     "recoilAngle": 9.0,
     "recoilKick": 1.0,
-    "recoilDurationOffset": 0.4,
+    "recoilDurationOffset": 0.6,
     "recoilAdsReduction": 0.3,
     "alwaysSpread": false,
     "spread": 2.0

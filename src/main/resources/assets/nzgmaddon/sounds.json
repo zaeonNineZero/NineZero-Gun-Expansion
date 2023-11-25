@@ -208,23 +208,6 @@
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/battle_rifle/cock"}]
   },
-
-"item.infantry_rifle.fire": {
-    "subtitle":"subtitle.cgm.fire",
-    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/fire"}]
-  },
-"item.infantry_rifle.silenced_fire": {
-    "subtitle":"subtitle.cgm.fire.silenced",
-    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/silenced_fire"}]
-  },
-"item.infantry_rifle.enchanted_fire": {
-    "subtitle":"subtitle.cgm.enchanted_fire",
-    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/enchanted_fire"}]
-  },
-"item.infantry_rifle.cock": {
-    "subtitle":"subtitle.cgm.cock",
-    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/cock"}]
-  },
   
 "item.machine_gun.fire": {
     "subtitle":"subtitle.cgm.fire",
@@ -247,6 +230,23 @@
 "item.machine_gun.cock": {
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/machine_gun/cock"}]
+  },
+
+"item.infantry_rifle.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/fire"}]
+  },
+"item.infantry_rifle.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/silenced_fire"}]
+  },
+"item.infantry_rifle.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/enchanted_fire"}]
+  },
+"item.infantry_rifle.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/cock"}]
   },
 
 "item.auto_sniper_rifle.fire": {
