@@ -53,7 +53,7 @@ As usual, all new items have usable recipes in the CGM Workbench.
 
 ### 1.1.0 'Accessorized' (3/27/23)
 * Added Hunting Shotgun.
-* Added Flash Hider, Muzzle Break, Extended Barrel, Dot Sight, Carbine Stock, Short Stock, Marksman Stock, and Horizontal Grip attachments.
+* Added Flash Hider, Muzzle Brake, Extended Barrel, Dot Sight, Carbine Stock, Short Stock, Marksman Stock, and Horizontal Grip attachments.
 * Crafting recipes for all new items, allowing them to be acquired and used in survival mode.
 * Modified the stats of pretty much every gun to make them more competitive with the CGM guns - generally increased damage, reduced recoil, and decreased spread where needed. Check the GitHub  commits for more details on changed stats. (bc5419b)
 * Updated stat modifiers for several attachments.
