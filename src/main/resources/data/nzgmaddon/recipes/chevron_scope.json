@@ -1,0 +1,24 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 4,
+      "tag": "forge:nuggets/iron"
+    },
+    {
+      "count": 1,
+      "tag": "forge:gems/amethyst"
+    },
+    {
+      "count": 2,
+      "tag": "forge:dusts/redstone"
+    },
+    {
+      "count": 1,
+      "tag": "forge:dyes/black"
+    }
+  ],
+  "result": {
+    "item": "nzgmaddon:chevron_scope"
+  }
+}
