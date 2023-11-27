@@ -1,7 +1,7 @@
 # Changelog (1.19.2 Releases)
 
 
-### 1.3.0 'Specialists' (11/**/23)
+### 1.3.0 'Specialists' (11/26/23)
 * Added the Rapid SMG, Automatic Sniper Rifle, and Infantry Rifle.
 * Overhauled the Hunting Rifle with a new model, sounds, and stats.
 * Added the Bolt-Action Rifle, which uses the sounds and model of the old Hunting Rifle with reworked stats.

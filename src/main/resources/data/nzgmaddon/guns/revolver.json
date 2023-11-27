@@ -15,7 +15,7 @@
     "damage": 12.0,
     "size": 0.2,
     "speed": 15.0,
-    "life": 10
+    "life": 25
   },
   "sounds": {
     "fire": "nzgmaddon:item.revolver.fire",

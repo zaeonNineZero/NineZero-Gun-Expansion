@@ -16,7 +16,7 @@
     "damage": 3.1,
     "size": 0.2,
     "speed": 10.0,
-    "life": 16
+    "life": 20
   },
   "sounds": {
     "fire": "nzgmaddon:item.micro_smg.fire",

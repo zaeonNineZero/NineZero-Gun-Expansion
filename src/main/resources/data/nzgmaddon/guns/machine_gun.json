@@ -16,7 +16,7 @@
     "damage": 4.8,
     "size": 0.2,
     "speed": 10.0,
-    "life": 24
+    "life": 25
   },
   "sounds": {
     "fire": "nzgmaddon:item.machine_gun.fire",

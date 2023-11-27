@@ -16,7 +16,7 @@
     "damage": 3.0,
     "size": 0.2,
     "speed": 10.0,
-    "life": 17
+    "life": 20
   },
   "sounds": {
     "fire": "nzgmaddon:item.rapid_smg.fire",
