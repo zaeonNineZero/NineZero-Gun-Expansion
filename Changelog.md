@@ -1,6 +1,9 @@
 # Changelog (1.19.2 Releases)
 
 
+### 1.3.1 (11/28/23)
+* Fixed the Infantry Rifle accepting stock attachments when it's not supposed to. Whoops!
+
 ### 1.3.0 'Specialists' (11/26/23)
 * Added the Rapid SMG, Automatic Sniper Rifle, and Infantry Rifle.
 * Overhauled the Hunting Rifle with a new model, sounds, and stats.
