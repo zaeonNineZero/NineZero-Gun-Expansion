@@ -4,7 +4,7 @@
 ### 1.3.0 'Specialists' (11/26/23)
 * Added the Rapid SMG, Automatic Sniper Rifle, and Infantry Rifle.
 * Overhauled the Hunting Rifle with a new model, sounds, and stats.
-* Added the Bolt-Action Rifle, which uses the sounds and model of the old Hunting Rifle with reworked stats.
+* Added the Bolt-Action Rifle, which uses the old model of the Hunting Rifle with reworked stats and some new sounds.
 * Added the Pump Shotgun and Chevron Scope, using the Shotgun and Medium Scope models from CGM Audio/Visual Enhancements.
   -  The Chevron Scope has received a new reticle that more closely matches the Long/Ballistic Scopes' reticles.
   -  CGM AVE will be updated with new models for these items to reflect this addition.
