@@ -1,0 +1,12 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 23
+    }
+  ],
+  "result": {
+    "item": "nzgexpansion:rapid_smg"
+  }
+}

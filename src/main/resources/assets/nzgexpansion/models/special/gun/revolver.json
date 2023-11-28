@@ -527,8 +527,8 @@
 			}
 		},
 		{
-			"from": [7.2, 2.97, 12.24],
-			"to": [8.8, 3.73, 14.06],
+			"from": [7.201, 2.968, 12.2399],
+			"to": [8.799, 3.732, 14.0601],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.35, 14.1]},
 			"faces": {
 				"north": {"uv": [0, 0, 1, 1.4], "texture": "#1", "tintindex": 0},
@@ -538,8 +538,8 @@
 			}
 		},
 		{
-			"from": [7.62, 2.55, 12.24],
-			"to": [8.38, 4.15, 14.06],
+			"from": [7.618, 2.551, 12.2398],
+			"to": [8.382, 4.149, 14.0602],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.35, 14.1]},
 			"faces": {
 				"north": {"uv": [0, 0, 1, 1.4], "texture": "#1", "tintindex": 0},
@@ -723,41 +723,48 @@
 			"name": "revolver",
 			"origin": [8, 8, 8],
 			"color": 0,
+			"nbt": "{}",
 			"children": [
 				{
 					"name": "grip-trigger",
 					"origin": [7.9, 7.3, 7.4],
 					"color": 0,
+					"nbt": "{}",
 					"children": [0, 1, 2, 3, 4, 5]
 				},
 				{
 					"name": "barrel",
 					"origin": [8, 3.65, 8.5],
 					"color": 0,
+					"nbt": "{}",
 					"children": [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 				},
 				{
 					"name": "muzzle",
 					"origin": [8, 3.8, 7.7],
 					"color": 0,
+					"nbt": "{}",
 					"children": [17, 18, 19, 20, 21, 22, 23, 24]
 				},
 				{
 					"name": "body",
 					"origin": [8, 3.86, 15.29],
 					"color": 0,
+					"nbt": "{}",
 					"children": [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
 				},
 				{
 					"name": "sights",
 					"origin": [0, 0, 0],
 					"color": 0,
+					"nbt": "{}",
 					"children": [41, 42, 43, 44, 45]
 				},
 				{
 					"name": "cylinder",
 					"origin": [0, 0, 0],
 					"color": 0,
+					"nbt": "{}",
 					"children": [
 						46,
 						47,
@@ -768,12 +775,14 @@
 							"name": "bullets",
 							"origin": [8, 3.35, 14.1],
 							"color": 0,
+							"nbt": "{}",
 							"children": [51, 52, 53, 54, 55, 56]
 						},
 						{
 							"name": "holes",
 							"origin": [8, 8, 8],
 							"color": 0,
+							"nbt": "{}",
 							"children": [57, 58, 59, 60, 61, 62]
 						}
 					]

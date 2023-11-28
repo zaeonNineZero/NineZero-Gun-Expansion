@@ -5,7 +5,7 @@
     "gripType": "cgm:one_handed",
     "maxAmmo": 32,
     "reloadAmount": 12,
-    "recoilAngle": 2.0,
+    "recoilAngle": 1.8,
     "recoilKick": 0.4,
     "recoilAdsReduction": 0.2,
     "alwaysSpread": true,
@@ -13,10 +13,10 @@
   },
   "projectile": {
     "item": "cgm:basic_bullet",
-    "damage": 2.9,
+    "damage": 3.1,
     "size": 0.2,
-    "speed": 18.0,
-    "life": 10
+    "speed": 10.0,
+    "life": 20
   },
   "sounds": {
     "fire": "nzgexpansion:item.micro_smg.fire",

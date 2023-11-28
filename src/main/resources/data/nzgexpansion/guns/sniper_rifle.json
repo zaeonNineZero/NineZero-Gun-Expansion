@@ -1,6 +1,6 @@
 {
   "general": {
-    "rate": 28,
+    "rate": 34,
     "gripType": "cgm:two_handed",
     "maxAmmo": 6,
     "reloadAmount": 1,
@@ -15,8 +15,8 @@
     "item": "cgm:advanced_bullet",
     "damage": 17.0,
     "size": 0.0625,
-    "speed": 28.0,
-    "life": 20,
+    "speed": 25.0,
+    "life": 30,
     "gravity": true
   },
   "sounds": {

@@ -15,8 +15,8 @@
     "item": "nzgexpansion:medium_bullet",
     "damage": 4.8,
     "size": 0.2,
-    "speed": 24.0,
-    "life": 20
+    "speed": 10.0,
+    "life": 25
   },
   "sounds": {
     "fire": "nzgexpansion:item.machine_gun.fire",

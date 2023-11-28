@@ -15,8 +15,8 @@
     "item": "cgm:basic_bullet",
     "damage": 4.0,
     "size": 0.2,
-    "speed": 18.0,
-    "life": 12
+    "speed": 10.0,
+    "life": 25
   },
   "sounds": {
     "fire": "nzgexpansion:item.smg.fire",
@@ -28,7 +28,7 @@
   "display": {
     "flash": {
       "yOffset": 3.2,
-      "zOffset": -1.8,
+      "zOffset": -1.75,
       "size": 0.35
     }
   },
@@ -46,7 +46,7 @@
       },
       "barrel": {
         "yOffset": 3.2,
-        "zOffset": -0.8,
+        "zOffset": -1.25,
         "scale": 0.45
       },
       "stock": {
@@ -54,7 +54,7 @@
         "zOffset": 8.2
       },
       "underBarrel": {
-        "yOffset": 2.799,
+        "yOffset": 2.349,
         "zOffset": 1.25,
         "scale": 0.89
       }

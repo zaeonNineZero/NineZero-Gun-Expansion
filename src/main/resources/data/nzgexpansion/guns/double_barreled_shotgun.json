@@ -1,6 +1,6 @@
 {
   "general": {
-    "rate": 6,
+    "rate": 5,
     "gripType": "cgm:two_handed",
     "maxAmmo": 2,
     "reloadAmount": 1,
@@ -15,8 +15,8 @@
     "item": "cgm:shell",
     "damage": 16.0,
     "size": 1.0,
-    "speed": 16.0,
-    "life": 9
+    "speed": 12.0,
+    "life": 5
   },
   "sounds": {
     "fire": "nzgexpansion:item.double_barreled.fire",
