@@ -1,0 +1,37 @@
+{
+	"item.nzgmaddon.automatic_shotgun": "자동 산탄총",
+	"item.nzgmaddon.automatic_sniper_rifle": "자동 저격소총",
+	"item.nzgmaddon.battle_rifle": "전투용 소총",
+	"item.nzgmaddon.bolt_action_rifle": "볼트 액션 소총",
+	"item.nzgmaddon.double_barreled_shotgun": "더블 배럴 산탄총",
+	"item.nzgmaddon.heavy_assault_rifle": "중형 돌격소총",
+	"item.nzgmaddon.hunting_rifle": "사냥용 소총",
+	"item.nzgmaddon.hunting_shotgun": "사냥용 산탄총",
+	"item.nzgmaddon.infantry_rifle": "보병용 소총",
+	"item.nzgmaddon.machine_gun": "머신건",
+	"item.nzgmaddon.uzi": "마이크로 SMG",
+	"item.nzgmaddon.pump_shotgun": "펌프형 산탄총",
+	"item.nzgmaddon.rapid_smg": "고속 기관단총",
+	"item.nzgmaddon.revolver": "리볼버",
+	"item.nzgmaddon.sniper_rifle": "저격소총",
+	"item.nzgmaddon.submachine_gun": "서브머신건",
+
+	"item.nzgmaddon.medium_bullet": "보통탄",
+
+	"item.nzgmaddon.extended_barrel": "확장배럴",
+	"item.nzgmaddon.flash_hider": "플래시 하이더",
+	"item.nzgmaddon.muzzle_brake": "총구제동기",
+
+	"item.nzgmaddon.ballistic_scope": "탄도 조준경",
+	"item.nzgmaddon.chevron_scope": "체브론형 조준경",
+	"item.nzgmaddon.dot_sight": "도트사이트",
+
+	"item.nzgmaddon.carbine_stock": "카빈 개머리판",
+	"item.nzgmaddon.dyeable_tactical_stock": "전술 개머리판",
+	"item.nzgmaddon.marksman_stock": "사수 개머리판",
+	"item.nzgmaddon.solid_stock": "고정 개머리판",
+	"item.nzgmaddon.short_stock": "소형 개머리판",
+	"item.nzgmaddon.stabilizing_stock": "안정화 개머리판",
+
+	"item.nzgmaddon.horizontal_grip": "수평 손잡이"
+}
