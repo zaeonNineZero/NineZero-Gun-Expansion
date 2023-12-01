@@ -47,11 +47,6 @@
         "yOffset": 3.8365,
         "zOffset": -10.2,
         "scale": 0.46
-      },
-      "underBarrel": {
-        "yOffset": 2.8,
-        "zOffset": -1.0,
-        "scale": 0.95
       }
     }
   }
