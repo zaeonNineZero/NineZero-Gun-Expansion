@@ -1,0 +1,37 @@
+{
+	"item.nzgexpansion.automatic_shotgun": "자동 산탄총",
+	"item.nzgexpansion.automatic_sniper_rifle": "자동 저격소총",
+	"item.nzgexpansion.battle_rifle": "전투용 소총",
+	"item.nzgexpansion.bolt_action_rifle": "볼트 액션 소총",
+	"item.nzgexpansion.double_barreled_shotgun": "더블 배럴 산탄총",
+	"item.nzgexpansion.heavy_assault_rifle": "중형 돌격소총",
+	"item.nzgexpansion.hunting_rifle": "사냥용 소총",
+	"item.nzgexpansion.hunting_shotgun": "사냥용 산탄총",
+	"item.nzgexpansion.infantry_rifle": "보병용 소총",
+	"item.nzgexpansion.machine_gun": "머신건",
+	"item.nzgexpansion.micro_smg": "마이크로 SMG",
+	"item.nzgexpansion.pump_shotgun": "펌프형 산탄총",
+	"item.nzgexpansion.rapid_smg": "고속 기관단총",
+	"item.nzgexpansion.revolver": "리볼버",
+	"item.nzgexpansion.sniper_rifle": "저격소총",
+	"item.nzgexpansion.submachine_gun": "서브머신건",
+
+	"item.nzgexpansion.medium_bullet": "보통탄",
+
+	"item.nzgexpansion.extended_barrel": "확장배럴",
+	"item.nzgexpansion.flash_hider": "플래시 하이더",
+	"item.nzgexpansion.muzzle_brake": "총구제동기",
+
+	"item.nzgexpansion.ballistic_scope": "탄도 조준경",
+	"item.nzgexpansion.chevron_scope": "체브론형 조준경",
+	"item.nzgexpansion.dot_sight": "도트사이트",
+
+	"item.nzgexpansion.carbine_stock": "카빈 개머리판",
+	"item.nzgexpansion.dyeable_tactical_stock": "전술 개머리판",
+	"item.nzgexpansion.marksman_stock": "사수 개머리판",
+	"item.nzgexpansion.solid_stock": "고정 개머리판",
+	"item.nzgexpansion.short_stock": "소형 개머리판",
+	"item.nzgexpansion.stabilizing_stock": "안정화 개머리판",
+
+	"item.nzgexpansion.horizontal_grip": "수평 손잡이"
+}
