@@ -5,6 +5,7 @@
 * Added Korean translation, courtesy of 오구리 캡 (oguri_cap_1988). Thank you!
 * Removed the underbarrel attachment slot for the Bolt Action Rifle; it was not meant to have this attachment slot in the first place.
 * Fixed iron sight position of the Automatic Shotgun.
+* Fixed missing .cgmmeta file for the Pump Shotgun. Whoops!
 
 ### 1.3.1 'Specialists' (11/28/23)
 This release includes both the 1.3.0 'Specialists' update and the 1.3.1 hotfix.
