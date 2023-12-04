@@ -1,0 +1,16 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 25
+    },
+	{
+      "tag": "minecraft:planks",
+      "count": 5
+    }
+  ],
+  "result": {
+    "item": "nzgexpansion:heavy_assault_rifle"
+  }
+}

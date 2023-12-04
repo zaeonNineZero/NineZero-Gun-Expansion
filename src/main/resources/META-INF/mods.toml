@@ -3,7 +3,7 @@ loaderVersion="[41,)"
 license="GPL3"
 
 [[mods]]
-modId="nzgmaddon"
+modId="nzgexpansion"
 version="1.3.1"
 displayName="NineZero's Gun Expansion"
 updateJSONURL=""
@@ -14,30 +14,30 @@ description='''
 An addon for MrCrayfish's Gun Mod, adding additional weapons and attachments in an aesthetically simple style.
 '''
 
-[[dependencies.nzgmaddon]]
+[[dependencies.nzgexpansion]]
     modId="forge"
     mandatory=true
-    versionRange="[41.0.94,)"
+    versionRange="[44.0.0,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.nzgmaddon]]
+[[dependencies.nzgexpansion]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19,1.19.2)"
+    versionRange="[1.19.3,1.20)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.nzgmaddon]]
+[[dependencies.nzgexpansion]]
     modId="framework"
     mandatory=true
-    versionRange="[0.3.2,)"
+    versionRange="[0.4.2,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.nzgmaddon]]
+[[dependencies.nzgexpansion]]
     modId="cgm"
     mandatory=true
     versionRange="[1.3.4,)"
     ordering="AFTER"
     side="BOTH"
 
-[modproperties.nzgmaddon]
+[modproperties.nzgexpansion]
     catalogueImageIcon="nzgexpansion_icon.png"

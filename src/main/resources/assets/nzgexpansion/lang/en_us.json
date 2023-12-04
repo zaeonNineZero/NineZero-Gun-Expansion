@@ -1,0 +1,39 @@
+{
+    "itemGroup.nzgexpansion": "NineZero's Gun Expansion",
+	
+	"item.nzgexpansion.automatic_shotgun": "Automatic Shotgun",
+	"item.nzgexpansion.automatic_sniper_rifle": "Automatic Sniper Rifle",
+	"item.nzgexpansion.battle_rifle": "Battle Rifle",
+	"item.nzgexpansion.bolt_action_rifle": "Bolt Action Rifle",
+	"item.nzgexpansion.double_barreled_shotgun": "Double Barreled Shotgun",
+	"item.nzgexpansion.heavy_assault_rifle": "Heavy Assault Rifle",
+	"item.nzgexpansion.hunting_rifle": "Hunting Rifle",
+	"item.nzgexpansion.hunting_shotgun": "Hunting Shotgun",
+	"item.nzgexpansion.infantry_rifle": "Infantry Rifle",
+	"item.nzgexpansion.machine_gun": "Machine Gun",
+	"item.nzgexpansion.micro_smg": "Micro SMG",
+	"item.nzgexpansion.pump_shotgun": "Pump Shotgun",
+	"item.nzgexpansion.rapid_smg": "Rapid SMG",
+	"item.nzgexpansion.revolver": "Revolver",
+	"item.nzgexpansion.sniper_rifle": "Sniper Rifle",
+	"item.nzgexpansion.submachine_gun": "Submachine Gun",
+	
+	"item.nzgexpansion.medium_bullet": "Medium Bullet",
+	
+	"item.nzgexpansion.extended_barrel": "Extended Barrel",
+	"item.nzgexpansion.flash_hider": "Flash Hider",
+	"item.nzgexpansion.muzzle_brake": "Muzzle Brake",
+	
+	"item.nzgexpansion.ballistic_scope": "Ballistic Scope",
+	"item.nzgexpansion.chevron_scope": "Chevron Scope",
+	"item.nzgexpansion.dot_sight": "Dot Sight",
+	
+	"item.nzgexpansion.carbine_stock": "Carbine Stock",
+	"item.nzgexpansion.dyeable_tactical_stock": "Tactical Stock",
+	"item.nzgexpansion.marksman_stock": "Marksman Stock",
+	"item.nzgexpansion.short_stock": "Short Stock",
+	"item.nzgexpansion.solid_stock": "Solid Stock",
+	"item.nzgexpansion.stabilizing_stock": "Stabilizing Stock",
+	
+	"item.nzgexpansion.horizontal_grip": "Horizontal Grip"
+}

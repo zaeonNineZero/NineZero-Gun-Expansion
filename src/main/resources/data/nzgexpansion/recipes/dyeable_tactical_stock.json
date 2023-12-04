@@ -1,0 +1,16 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 8,
+      "tag": "forge:nuggets/iron"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:gray_wool"
+    }
+  ],
+  "result": {
+    "item": "nzgexpansion:dyeable_tactical_stock"
+  }
+}
