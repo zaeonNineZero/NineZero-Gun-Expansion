@@ -1,7 +1,7 @@
 # Changelog (1.19.3 Releases)
 
 
-### 1.3.2 (12/*/23)
+### 1.3.2 (12/4/23)
 * Added Korean translation, courtesy of 오구리 캡 (oguri_cap_1988). Thank you!
 * Removed the underbarrel attachment slot for the Bolt Action Rifle; it was not meant to have this attachment slot in the first place.
 * Fixed iron sight position of the Automatic Shotgun.
