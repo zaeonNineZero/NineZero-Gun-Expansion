@@ -1,8 +1,8 @@
 {
     "pack": {
         "description": "Base resources for NineZero's Gun Expansion",
-        "pack_format": 10,
-        "forge:resource_pack_format": 12,
-        "forge:data_pack_format": 10
+        "pack_format": 13,
+        "forge:resource_pack_format": 13,
+        "forge:data_pack_format": 12
     }
 }
