@@ -8,14 +8,14 @@ import com.mrcrayfish.guns.item.ScopeItem;
 import com.mrcrayfish.guns.item.StockItem;
 import com.mrcrayfish.guns.item.UnderBarrelItem;
 import com.mrcrayfish.guns.item.attachment.impl.Barrel;
+import com.mrcrayfish.guns.item.attachment.impl.Scope;
 import com.mrcrayfish.guns.item.attachment.impl.Stock;
 import com.mrcrayfish.guns.item.attachment.impl.UnderBarrel;
 import com.mrcrayfish.guns.common.GunModifiers;
 import zaeonninezero.nzgexpansion.common.ExtraGunModifiers;
-import zaeonninezero.nzgexpansion.common.Scopes;
 import zaeonninezero.nzgexpansion.nzgExpansion;
-import net.minecraft.world.item.Item;
-import net.minecraftforge.registries.RegistryObject;
+import net.minecraft.item.Item;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -33,7 +33,7 @@ public class initItems {
      *      https://github.com/MrCrayfish/MrCrayfishGunMod/tree/1.16.X/src/main/resources/data/cgm/guns
      * I would say, if you wanted to add something to this then make sure you know what you're doing :P
      */
-	 
+	
 	//Guns
     public static final RegistryObject<GunItem> REVOLVER = ITEMS.register("revolver", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<GunItem> MICRO_SMG = ITEMS.register("micro_smg", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
@@ -56,9 +56,9 @@ public class initItems {
 	public static final RegistryObject<Item> MEDIUM_BULLET = ITEMS.register("medium_bullet", () -> new AmmoItem(new Item.Properties().tab(GunMod.GROUP)));
 	
 	//Scopes / Sights
-	public static final RegistryObject<Item> DOT_SIGHT = ITEMS.register("dot_sight", () -> new ScopeItem(Scopes.DOT_SIGHT, new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
-	public static final RegistryObject<Item> CHEVRON_SCOPE = ITEMS.register("chevron_scope", () -> new ScopeItem(Scopes.CHEVRON_SCOPE, new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
-	public static final RegistryObject<Item> BALLISTIC_SCOPE = ITEMS.register("ballistic_scope", () -> new ScopeItem(Scopes.BALLISTIC_SCOPE, new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+	public static final RegistryObject<Item> DOT_SIGHT = ITEMS.register("dot_sight", () -> new ScopeItem(Scope.create(0.0F, 1.5F, ExtraGunModifiers.QUICK_ADS).viewFinderOffset(0.4), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+	public static final RegistryObject<Item> CHEVRON_SCOPE = ITEMS.register("chevron_scope", () -> new ScopeItem(Scope.create(0.27F, 1.65F, GunModifiers.SLOW_ADS).viewFinderOffset(0.275), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+	public static final RegistryObject<Item> BALLISTIC_SCOPE = ITEMS.register("ballistic_scope", () -> new ScopeItem(Scope.create(0.44F, 1.4F, GunModifiers.SLOWER_ADS).viewFinderOffset(0.375), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 	
 	//Barrels
     public static final RegistryObject<Item> FLASH_HIDER  = ITEMS.register("flash_hider", () -> new BarrelItem(Barrel.create(4,ExtraGunModifiers.FLASH_HIDER_EFFECT), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));

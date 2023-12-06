@@ -28,29 +28,29 @@
   },
   "display": {
     "flash": {
-      "yOffset": 3.4,
-      "zOffset": -8.91
+      "yOffset": 4.175,
+      "zOffset": -13.85
     }
   },
   "modules": {
     "zoom": {
-      "yOffset": 5.2,
-      "zOffset": 3.2,
+      "yOffset": 5.1,
+      "zOffset": 2.8,
       "fovModifier": 0.6
     },
     "attachments": {
       "scope": {
-        "yOffset": 4.4,
-        "zOffset": 4.0
+        "yOffset": 4.7,
+        "zOffset": 2.7
       },
       "barrel": {
-        "yOffset": 3.4,
-        "zOffset": -7.9,
+        "yOffset": 4.175,
+        "zOffset": -13.3,
         "scale": 0.5
       },
       "underBarrel": {
-        "yOffset": 2.599,
-        "zOffset": -1.0
+        "yOffset": 2.449,
+        "zOffset": -3.0
       }
     }
   }

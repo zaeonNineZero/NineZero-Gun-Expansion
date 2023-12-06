@@ -5,7 +5,7 @@
     "gripType": "cgm:one_handed",
     "maxAmmo": 32,
     "reloadAmount": 12,
-    "recoilAngle": 1.8,
+    "recoilAngle": 2.0,
     "recoilKick": 0.4,
     "recoilAdsReduction": 0.2,
     "alwaysSpread": true,
@@ -28,7 +28,7 @@
   "display": {
     "flash": {
       "yOffset": 3.3,
-      "zOffset": 3.74,
+      "zOffset": 3.1,
       "size": 0.35
     }
   },
@@ -46,7 +46,7 @@
       },
       "barrel": {
         "yOffset": 3.3,
-        "zOffset": 3.75,
+        "zOffset": 3.18,
         "scale": 0.5
       },
       "stock": {

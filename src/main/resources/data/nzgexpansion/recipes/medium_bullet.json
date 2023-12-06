@@ -2,7 +2,7 @@
   "type": "cgm:workbench",
   "materials": [
     {
-      "item": "minecraft:copper_ingot",
+      "item": "minecraft:iron_nugget",
       "count": 4
     },
     {
@@ -12,6 +12,6 @@
   ],
   "result": {
     "item": "nzgexpansion:medium_bullet",
-    "count": 48
+    "count": 24
   }
 }

@@ -28,33 +28,33 @@
   },
   "display": {
     "flash": {
-      "yOffset": 3.6505,
-      "zOffset": -3.81
+      "yOffset": 4.1,
+      "zOffset": -8.7
     }
   },
   "modules": {
     "zoom": {
-      "yOffset": 5.1,
-      "zOffset": 3.2,
+      "yOffset": 5.2,
+      "zOffset": 3.3,
       "fovModifier": 0.8
     },
     "attachments": {
       "scope": {
-        "yOffset": 4.4,
-        "zOffset": 4.0
+        "yOffset": 4.65,
+        "zOffset": 4.2
       },
       "barrel": {
-        "yOffset": 3.6506,
-        "zOffset": -3.8,
+        "yOffset": 4.1,
+        "zOffset": -8.2,
         "scale": 0.5
       },
       "stock": {
-        "yOffset": 3.6506,
-        "zOffset": 8.4
+        "yOffset": 3.4,
+        "zOffset": 8.2
       },
       "underBarrel": {
-        "yOffset": 1.8,
-        "zOffset": -0.5
+        "yOffset": 2.3,
+        "zOffset": -2.25
       }
     }
   }

@@ -28,14 +28,13 @@
   "display": {
     "flash": {
       "yOffset": 3.2,
-      "zOffset": -1.75,
-      "size": 0.35
+      "zOffset": -2.21
     }
   },
   "modules": {
     "zoom": {
-      "yOffset": 4.8,
-      "zOffset": 2.6,
+      "yOffset": 4.7,
+      "zOffset": 2.5,
       "fovModifier": 0.7
     },
     "attachments": {
@@ -46,7 +45,7 @@
       },
       "barrel": {
         "yOffset": 3.2,
-        "zOffset": -1.25,
+        "zOffset": -1.6,
         "scale": 0.45
       },
       "stock": {
@@ -54,9 +53,9 @@
         "zOffset": 8.2
       },
       "underBarrel": {
-        "yOffset": 2.349,
-        "zOffset": 1.25,
-        "scale": 0.89
+        "yOffset": 2.599,
+        "zOffset": 1.0,
+        "scale": 0.9
       }
     }
   }

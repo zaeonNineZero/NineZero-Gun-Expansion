@@ -28,24 +28,24 @@
   },
   "display": {
     "flash": {
-      "yOffset": 3.6505,
-      "zOffset": -3.81
+      "yOffset": 4.0,
+      "zOffset": -13.5
     }
   },
   "modules": {
     "zoom": {
-      "yOffset": 5.1,
-      "zOffset": 3.2,
+      "yOffset": 5.0,
+      "zOffset": 2.8,
       "fovModifier": 0.8
     },
     "attachments": {
       "scope": {
-        "yOffset": 4.4,
-        "zOffset": 4.0
+        "yOffset": 4.65,
+        "zOffset": 4.2
       },
       "barrel": {
-        "yOffset": 3.6506,
-        "zOffset": -3.8,
+        "yOffset": 4.0,
+        "zOffset": -12.9,
         "scale": 0.5
       }
     }

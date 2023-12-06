@@ -29,13 +29,13 @@
   "display": {
     "flash": {
       "yOffset": 3.4,
-      "zOffset": -8.91
+      "zOffset": -8.41
     }
   },
   "modules": {
     "zoom": {
-      "yOffset": 5.2,
-      "zOffset": 3.2,
+      "yOffset": 5.15,
+      "zOffset": 3.3,
       "fovModifier": 0.6
     },
     "attachments": {
@@ -45,7 +45,7 @@
       },
       "barrel": {
         "yOffset": 3.4,
-        "zOffset": -7.9,
+        "zOffset": -7.4,
         "scale": 0.5
       },
       "stock": {
@@ -53,7 +53,7 @@
         "zOffset": 8.2
       },
       "underBarrel": {
-        "yOffset": 2.599,
+        "yOffset": 2.399,
         "zOffset": -1.0
       }
     }

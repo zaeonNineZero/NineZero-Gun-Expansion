@@ -1,7 +1,7 @@
 package zaeonninezero.nzgexpansion.common;
 
 import com.mrcrayfish.guns.interfaces.IGunModifier;
-import net.minecraft.util.Mth;
+import net.minecraft.util.math.MathHelper;
 
 /**
  * Author: MrCrayfish
@@ -17,9 +17,9 @@ public class ExtraGunModifiers
         }
 
         @Override
-        public double modifyMuzzleFlashScale(double scale)
+        public double modifyMuzzleFlashSize(double size)
         {
-            return 0.75F;
+            return 0.3F;
         }
     };
     public static final IGunModifier MUZZLE_BRAKE_EFFECT = new IGunModifier()
@@ -43,9 +43,9 @@ public class ExtraGunModifiers
         }
 
         @Override
-        public double modifyMuzzleFlashScale(double scale)
+        public double modifyMuzzleFlashSize(double size)
         {
-            return 1.15F;
+            return 0.85F;
         }
     };
     public static final IGunModifier EXTENDED_BARREL_EFFECT = new IGunModifier()
@@ -189,7 +189,7 @@ public class ExtraGunModifiers
         /*@Override
         public int modifyFireRate(int rate)
         {
-            return Mth.clamp((int) (rate * 1.1), rate + 1, Integer.MAX_VALUE);
+            return MathHelper.clamp((int) (rate * 1.1), rate + 1, Integer.MAX_VALUE);
         }*/
     };
 	public static final IGunModifier MARKSMAN_STABILISED = new IGunModifier()
@@ -221,7 +221,7 @@ public class ExtraGunModifiers
         @Override
         public int modifyFireRate(int rate)
         {
-            return Mth.clamp((int) (rate * 1.25), rate + 1, Integer.MAX_VALUE);
+            return MathHelper.clamp((int) (rate * 1.25), rate + 1, Integer.MAX_VALUE);
         }
     };
 	
