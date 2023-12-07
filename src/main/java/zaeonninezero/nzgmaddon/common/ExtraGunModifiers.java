@@ -177,13 +177,13 @@ public class ExtraGunModifiers
         @Override
         public float modifyProjectileSpread(float spread)
         {
-            return spread * 0.65F;
+            return spread * 0.75F;
         }
 
         @Override
         public double modifyAimDownSightSpeed(double speed)
         {
-            return speed * 0.8F;
+            return speed * 0.85F;
         }
 
         /*@Override

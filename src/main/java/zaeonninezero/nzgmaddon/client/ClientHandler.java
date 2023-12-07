@@ -2,6 +2,7 @@ package zaeonninezero.nzgmaddon.client;
 
 import com.mrcrayfish.guns.client.render.gun.ModelOverrides;
 import com.mrcrayfish.guns.client.render.gun.model.SimpleModel;
+import zaeonninezero.nzgmaddon.client.render.gun.model.*;
 import zaeonninezero.nzgmaddon.nzgmAddon;
 import zaeonninezero.nzgmaddon.init.initItems;
 import net.minecraftforge.api.distmarker.Dist;
@@ -17,7 +18,8 @@ public class ClientHandler
 	
 	private static void registerModelOverrides()
     {
-        ModelOverrides.register(initItems.REVOLVER.get(), new SimpleModel(SpecialModels.REVOLVER::getModel));
+        //ModelOverrides.register(initItems.REVOLVER.get(), new SimpleModel(SpecialModels.REVOLVER::getModel));
+        ModelOverrides.register(initItems.HEAVY_PISTOL.get(), new SimpleModel(SpecialModels.HEAVY_PISTOL::getModel));
 		ModelOverrides.register(initItems.UZI.get(), new SimpleModel(SpecialModels.UZI::getModel));
 		ModelOverrides.register(initItems.SUBMACHINE_GUN.get(), new SimpleModel(SpecialModels.SUBMACHINE_GUN::getModel));
 		ModelOverrides.register(initItems.RAPID_SMG.get(), new SimpleModel(SpecialModels.RAPID_SMG::getModel));
@@ -33,5 +35,7 @@ public class ClientHandler
 		ModelOverrides.register(initItems.HUNTING_RIFLE.get(), new SimpleModel(SpecialModels.HUNTING_RIFLE::getModel));
 		ModelOverrides.register(initItems.BOLT_ACTION_RIFLE.get(), new SimpleModel(SpecialModels.BOLT_ACTION_RIFLE::getModel));
 		ModelOverrides.register(initItems.SNIPER_RIFLE.get(), new SimpleModel(SpecialModels.SNIPER_RIFLE::getModel));
+		
+        ModelOverrides.register(initItems.REVOLVER.get(), new RevolverModel());
     }
 }

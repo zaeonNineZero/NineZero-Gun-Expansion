@@ -12,7 +12,8 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = nzgmAddon.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public enum SpecialModels
 {
-    REVOLVER("gun/revolver"),
+    //REVOLVER("gun/revolver"),
+    HEAVY_PISTOL("gun/heavy_pistol"),
     UZI("gun/uzi"),
     SUBMACHINE_GUN("gun/submachine_gun"),
     RAPID_SMG("gun/rapid_smg"),
@@ -27,7 +28,11 @@ public enum SpecialModels
     AUTOMATIC_SNIPER_RIFLE("gun/automatic_sniper_rifle"),
     HUNTING_RIFLE("gun/hunting_rifle"),
     BOLT_ACTION_RIFLE("gun/bolt_action_rifle"),
-    SNIPER_RIFLE("gun/sniper_rifle");
+    SNIPER_RIFLE("gun/sniper_rifle"),
+	
+    REVOLVER_BASE("revolver_base"),
+    REVOLVER_CYLINDER("revolver_cylinder"),
+    REVOLVER_RAIL("revolver_rail");
 
     /**
      * The location of an item model in the [MOD_ID]/models/special/[NAME] folder
