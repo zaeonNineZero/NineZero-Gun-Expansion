@@ -1,28 +1,28 @@
 {
   "general": {
-    "rate": 8,
+    "rate": 14,
     "gripType": "cgm:one_handed",
     "maxAmmo": 6,
     "reloadAmount": 2,
-    "recoilAngle": 5.0,
-	"recoilKick": 0.3,
-    "recoilAdsReduction": 0.25,
-    "alwaysSpread": true,
-    "spread": 1.0
+    "recoilAngle": 7.0,
+	"recoilKick": 0.6,
+    "recoilAdsReduction": 0.05,
+    "alwaysSpread": false,
+    "spread": 2.0
   },
   "projectile": {
-    "item": "cgm:basic_bullet",
-    "damage": 11.5,
+    "item": "cgm:advanced_bullet",
+    "damage": 15.5,
     "size": 0.2,
     "speed": 15.0,
     "life": 25
   },
   "sounds": {
-    "fire": "nzgmaddon:item.revolver.fire",
+    "fire": "nzgmaddon:item.heavy_revolver.fire",
     "reload": "cgm:item.pistol.reload",
-    "cock": "nzgmaddon:item.revolver.cock",
-    "silencedFire": "nzgmaddon:item.revolver.silenced_fire",
-    "enchantedFire": "nzgmaddon:item.revolver.enchanted_fire"
+    "cock": "nzgmaddon:item.heavy_revolver.cock",
+    "silencedFire": "nzgmaddon:item.heavy_revolver.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.heavy_revolver.enchanted_fire"
   },
   "display": {
     "flash": {
@@ -34,7 +34,7 @@
     "zoom": {
       "yOffset": 4.6,
       "zOffset": 1.5,
-      "fovModifier": 0.75
+      "fovModifier": 0.7
     },
     "attachments": {
       "scope": {

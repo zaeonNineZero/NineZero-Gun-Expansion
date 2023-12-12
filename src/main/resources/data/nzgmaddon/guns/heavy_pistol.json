@@ -1,6 +1,6 @@
 {
   "general": {
-    "rate": 8,
+    "rate": 9,
     "gripType": "cgm:one_handed",
     "maxAmmo": 8,
     "reloadAmount": 4,
@@ -12,10 +12,10 @@
   },
   "projectile": {
     "item": "cgm:advanced_bullet",
-    "damage": 11,
+    "damage": 12.5,
     "size": 0.2,
     "speed": 12.0,
-    "life": 20
+    "life": 25
   },
   "sounds": {
     "fire": "nzgmaddon:item.heavy_pistol.fire",

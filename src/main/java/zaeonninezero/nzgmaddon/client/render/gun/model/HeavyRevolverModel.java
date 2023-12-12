@@ -21,8 +21,9 @@ import javax.annotation.Nullable;
 /**
  * Author: MrCrayfish
  * Modified by zaeonNineZero for Nine Zero's Gun Expansion
+ * NZ NOTE: This is a placeholder model and will be replaced later.
  */
-public class RevolverModel implements IOverrideModel
+public class HeavyRevolverModel implements IOverrideModel
 {
     @Override
 	// This class renders a multi-part model that supports animations and removeable parts.
@@ -32,17 +33,8 @@ public class RevolverModel implements IOverrideModel
     public void render(float partialTicks, ItemTransforms.TransformType transformType, ItemStack stack, ItemStack parent, @Nullable LivingEntity entity, PoseStack poseStack, MultiBufferSource buffer, int light, int overlay)
     {
 		// Render the item's BakedModel, which will serve as the core of our custom model.
-        BakedModel bakedModel = SpecialModels.REVOLVER_BASE.getModel();
+        BakedModel bakedModel = SpecialModels.HEAVY_REVOLVER_BASE.getModel();
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
-
-		// Render the top rail element that appears when a scope is attached.
-		// We have to grab the gun's scope attachment slot and check whether it is empty or not.
-		// If the isEmpty function returns false, then we render the attachment rail.
-		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
-        if(!attachmentStack.isEmpty())
-		{
-            RenderUtil.renderModel(SpecialModels.REVOLVER_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
-		}
 
 		// Now we can work on the animated parts.
 		

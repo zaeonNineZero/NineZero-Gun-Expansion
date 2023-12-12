@@ -37,5 +37,6 @@ public class ClientHandler
 		ModelOverrides.register(initItems.SNIPER_RIFLE.get(), new SimpleModel(SpecialModels.SNIPER_RIFLE::getModel));
 		
         ModelOverrides.register(initItems.REVOLVER.get(), new RevolverModel());
+        ModelOverrides.register(initItems.HEAVY_REVOLVER.get(), new HeavyRevolverModel());
     }
 }

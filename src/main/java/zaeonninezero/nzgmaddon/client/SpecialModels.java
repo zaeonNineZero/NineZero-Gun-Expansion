@@ -32,7 +32,9 @@ public enum SpecialModels
 	
     REVOLVER_BASE("revolver_base"),
     REVOLVER_CYLINDER("revolver_cylinder"),
-    REVOLVER_RAIL("revolver_rail");
+    REVOLVER_RAIL("revolver_rail"),
+	
+    HEAVY_REVOLVER_BASE("heavy_revolver_base");
 
     /**
      * The location of an item model in the [MOD_ID]/models/special/[NAME] folder

@@ -31,6 +31,11 @@ public class initSounds {
 	public static final RegistryObject<SoundEvent> ITEM_HEAVY_PISTOL_SILENCED_FIRE = register("item.heavy_pistol.silenced_fire");
 	public static final RegistryObject<SoundEvent> ITEM_HEAVY_PISTOL_COCK = register("item.heavy_pistol.cock");
 	
+	public static final RegistryObject<SoundEvent> ITEM_HEAVY_REVOLVER_FIRE = register("item.heavy_revolver.fire");
+	public static final RegistryObject<SoundEvent> ITEM_HEAVY_REVOLVER_ENCHANTED_FIRE = register("item.heavy_revolver.enchanted_fire");
+	public static final RegistryObject<SoundEvent> ITEM_HEAVY_REVOLVER_SILENCED_FIRE = register("item.heavy_revolver.silenced_fire");
+	public static final RegistryObject<SoundEvent> ITEM_HEAVY_REVOLVER_COCK = register("item.heavy_revolver.cock");
+	
 	public static final RegistryObject<SoundEvent> ITEM_MICRO_SMG_FIRE = register("item.micro_smg.fire");
 	public static final RegistryObject<SoundEvent> ITEM_MICRO_SMG_ENCHANTED_FIRE = register("item.micro_smg.enchanted_fire");
 	public static final RegistryObject<SoundEvent> ITEM_MICRO_SMG_SILENCED_FIRE = register("item.micro_smg.silenced_fire");
