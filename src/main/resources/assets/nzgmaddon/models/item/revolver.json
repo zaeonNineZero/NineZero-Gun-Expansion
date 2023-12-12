@@ -7,8 +7,8 @@
 			"scale": [1.1, 1.1, 1.1]
 		},
 		"firstperson_righthand": {
-			"translation": [-5.0, 8.5, -2.0],
-			"scale": [0.77, 0.77, 0.77]
+			"translation": [-5.0, 8.1, -2.0],
+			"scale": [0.75, 0.75, 0.75]
 		},
 		"ground": {
 			"translation": [0, 5, -5.75],
