@@ -53,6 +53,7 @@ public class RevolverModel implements IOverrideModel
         {
             ItemCooldowns tracker = Minecraft.getInstance().player.getCooldowns();
             cooldown = tracker.getCooldownPercent(stack.getItem(), Minecraft.getInstance().getFrameTime());
+            cooldown = Math.max((cooldown*2)-1,0);
             cooldown = cooldown*cooldown;
         }
 
