@@ -6,7 +6,7 @@
     "maxAmmo": 40,
     "reloadAmount": 10,
     "recoilAngle": 1.5,
-    "recoilKick": 0.15,
+    "recoilKick": 0.25,
     "recoilAdsReduction": 0.5,
     "alwaysSpread": false,
     "spread": 1.5
@@ -34,14 +34,14 @@
   },
   "modules": {
     "zoom": {
-      "yOffset": 5.3,
+      "yOffset": 5.25,
       "zOffset": 3.2,
       "fovModifier": 0.6
     },
     "attachments": {
       "scope": {
         "yOffset": 4.4,
-        "zOffset": 3.0
+        "zOffset": 4.5
       },
       "barrel": {
         "yOffset": 3.475,
@@ -50,7 +50,7 @@
       },
       "underBarrel": {
         "yOffset": 2.549,
-        "zOffset": 0.0
+        "zOffset": -0.2
       }
     }
   }

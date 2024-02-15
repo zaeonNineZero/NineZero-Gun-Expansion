@@ -19,7 +19,7 @@ public class ExtraGunModifiers
         @Override
         public double modifyMuzzleFlashScale(double scale)
         {
-            return 0.75F;
+            return 0.8F;
         }
     };
     public static final IGunModifier MUZZLE_BRAKE_EFFECT = new IGunModifier()
