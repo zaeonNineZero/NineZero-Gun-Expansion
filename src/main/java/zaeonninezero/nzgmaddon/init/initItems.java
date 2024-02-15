@@ -47,6 +47,7 @@ public class initItems {
 	public static final RegistryObject<GunItem> AUTOMATIC_SHOTGUN = ITEMS.register("automatic_shotgun", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<GunItem> HEAVY_ASSAULT_RIFLE = ITEMS.register("heavy_assault_rifle", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
     public static final RegistryObject<GunItem> BATTLE_RIFLE = ITEMS.register("battle_rifle", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+    public static final RegistryObject<GunItem> BULLPUP_RIFLE = ITEMS.register("bullpup_rifle", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 	public static final RegistryObject<GunItem> MACHINE_GUN = ITEMS.register("machine_gun", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 	public static final RegistryObject<GunItem> INFANTRY_RIFLE = ITEMS.register("infantry_rifle", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 	public static final RegistryObject<GunItem> AUTOMATIC_SNIPER_RIFLE = ITEMS.register("automatic_sniper_rifle", () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
