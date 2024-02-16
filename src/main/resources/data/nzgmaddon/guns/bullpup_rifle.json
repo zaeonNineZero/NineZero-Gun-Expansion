@@ -20,11 +20,11 @@
     "gravity": true
   },
   "sounds": {
-    "fire": "cgm:item.assault_rifle.fire",
-    "reload": "nzgmaddon:item.assault_rifle.reload",
-    "cock": "cgm:item.assault_rifle.cock",
-    "silencedFire": "cgm:item.assault_rifle.silenced_fire",
-    "enchantedFire": "cgm:item.assault_rifle.enchanted_fire"
+    "fire": "nzgmaddon:item.bullpup_rifle.fire",
+    "reload": "nzgmaddon:item.bullpup_rifle.reload",
+    "cock": "nzgmaddon:item.bullpup_rifle.cock",
+    "silencedFire": "nzgmaddon:item.bullpup_rifle.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.bullpup_rifle.enchanted_fire"
   },
   "display": {
     "flash": {

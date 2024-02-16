@@ -79,6 +79,11 @@ public class initSounds {
 	public static final RegistryObject<SoundEvent> ITEM_BATTLE_RIFLE_SILENCED_FIRE = register("item.battle_rifle.silenced_fire");
 	public static final RegistryObject<SoundEvent> ITEM_BATTLE_RIFLE_COCK = register("item.battle_rifle.cock");
 
+	public static final RegistryObject<SoundEvent> ITEM_BULLPUP_RIFLE_FIRE = register("item.bullpup.fire");
+	public static final RegistryObject<SoundEvent> ITEM_BULLPUP_RIFLE_ENCHANTED_FIRE = register("item.bullpup.enchanted_fire");
+	public static final RegistryObject<SoundEvent> ITEM_BULLPUP_RIFLE_SILENCED_FIRE = register("item.bullpup.silenced_fire");
+	public static final RegistryObject<SoundEvent> ITEM_BULLPUP_RIFLE_COCK = register("item.bullpup.cock");
+
 	public static final RegistryObject<SoundEvent> ITEM_MACHINE_GUN_FIRE = register("item.machine_gun.fire");
 	public static final RegistryObject<SoundEvent> ITEM_MACHINE_GUN_ENCHANTED_FIRE = register("item.machine_gun.enchanted_fire");
 	public static final RegistryObject<SoundEvent> ITEM_MACHINE_GUN_SILENCED_FIRE = register("item.machine_gun.silenced_fire");
