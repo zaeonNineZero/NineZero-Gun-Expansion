@@ -22,6 +22,7 @@ public class ClientHandler
         ModelOverrides.register(initItems.HEAVY_PISTOL.get(), new SimpleModel(SpecialModels.HEAVY_PISTOL::getModel));
 		ModelOverrides.register(initItems.UZI.get(), new SimpleModel(SpecialModels.UZI::getModel));
 		ModelOverrides.register(initItems.SUBMACHINE_GUN.get(), new SimpleModel(SpecialModels.SUBMACHINE_GUN::getModel));
+		ModelOverrides.register(initItems.COMPACT_SMG.get(), new SimpleModel(SpecialModels.COMPACT_SMG::getModel));
 		ModelOverrides.register(initItems.RAPID_SMG.get(), new SimpleModel(SpecialModels.RAPID_SMG::getModel));
 		ModelOverrides.register(initItems.PUMP_SHOTGUN.get(), new SimpleModel(SpecialModels.PUMP_SHOTGUN::getModel));
 		ModelOverrides.register(initItems.HUNTING_SHOTGUN.get(), new SimpleModel(SpecialModels.HUNTING_SHOTGUN::getModel));

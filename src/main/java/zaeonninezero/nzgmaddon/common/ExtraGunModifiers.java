@@ -74,6 +74,58 @@ public class ExtraGunModifiers
             return speed * 0.95F;
         }
     };
+    public static final IGunModifier MUFFLED_IMPROVED = new IGunModifier()
+    {
+        @Override
+        public float modifyProjectileSpread(float spread)
+        {
+            return spread * 0.85F;
+        }
+        
+        @Override
+        public double modifyProjectileSpeed(double speed)
+        {
+            return speed * 0.8;
+        }
+        
+        @Override
+        public float modifyProjectileDamage(float damage)
+        {
+            return damage * 0.95F;
+        }
+		
+		@Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.95F;
+        }
+    };
+    public static final IGunModifier MUFFLED_PERFORMANCE = new IGunModifier()
+    {
+        @Override
+        public float modifyProjectileSpread(float spread)
+        {
+            return spread * 0.75F;
+        }
+        
+        @Override
+        public double modifyProjectileSpeed(double speed)
+        {
+            return speed * 0.65;
+        }
+        
+        @Override
+        public float modifyProjectileDamage(float damage)
+        {
+            return damage * 0.95F;
+        }
+		
+		@Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.9F;
+        }
+    };
 	
 	
     public static final IGunModifier QUICK_ADS = new IGunModifier()

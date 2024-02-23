@@ -16,6 +16,7 @@ public enum SpecialModels
     HEAVY_PISTOL("gun/heavy_pistol"),
     UZI("gun/uzi"),
     SUBMACHINE_GUN("gun/submachine_gun"),
+    COMPACT_SMG("gun/compact_smg"),
     RAPID_SMG("gun/rapid_smg"),
     PUMP_SHOTGUN("gun/pump_shotgun"),
     HUNTING_SHOTGUN("gun/hunting_shotgun"),

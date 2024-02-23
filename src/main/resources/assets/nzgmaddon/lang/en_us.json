@@ -4,6 +4,7 @@
 	"item.nzgmaddon.battle_rifle": "Battle Rifle",
 	"item.nzgmaddon.bolt_action_rifle": "Bolt Action Rifle",
 	"item.nzgmaddon.bullpup_rifle": "Bullpup Rifle",
+	"item.nzgmaddon.compact_smg": "Compact SMG",
 	"item.nzgmaddon.double_barreled_shotgun": "Double Barreled Shotgun",
 	"item.nzgmaddon.heavy_assault_rifle": "Heavy Assault Rifle",
 	"item.nzgmaddon.heavy_pistol": "Heavy Pistol",
@@ -24,6 +25,8 @@
 	"item.nzgmaddon.extended_barrel": "Extended Barrel",
 	"item.nzgmaddon.flash_hider": "Flash Hider",
 	"item.nzgmaddon.muzzle_brake": "Muzzle Brake",
+	"item.nzgmaddon.improved_silencer": "Improved Silencer",
+	"item.nzgmaddon.performance_silencer": "Performance Silencer",
 	
 	"item.nzgmaddon.ballistic_scope": "Ballistic Scope",
 	"item.nzgmaddon.chevron_scope": "Chevron Scope",

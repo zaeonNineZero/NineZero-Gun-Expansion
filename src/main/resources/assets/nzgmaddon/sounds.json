@@ -133,6 +133,15 @@
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/smg/cock"}]
   },
+  
+"item.compact_smg.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [{"name":"nzgmaddon:item/compact_smg/fire"}]
+  },
+"item.compact_smg.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+    "sounds": [{"name":"nzgmaddon:item/compact_smg/enchanted_fire"}]
+  },
 
 "item.rapid_smg.fire": {
     "subtitle":"subtitle.cgm.fire",
