@@ -133,6 +133,15 @@
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/smg/cock"}]
   },
+  
+"item.compact_smg.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [{"name":"nzgmaddon:item/compact_smg/fire"}]
+  },
+"item.compact_smg.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+    "sounds": [{"name":"nzgmaddon:item/compact_smg/enchanted_fire"}]
+  },
 
 "item.rapid_smg.fire": {
     "subtitle":"subtitle.cgm.fire",
@@ -240,7 +249,11 @@
 
 "item.battle_rifle.fire": {
     "subtitle":"subtitle.cgm.fire",
-    "sounds": [{"name":"nzgmaddon:item/battle_rifle/fire"}]
+    "sounds": [
+      "nzgmaddon:item/battle_rifle/fire",
+      "nzgmaddon:item/battle_rifle/fire2",
+      "nzgmaddon:item/battle_rifle/fire3"
+    ]
   },
 "item.battle_rifle.silenced_fire": {
     "subtitle":"subtitle.cgm.fire.silenced",
@@ -248,11 +261,42 @@
   },
 "item.battle_rifle.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
-    "sounds": [{"name":"nzgmaddon:item/battle_rifle/enchanted_fire"}]
+	"sounds": [
+      "nzgmaddon:item/battle_rifle/enchanted_fire",
+      "nzgmaddon:item/battle_rifle/enchanted_fire2",
+      "nzgmaddon:item/battle_rifle/enchanted_fire3"
+    ]
   },
 "item.battle_rifle.cock": {
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/battle_rifle/cock"}]
+  },
+
+"item.bullpup_rifle.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [
+      "nzgmaddon:item/bullpup_rifle/fire",
+      "nzgmaddon:item/bullpup_rifle/fire2",
+      "nzgmaddon:item/bullpup_rifle/fire3",
+      "nzgmaddon:item/bullpup_rifle/fire4"
+    ]
+  },
+"item.bullpup_rifle.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"cgm:item/assault_rifle/silenced_fire"}]
+  },
+"item.bullpup_rifle.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+	"sounds": [
+      "nzgmaddon:item/bullpup_rifle/enchanted_fire",
+      "nzgmaddon:item/bullpup_rifle/enchanted_fire2",
+      "nzgmaddon:item/bullpup_rifle/enchanted_fire3",
+      "nzgmaddon:item/bullpup_rifle/enchanted_fire4"
+    ]
+  },
+"item.bullpup_rifle.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"cgm:item/assault_rifle/cock"}]
   },
   
 "item.machine_gun.fire": {

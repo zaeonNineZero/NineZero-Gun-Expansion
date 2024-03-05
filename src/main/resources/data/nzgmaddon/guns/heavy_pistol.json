@@ -38,14 +38,14 @@
     },
     "attachments": {
       "scope": {
-        "yOffset": 3.7,
-        "zOffset": 6.0,
+        "yOffset": 3.9,
+        "zOffset": 7.9,
         "scale": 0.75
       },
       "barrel": {
-        "yOffset": 3.3,
-        "zOffset": 2.15,
-        "scale": 0.5
+        "yOffset": 3.35,
+        "zOffset": 0.8,
+        "scale": 0.42
       }
     }
   }

@@ -1,0 +1,57 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 3,
+    "gripType": "cgm:two_handed",
+    "maxAmmo": 40,
+    "reloadAmount": 10,
+    "recoilAngle": 1.5,
+    "recoilKick": 0.25,
+    "recoilAdsReduction": 0.5,
+    "alwaysSpread": false,
+    "spread": 1.5
+  },
+  "projectile": {
+    "item": "nzgmaddon:medium_bullet",
+    "damage": 7.0,
+    "size": 0.2,
+    "speed": 10.0,
+    "life": 25,
+    "gravity": true
+  },
+  "sounds": {
+    "fire": "nzgmaddon:item.bullpup_rifle.fire",
+    "reload": "nzgmaddon:item.bullpup_rifle.reload",
+    "cock": "nzgmaddon:item.bullpup_rifle.cock",
+    "silencedFire": "nzgmaddon:item.bullpup_rifle.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.bullpup_rifle.enchanted_fire"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.475,
+      "zOffset": -3.5
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 5.25,
+      "zOffset": 3.2,
+      "fovModifier": 0.6
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 4.4,
+        "zOffset": 4.5
+      },
+      "barrel": {
+        "yOffset": 3.475,
+        "zOffset": -2.9,
+        "scale": 0.5
+      },
+      "underBarrel": {
+        "yOffset": 2.549,
+        "zOffset": -0.2
+      }
+    }
+  }
+}

@@ -16,6 +16,7 @@ public enum SpecialModels
     HEAVY_PISTOL("gun/heavy_pistol"),
     UZI("gun/uzi"),
     SUBMACHINE_GUN("gun/submachine_gun"),
+    COMPACT_SMG("gun/compact_smg"),
     RAPID_SMG("gun/rapid_smg"),
     PUMP_SHOTGUN("gun/pump_shotgun"),
     HUNTING_SHOTGUN("gun/hunting_shotgun"),
@@ -23,6 +24,7 @@ public enum SpecialModels
     AUTOMATIC_SHOTGUN("gun/automatic_shotgun"),
     HEAVY_ASSAULT_RIFLE("gun/heavy_assault_rifle"),
     BATTLE_RIFLE("gun/battle_rifle"),
+    BULLPUP_RIFLE("gun/bullpup_rifle"),
     MACHINE_GUN("gun/machine_gun"),
     INFANTRY_RIFLE("gun/infantry_rifle"),
     AUTOMATIC_SNIPER_RIFLE("gun/automatic_sniper_rifle"),
@@ -34,7 +36,8 @@ public enum SpecialModels
     REVOLVER_CYLINDER("revolver_cylinder"),
     REVOLVER_RAIL("revolver_rail"),
 	
-    HEAVY_REVOLVER_BASE("heavy_revolver_base");
+    HEAVY_REVOLVER_BASE("heavy_revolver_base"),
+    HEAVY_REVOLVER_CYLINDER("heavy_revolver_cylinder");
 
     /**
      * The location of an item model in the [MOD_ID]/models/special/[NAME] folder
