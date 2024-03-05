@@ -61,9 +61,9 @@ public class RevolverModel implements IOverrideModel
 		// Push pose - this preps the renderer for our transformations.
         poseStack.pushPose();
 		// Now we apply our transformations, in this case translation and rotation.
-        poseStack.translate(0, -4.43 * 0.0625, 0);
+        poseStack.translate(0, -4.42 * 0.0625, 0);
         poseStack.mulPose(Vector3f.ZN.rotationDegrees(60F * cooldown));
-        poseStack.translate(0, 4.43 * 0.0625, 0);
+        poseStack.translate(0, 4.42 * 0.0625, 0);
 		// Transformations done - now we can render the cylinder model.
         RenderUtil.renderModel(SpecialModels.REVOLVER_CYLINDER.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose - this applies our model transformations and rendering, and clears the poseStack.

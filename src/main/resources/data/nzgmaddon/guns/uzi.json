@@ -9,11 +9,11 @@
     "recoilKick": 0.4,
     "recoilAdsReduction": 0.2,
     "alwaysSpread": true,
-    "spread": 10.0
+    "spread": 8.0
   },
   "projectile": {
     "item": "cgm:basic_bullet",
-    "damage": 3.1,
+    "damage": 3.2,
     "size": 0.2,
     "speed": 10.0,
     "life": 20
