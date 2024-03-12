@@ -4,9 +4,11 @@
 	"item.nzgmaddon.battle_rifle": "战斗步枪",
     "item.nzgmaddon.bolt_action_rifle": "栓动步枪",
 	"item.nzgmaddon.bullpup_rifle": "无托步枪",
+	"item.nzgmaddon.compact_smg": "紧凑型冲锋枪",
 	"item.nzgmaddon.double_barreled_shotgun": "双管霰弹枪",
 	"item.nzgmaddon.heavy_assault_rifle": "重型突击步枪",
 	"item.nzgmaddon.heavy_pistol": "重型手枪",
+	"item.nzgmaddon.heavy_revolver": "重型左轮手枪",
 	"item.nzgmaddon.hunting_rifle": "狩猎步枪",
 	"item.nzgmaddon.hunting_shotgun": "狩猎霰弹枪",
 	"item.nzgmaddon.infantry_rifle": "步兵步枪",
@@ -22,7 +24,9 @@
 	
 	"item.nzgmaddon.extended_barrel": "加长枪管",
 	"item.nzgmaddon.flash_hider": "消焰器",
+	"item.nzgmaddon.improved_silencer": "改进型消音器",
 	"item.nzgmaddon.muzzle_brake": "枪口制退器",
+	"item.nzgmaddon.performance_silencer": "高性能消音器",
 
 	"item.nzgmaddon.ballistic_scope": "狙击瞄准镜",
 	"item.nzgmaddon.chevron_scope": "V型分划瞄准镜",
