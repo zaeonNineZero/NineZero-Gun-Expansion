@@ -1,29 +1,35 @@
 {
 	"item.nzgmaddon.automatic_shotgun": "Автоматический дробовик",
-    "item.nzgmaddon.automatic_sniper_rifle": "Автоматическая снайперская винтовка",
+  "item.nzgmaddon.automatic_sniper_rifle": "Автоматическая снайперская винтовка",
 	"item.nzgmaddon.battle_rifle": "Боевая винтовка",
-    "item.nzgmaddon.bolt_action_rifle": "Винтовка с болтовым затвором",
+  "item.nzgmaddon.bolt_action_rifle": "Винтовка с болтовым затвором",
+	"item.nzgmaddon.bullpup_rifle": "Винтовка Буллпап",
+	"item.nzgmaddon.compact_smg": "Компактный пистолет-пулемёт",
 	"item.nzgmaddon.double_barreled_shotgun": "Двуствольный дробовик",
-	"item.nzgmaddon.heavy_assault_rifle": "Тяжелая штурмовая винтовка",
-	"item.nzgmaddon.hunting_rifle": "Охотничье ружье",
+	"item.nzgmaddon.heavy_assault_rifle": "Тяжёлая штурмовая винтовка",
+	"item.nzgmaddon.heavy_pistol": "Тяжёлый пистолет",
+	"item.nzgmaddon.heavy_revolver": "Тяжёлый револьвер",
+	"item.nzgmaddon.hunting_rifle": "Охотничья винтовка",
 	"item.nzgmaddon.hunting_shotgun": "Охотничий дробовик",
 	"item.nzgmaddon.infantry_rifle": "Пехотная винтовка",
-	"item.nzgmaddon.machine_gun": "Пулемет",
-	"item.nzgmaddon.uzi": "Микро пистолет-пулемет",
-    "item.nzgmaddon.pump_shotgun": "Помповый дробовик",
-    "item.nzgmaddon.rapid_smg": "Быстрый пистолет-пулемет",
+	"item.nzgmaddon.machine_gun": "Пулемёт",
+	"item.nzgmaddon.uzi": "Микро пистолет-пулемёт",
+  "item.nzgmaddon.pump_shotgun": "Помповый дробовик",
+  "item.nzgmaddon.rapid_smg": "Быстрый пистолет-пулемёт",
 	"item.nzgmaddon.revolver": "Револьвер",
 	"item.nzgmaddon.sniper_rifle": "Снайперская винтовка",
 	"item.nzgmaddon.submachine_gun": "Автомат",
 
 	"item.nzgmaddon.medium_bullet": "Средний патрон",
 
-	"item.nzgmaddon.extended_barrel": "Удлиненный ствол",
+	"item.nzgmaddon.extended_barrel": "Удлинённый ствол",
 	"item.nzgmaddon.flash_hider": "Пламегаситель",
 	"item.nzgmaddon.muzzle_brake": "Дульный тормоз",
+	"item.nzgmaddon.improved_silencer": "Улучшенный глушитель",
+	"item.nzgmaddon.performance_silencer": "Высокопроизводительный глушитель",
 
 	"item.nzgmaddon.ballistic_scope": "Баллистический прицел",
-    "item.nzgmaddon.chevron_scope": "Шевронный прицел",
+  "item.nzgmaddon.chevron_scope": "Шевронный прицел",
 	"item.nzgmaddon.dot_sight": "Коллиматорный прицел",
 
 	"item.nzgmaddon.carbine_stock": "Ложа карабина",
@@ -33,5 +39,5 @@
 	"item.nzgmaddon.solid_stock": "Твёрдая ложа",
 	"item.nzgmaddon.stabilizing_stock": "Стабилизирующая ложа",
 
-    "item.nzgmaddon.horizontal_grip": "Горизонтальная рукоять"
+  "item.nzgmaddon.horizontal_grip": "Горизонтальная рукоять"
 }
