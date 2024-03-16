@@ -21,6 +21,7 @@ import javax.annotation.Nullable;
 /**
  * Author: MrCrayfish
  * Modified by zaeonNineZero for Nine Zero's Gun Expansion
+ * Attachment detection logic based off of code from Mo' Guns by Bomb787 and AlanorMiga (MigaMi)
  */
 public class RevolverModel implements IOverrideModel
 {
@@ -58,15 +59,18 @@ public class RevolverModel implements IOverrideModel
         }
 
 		// Revolver rotating cylinder. Cylinder rotates (err, simulates rotation) to its next chamber after firing.
-		// Push pose - this preps the renderer for our transformations.
+		// Push pose so we can make do transformations without affecting the models above.
         poseStack.pushPose();
-		// Now we apply our transformations, in this case translation and rotation.
+		// Now we apply our transformations.
+		// First we set the rotation pivot point by translating the model.
         poseStack.translate(0, -4.42 * 0.0625, 0);
-        poseStack.mulPose(Vector3f.ZN.rotationDegrees(60F * cooldown));
+        // Then we rotate the model based on the cooldown variable, creating a smooth rotation effect.
+		poseStack.mulPose(Vector3f.ZN.rotationDegrees(60F * cooldown));
+		// Finally we translate the model back to its intended position.
         poseStack.translate(0, 4.42 * 0.0625, 0);
-		// Transformations done - now we can render the cylinder model.
+		// Our transformations are done - now we can render the model.
         RenderUtil.renderModel(SpecialModels.REVOLVER_CYLINDER.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
-		// Pop pose - this applies our model transformations and rendering, and clears the poseStack.
+		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
     }
 }

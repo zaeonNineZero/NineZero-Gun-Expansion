@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"2": "cgm:items/machine_pistol",
+		"particle": "cgm:items/pistol"
+	},
+	"elements": [
+		{
+			"name": "rail",
+			"from": [7.7, 4, 14.45],
+			"to": [8.3, 4.15, 16.95],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 7.64, 1.1]},
+			"faces": {
+				"north": {"uv": [14.5, 0, 15, 0.5], "texture": "#2", "tintindex": 0},
+				"east": {"uv": [15.5, 0, 16, 3.5], "texture": "#2", "tintindex": 0},
+				"south": {"uv": [15.5, 0, 16, 0.5], "texture": "#2", "tintindex": 0},
+				"west": {"uv": [14.5, 0, 15, 3.5], "texture": "#2", "tintindex": 0},
+				"up": {"uv": [15, 0, 15.5, 3.5], "texture": "#2", "tintindex": 0},
+				"down": {"uv": [15.5, 0, 16, 3.5], "texture": "#2", "tintindex": 0}
+			}
+		}
+	]
+}

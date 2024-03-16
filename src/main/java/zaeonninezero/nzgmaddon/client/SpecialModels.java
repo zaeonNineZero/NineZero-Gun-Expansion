@@ -37,7 +37,26 @@ public enum SpecialModels
     REVOLVER_RAIL("revolver_rail"),
 	
     HEAVY_REVOLVER_BASE("heavy_revolver_base"),
-    HEAVY_REVOLVER_CYLINDER("heavy_revolver_cylinder");
+    HEAVY_REVOLVER_CYLINDER("heavy_revolver_cylinder"),
+	
+    MICRO_SMG_BASE("micro_smg_base"),
+    MICRO_SMG_RAIL("micro_smg_rail"),
+    MICRO_SMG_CHARGEHANDLE("micro_smg_chargehandle"),
+	
+    SUBMACHINE_GUN_BASE("submachine_gun_base"),
+    SUBMACHINE_GUN_REARSIGHT("submachine_gun_rearsight"),
+	
+    COMPACT_SMG_BASE("compact_smg_base"),
+    COMPACT_SMG_SIGHTS("compact_smg_sights"),
+	
+    RAPID_SMG_BASE("rapid_smg_base"),
+    RAPID_SMG_SIGHTS("rapid_smg_sights"),
+	
+    BATTLE_RIFLE_BASE("battle_rifle_base"),
+    BATTLE_RIFLE_SIGHTS("battle_rifle_sights"),
+	
+    SNIPER_RIFLE_BASE("sniper_rifle_base"),
+    SNIPER_RIFLE_SIGHTS("sniper_rifle_sights");
 
     /**
      * The location of an item model in the [MOD_ID]/models/special/[NAME] folder
