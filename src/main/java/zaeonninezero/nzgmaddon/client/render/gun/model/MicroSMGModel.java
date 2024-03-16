@@ -62,7 +62,7 @@ public class MicroSMGModel implements IOverrideModel
         poseStack.pushPose();
 		// Now we apply our transformations.
 		// All we need to do is move the model based on the cooldown variable.
-        poseStack.translate(0, (cooldown) * 0.0625, 0);
+        poseStack.translate(0, 0, (cooldown * 1.2) * 0.0625);
 		// Our transformations are done - now we can render the model.
         RenderUtil.renderModel(SpecialModels.MICRO_SMG_CHARGEHANDLE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
