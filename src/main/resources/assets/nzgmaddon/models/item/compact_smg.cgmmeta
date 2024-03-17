@@ -13,8 +13,8 @@
                 "scale": [1, 1, 0.85]
             },
             "underBarrel": {
-                "translation": [8.0, 2.549, 11.4],
-                "scale": [0.9, 0.9, 0.9]
+                "translation": [8.0, 2.549, 11.3],
+                "scale": [0.91, 0.91, 0.91]
             }
         },
         "ironSight": {
