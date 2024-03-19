@@ -34,11 +34,13 @@ public class PumpShotgunModel implements IOverrideModel
         BakedModel bakedModel = SpecialModels.PUMP_SHOTGUN_BASE.getModel();
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
 
-		// Render the iron sights element, which is only present when a scope is not attached.
-		// We have to grab the gun's scope attachment slot and check whether it is empty or not.
-		// If the isEmpty function returns true, then we render the iron sights.
-		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
-        if(attachmentStack.isEmpty())
+		// Render the iron sights element.
+		// This time we have two criteria needed to render the sights element:
+		// 1. A scope must NOT be attached.
+		// 2. A stock must be attached.
+		ItemStack scopeStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
+		ItemStack stockStack = Gun.getAttachment(IAttachment.Type.STOCK, stack);
+        if(scopeStack.isEmpty() && !stockStack.isEmpty())
 		{
             RenderUtil.renderModel(SpecialModels.PUMP_SHOTGUN_SIGHTS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
