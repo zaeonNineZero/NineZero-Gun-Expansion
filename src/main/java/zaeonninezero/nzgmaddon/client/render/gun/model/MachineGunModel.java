@@ -42,7 +42,7 @@ public class MachineGunModel implements IOverrideModel
 		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
         if(attachmentStack.isEmpty())
 		{
-            RenderUtil.renderModel(SpecialModels.MACHINE_GUN_REARSIGHT.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+            RenderUtil.renderModel(SpecialModels.MACHINE_GUN_SIGHTS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
 
 		// Now we can work on the animated parts.
@@ -120,7 +120,7 @@ public class MachineGunModel implements IOverrideModel
         poseStack.pushPose();
 		// Transformations
         poseStack.translate(0.811 * 0.0625, -3.04 * 0.0625, 0);
-        poseStack.mulPose(Vector3f.ZN.rotationDegrees(7F * cooldown));
+        poseStack.mulPose(Vector3f.ZN.rotationDegrees(24F * cooldown));
         poseStack.translate(-0.811 * 0.0625, 3.04 * 0.0625, 0);
 		// Render
         RenderUtil.renderModel(SpecialModels.MACHINE_GUN_HANDLE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);

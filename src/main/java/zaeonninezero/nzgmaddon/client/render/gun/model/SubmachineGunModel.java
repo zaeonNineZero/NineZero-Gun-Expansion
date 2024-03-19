@@ -40,7 +40,7 @@ public class SubmachineGunModel implements IOverrideModel
 		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
         if(attachmentStack.isEmpty())
 		{
-            RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_REARSIGHT.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+            RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_SIGHTS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
 
 		// Since this model doesn't have animations, our code can end here.

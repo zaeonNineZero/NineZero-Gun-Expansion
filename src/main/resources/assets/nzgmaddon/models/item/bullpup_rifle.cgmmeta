@@ -9,7 +9,7 @@
                 "translation": [8.0, 4.4, 12.5]
             },
             "underBarrel": {
-                "translation": [8.0, 2.549, 8.2],
+                "translation": [8.0, 2.549, 8.5],
                 "scale": [1, 1, 0.95]
             }
         },

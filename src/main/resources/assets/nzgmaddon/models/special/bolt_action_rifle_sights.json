@@ -1,0 +1,66 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "nzgmaddon:items/sniper_rifle"
+	},
+	"elements": [
+		{
+			"from": [7.9, 4.4365, 8.3],
+			"to": [8.1, 4.5865, 8.65],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.7365, 2.5]},
+			"faces": {
+				"north": {"uv": [0, 10, 0.5, 10.5], "texture": "#1"},
+				"east": {"uv": [0, 10, 0.5, 10.5], "texture": "#1"},
+				"south": {"uv": [0, 10, 0.5, 10.5], "texture": "#1"},
+				"west": {"uv": [0, 10, 0.5, 10.5], "texture": "#1"},
+				"up": {"uv": [0.5, 10.5, 0, 10], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.65, 4.1865, 7.9],
+			"to": [8.35, 4.4365, 8.7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.7365, 2.5]},
+			"faces": {
+				"north": {"uv": [1, 10, 1.5, 10.5], "texture": "#1"},
+				"east": {"uv": [1, 10, 1.5, 10.5], "texture": "#1"},
+				"south": {"uv": [1, 10, 1.5, 10.5], "texture": "#1"},
+				"west": {"uv": [1, 10, 1.5, 10.5], "texture": "#1"},
+				"up": {"uv": [1.5, 10.5, 1, 10], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.7, 4.4365, 8.3],
+			"to": [7.9, 4.7365, 8.65],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.7365, 2.5]},
+			"faces": {
+				"north": {"uv": [0, 10.5, 0.5, 11], "texture": "#1"},
+				"east": {"uv": [0, 10.5, 0.5, 11], "texture": "#1"},
+				"south": {"uv": [0, 10.5, 0.5, 11], "texture": "#1"},
+				"west": {"uv": [0, 10.5, 0.5, 11], "texture": "#1"},
+				"up": {"uv": [0.5, 11, 0, 10.5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8.1, 4.4365, 8.3],
+			"to": [8.3, 4.7365, 8.65],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.7365, 2.5]},
+			"faces": {
+				"north": {"uv": [0, 10.5, 0.5, 11], "texture": "#1"},
+				"east": {"uv": [0, 10.5, 0.5, 11], "texture": "#1"},
+				"south": {"uv": [0, 10.5, 0.5, 11], "texture": "#1"},
+				"west": {"uv": [0, 10.5, 0.5, 11], "texture": "#1"},
+				"up": {"uv": [0.5, 11, 0, 10.5], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "rear_sight",
+			"origin": [8, 7.7365, 2.5],
+			"color": 0,
+			"nbt": "{}",
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

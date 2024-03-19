@@ -21,7 +21,7 @@ import javax.annotation.Nullable;
  * Modified by zaeonNineZero for Nine Zero's Gun Expansion
  * Attachment detection logic based off of code from Mo' Guns by Bomb787 and AlanorMiga (MigaMi)
  */
-public class AutomaticShotgunModel implements IOverrideModel
+public class BoltActionRifleModel implements IOverrideModel
 {
     @Override
 	// This class renders a multi-part model that supports animations and removeable parts.
@@ -31,7 +31,7 @@ public class AutomaticShotgunModel implements IOverrideModel
     public void render(float partialTicks, ItemTransforms.TransformType transformType, ItemStack stack, ItemStack parent, @Nullable LivingEntity entity, PoseStack poseStack, MultiBufferSource buffer, int light, int overlay)
     {
 		// Render the item's BakedModel, which will serve as the core of our custom model.
-        BakedModel bakedModel = SpecialModels.AUTOMATIC_SHOTGUN_BASE.getModel();
+        BakedModel bakedModel = SpecialModels.BOLT_ACTION_RIFLE_BASE.getModel();
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
 
 		// Render the iron sights element, which is only present when a scope is not attached.
@@ -40,9 +40,16 @@ public class AutomaticShotgunModel implements IOverrideModel
 		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
         if(attachmentStack.isEmpty())
 		{
-            RenderUtil.renderModel(SpecialModels.AUTOMATIC_SHOTGUN_SIGHTS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+            RenderUtil.renderModel(SpecialModels.BOLT_ACTION_RIFLE_SIGHTS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
+		else
+		// Render the top rail element that appears when a scope is attached.
+		{
+            RenderUtil.renderModel(SpecialModels.BOLT_ACTION_RIFLE_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+		}
+		
 
 		// Since this model doesn't have animations, our code can end here.
+		// In this future, this model may receive animated components, but for now everything is static.
     }
 }

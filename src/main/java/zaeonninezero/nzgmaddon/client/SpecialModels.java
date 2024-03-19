@@ -44,7 +44,7 @@ public enum SpecialModels
     MICRO_SMG_CHARGEHANDLE("micro_smg_chargehandle"),
 	
     SUBMACHINE_GUN_BASE("submachine_gun_base"),
-    SUBMACHINE_GUN_REARSIGHT("submachine_gun_rearsight"),
+    SUBMACHINE_GUN_SIGHTS("submachine_gun_sights"),
 	
     COMPACT_SMG_BASE("compact_smg_base"),
     COMPACT_SMG_SIGHTS("compact_smg_sights"),
@@ -52,14 +52,17 @@ public enum SpecialModels
     RAPID_SMG_BASE("rapid_smg_base"),
     RAPID_SMG_SIGHTS("rapid_smg_sights"),
 	
+    PUMP_SHOTGUN_BASE("pump_shotgun_base"),
+    PUMP_SHOTGUN_SIGHTS("pump_shotgun_sights"),
+	
     AUTOMATIC_SHOTGUN_BASE("automatic_shotgun_base"),
-    AUTOMATIC_SHOTGUN_REARSIGHT("automatic_shotgun_rearsight"),
+    AUTOMATIC_SHOTGUN_SIGHTS("automatic_shotgun_sights"),
 	
     BATTLE_RIFLE_BASE("battle_rifle_base"),
     BATTLE_RIFLE_SIGHTS("battle_rifle_sights"),
 	
     MACHINE_GUN_BASE("machine_gun_base"),
-    MACHINE_GUN_REARSIGHT("machine_gun_rearsight"),
+    MACHINE_GUN_SIGHTS("machine_gun_sights"),
     MACHINE_GUN_BELT("machine_gun_belt"),
     MACHINE_GUN_BULLET1("machine_gun_bullet1"),
     MACHINE_GUN_BULLET2("machine_gun_bullet2"),
@@ -67,6 +70,10 @@ public enum SpecialModels
     MACHINE_GUN_BULLET4("machine_gun_bullet4"),
     MACHINE_GUN_BULLET5("machine_gun_bullet5"),
     MACHINE_GUN_HANDLE("machine_gun_handle"),
+    
+    BOLT_ACTION_RIFLE_BASE("bolt_action_rifle_base"),
+    BOLT_ACTION_RIFLE_SIGHTS("bolt_action_rifle_sights"),
+    BOLT_ACTION_RIFLE_RAIL("bolt_action_rifle_rail"),
 	
     SNIPER_RIFLE_BASE("sniper_rifle_base"),
     SNIPER_RIFLE_SIGHTS("sniper_rifle_sights");
