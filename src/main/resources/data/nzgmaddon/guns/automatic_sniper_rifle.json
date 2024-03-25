@@ -21,7 +21,7 @@
   },
   "sounds": {
     "fire": "nzgmaddon:item.auto_sniper_rifle.fire",
-    "reload": "nzgmaddon:item.rifle.reload",
+    "reload": "nzgmaddon:item.assault_rifle.reload",
     "cock": "nzgmaddon:item.auto_sniper_rifle.cock",
     "silencedFire": "nzgmaddon:item.auto_sniper_rifle.silenced_fire",
     "enchantedFire": "nzgmaddon:item.auto_sniper_rifle.enchanted_fire"
