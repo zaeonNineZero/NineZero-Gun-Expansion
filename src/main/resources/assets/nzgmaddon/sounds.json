@@ -276,8 +276,7 @@
     "subtitle":"subtitle.cgm.fire",
     "sounds": [
       "nzgmaddon:item/bullpup_rifle/fire",
-      "nzgmaddon:item/bullpup_rifle/fire2",
-      "nzgmaddon:item/bullpup_rifle/fire3"
+      "nzgmaddon:item/bullpup_rifle/fire2"
     ]
   },
 "item.bullpup_rifle.silenced_fire": {
@@ -288,8 +287,7 @@
     "subtitle":"subtitle.cgm.enchanted_fire",
 	"sounds": [
       "nzgmaddon:item/bullpup_rifle/enchanted_fire",
-      "nzgmaddon:item/bullpup_rifle/enchanted_fire2",
-      "nzgmaddon:item/bullpup_rifle/enchanted_fire3"
+      "nzgmaddon:item/bullpup_rifle/enchanted_fire2"
     ]
   },
 "item.bullpup_rifle.cock": {
