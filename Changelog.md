@@ -1,7 +1,7 @@
 # Changelog (1.19.2 Releases)
 
 
-### 1.4.0 (*/**/24)
+### 1.4.0 (4/**/24)
 This is a relative big update for NZGE, with several new guns and a multitude of changes and tweaks.
 
 * Added model overrides for many of the guns in the addon, adding removeable iron sights and some animated elements.
@@ -16,6 +16,8 @@ This is a relative big update for NZGE, with several new guns and a multitude of
 * Changes to the fire sounds of several guns. Enchanted gunfire sounds now use a "flangered" layering effect.
 * Adjusted the Stabilizing Stock's stat modifiers - reduced the ADS speed penalty, but decreased spread reduction.
 * Adjusted the model and ADS parameters for the Ballistic Scope, and very slightly increased camera FOV zoom.
+
+There are likely a few other minor changes and adjustments beyond what I've listed here. Be sure to check the commits on the Github repo to see everything I've changed!
 
 
 ### 1.3.2 (12/4/23)
