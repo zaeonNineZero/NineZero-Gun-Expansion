@@ -7,7 +7,7 @@
 	"elements": [
 		{
 			"name": "rail",
-			"from": [7.7, 4, 14.45],
+			"from": [7.7, 4, 14.35],
 			"to": [8.3, 4.15, 16.95],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 7.64, 1.1]},
 			"faces": {

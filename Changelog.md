@@ -15,6 +15,7 @@ This is a relative big update for NZGE, with several new guns and a multitude of
   -  Both silencers sport better stats than CGM's Silencer, at the cost of muzzle velocity. Lead your shots accordingly!
 * Changes to the fire sounds of several guns. Enchanted gunfire sounds now use a "flangered" layering effect.
 * Adjusted the Stabilizing Stock's stat modifiers - reduced the ADS speed penalty, but decreased spread reduction.
+* Adjusted the model and ADS parameters for the Ballistic Scope, and very slightly increased camera FOV zoom.
 
 
 ### 1.3.2 (12/4/23)

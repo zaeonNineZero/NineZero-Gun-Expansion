@@ -24,9 +24,9 @@ public enum SpecialModels
     //AUTOMATIC_SHOTGUN("gun/automatic_shotgun"),
     HEAVY_ASSAULT_RIFLE("gun/heavy_assault_rifle"),
     //BATTLE_RIFLE("gun/battle_rifle"),
-    BULLPUP_RIFLE("gun/bullpup_rifle"),
+    //BULLPUP_RIFLE("gun/bullpup_rifle"),
     //MACHINE_GUN("gun/machine_gun"),
-    INFANTRY_RIFLE("gun/infantry_rifle"),
+    //INFANTRY_RIFLE("gun/infantry_rifle"),
     AUTOMATIC_SNIPER_RIFLE("gun/automatic_sniper_rifle"),
     HUNTING_RIFLE("gun/hunting_rifle"),
     BOLT_ACTION_RIFLE("gun/bolt_action_rifle"),
@@ -61,6 +61,9 @@ public enum SpecialModels
     BATTLE_RIFLE_BASE("battle_rifle_base"),
     BATTLE_RIFLE_SIGHTS("battle_rifle_sights"),
 	
+    BULLPUP_RIFLE_BASE("bullpup_rifle_base"),
+    BULLPUP_RIFLE_SIGHTS("bullpup_rifle_sights"),
+	
     MACHINE_GUN_BASE("machine_gun_base"),
     MACHINE_GUN_SIGHTS("machine_gun_sights"),
     MACHINE_GUN_BELT("machine_gun_belt"),
@@ -70,6 +73,9 @@ public enum SpecialModels
     MACHINE_GUN_BULLET4("machine_gun_bullet4"),
     MACHINE_GUN_BULLET5("machine_gun_bullet5"),
     MACHINE_GUN_HANDLE("machine_gun_handle"),
+	
+    INFANTRY_RIFLE_BASE("infantry_rifle_base"),
+    INFANTRY_RIFLE_CHAMBER("infantry_rifle_chamber"),
     
     BOLT_ACTION_RIFLE_BASE("bolt_action_rifle_base"),
     BOLT_ACTION_RIFLE_SIGHTS("bolt_action_rifle_sights"),

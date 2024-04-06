@@ -3,8 +3,8 @@
         "origin": [8.0, 8.0, 8.0]
     },
     "cgm:scope": {
-        "camera": [8.0, 9.4, 34.0],
-        "viewportFov": 5.0,
+        "camera": [8.0, 9.4, 31.0],
+        "viewportFov": 5.1,
         "sightAnimation": {
             "viewportCurve": "ease_out_quad",
             "sightCurve": "ease_in_out_quad",
