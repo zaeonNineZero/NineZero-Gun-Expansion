@@ -6,14 +6,15 @@ This is a relative big update for NZGE, with several new guns and a multitude of
 
 * Added model overrides for many of the guns in the addon, adding removeable iron sights and some animated elements.
 * Some models received significant changes or upgrades:
-  -  The Revolver received a full model overhaul, now sporting a more slender design based on the Colt Python. Also, the cylinder now rotates!
+  -  The Revolver received a full model overhaul, sporting a more slender design based on the Colt Python. Also, the cylinder now rotates!
   -  The Battle Rifle's design now bares a resemblance to the SCAR-H, helping to differentiate it from CGM's Assault Rifle.
   -  The Machine Gun's bullet belt has received proper animations, 'feeding' bullets from the box into the chamber.
+  -  The Infantry Rifle's bolt/breech now recoils back with each shot.
 * Added the following new weapons: Heavy Pistol, Heavy Revolver, Compact SMG, and Bullpup Rifle.
   -  The Heavy Revolver also features an animated cylinder just like the normal-sized Revolver.
 * Added two new silencers: the Improved Silencer and the Performance Silencer.
   -  Both silencers sport better stats than CGM's Silencer, at the cost of muzzle velocity. Lead your shots accordingly!
-* Changes to the fire sounds of several guns. Enchanted gunfire sounds now use a "flangered" layering effect.
+* Updated the fire sounds of several guns for better quality and feel. Enchanted gunfire sounds now use a "flangered" layering effect.
 * Adjusted the Stabilizing Stock's stat modifiers - reduced the ADS speed penalty, but decreased spread reduction.
 * Adjusted the model and ADS parameters for the Ballistic Scope, and very slightly increased camera FOV zoom.
 
