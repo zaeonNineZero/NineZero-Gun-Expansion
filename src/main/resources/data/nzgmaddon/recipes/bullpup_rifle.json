@@ -3,18 +3,14 @@
   "materials": [
     {
       "tag": "forge:ingots/iron",
-      "count": 25
+      "count": 29
     },
     {
       "item": "minecraft:gray_wool",
       "count": 1
-    },
-	{
-      "tag": "forge:nuggets/iron",
-      "count": 1
     }
   ],
   "result": {
-    "item": "nzgmaddon:sniper_rifle"
+    "item": "nzgmaddon:bullpup_rifle"
   }
 }
