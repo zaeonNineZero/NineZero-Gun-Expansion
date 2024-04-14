@@ -4,19 +4,23 @@
 ### 1.4.0 (4/**/24)
 This is a relative big update for NZGE, with several new guns and a multitude of changes and tweaks.
 
-* Added model overrides for many of the guns in the addon, adding removeable iron sights and some animated elements.
-* Some models received significant changes or upgrades:
+* Added model overrides for many of the guns in the addon, adding removeable iron sights to many of them.
+* The following models received noteworthy changes beyond removeable iron sights, with some including animated elements:
   -  The Revolver received a full model overhaul, sporting a more slender design based on the Colt Python. Also, the cylinder now rotates!
   -  The Battle Rifle's design now bares a resemblance to the SCAR-H, helping to differentiate it from CGM's Assault Rifle.
   -  The Machine Gun's bullet belt has received proper animations, 'feeding' bullets from the box into the chamber.
   -  The Infantry Rifle's bolt/breech now recoils back with each shot.
+
 * Added the following new weapons: Heavy Pistol, Heavy Revolver, Compact SMG, and Bullpup Rifle.
   -  The Heavy Revolver also features an animated cylinder just like the normal-sized Revolver.
 * Added two new silencers: the Improved Silencer and the Performance Silencer.
-  -  Both silencers sport better stats than CGM's Silencer, at the cost of muzzle velocity. Lead your shots accordingly!
+
+  -  Both silencers have better stats than CGM's Silencer, at the cost of muzzle velocity. Lead your shots accordingly!
 * Updated the fire sounds of several guns for better quality and feel. Enchanted gunfire sounds now use a "flangered" layering effect.
 * Adjusted the Stabilizing Stock's stat modifiers - reduced the ADS speed penalty, but decreased spread reduction.
 * Adjusted the model and ADS parameters for the Ballistic Scope, and very slightly increased camera FOV zoom.
+
+The en_us, zh_cn, ru_ru localization files have been updated to reflect the content of this update. Other translations pending.
 
 There are likely a few other minor changes and adjustments beyond what I've listed here. Be sure to check the commits on the Github repo to see everything I've changed!
 

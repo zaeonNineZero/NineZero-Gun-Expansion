@@ -1,8 +1,8 @@
 {
 	"item.nzgmaddon.automatic_shotgun": "Автоматический дробовик",
-  "item.nzgmaddon.automatic_sniper_rifle": "Автоматическая снайперская винтовка",
+	"item.nzgmaddon.automatic_sniper_rifle": "Автоматическая снайперская винтовка",
 	"item.nzgmaddon.battle_rifle": "Боевая винтовка",
-  "item.nzgmaddon.bolt_action_rifle": "Винтовка с болтовым затвором",
+	"item.nzgmaddon.bolt_action_rifle": "Винтовка с болтовым затвором",
 	"item.nzgmaddon.bullpup_rifle": "Винтовка Буллпап",
 	"item.nzgmaddon.compact_smg": "Компактный пистолет-пулемёт",
 	"item.nzgmaddon.double_barreled_shotgun": "Двуствольный дробовик",
@@ -14,8 +14,8 @@
 	"item.nzgmaddon.infantry_rifle": "Пехотная винтовка",
 	"item.nzgmaddon.machine_gun": "Пулемёт",
 	"item.nzgmaddon.uzi": "Микро пистолет-пулемёт",
-  "item.nzgmaddon.pump_shotgun": "Помповый дробовик",
-  "item.nzgmaddon.rapid_smg": "Быстрый пистолет-пулемёт",
+	"item.nzgmaddon.pump_shotgun": "Помповый дробовик",
+	"item.nzgmaddon.rapid_smg": "Быстрый пистолет-пулемёт",
 	"item.nzgmaddon.revolver": "Револьвер",
 	"item.nzgmaddon.sniper_rifle": "Снайперская винтовка",
 	"item.nzgmaddon.submachine_gun": "Автомат",
@@ -24,12 +24,12 @@
 
 	"item.nzgmaddon.extended_barrel": "Удлинённый ствол",
 	"item.nzgmaddon.flash_hider": "Пламегаситель",
-	"item.nzgmaddon.muzzle_brake": "Дульный тормоз",
 	"item.nzgmaddon.improved_silencer": "Улучшенный глушитель",
+	"item.nzgmaddon.muzzle_brake": "Дульный тормоз",
 	"item.nzgmaddon.performance_silencer": "Высокопроизводительный глушитель",
 
 	"item.nzgmaddon.ballistic_scope": "Баллистический прицел",
-  "item.nzgmaddon.chevron_scope": "Шевронный прицел",
+	"item.nzgmaddon.chevron_scope": "Шевронный прицел",
 	"item.nzgmaddon.dot_sight": "Коллиматорный прицел",
 
 	"item.nzgmaddon.carbine_stock": "Ложа карабина",
