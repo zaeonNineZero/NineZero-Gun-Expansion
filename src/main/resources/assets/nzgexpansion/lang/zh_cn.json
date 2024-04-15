@@ -3,8 +3,12 @@
 	"item.nzgexpansion.automatic_sniper_rifle": "自动精确射手步枪",
 	"item.nzgexpansion.battle_rifle": "战斗步枪",
     "item.nzgexpansion.bolt_action_rifle": "栓动步枪",
+	"item.nzgexpansion.bullpup_rifle": "无托步枪",
+	"item.nzgexpansion.compact_smg": "紧凑型冲锋枪",
 	"item.nzgexpansion.double_barreled_shotgun": "双管霰弹枪",
 	"item.nzgexpansion.heavy_assault_rifle": "重型突击步枪",
+	"item.nzgexpansion.heavy_pistol": "重型手枪",
+	"item.nzgexpansion.heavy_revolver": "重型左轮手枪",
 	"item.nzgexpansion.hunting_rifle": "狩猎步枪",
 	"item.nzgexpansion.hunting_shotgun": "狩猎霰弹枪",
 	"item.nzgexpansion.infantry_rifle": "步兵步枪",
@@ -20,7 +24,9 @@
 	
 	"item.nzgexpansion.extended_barrel": "加长枪管",
 	"item.nzgexpansion.flash_hider": "消焰器",
+	"item.nzgexpansion.improved_silencer": "改进型消音器",
 	"item.nzgexpansion.muzzle_brake": "枪口制退器",
+	"item.nzgexpansion.performance_silencer": "高性能消音器",
 
 	"item.nzgexpansion.ballistic_scope": "狙击瞄准镜",
 	"item.nzgexpansion.chevron_scope": "V型分划瞄准镜",

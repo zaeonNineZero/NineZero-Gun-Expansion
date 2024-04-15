@@ -3,8 +3,12 @@
 	"item.nzgexpansion.automatic_sniper_rifle": "Automatic Sniper Rifle",
 	"item.nzgexpansion.battle_rifle": "Battle Rifle",
 	"item.nzgexpansion.bolt_action_rifle": "Bolt Action Rifle",
+	"item.nzgexpansion.bullpup_rifle": "Bullpup Rifle",
+	"item.nzgexpansion.compact_smg": "Compact SMG",
 	"item.nzgexpansion.double_barreled_shotgun": "Double Barreled Shotgun",
 	"item.nzgexpansion.heavy_assault_rifle": "Heavy Assault Rifle",
+	"item.nzgexpansion.heavy_pistol": "Heavy Pistol",
+	"item.nzgexpansion.heavy_revolver": "Heavy Revolver",
 	"item.nzgexpansion.hunting_rifle": "Hunting Rifle",
 	"item.nzgexpansion.hunting_shotgun": "Hunting Shotgun",
 	"item.nzgexpansion.infantry_rifle": "Infantry Rifle",
@@ -20,7 +24,9 @@
 	
 	"item.nzgexpansion.extended_barrel": "Extended Barrel",
 	"item.nzgexpansion.flash_hider": "Flash Hider",
+	"item.nzgexpansion.improved_silencer": "Improved Silencer",
 	"item.nzgexpansion.muzzle_brake": "Muzzle Brake",
+	"item.nzgexpansion.performance_silencer": "Performance Silencer",
 	
 	"item.nzgexpansion.ballistic_scope": "Ballistic Scope",
 	"item.nzgexpansion.chevron_scope": "Chevron Scope",

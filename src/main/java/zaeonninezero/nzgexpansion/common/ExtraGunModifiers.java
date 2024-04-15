@@ -19,7 +19,7 @@ public class ExtraGunModifiers
         @Override
         public double modifyMuzzleFlashScale(double scale)
         {
-            return 0.75F;
+            return 0.8F;
         }
     };
     public static final IGunModifier MUZZLE_BRAKE_EFFECT = new IGunModifier()
@@ -72,6 +72,58 @@ public class ExtraGunModifiers
         public double modifyAimDownSightSpeed(double speed)
         {
             return speed * 0.95F;
+        }
+    };
+    public static final IGunModifier MUFFLED_IMPROVED = new IGunModifier()
+    {
+        @Override
+        public float modifyProjectileSpread(float spread)
+        {
+            return spread * 0.85F;
+        }
+        
+        @Override
+        public double modifyProjectileSpeed(double speed)
+        {
+            return speed * 0.8;
+        }
+        
+        @Override
+        public float modifyProjectileDamage(float damage)
+        {
+            return damage * 0.95F;
+        }
+		
+		@Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.95F;
+        }
+    };
+    public static final IGunModifier MUFFLED_PERFORMANCE = new IGunModifier()
+    {
+        @Override
+        public float modifyProjectileSpread(float spread)
+        {
+            return spread * 0.75F;
+        }
+        
+        @Override
+        public double modifyProjectileSpeed(double speed)
+        {
+            return speed * 0.65;
+        }
+        
+        @Override
+        public float modifyProjectileDamage(float damage)
+        {
+            return damage * 0.95F;
+        }
+		
+		@Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.9F;
         }
     };
 	
@@ -177,13 +229,13 @@ public class ExtraGunModifiers
         @Override
         public float modifyProjectileSpread(float spread)
         {
-            return spread * 0.65F;
+            return spread * 0.7F;
         }
 
         @Override
         public double modifyAimDownSightSpeed(double speed)
         {
-            return speed * 0.8F;
+            return speed * 0.85F;
         }
 
         /*@Override
