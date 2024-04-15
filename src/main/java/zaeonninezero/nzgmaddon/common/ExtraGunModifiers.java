@@ -229,7 +229,7 @@ public class ExtraGunModifiers
         @Override
         public float modifyProjectileSpread(float spread)
         {
-            return spread * 0.75F;
+            return spread * 0.7F;
         }
 
         @Override
