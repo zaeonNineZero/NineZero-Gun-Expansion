@@ -1,16 +1,16 @@
 {
 	"item.nzgmaddon.automatic_shotgun": "Автоматический дробовик",
 	"item.nzgmaddon.automatic_sniper_rifle": "Автоматическая снайперская винтовка",
-	"item.nzgmaddon.battle_rifle": "Боевая винтовка",
+	"item.nzgmaddon.battle_rifle": "Стрелковая винтовка",
 	"item.nzgmaddon.bolt_action_rifle": "Винтовка с болтовым затвором",
 	"item.nzgmaddon.bullpup_rifle": "Винтовка Буллпап",
 	"item.nzgmaddon.compact_smg": "Компактный пистолет-пулемёт",
-	"item.nzgmaddon.double_barreled_shotgun": "Двуствольный дробовик",
+	"item.nzgmaddon.double_barreled_shotgun": "Двуствольное ружьё",
 	"item.nzgmaddon.heavy_assault_rifle": "Тяжёлая штурмовая винтовка",
 	"item.nzgmaddon.heavy_pistol": "Тяжёлый пистолет",
 	"item.nzgmaddon.heavy_revolver": "Тяжёлый револьвер",
 	"item.nzgmaddon.hunting_rifle": "Охотничья винтовка",
-	"item.nzgmaddon.hunting_shotgun": "Охотничий дробовик",
+	"item.nzgmaddon.hunting_shotgun": "Охотничье ружьё",
 	"item.nzgmaddon.infantry_rifle": "Пехотная винтовка",
 	"item.nzgmaddon.machine_gun": "Пулемёт",
 	"item.nzgmaddon.uzi": "Микро пистолет-пулемёт",
@@ -36,8 +36,8 @@
 	"item.nzgmaddon.dyeable_tactical_stock": "Тактическая ложа",
 	"item.nzgmaddon.marksman_stock": "Стрелковая ложа",
 	"item.nzgmaddon.short_stock": "Короткая ложа",
-	"item.nzgmaddon.solid_stock": "Твёрдая ложа",
+	"item.nzgmaddon.solid_stock": "Цельная ложа",
 	"item.nzgmaddon.stabilizing_stock": "Стабилизирующая ложа",
 
-  "item.nzgmaddon.horizontal_grip": "Горизонтальная рукоять"
+	"item.nzgmaddon.horizontal_grip": "Горизонтальная рукоять"
 }
