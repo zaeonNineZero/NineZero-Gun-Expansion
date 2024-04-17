@@ -1,6 +1,12 @@
 # Changelog (1.19.2 Releases)
 
 
+### 1.4.1 (4/*/23)
+* Added working recipes for the Improved Silencer and the Performance Silencer, which I forgot for v1.4.0. Whoops!
+* Updated ru_ru localization with more accurate translations. Courtesy of mpustovoi.
+* Slightly buffed the Stabilizing Stock's spread reduction.
+* Overhauled the fire sounds for the Revolver, using a new set of sound samples.
+
 ### 1.4.0 'Gunslingers' (4/15/23)
 This is a relatively big update for NZGE, with several new guns and a multitude of changes and tweaks.
 
@@ -14,8 +20,8 @@ This is a relatively big update for NZGE, with several new guns and a multitude 
 * Added the following new weapons: Heavy Pistol, Heavy Revolver, Compact SMG, and Bullpup Rifle.
   -  The Heavy Revolver also features an animated cylinder just like the normal-sized Revolver.
 * Added two new silencers: the Improved Silencer and the Performance Silencer.
-
   -  Both silencers have better stats than CGM's Silencer, at the cost of muzzle velocity. Lead your shots accordingly!
+
 * Updated the fire sounds of several guns for better quality and feel. Enchanted gunfire sounds now use a "flanger" layering effect.
 * Adjusted the Stabilizing Stock's stat modifiers - reduced the ADS speed penalty, but decreased spread reduction.
 * Adjusted the model and ADS parameters for the Ballistic Scope, and very slightly increased camera FOV zoom.
