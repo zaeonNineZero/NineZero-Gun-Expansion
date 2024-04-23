@@ -3,9 +3,11 @@
 
 ### 1.4.1 (4/*/23)
 * Added working recipes for the Improved Silencer and the Performance Silencer, which I forgot for v1.4.0. Whoops!
-* Updated ru_ru localization with more accurate translations. Courtesy of mpustovoi.
-* Slightly buffed the Stabilizing Stock's spread reduction.
 * Overhauled the fire sounds for the Revolver, using a new set of sound samples.
+* Model adjustments to the Sniper Rifle and Bolt Action Rifle, reducing the thickness of the bolt and chamber assemblies.
+  -  The Sniper Rifle's bolt also got redesigned, now resembling the AWM's bolt.
+* Slightly buffed the Stabilizing Stock's spread reduction.
+* Updated ru_ru localization with more accurate translations. Courtesy of mpustovoi.
 
 ### 1.4.0 'Gunslingers' (4/15/23)
 This is a relatively big update for NZGE, with several new guns and a multitude of changes and tweaks.
