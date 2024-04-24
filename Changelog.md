@@ -1,8 +1,8 @@
 # Changelog (1.18.2 Releases)
 
 
-### 1.4.0 'Gunslingers' (4/*/23)
-This is a relatively big update for NZGE, with several new guns and a multitude of changes and tweaks.
+### 1.4.1 'Gunslingers' (4/24/23)
+This release includes the v1.4.0 'Gunslingers' major update and the v1.4.1 patch.
 
 * Added model overrides for many of the guns in the addon, adding removable iron sights to many of them.
 * The following models received noteworthy changes beyond removable iron sights, with some including animated elements:
@@ -10,19 +10,20 @@ This is a relatively big update for NZGE, with several new guns and a multitude 
   -  The Battle Rifle's design now bears a resemblance to the SCAR-H, helping to differentiate it from CGM's Assault Rifle.
   -  The Machine Gun's bullet belt has received proper animations, 'feeding' bullets from the box into the chamber.
   -  The Infantry Rifle's bolt/breech cycles back with each shot.
+  -  The Sniper Rifle and Bolt Action Rifle received changes to the bolt assembly. The Sniper Rifle's bolt now resembles the AWM's bolt.
 
 * Added the following new weapons: Heavy Pistol, Heavy Revolver, Compact SMG, and Bullpup Rifle.
   -  The Heavy Revolver also features an animated cylinder just like the normal-sized Revolver.
 * Added two new silencers: the Improved Silencer and the Performance Silencer.
-
   -  Both silencers have better stats than CGM's Silencer, at the cost of muzzle velocity. Lead your shots accordingly!
+  -  Includes working recipes for the Improved Silencer and the Performance Silencer, which were missing in v1.4.0 for MC 1.19.2.
+
 * Updated the fire sounds of several guns for better quality and feel. Enchanted gunfire sounds now use a "flanger" layering effect.
+  -  Overhauled the fire sounds for the Revolver, using a new set of sound samples. (From v1.4.1)
 * Adjusted the Stabilizing Stock's stat modifiers - reduced the ADS speed penalty, but decreased spread reduction.
 * Adjusted the model and ADS parameters for the Ballistic Scope, and very slightly increased camera FOV zoom.
 
 The en_us, zh_cn, ru_ru localization files have been updated to reflect the content of this update. Other translation updates are pending.
-
-There are likely a few other minor changes and adjustments beyond what I've listed here. Be sure to check the commits on the GitHub repo to see everything I've changed!
 
 
 ### 1.3.2 (12/4/23)
