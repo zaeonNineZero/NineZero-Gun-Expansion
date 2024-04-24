@@ -1,7 +1,7 @@
 # Changelog (1.19.2 Releases)
 
 
-### 1.4.1 (4/*/23)
+### 1.4.1 (4/24/23)
 * Added working recipes for the Improved Silencer and the Performance Silencer, which I forgot for v1.4.0. Whoops!
 * Overhauled the fire sounds for the Revolver, using a new set of sound samples.
 * Model adjustments to the Sniper Rifle and Bolt Action Rifle, reducing the thickness of the bolt and chamber assemblies.
