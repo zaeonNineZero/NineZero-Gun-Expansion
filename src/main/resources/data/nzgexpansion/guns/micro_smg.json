@@ -9,11 +9,11 @@
     "recoilKick": 0.4,
     "recoilAdsReduction": 0.2,
     "alwaysSpread": true,
-    "spread": 10.0
+    "spread": 6.5
   },
   "projectile": {
     "item": "cgm:basic_bullet",
-    "damage": 3.1,
+    "damage": 3.2,
     "size": 0.2,
     "speed": 10.0,
     "life": 20
@@ -28,7 +28,7 @@
   "display": {
     "flash": {
       "yOffset": 3.3,
-      "zOffset": 3.74,
+      "zOffset": 2.55,
       "size": 0.35
     }
   },
@@ -46,7 +46,7 @@
       },
       "barrel": {
         "yOffset": 3.3,
-        "zOffset": 3.75,
+        "zOffset": 2.75,
         "scale": 0.5
       },
       "stock": {

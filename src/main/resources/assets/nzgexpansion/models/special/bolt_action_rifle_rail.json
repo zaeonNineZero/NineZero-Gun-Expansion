@@ -1,0 +1,40 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "nzgexpansion:items/sniper_rifle"
+	},
+	"elements": [
+		{
+			"name": "rail",
+			"from": [7.69, 4.39, 8.93],
+			"to": [8.31, 4.55, 13.48],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.85, 9.65]},
+			"faces": {
+				"north": {"uv": [2, 8, 9.5, 8.5], "rotation": 90, "texture": "#1"},
+				"east": {"uv": [2, 8, 9.5, 8.5], "rotation": 90, "texture": "#1"},
+				"south": {"uv": [2, 8, 9.5, 8.5], "rotation": 90, "texture": "#1"},
+				"west": {"uv": [2, 8, 9.5, 8.5], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [1.5, 7.5, 9, 8], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [2, 8, 9.5, 8.5], "rotation": 90, "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "body",
+			"origin": [8.1, 3.4, 8.3],
+			"color": 0,
+			"nbt": "{}",
+			"children": [
+				{
+					"name": "frame",
+					"origin": [8.1, 3.4, 8.3],
+					"color": 0,
+					"nbt": "{}",
+					"children": [0]
+				}
+			]
+		}
+	]
+}

@@ -46,6 +46,52 @@
     "sounds": [{"name":"nzgexpansion:item/revolver/cock"}]
   },
 
+"item.heavy_pistol.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [
+      "nzgexpansion:item/heavy_pistol/fire",
+      "nzgexpansion:item/heavy_pistol/fire2"
+    ]
+  },
+"item.heavy_pistol.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+    "sounds": [
+      "nzgexpansion:item/heavy_pistol/enchanted_fire",
+      "nzgexpansion:item/heavy_pistol/enchanted_fire2"
+    ]
+  },
+"item.heavy_pistol.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"nzgexpansion:item/heavy_pistol/silenced_fire"}]
+  },
+"item.heavy_pistol.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgexpansion:item/heavy_pistol/cock"}]
+  },
+
+"item.heavy_revolver.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [
+      "nzgexpansion:item/heavy_revolver/fire",
+      "nzgexpansion:item/heavy_revolver/fire2",
+      "nzgexpansion:item/heavy_revolver/fire3"
+    ]
+  },
+"item.heavy_revolver.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+    "sounds": [
+      "nzgexpansion:item/heavy_revolver/enchanted_fire"
+    ]
+  },
+"item.heavy_revolver.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"nzgexpansion:item/heavy_revolver/silenced_fire"}]
+  },
+"item.heavy_revolver.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgexpansion:item/heavy_revolver/cock"}]
+  },
+
 "item.micro_smg.fire": {
     "subtitle":"subtitle.cgm.fire",
 	"sounds": [
@@ -86,6 +132,15 @@
 "item.smg.cock": {
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgexpansion:item/smg/cock"}]
+  },
+  
+"item.compact_smg.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [{"name":"nzgexpansion:item/compact_smg/fire"}]
+  },
+"item.compact_smg.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+    "sounds": [{"name":"nzgexpansion:item/compact_smg/enchanted_fire"}]
   },
 
 "item.rapid_smg.fire": {
@@ -194,7 +249,11 @@
 
 "item.battle_rifle.fire": {
     "subtitle":"subtitle.cgm.fire",
-    "sounds": [{"name":"nzgexpansion:item/battle_rifle/fire"}]
+    "sounds": [
+      "nzgexpansion:item/battle_rifle/fire",
+      "nzgexpansion:item/battle_rifle/fire2",
+      "nzgexpansion:item/battle_rifle/fire3"
+    ]
   },
 "item.battle_rifle.silenced_fire": {
     "subtitle":"subtitle.cgm.fire.silenced",
@@ -202,11 +261,38 @@
   },
 "item.battle_rifle.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
-    "sounds": [{"name":"nzgexpansion:item/battle_rifle/enchanted_fire"}]
+	"sounds": [
+      "nzgexpansion:item/battle_rifle/enchanted_fire",
+      "nzgexpansion:item/battle_rifle/enchanted_fire2",
+      "nzgexpansion:item/battle_rifle/enchanted_fire3"
+    ]
   },
 "item.battle_rifle.cock": {
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgexpansion:item/battle_rifle/cock"}]
+  },
+
+"item.bullpup_rifle.fire": {
+    "subtitle":"subtitle.cgm.fire",
+    "sounds": [
+      "nzgexpansion:item/bullpup_rifle/fire",
+      "nzgexpansion:item/bullpup_rifle/fire2"
+    ]
+  },
+"item.bullpup_rifle.silenced_fire": {
+    "subtitle":"subtitle.cgm.fire.silenced",
+    "sounds": [{"name":"cgm:item/assault_rifle/silenced_fire"}]
+  },
+"item.bullpup_rifle.enchanted_fire": {
+    "subtitle":"subtitle.cgm.enchanted_fire",
+	"sounds": [
+      "nzgexpansion:item/bullpup_rifle/enchanted_fire",
+      "nzgexpansion:item/bullpup_rifle/enchanted_fire2"
+    ]
+  },
+"item.bullpup_rifle.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"cgm:item/assault_rifle/cock"}]
   },
   
 "item.machine_gun.fire": {

@@ -1,0 +1,32 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"3": "nzgexpansion:items/heavy_pistol",
+		"particle": "cgm:items/pistol"
+	},
+	"elements": [
+		{
+			"name": "rail",
+			"from": [7.7, 4.79, 9.7],
+			"to": [8.3, 4.94, 13.3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 7.64, 1.1]},
+			"faces": {
+				"north": {"uv": [9, 6, 11, 7], "rotation": 90, "texture": "#3", "tintindex": 0},
+				"east": {"uv": [8, 6, 14, 7], "rotation": 90, "texture": "#3", "tintindex": 0},
+				"south": {"uv": [9, 6, 11, 7], "rotation": 90, "texture": "#3", "tintindex": 0},
+				"west": {"uv": [8, 6, 14, 7], "rotation": 90, "texture": "#3", "tintindex": 0},
+				"up": {"uv": [15, 0, 16, 9], "texture": "#3", "tintindex": 0},
+				"down": {"uv": [8, 7, 14, 8], "rotation": 90, "texture": "#3", "tintindex": 0}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "rail",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"nbt": "{}",
+			"children": [0]
+		}
+	]
+}

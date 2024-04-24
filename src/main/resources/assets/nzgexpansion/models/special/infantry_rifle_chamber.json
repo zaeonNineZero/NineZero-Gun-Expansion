@@ -1,0 +1,68 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "nzgexpansion:items/battle_rifle",
+		"particle": "cgm:items/rifle"
+	},
+	"elements": [
+		{
+			"from": [7.4, 3.97, 9.35],
+			"to": [8.6, 4.37, 11.4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15, 12.3, 12.35]},
+			"faces": {
+				"north": {"uv": [15.5, 15, 16, 15.5], "texture": "#1"},
+				"east": {"uv": [0.5, 11.5, 1.5, 12], "texture": "#1"},
+				"west": {"uv": [0.5, 11.5, 1.5, 12], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8.45, 4.02, 9.5],
+			"to": [9.1, 4.37, 9.85],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 12.35, 12.35]},
+			"faces": {
+				"north": {"uv": [0.5, 12.5, 1, 11.5], "rotation": 90, "texture": "#1"},
+				"east": {"uv": [0.5, 11.5, 1, 12], "texture": "#1"},
+				"south": {"uv": [0.5, 11.5, 1, 12.5], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [0.5, 11.5, 1, 12.5], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0.5, 11.5, 1, 12.5], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.55806, 4.10841, 9.3499],
+			"to": [7.86919, 4.33841, 11.3999],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.4409, 4.16341, 9.55]},
+			"faces": {
+				"north": {"uv": [15.5, 15, 16, 15.5], "texture": "#1"},
+				"up": {"uv": [0.5, 11.5, 1, 12], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.62, 4.37, 9.35],
+			"to": [8.38, 4.59, 11.4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15, 12.62, 12.35]},
+			"faces": {
+				"north": {"uv": [15.5, 15, 16, 15.5], "texture": "#1"},
+				"up": {"uv": [0.5, 11.5, 1, 12], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8.13081, 4.10841, 9.3499],
+			"to": [8.44194, 4.33841, 11.3999],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8.5591, 4.16341, 9.55]},
+			"faces": {
+				"north": {"uv": [15.5, 15, 16, 15.5], "texture": "#1"},
+				"up": {"uv": [0.5, 11.5, 1, 12], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "chamber",
+			"origin": [8.5591, 4.34341, 9.5],
+			"color": 0,
+			"nbt": "{}",
+			"children": [0, 1, 2, 3, 4]
+		}
+	]
+}

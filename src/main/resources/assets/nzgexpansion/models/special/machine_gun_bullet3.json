@@ -1,0 +1,72 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"4": "nzgexpansion:items/medium_bullet",
+		"particle": "cgm:items/assault_rifle"
+	},
+	"elements": [
+		{
+			"from": [6.71, 3.26, 10.6],
+			"to": [6.99, 3.54, 10.95],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [6.85, 3.4, 11.5]},
+			"faces": {
+				"north": {"uv": [2, 0, 4, 2], "rotation": 180, "texture": "#4"},
+				"east": {"uv": [0, 0, 2, 1], "rotation": 90, "texture": "#4"},
+				"west": {"uv": [0, 0, 2, 1], "rotation": 270, "texture": "#4"},
+				"up": {"uv": [2, 0, 0, 1], "texture": "#4"},
+				"down": {"uv": [2, 0, 0, 1], "rotation": 180, "texture": "#4"}
+			}
+		},
+		{
+			"from": [6.68, 3.23, 10.95],
+			"to": [7.02, 3.57, 11.3],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [6.85, 3.4, 11.55]},
+			"faces": {
+				"north": {"uv": [2, 0, 4, 2], "rotation": 180, "texture": "#4"},
+				"east": {"uv": [0, 1, 2, 2], "rotation": 90, "texture": "#4"},
+				"west": {"uv": [0, 1, 2, 2], "rotation": 270, "texture": "#4"},
+				"up": {"uv": [2, 1, 0, 2], "texture": "#4"},
+				"down": {"uv": [2, 1, 0, 2], "rotation": 180, "texture": "#4"}
+			}
+		},
+		{
+			"from": [6.65, 3.2, 11.3],
+			"to": [7.05, 3.6, 12.3501],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [6.85, 3.4, 11.55]},
+			"faces": {
+				"north": {"uv": [2, 2, 4, 4], "rotation": 180, "texture": "#4"},
+				"east": {"uv": [0, 2, 2, 6], "rotation": 90, "texture": "#4"},
+				"south": {"uv": [2, 2, 4, 4], "texture": "#4"},
+				"west": {"uv": [0, 2, 2, 6], "rotation": 270, "texture": "#4"},
+				"up": {"uv": [2, 2, 0, 6], "texture": "#4"},
+				"down": {"uv": [2, 2, 0, 6], "rotation": 180, "texture": "#4"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "ammo",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"nbt": "{}",
+			"children": [
+				{
+					"name": "bullets",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"nbt": "{}",
+					"children": [
+						{
+							"name": "group",
+							"origin": [6.75, 2.3, 11.55],
+							"color": 0,
+							"nbt": "{}",
+							"children": [0, 1, 2]
+						}
+					]
+				}
+			]
+		}
+	]
+}

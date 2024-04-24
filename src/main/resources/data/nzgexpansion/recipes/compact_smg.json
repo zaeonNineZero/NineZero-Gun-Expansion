@@ -3,10 +3,10 @@
   "materials": [
     {
       "tag": "forge:ingots/iron",
-      "count": 18
+      "count": 22
     }
   ],
   "result": {
-    "item": "nzgexpansion:uzi"
+    "item": "nzgexpansion:compact_smg"
   }
 }
