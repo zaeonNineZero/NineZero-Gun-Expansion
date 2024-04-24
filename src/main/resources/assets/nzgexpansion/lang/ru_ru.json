@@ -1,19 +1,19 @@
 {
 	"item.nzgexpansion.automatic_shotgun": "Автоматический дробовик",
 	"item.nzgexpansion.automatic_sniper_rifle": "Автоматическая снайперская винтовка",
-	"item.nzgexpansion.battle_rifle": "Боевая винтовка",
+	"item.nzgexpansion.battle_rifle": "Стрелковая винтовка",
 	"item.nzgexpansion.bolt_action_rifle": "Винтовка с болтовым затвором",
 	"item.nzgexpansion.bullpup_rifle": "Винтовка Буллпап",
 	"item.nzgexpansion.compact_smg": "Компактный пистолет-пулемёт",
-	"item.nzgexpansion.double_barreled_shotgun": "Двуствольный дробовик",
+	"item.nzgexpansion.double_barreled_shotgun": "Двуствольное ружьё",
 	"item.nzgexpansion.heavy_assault_rifle": "Тяжёлая штурмовая винтовка",
 	"item.nzgexpansion.heavy_pistol": "Тяжёлый пистолет",
 	"item.nzgexpansion.heavy_revolver": "Тяжёлый револьвер",
 	"item.nzgexpansion.hunting_rifle": "Охотничья винтовка",
-	"item.nzgexpansion.hunting_shotgun": "Охотничий дробовик",
+	"item.nzgexpansion.hunting_shotgun": "Охотничье ружьё",
 	"item.nzgexpansion.infantry_rifle": "Пехотная винтовка",
 	"item.nzgexpansion.machine_gun": "Пулемёт",
-	"item.nzgexpansion.micro_smg": "Микро пистолет-пулемет",
+	"item.nzgexpansion.micro_smg": "Микро пистолет-пулемёт",
 	"item.nzgexpansion.pump_shotgun": "Помповый дробовик",
 	"item.nzgexpansion.rapid_smg": "Быстрый пистолет-пулемёт",
 	"item.nzgexpansion.revolver": "Револьвер",
@@ -36,8 +36,8 @@
 	"item.nzgexpansion.dyeable_tactical_stock": "Тактическая ложа",
 	"item.nzgexpansion.marksman_stock": "Стрелковая ложа",
 	"item.nzgexpansion.short_stock": "Короткая ложа",
-	"item.nzgexpansion.solid_stock": "Твёрдая ложа",
+	"item.nzgexpansion.solid_stock": "Цельная ложа",
 	"item.nzgexpansion.stabilizing_stock": "Стабилизирующая ложа",
 
-  "item.nzgexpansion.horizontal_grip": "Горизонтальная рукоять"
+	"item.nzgexpansion.horizontal_grip": "Горизонтальная рукоять"
 }

@@ -1,9 +1,9 @@
-package zaeonninezero.nzgmaddon.client.render.gun.model;
+package zaeonninezero.nzgexpansion.client.render.gun.model;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.client.GunModel;
-import zaeonninezero.nzgmaddon.client.SpecialModels;
+import zaeonninezero.nzgexpansion.client.SpecialModels;
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
 import com.mrcrayfish.guns.client.util.RenderUtil;
 import com.mrcrayfish.guns.item.attachment.IAttachment;
