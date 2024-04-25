@@ -1,4 +1,4 @@
-# Changelog (1.19.2 Releases)
+# Changelog (1.19.2 Releases -- Developer Edition)
 
 
 ### 1.4.1 (4/24/23)
