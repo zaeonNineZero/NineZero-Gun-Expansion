@@ -1,0 +1,126 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "nzgmaddon:items/pump_shotgun",
+		"3": "cgm:items/shotgun",
+		"particle": "cgm:items/shotgun"
+	},
+	"elements": [
+		{
+			"from": [7.35, 2.5, 3.625],
+			"to": [8.65, 3.1, 7.95],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1.9, 9.3]},
+			"faces": {
+				"north": {"uv": [12, 3.5, 10.5, 3], "rotation": 180, "texture": "#2", "tintindex": 0},
+				"east": {"uv": [11.75, 3.5, 12.5, 0], "rotation": 270, "texture": "#2", "tintindex": 0},
+				"south": {"uv": [10.5, 3, 12, 3.5], "texture": "#2", "tintindex": 0},
+				"west": {"uv": [10, 3.5, 10.75, 0], "rotation": 90, "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.3636, 2.53787, 3.626],
+			"to": [7.6636, 3.03213, 7.949],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 2.75, 3.7]},
+			"faces": {
+				"north": {"uv": [11, 3.5, 10.5, 3], "rotation": 270, "texture": "#2", "tintindex": 0},
+				"south": {"uv": [10.5, 3, 11, 3.5], "rotation": 270, "texture": "#2", "tintindex": 0},
+				"west": {"uv": [11.125, 0, 10.5, 3.5], "rotation": 270, "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.7, 2.15, 3.625],
+			"to": [8.3, 3.45, 7.95],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1.25, 9.3]},
+			"faces": {
+				"north": {"uv": [11.75, 3, 10.75, 3.5], "rotation": 180, "texture": "#2", "tintindex": 0},
+				"south": {"uv": [10.75, 3, 11.75, 3.5], "texture": "#2", "tintindex": 0},
+				"up": {"uv": [9.5, 3.5, 10, 0], "rotation": 180, "texture": "#2", "tintindex": 0},
+				"down": {"uv": [11, 3.5, 11.5, 0], "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [8.3364, 2.53787, 3.626],
+			"to": [8.6364, 3.03213, 7.949],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 2.75, 3.7]},
+			"faces": {
+				"north": {"uv": [12, 3, 11.5, 3.5], "rotation": 270, "texture": "#2", "tintindex": 0},
+				"east": {"uv": [11.375, 3.5, 12, 0], "rotation": 270, "texture": "#2", "tintindex": 0},
+				"south": {"uv": [11.5, 3, 12, 3.5], "rotation": 270, "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.78787, 3.1864, 3.626],
+			"to": [8.28213, 3.4864, 7.949],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 2.85, 3.7]},
+			"faces": {
+				"north": {"uv": [11, 3.5, 10.5, 3], "rotation": 180, "texture": "#2", "tintindex": 0},
+				"south": {"uv": [10.5, 3, 11, 3.5], "texture": "#2", "tintindex": 0},
+				"up": {"uv": [9.5, 0, 10.125, 3.5], "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.3636, 2.56787, 3.626],
+			"to": [7.6636, 3.06213, 7.949],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 2.85, 3.7]},
+			"faces": {
+				"north": {"uv": [12, 3, 11.5, 3.5], "rotation": 90, "texture": "#2", "tintindex": 0},
+				"south": {"uv": [11.5, 3, 12, 3.5], "rotation": 90, "texture": "#2", "tintindex": 0},
+				"west": {"uv": [13, 3.5, 12.375, 0], "rotation": 90, "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.701, 4.93604, 10.08396],
+			"to": [8.299, 5.23604, 10.29816],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 11.3, 3.51]},
+			"faces": {
+				"east": {"uv": [0.5, 10, 0, 10.5], "texture": "#3", "tintindex": 0},
+				"west": {"uv": [0.5, 10, 0, 10.5], "texture": "#3", "tintindex": 0},
+				"down": {"uv": [0.5, 10, 0, 10.5], "texture": "#3", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.7, 2, 3.81],
+			"to": [8.3, 2.3, 7.78],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 6.9, 3.45]},
+			"faces": {
+				"east": {"uv": [0, 10, 12.5, 10.5], "texture": "#3", "tintindex": 0},
+				"west": {"uv": [0, 10, 12.5, 10.5], "texture": "#3", "tintindex": 0},
+				"down": {"uv": [0, 9.5, 4.5, 10], "rotation": 90, "texture": "#3", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.701, 4.93604, 14.05396],
+			"to": [8.299, 5.14604, 14.26816],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 11.3, 7.48]},
+			"faces": {
+				"east": {"uv": [0.5, 10, 0, 10.5], "texture": "#3", "tintindex": 0},
+				"south": {"uv": [0.5, 10, 0, 10.5], "texture": "#3", "tintindex": 0},
+				"west": {"uv": [0.5, 10, 0, 10.5], "texture": "#3", "tintindex": 0}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "pump",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"nbt": "{}",
+			"children": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				{
+					"name": "group",
+					"origin": [8, 11.3, 9.05],
+					"color": 0,
+					"nbt": "{}",
+					"children": [6, 7, 8]
+				}
+			]
+		}
+	]
+}

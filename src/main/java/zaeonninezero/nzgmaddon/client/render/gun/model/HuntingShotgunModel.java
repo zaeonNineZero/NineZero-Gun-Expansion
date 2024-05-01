@@ -23,7 +23,7 @@ import javax.annotation.Nullable;
  * Modified by zaeonNineZero for Nine Zero's Gun Expansion
  * Attachment detection logic based off of code from Mo' Guns by Bomb787 and AlanorMiga (MigaMi)
  */
-public class BoltActionRifleModel implements IOverrideModel
+public class HuntingShotgunModel implements IOverrideModel
 {
     @Override
 	// This class renders a multi-part model that supports animations and removeable parts.
@@ -33,35 +33,19 @@ public class BoltActionRifleModel implements IOverrideModel
     public void render(float partialTicks, ItemTransforms.TransformType transformType, ItemStack stack, ItemStack parent, @Nullable LivingEntity entity, PoseStack poseStack, MultiBufferSource buffer, int light, int overlay)
     {
 		// Render the item's BakedModel, which will serve as the core of our custom model.
-        BakedModel bakedModel = SpecialModels.BOLT_ACTION_RIFLE_BASE.getModel();
+        BakedModel bakedModel = SpecialModels.HUNTING_SHOTGUN_BASE.getModel();
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
-
-		// Render the iron sights element, which is only present when a scope is not attached.
-		// We have to grab the gun's scope attachment slot and check whether it is empty or not.
-		// If the isEmpty function returns true, then we render the iron sights.
-		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
-        if(attachmentStack.isEmpty())
-		{
-            RenderUtil.renderModel(SpecialModels.BOLT_ACTION_RIFLE_SIGHTS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
-		}
-		else
-		// Render the top rail element that appears when a scope is attached.
-		{
-            RenderUtil.renderModel(SpecialModels.BOLT_ACTION_RIFLE_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
-		}
         
         // Next, we do the animated parts.
 		
 		// Get the item's cooldown from the user entity, then process it into a usable animation.
         boolean isPlayer = (entity != null && entity.equals(Minecraft.getInstance().player) ? true : false);
         float boltMovement = 0F;
-        float boltPivot = 0F;
         if(isPlayer)
         {
-            float cooldownDivider = 3.0F;
-            float cooldownOffset1 = 1.0F;
-            float intensity = 1.9F +1;
-            float boltLeadTime = 0.4F;
+            float cooldownDivider = 3.7F;
+            float cooldownOffset1 = 0.7F;
+            float intensity = 3.6F +1;
             
         	ItemCooldowns tracker = Minecraft.getInstance().player.getCooldowns();
             float cooldown = tracker.getCooldownPercent(stack.getItem(), Minecraft.getInstance().getFrameTime());
@@ -71,44 +55,19 @@ public class BoltActionRifleModel implements IOverrideModel
             float cooldown_b = Math.min(Math.max(cooldown_a*intensity,0),1);
             float cooldown_c = Math.min(Math.max((-cooldown_a*intensity)+intensity,0),1);
             float cooldown_d = Math.min(cooldown_b,cooldown_c);
-
-            float cooldown_e = Math.min(Math.max(cooldown_a*intensity+boltLeadTime,0),1);
-            float cooldown_f = Math.min(Math.max((-cooldown_a*intensity+boltLeadTime)+intensity,0),1);
-            float cooldown_g = Math.min(cooldown_e,cooldown_f);
             
             boltMovement = cooldown_d;
-            boltPivot = cooldown_g;
         }
 
-		// Sniper Rifle bolt and chamber. This animated part cycles backward then forward after firing.
-        // This element consists of two parts.
-        
-        // Part 1: Rotating bolt handle
+		// Pump Shotgun slide. This animated part cycles backward then forward after firing.
 		// Push pose so we can make do transformations without affecting the models above.
         poseStack.pushPose();
-		// Now we apply our transformations.
-        if(isPlayer)
-        {
-        	// Translate the Z-axis for back and forth movement, and the Y-axis to set our pivot point.
-        	poseStack.translate(0, -4.15 * 0.0625, (boltMovement * 2.5) * 0.0625);
-        	// Rotate the model to represent the bolt being rotated.
-        	poseStack.mulPose(Vector3f.ZN.rotationDegrees(-67.5F * Math.min(boltPivot*2F,1)));
-			// Translate the Y-axis back to its original position, without touching the Z-axis.
-        	poseStack.translate(0, 4.15 * 0.0625, 0);
-        }
+		// Now we apply our transformations. We will ONLY do so if a grip is not attached.
+		ItemStack gripStack = Gun.getAttachment(IAttachment.Type.UNDER_BARREL, stack);
+        if(isPlayer && gripStack.isEmpty())
+        poseStack.translate(0, 0, (boltMovement * 1.8) * 0.0625);
 		// Our transformations are done - now we can render the model.
-        RenderUtil.renderModel(SpecialModels.BOLT_ACTION_RIFLE_BOLT.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
-		// Pop pose to compile everything in the render matrix.
-        poseStack.popPose();
-        
-        // Part 2: Non-rotating bolt/chamber
-		// Push pose so we can make do transformations without affecting the models above.
-        poseStack.pushPose();
-		// Now we apply our transformations.
-        if(isPlayer)
-        poseStack.translate(0, 0, (boltMovement * 2.5) * 0.0625);
-		// Our transformations are done - now we can render the model.
-        RenderUtil.renderModel(SpecialModels.BOLT_ACTION_RIFLE_CHAMBER.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+        RenderUtil.renderModel(SpecialModels.HUNTING_SHOTGUN_PUMP.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
     }

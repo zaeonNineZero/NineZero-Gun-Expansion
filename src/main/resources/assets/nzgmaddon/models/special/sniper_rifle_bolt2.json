@@ -1,0 +1,52 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "nzgmaddon:items/sniper_rifle"
+	},
+	"elements": [
+		{
+			"from": [8.09309, 3.84547, 13.68],
+			"to": [9.23309, 4.12547, 14.04],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 3.75, 13.74]},
+			"faces": {
+				"north": {"uv": [0.5, 10, 1, 10.5], "rotation": 180, "texture": "#1"},
+				"east": {"uv": [0.5, 10, 1, 10.5], "texture": "#1"},
+				"south": {"uv": [0.5, 10, 1, 10.5], "texture": "#1"},
+				"west": {"uv": [0.5, 10, 1, 10.5], "texture": "#1"},
+				"up": {"uv": [0.5, 10, 1, 10.5], "texture": "#1"},
+				"down": {"uv": [0.5, 10.5, 1, 11], "texture": "#1"}
+			}
+		},
+		{
+			"from": [9.14322, 3.31847, 13.65],
+			"to": [9.57322, 3.73847, 14.08],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8, 3.75, 13.87]},
+			"faces": {
+				"north": {"uv": [0.5, 9.5, 1, 10], "rotation": 90, "texture": "#1"},
+				"east": {"uv": [0.5, 9.5, 1, 10], "rotation": 90, "texture": "#1"},
+				"south": {"uv": [0.5, 9.5, 1, 10], "rotation": 90, "texture": "#1"},
+				"west": {"uv": [0.5, 10, 1, 10.5], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [0.5, 9.5, 1, 10], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0.5, 9.5, 1, 10], "rotation": 90, "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "bolt",
+			"origin": [8, 3.3365, 3.8],
+			"color": 0,
+			"nbt": "{}",
+			"children": [
+				{
+					"name": "rotatingpart",
+					"origin": [8.65, 3.48, 13.7],
+					"color": 0,
+					"nbt": "{}",
+					"children": [0, 1]
+				}
+			]
+		}
+	]
+}
