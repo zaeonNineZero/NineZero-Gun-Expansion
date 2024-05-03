@@ -21,7 +21,7 @@
   },
   "sounds": {
     "fire": "nzgmaddon:item.bullpup_rifle.fire",
-    "reload": "nzgmaddon:item.bullpup_rifle.reload",
+    "reload": "nzgmaddon:item.assault_rifle.reload",
     "cock": "nzgmaddon:item.bullpup_rifle.cock",
     "silencedFire": "nzgmaddon:item.bullpup_rifle.silenced_fire",
     "enchantedFire": "nzgmaddon:item.bullpup_rifle.enchanted_fire"
