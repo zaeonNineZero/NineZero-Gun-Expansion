@@ -1,6 +1,22 @@
 # Changelog (1.19.2 Releases -- Developer Edition)
 
 
+### 1.4.2 (5/*/23)
+* Added some basic animations to the Pump Shotgun, Hunting Shotgun, Bolt Action Rifle, and Sniper Rifle.
+  -  The shotguns' slide grips move back and forth after firing.
+  -  The rifles' bolts rotate and move back and forth after firing. The models also receives some touch-ups with this patch.
+  -  All received new chambering sounds, with the shotguns sharing chambering sounds and the rifles getting separate chambering sounds.
+  -  The fire sounds for these guns have been edited to include a sample of the chambering sound to match the animations.
+* Added experimental "skin variants" for the Pump Shotgun and Heavy Assault Rifle.
+  -  The Pump Shotgun's body changes to gray and is not affected by color dyeing.
+  -  Conversely, the Heavy AR's body changes to white, which can be changed with dyes.
+  -  These skins can be used by setting the "CustomModelData" NBT tag to 1. The use of "CustomModelData" is arbitrary and may change in the future.
+* Overhauled the fire sounds for the Heavy AR, using a new set of sound samples. This is an experimental change that will be subject to user feedback.
+* Model touch-ups to the Heavy AR to reduce Z-fighting issues.
+* As part of the model touch-ups, fixed an issue where a small part of the Bolt Action Rifle's model was inadvertedly being tinted by dyes.
+* Fixed the Bullpup Rifle having an invalid reload sound. Whoops!
+
+
 ### 1.4.1 (4/24/23)
 * Added working recipes for the Improved Silencer and the Performance Silencer, which I forgot for v1.4.0. Whoops!
 * Overhauled the fire sounds for the Revolver, using a new set of sound samples.
