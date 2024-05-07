@@ -5,13 +5,13 @@ license="GPL3"
 [[mods]]
 modId="nzgmaddon"
 version="1.4.2"
-displayName="NineZero's Gun Expansion"
+displayName="NineZero's Gun Expansion (Development Branch)"
 updateJSONURL=""
 displayURL="https://www.curseforge.com/minecraft/mc-mods/ninezeros-gun-expansion"
 logoFile="nzgexpansion_banner.png"
 authors="zaeonNineZero"
 description='''
-An addon for MrCrayfish's Gun Mod, adding additional weapons and attachments in an aesthetically simple style.
+An addon for MrCrayfish's Gun Mod, adding additional weapons and attachments in an aesthetically simple style. (NZGE Development Branch for implementing and testing features.)
 '''
 
 [[dependencies.nzgmaddon]]
