@@ -27,7 +27,7 @@ public class HuntingShotgunModel implements IOverrideModel
 {
     @Override
 	// This class renders a multi-part model that supports animations and removeable parts.
-	// We only need to render removeable parts for this model, so we can skip the animation portion.
+ 	// We'll render the non-moving/static parts first, then render the animated parts.
 	
 	// We start by declaring our render function that will handle rendering the core baked model (which is a non-moving part).
     public void render(float partialTicks, ItemTransforms.TransformType transformType, ItemStack stack, ItemStack parent, @Nullable LivingEntity entity, PoseStack poseStack, MultiBufferSource buffer, int light, int overlay)
