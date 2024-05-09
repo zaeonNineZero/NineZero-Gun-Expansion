@@ -1,6 +1,10 @@
 # Changelog (1.19.2 Releases -- Developer Edition)
 
 
+### 1.4.2 Main Release (5/9/23)
+* Added a model variant for the Bolt Action Rifle based on the Kar 98k and Springfield M1903.
+* Added survival-compatible recipes for the newly added model variants. They cost the same as their standard counterparts.
+
 ### 1.4.2 Pre-Release 1 (5/6/23)
 * Added some basic animations to the Pump Shotgun, Hunting Shotgun, Bolt Action Rifle, and Sniper Rifle.
   -  The shotguns' slide grips move back and forth after firing.
