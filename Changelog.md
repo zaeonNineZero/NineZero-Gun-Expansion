@@ -8,8 +8,8 @@
   -  All received new chambering sounds, with the shotguns sharing chambering sounds and the rifles getting separate chambering sounds.
   -  The fire sounds for these guns have been edited to include a sample of the chambering sound to match the animations.
 * Added experimental "skin variants" for the Pump Shotgun, Heavy Assault Rifle, and Bolt Action Rifle.
-  -  For the Pump Shotgun: The body becomes solid gray regardless of dyes applied.
-  -  For the Assault Rifle: The body becomes recolorable, matching the forward handguard.
+  -  For the Pump Shotgun: The body becomes an undyeable gray, similar to the Hunting Shotgun.
+  -  For the Assault Rifle: The body becomes white by default, and changes to match the dye coloration.
   -  For the Bolt Action Rifle: The stock extends forward to wrap around the barrel, like an early bolt-action service rifle.
   -  These variants are all craftable in survival mode for the same cost as the default gun versions.
   -  Technical notes: the model code checks the "CustomModelData" tag to determine the model variant. The use of "CustomModelData" is arbitrary and may change in the future.
