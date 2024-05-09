@@ -389,6 +389,10 @@
     "subtitle":"subtitle.cgm.enchanted_fire",
     "sounds": [{"name":"nzgmaddon:item/bolt_action_rifle/enchanted_fire"}]
   },
+"item.bolt_action_rifle.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/bolt_action_rifle/cock"}]
+  },
 
 "item.sniper_rifle.fire": {
     "subtitle":"subtitle.cgm.fire",

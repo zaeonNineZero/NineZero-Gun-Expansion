@@ -5,8 +5,8 @@
     "maxAmmo": 4,
     "reloadAmount": 1,
     "recoilAngle": 6.0,
-    "recoilKick": 1.0,
-    "recoilDurationOffset": 0.4,
+    "recoilKick": 0.6,
+    "recoilDurationOffset": 0.3,
     "recoilAdsReduction": 0.45,
     "alwaysSpread": false,
     "spread": 0.0
@@ -22,7 +22,7 @@
   "sounds": {
     "fire": "nzgmaddon:item.bolt_action_rifle.fire",
     "reload": "nzgmaddon:item.rifle.reload",
-    "cock": "nzgmaddon:item.sniper_rifle.cock",
+    "cock": "nzgmaddon:item.bolt_action_rifle.cock",
     "silencedFire": "nzgmaddon:item.bolt_action_rifle.silenced_fire",
     "enchantedFire": "nzgmaddon:item.bolt_action_rifle.enchanted_fire"
   },

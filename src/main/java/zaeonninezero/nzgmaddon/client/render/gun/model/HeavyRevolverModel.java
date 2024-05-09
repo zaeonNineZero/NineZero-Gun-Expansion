@@ -38,25 +38,29 @@ public class HeavyRevolverModel implements IOverrideModel
 		
 		// Get the item's cooldown from the user entity, then do some math to make a suitable animation.
 		// In this case, we multiply the cooldown value by itself to create a smooth animation.
+        boolean isPlayer = (entity != null && entity.equals(Minecraft.getInstance().player) ? true : false);
         float cooldown = 0F;
-        if(entity != null && entity.equals(Minecraft.getInstance().player))
+        if(isPlayer)
         {
             ItemCooldowns tracker = Minecraft.getInstance().player.getCooldowns();
             cooldown = tracker.getCooldownPercent(stack.getItem(), Minecraft.getInstance().getFrameTime());
             cooldown = Math.max((cooldown*2)-1,0);
-            cooldown = cooldown*cooldown;
+            cooldown*= cooldown;
         }
 
 		// Rotating cylinder. Same as the one for the revolver, just with a different model.
 		// Push pose so we can make do transformations without affecting the models above.
         poseStack.pushPose();
 		// Now we apply our transformations.
-		// First we set the rotation pivot point by translating the model.
-        poseStack.translate(0, -4.27 * 0.0625, 0);
-        // Then we rotate the model based on the cooldown variable, creating a smooth rotation effect.
-        poseStack.mulPose(Vector3f.ZN.rotationDegrees(60F * cooldown));
-		// Finally we translate the model back to its intended position.
-        poseStack.translate(0, 4.27 * 0.0625, 0);
+        if(isPlayer)
+        {
+			// First we set the rotation pivot point by translating the model.
+        	poseStack.translate(0, -4.27 * 0.0625, 0);
+        	// Rotate the model based on the cooldown variable. Here we go in the opposite direction of the standard Revolver's cylinder.
+        	poseStack.mulPose(Vector3f.ZN.rotationDegrees(60F * cooldown));
+			// Finally we translate the model back to its intended position.
+        	poseStack.translate(0, 4.27 * 0.0625, 0);
+    	}
 		// Our transformations are done - now we can render the model.
         RenderUtil.renderModel(SpecialModels.HEAVY_REVOLVER_CYLINDER.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.

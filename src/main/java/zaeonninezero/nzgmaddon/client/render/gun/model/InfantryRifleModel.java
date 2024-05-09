@@ -39,19 +39,22 @@ public class InfantryRifleModel implements IOverrideModel
 		
 		// Get the item's cooldown from the user entity, then do some math to make a suitable animation.
 		// In this case, we multiply the cooldown value by itself to create a smooth animation.
+        boolean isPlayer = (entity != null && entity.equals(Minecraft.getInstance().player) ? true : false);
         float cooldown = 0F;
-        if(entity != null && entity.equals(Minecraft.getInstance().player))
+        if(isPlayer)
         {
             ItemCooldowns tracker = Minecraft.getInstance().player.getCooldowns();
             cooldown = tracker.getCooldownPercent(stack.getItem(), Minecraft.getInstance().getFrameTime());
-            cooldown = cooldown*cooldown;
+            cooldown*= cooldown;
         }
 
-		// Micro SMG charging handle. This animated part kicks backward on firing, then moves back to its resting position.
+		// Infantry Rifle charging handle. This animated part kicks backward on firing, then moves back to its resting position.
 		// Push pose so we can make do transformations without affecting the models above.
         poseStack.pushPose();
 		// Now we apply our transformations.
+        if(isPlayer)
 		// All we need to do is move the model based on the cooldown variable.
+        if(isPlayer)
         poseStack.translate(0, 0, (cooldown * 1.9) * 0.0625);
 		// Our transformations are done - now we can render the model.
         RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_CHAMBER.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
