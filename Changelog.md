@@ -1,6 +1,23 @@
 # Changelog (1.19.2 Releases)
 
 
+### 1.4.2 (5/9/23)
+* Added some basic animations to the Pump Shotgun, Hunting Shotgun, Bolt Action Rifle, and Sniper Rifle.
+  -  The shotguns' slide grips move back and forth after firing.
+  -  The rifles' bolts rotate and move back and forth after firing. The models also received some touch-ups with this patch.
+  -  All received new chambering sounds, with the shotguns sharing chambering sounds and the rifles getting separate chambering sounds.
+  -  The fire sounds for these guns have been edited to include a sample of the chambering sound to match the animations.
+* Added experimental "skin variants" for the Pump Shotgun, Heavy Assault Rifle, and Bolt Action Rifle.
+  -  For the Pump Shotgun: The body becomes solid gray regardless of dyes applied.
+  -  For the Assault Rifle: The body becomes recolorable, matching the forward handguard.
+  -  For the Bolt Action Rifle: The stock extends forward to wrap around the barrel, like an early bolt-action service rifle.
+  -  These variants are all craftable in survival mode for the same cost as the default gun versions.
+  -  Technical notes: the model code checks the "CustomModelData" tag to determine the model variant. The use of "CustomModelData" is arbitrary and may change in the future.
+* Overhauled the fire sounds for the Heavy AR, using a new set of sound samples. This is an experimental change that will be subject to user feedback.
+* Model touch-ups to the Heavy AR to reduce Z-fighting issues.
+* As part of the model touch-ups, fixed an issue where a small part of the Bolt Action Rifle's model was inadvertently being tinted by dyes.
+* Fixed the Bullpup Rifle having an invalid reload sound. Whoops!
+
 ### 1.4.1 (4/24/23)
 * Added working recipes for the Improved Silencer and the Performance Silencer, which I forgot for v1.4.0. Whoops!
 * Overhauled the fire sounds for the Revolver, using a new set of sound samples.
