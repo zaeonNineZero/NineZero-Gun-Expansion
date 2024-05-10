@@ -25,7 +25,7 @@ public class ClientHandler
 		
         ModelOverrides.register(initItems.REVOLVER.get(), new RevolverModel());
         ModelOverrides.register(initItems.HEAVY_REVOLVER.get(), new HeavyRevolverModel());
-        ModelOverrides.register(initItems.UZI.get(), new MicroSMGModel());
+        ModelOverrides.register(initItems.MICRO_SMG.get(), new MicroSMGModel());
         ModelOverrides.register(initItems.SUBMACHINE_GUN.get(), new SubmachineGunModel());
         ModelOverrides.register(initItems.COMPACT_SMG.get(), new CompactSMGModel());
         ModelOverrides.register(initItems.RAPID_SMG.get(), new RapidSMGModel());
