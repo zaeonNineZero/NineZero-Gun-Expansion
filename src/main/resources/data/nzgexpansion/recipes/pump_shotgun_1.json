@@ -1,0 +1,15 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 24,
+      "tag": "forge:ingots/iron"
+    }
+  ],
+  "result": {
+    "item": "nzgexpansion:pump_shotgun",
+	"nbt": {
+      "CustomModelData":1
+    }
+  }
+}
