@@ -4,7 +4,7 @@ license="GPL3"
 
 [[mods]]
 modId="nzgmaddon"
-version="1.4.2"
+version="1.4.3"
 displayName="NineZero's Gun Expansion (Development Branch)"
 updateJSONURL=""
 displayURL="https://www.curseforge.com/minecraft/mc-mods/ninezeros-gun-expansion"
