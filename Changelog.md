@@ -3,7 +3,7 @@
 
 ### 1.4.3 (5/11/23)
 * Changed the fire rate of the Pump Shotgun and Hunting Shotgun to match up the animations to the new fire sounds. This change was supposed to have been part of v1.4.2 but was overlooked during development by mistake. (Whoops!)
-* Implemented another change to the Infantry Rifle model: the top rail now only appears when a scope is attached.
+* Implemented another change to the Infantry Rifle model: the top rail now only appears when a scope is attached. Credit to GrechHerald for the idea!
 
 ### 1.4.2 Main Release (5/9/23)
 * Added a model variant for the Bolt Action Rifle based on the Kar 98k and Springfield M1903.
