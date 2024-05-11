@@ -35,6 +35,15 @@ public class InfantryRifleModel implements IOverrideModel
         BakedModel bakedModel = SpecialModels.INFANTRY_RIFLE_BASE.getModel();
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
 
+		// Render the top rail element that appears when a scope is attached.
+		// We have to grab the gun's scope attachment slot and check whether it is empty or not.
+		// If the isEmpty function returns false, then we render the attachment rail.
+		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
+        if(!attachmentStack.isEmpty())
+		{
+            RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+		}
+
 		// Next, we do the animated parts.
 		
 		// Get the item's cooldown from the user entity, then do some math to make a suitable animation.
@@ -52,7 +61,6 @@ public class InfantryRifleModel implements IOverrideModel
 		// Push pose so we can make do transformations without affecting the models above.
         poseStack.pushPose();
 		// Now we apply our transformations.
-        if(isPlayer)
 		// All we need to do is move the model based on the cooldown variable.
         if(isPlayer)
         poseStack.translate(0, 0, (cooldown * 1.9) * 0.0625);
