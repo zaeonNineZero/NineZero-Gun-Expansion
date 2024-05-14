@@ -1,6 +1,27 @@
 # Changelog (1.18.2 Releases)
 
 
+### 1.4.3 (5/14/23)
+This release includes the v1.4.2 update and the v1.4.3 patch.
+
+* Added some basic animations to the Pump Shotgun, Hunting Shotgun, Bolt Action Rifle, and Sniper Rifle.
+  -  The shotguns' slide grips move back and forth after firing.
+  -  The rifles' bolts rotate and move back and forth after firing. The models also received some touch-ups with this patch.
+  -  All received new chambering sounds, with the shotguns sharing chambering sounds and the rifles getting separate chambering sounds.
+  -  The fire sounds for these guns have been edited to include a sample of the chambering sound to match the animations.
+  -  Changed the fire rate of the Pump Shotgun and Hunting Shotgun to match up the animations to the new fire sounds. (v1.4.3 change)
+* Added experimental "skin variants" for the Pump Shotgun, Heavy Assault Rifle, and Bolt Action Rifle.
+  -  For the Pump Shotgun: The body becomes an undyeable gray, similar to the Hunting Shotgun.
+  -  For the Assault Rifle: The body becomes white by default, and changes to match the dye coloration.
+  -  For the Bolt Action Rifle: The stock extends forward to wrap around the barrel, like an early bolt-action service rifle.
+  -  These variants are all craftable in survival mode for the same cost as the default gun versions.
+  -  Technical notes: the model code checks the "CustomModelData" tag to determine the model variant. The use of "CustomModelData" is arbitrary and may change in the future.
+* Implemented another change to the Infantry Rifle model: the top rail now only appears when a scope is attached. Credit to GrechHerald for the idea! (v1.4.3 change)
+* Overhauled the fire sounds for the Heavy AR, using a new set of sound samples. This is an experimental change that will be subject to user feedback.
+* Model touch-ups to the Heavy AR to reduce Z-fighting issues.
+* As part of the model touch-ups, fixed an issue where a small part of the Bolt Action Rifle's model was inadvertently being tinted by dyes.
+* Fixed the Bullpup Rifle having an invalid reload sound. Whoops!
+
 ### 1.4.1 'Gunslingers' (4/24/23)
 This release includes the v1.4.0 'Gunslingers' major update and the v1.4.1 patch.
 

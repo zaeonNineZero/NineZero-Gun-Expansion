@@ -84,6 +84,7 @@ public enum SpecialModels
 	
     INFANTRY_RIFLE_BASE("infantry_rifle_base"),
     INFANTRY_RIFLE_CHAMBER("infantry_rifle_chamber"),
+    INFANTRY_RIFLE_RAIL("infantry_rifle_rail"),
     
     BOLT_ACTION_RIFLE_BASE("bolt_action_rifle_base"),
     BOLT_ACTION_RIFLE_BASE_1("bolt_action_rifle_base_1"),
