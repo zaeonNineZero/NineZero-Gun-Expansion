@@ -11,15 +11,15 @@ public class ExtraGunModifiers
     public static final IGunModifier FLASH_HIDER_EFFECT = new IGunModifier()
     {
         @Override
-        public double modifyFireSoundRadius(double radius)
+        public float modifyProjectileSpread(float spread)
         {
-            return radius * 0.9;
+            return spread * 0.95F;
         }
 
         @Override
         public double modifyMuzzleFlashScale(double scale)
         {
-            return 0.8F;
+            return 0.9F;
         }
     };
     public static final IGunModifier MUZZLE_BRAKE_EFFECT = new IGunModifier()
@@ -183,7 +183,7 @@ public class ExtraGunModifiers
         @Override
         public double modifyAimDownSightSpeed(double speed)
         {
-            return speed * 0.8F;
+            return speed * 0.85F;
         }
     };
 	public static final IGunModifier CARBINE_STABILISED = new IGunModifier()
@@ -209,7 +209,7 @@ public class ExtraGunModifiers
         @Override
         public double modifyAimDownSightSpeed(double speed)
         {
-            return speed * 0.85F;
+            return speed * 0.9F;
         }
     };
 	public static final IGunModifier EXTRA_STABILISED = new IGunModifier()
@@ -223,13 +223,13 @@ public class ExtraGunModifiers
         @Override
         public float kickModifier()
         {
-            return 0.3F;
+            return 0.35F;
         }
 
         @Override
         public float modifyProjectileSpread(float spread)
         {
-            return spread * 0.7F;
+            return spread * 0.67F;
         }
 
         @Override
@@ -261,19 +261,19 @@ public class ExtraGunModifiers
         @Override
         public float modifyProjectileSpread(float spread)
         {
-            return spread * 0.2F;
+            return spread * 0.25F;
         }
 
         @Override
         public double modifyAimDownSightSpeed(double speed)
         {
-            return speed * 0.7F;
+            return speed * 0.75F;
         }
 
         @Override
         public int modifyFireRate(int rate)
         {
-            return Mth.clamp((int) (rate * 1.25), rate + 1, Integer.MAX_VALUE);
+            return Math.min(rate + 1, Integer.MAX_VALUE);
         }
     };
 	
@@ -283,13 +283,13 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.65F;
+            return 0.6F;
         }
 
         @Override
         public float kickModifier()
         {
-            return 0.65F;
+            return 0.75F;
         }
 
         @Override

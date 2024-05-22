@@ -1,6 +1,11 @@
 # Changelog (1.18.2 Releases)
 
 
+### 1.4.4 (5/??/23)
+* Added a custom Creative Mode inventory tab for NZGE! (Localization keys for the creative tab are all in English pending new translations)
+* Stat modifier tweaks across the board for almost every attachment, generally reducing ADS speed penalties.
+  -  Reduced the fire rate penalty of the Marksman Stock to one extra tick - penalty is no longer a multiplier.
+
 ### 1.4.3 (5/14/23)
 This release includes the v1.4.2 update and the v1.4.3 patch.
 
