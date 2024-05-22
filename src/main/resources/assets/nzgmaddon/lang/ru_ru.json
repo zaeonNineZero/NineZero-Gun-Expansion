@@ -1,10 +1,12 @@
 {
+	"itemGroup.nzgmaddon": "NineZero's Gun Expansion",
+	
 	"item.nzgmaddon.automatic_shotgun": "Автоматический дробовик",
 	"item.nzgmaddon.automatic_sniper_rifle": "Автоматическая снайперская винтовка",
 	"item.nzgmaddon.battle_rifle": "Стрелковая винтовка",
 	"item.nzgmaddon.bolt_action_rifle": "Винтовка с болтовым затвором",
 	"item.nzgmaddon.bullpup_rifle": "Винтовка Буллпап",
-	"item.nzgmaddon.compact_smg": "Компактный пистолет-пулемёт",
+	"item.nzgmaddon.compact_smg": "Компактный автомат",
 	"item.nzgmaddon.double_barreled_shotgun": "Двуствольное ружьё",
 	"item.nzgmaddon.heavy_assault_rifle": "Тяжёлая штурмовая винтовка",
 	"item.nzgmaddon.heavy_pistol": "Тяжёлый пистолет",
@@ -15,7 +17,7 @@
 	"item.nzgmaddon.machine_gun": "Пулемёт",
 	"item.nzgmaddon.uzi": "Микро пистолет-пулемёт",
 	"item.nzgmaddon.pump_shotgun": "Помповый дробовик",
-	"item.nzgmaddon.rapid_smg": "Быстрый пистолет-пулемёт",
+	"item.nzgmaddon.rapid_smg": "Скорострельный автомат",
 	"item.nzgmaddon.revolver": "Револьвер",
 	"item.nzgmaddon.sniper_rifle": "Снайперская винтовка",
 	"item.nzgmaddon.submachine_gun": "Автомат",
