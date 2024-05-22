@@ -3,7 +3,7 @@
 
 
 
-### 1.4.4 'Gunslingers' (5/??/23)
+### 1.4.4 'Gunslingers' (5/22/23)
 This release includes the v1.4.0 'Gunslingers' major update and all patches up to and including the new v1.4.4 patch.
 
 * Added the following new weapons: Heavy Pistol, Heavy Revolver, Compact SMG, and Bullpup Rifle.
