@@ -12,6 +12,23 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod("nzgexpansion")
 public class nzgExpansion {
 	public static final String MOD_ID = "nzgexpansion";
+    public static final CreativeModeTab GROUP = new CreativeModeTab(MOD_ID)
+    {
+        @Override
+        public ItemStack makeIcon()
+        {
+            ItemStack stack = new ItemStack(initItems.REVOLVER.get());
+            stack.getOrCreateTag().putInt("AmmoCount", initItems.REVOLVER.get().getGun().getGeneral().getMaxAmmo());
+            return stack;
+        }
+
+        @Override
+        public void fillItemList(NonNullList<ItemStack> items)
+        {
+            super.fillItemList(items);
+            CustomGunManager.fill(items);
+        }
+    };
 	
 	public nzgExpansion() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
