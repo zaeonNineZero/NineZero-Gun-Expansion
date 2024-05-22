@@ -2,6 +2,12 @@ package zaeonninezero.nzgexpansion;
 
 import zaeonninezero.nzgexpansion.init.*;
 import zaeonninezero.nzgexpansion.client.ClientHandler;
+
+import com.mrcrayfish.guns.client.CustomGunManager;
+
+import net.minecraft.core.NonNullList;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
