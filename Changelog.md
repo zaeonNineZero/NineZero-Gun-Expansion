@@ -1,6 +1,11 @@
 # Changelog (1.19.2 Releases)
 
 
+### 1.4.4 (5/22/23)
+* Added a custom Creative Mode inventory tab for NZGE! (Localization keys for the creative tab are all in English pending new translations)
+* Stat modifier tweaks across the board for almost every attachment, generally reducing ADS speed penalties.
+  -  Reduced the fire rate penalty of the Marksman Stock to one extra tick - penalty is no longer a multiplier.
+
 ### 1.4.3 (5/11/23)
 * Changed the fire rate of the Pump Shotgun and Hunting Shotgun to match up the animations to the new fire sounds. This change was supposed to have been part of v1.4.2 but was overlooked during development by mistake. (Whoops!)
 * Implemented another change to the Infantry Rifle model: the top rail now only appears when a scope is attached. Credit to GrechHerald for the idea!
