@@ -17,7 +17,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("nzgmaddon")
 public class nzgmAddon {
-	public static final String MOD_ID = "nzgmaddon";;
+	public static final String MOD_ID = "nzgmaddon";
     public static final CreativeModeTab GROUP = new CreativeModeTab(MOD_ID)
     {
         @Override
