@@ -1,8 +1,6 @@
 # Changelog (1.19.3 Releases)
 
 
-
-
 ### 1.4.4 'Gunslingers' (5/22/23)
 This release includes the v1.4.0 'Gunslingers' major update and all patches up to and including the new v1.4.4 patch.
 
@@ -44,6 +42,7 @@ This release includes the v1.4.0 'Gunslingers' major update and all patches up t
 The en_us, zh_cn, ru_ru localization files have been updated to reflect the content of this update. Other translation updates are pending.
 
 There are likely a few other minor changes and adjustments beyond what I've listed here. Be sure to check the commits on the GitHub repo to see everything I've changed!
+
 
 ### 1.3.2 (12/4/23)
 * Added Korean translation, courtesy of 오구리 캡 (oguri_cap_1988). Thank you!
