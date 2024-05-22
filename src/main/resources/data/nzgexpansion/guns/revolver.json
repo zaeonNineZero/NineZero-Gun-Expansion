@@ -12,7 +12,7 @@
   },
   "projectile": {
     "item": "cgm:basic_bullet",
-    "damage": 12.0,
+    "damage": 11.5,
     "size": 0.2,
     "speed": 15.0,
     "life": 25
@@ -34,12 +34,12 @@
     "zoom": {
       "yOffset": 4.6,
       "zOffset": 1.5,
-      "fovModifier": 0.7
+      "fovModifier": 0.75
     },
     "attachments": {
       "scope": {
         "yOffset": 4.2,
-        "zOffset": 4.7,
+        "zOffset": 4.8,
         "scale": 0.79
       },
       "barrel": {

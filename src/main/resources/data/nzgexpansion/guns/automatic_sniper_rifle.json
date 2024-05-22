@@ -9,7 +9,7 @@
     "recoilKick": 1.5,
     "recoilAdsReduction": 0.3,
     "alwaysSpread": false,
-    "spread": 8.0
+    "spread": 9.0
   },
   "projectile": {
     "item": "nzgexpansion:medium_bullet",
@@ -21,7 +21,7 @@
   },
   "sounds": {
     "fire": "nzgexpansion:item.auto_sniper_rifle.fire",
-    "reload": "nzgexpansion:item.rifle.reload",
+    "reload": "nzgexpansion:item.assault_rifle.reload",
     "cock": "nzgexpansion:item.auto_sniper_rifle.cock",
     "silencedFire": "nzgexpansion:item.auto_sniper_rifle.silenced_fire",
     "enchantedFire": "nzgexpansion:item.auto_sniper_rifle.enchanted_fire"

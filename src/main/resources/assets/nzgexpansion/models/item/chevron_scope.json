@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "cgm:item/long_scope",
-		"2": "cgm:item/medium_scope",
+		"1": "cgm:items/long_scope",
+		"2": "cgm:items/medium_scope",
 		"3": "nzgexpansion:effect/acog_reticle",
-		"particle": "cgm:item/long_scope"
+		"particle": "cgm:items/long_scope"
 	},
 	"elements": [
 		{

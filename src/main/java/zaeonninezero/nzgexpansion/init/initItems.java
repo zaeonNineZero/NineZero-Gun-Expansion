@@ -36,9 +36,11 @@ public class initItems {
 	 
 	//Guns
     public static final RegistryObject<GunItem> REVOLVER = ITEMS.register("revolver", () -> new GunItem(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<GunItem> HEAVY_PISTOL = ITEMS.register("heavy_pistol", () -> new GunItem(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<GunItem> HEAVY_REVOLVER = ITEMS.register("heavy_revolver", () -> new GunItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<GunItem> MICRO_SMG = ITEMS.register("micro_smg", () -> new GunItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<GunItem> SUBMACHINE_GUN = ITEMS.register("submachine_gun", () -> new GunItem(new Item.Properties().stacksTo(1)));
-	
+	public static final RegistryObject<GunItem> COMPACT_SMG = ITEMS.register("compact_smg", () -> new GunItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<GunItem> RAPID_SMG = ITEMS.register("rapid_smg", () -> new GunItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<GunItem> PUMP_SHOTGUN = ITEMS.register("pump_shotgun", () -> new GunItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<GunItem> HUNTING_SHOTGUN = ITEMS.register("hunting_shotgun", () -> new GunItem(new Item.Properties().stacksTo(1)));
@@ -46,6 +48,7 @@ public class initItems {
     public static final RegistryObject<GunItem> AUTOMATIC_SHOTGUN = ITEMS.register("automatic_shotgun", () -> new GunItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<GunItem> HEAVY_ASSAULT_RIFLE = ITEMS.register("heavy_assault_rifle", () -> new GunItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<GunItem> BATTLE_RIFLE = ITEMS.register("battle_rifle", () -> new GunItem(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<GunItem> BULLPUP_RIFLE = ITEMS.register("bullpup_rifle", () -> new GunItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<GunItem> MACHINE_GUN = ITEMS.register("machine_gun", () -> new GunItem(new Item.Properties().stacksTo(1)));
 	public static final RegistryObject<GunItem> INFANTRY_RIFLE = ITEMS.register("infantry_rifle", () -> new GunItem(new Item.Properties().stacksTo(1)));
 	public static final RegistryObject<GunItem> AUTOMATIC_SNIPER_RIFLE = ITEMS.register("automatic_sniper_rifle", () -> new GunItem(new Item.Properties().stacksTo(1)));
@@ -65,6 +68,8 @@ public class initItems {
     public static final RegistryObject<Item> FLASH_HIDER  = ITEMS.register("flash_hider", () -> new BarrelItem(Barrel.create(4,ExtraGunModifiers.FLASH_HIDER_EFFECT), new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> MUZZLE_BRAKE  = ITEMS.register("muzzle_brake", () -> new BarrelItem(Barrel.create(5.3f,ExtraGunModifiers.MUZZLE_BRAKE_EFFECT), new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> EXTENDED_BARREL  = ITEMS.register("extended_barrel", () -> new BarrelItem(Barrel.create(6,ExtraGunModifiers.EXTENDED_BARREL_EFFECT), new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> IMPROVED_SILENCER = ITEMS.register("improved_silencer", () -> new BarrelItem(Barrel.create(12.2F, GunModifiers.SILENCED, ExtraGunModifiers.MUFFLED_IMPROVED), new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> PERFORMANCE_SILENCER = ITEMS.register("performance_silencer", () -> new BarrelItem(Barrel.create(12.2F, GunModifiers.SILENCED, ExtraGunModifiers.MUFFLED_PERFORMANCE), new Item.Properties().stacksTo(1)));
 	
 	//Stocks
     public static final RegistryObject<Item> SHORT_STOCK  = ITEMS.register("short_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.SLIGHT_BETTER_CONTROL), new Item.Properties().stacksTo(1)));

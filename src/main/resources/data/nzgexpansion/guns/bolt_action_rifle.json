@@ -1,12 +1,12 @@
 {
   "general": {
-    "rate": 29,
+    "rate": 30,
     "gripType": "cgm:two_handed",
     "maxAmmo": 4,
     "reloadAmount": 1,
     "recoilAngle": 6.0,
-    "recoilKick": 1.0,
-    "recoilDurationOffset": 0.4,
+    "recoilKick": 0.6,
+    "recoilDurationOffset": 0.3,
     "recoilAdsReduction": 0.45,
     "alwaysSpread": false,
     "spread": 0.0
@@ -22,7 +22,7 @@
   "sounds": {
     "fire": "nzgexpansion:item.bolt_action_rifle.fire",
     "reload": "nzgexpansion:item.rifle.reload",
-    "cock": "nzgexpansion:item.sniper_rifle.cock",
+    "cock": "nzgexpansion:item.bolt_action_rifle.cock",
     "silencedFire": "nzgexpansion:item.bolt_action_rifle.silenced_fire",
     "enchantedFire": "nzgexpansion:item.bolt_action_rifle.enchanted_fire"
   },

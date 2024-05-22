@@ -1,0 +1,65 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "nzgexpansion:item/sniper_rifle"
+	},
+	"elements": [
+		{
+			"from": [7.89, 3.58, 13.61],
+			"to": [8.52, 4.005, 14.24],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.85, 13.94]},
+			"faces": {
+				"north": {"uv": [0.5, 9.5, 1, 10], "rotation": 180, "texture": "#1"},
+				"east": {"uv": [0.5, 9.5, 1, 10], "texture": "#1"},
+				"south": {"uv": [0.5, 9.5, 1, 10], "texture": "#1"},
+				"west": {"uv": [0.5, 9.5, 1, 10], "texture": "#1"},
+				"up": {"uv": [0.5, 9.5, 1, 10], "texture": "#1"},
+				"down": {"uv": [0.5, 10, 1, 10.5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8.24319, 2.55543, 13.83],
+			"to": [8.52319, 3.75543, 14.19],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [8, 3.85, 13.84]},
+			"faces": {
+				"north": {"uv": [0.5, 10, 1, 10.5], "rotation": 90, "texture": "#1"},
+				"east": {"uv": [0.5, 10, 1, 10.5], "rotation": 90, "texture": "#1"},
+				"south": {"uv": [0.5, 10, 1, 10.5], "rotation": 90, "texture": "#1"},
+				"west": {"uv": [0.5, 10.5, 1, 11], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [0.5, 10, 1, 10.5], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0.5, 10, 1, 10.5], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [8.6599, 2.42063, 13.78],
+			"to": [9.0699, 2.88063, 14.24],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.85, 13.94]},
+			"faces": {
+				"north": {"uv": [0.5, 9.5, 1, 10], "rotation": 90, "texture": "#1"},
+				"east": {"uv": [0.5, 9.5, 1, 10], "rotation": 90, "texture": "#1"},
+				"south": {"uv": [0.5, 9.5, 1, 10], "rotation": 90, "texture": "#1"},
+				"west": {"uv": [0.5, 10, 1, 10.5], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [0.5, 9.5, 1, 10], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0.5, 10, 1, 10.5], "rotation": 90, "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "bolt",
+			"origin": [8, 3.3365, 3.8],
+			"color": 0,
+			"nbt": "{}",
+			"children": [
+				{
+					"name": "rotatingpart",
+					"origin": [8.65, 3.48, 13.7],
+					"color": 0,
+					"nbt": "{}",
+					"children": [0, 1, 2]
+				}
+			]
+		}
+	]
+}

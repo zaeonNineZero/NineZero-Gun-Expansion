@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "cgm:item/pistol",
+		"particle": "cgm:item/pistol"
+	},
+	"elements": [
+		{
+			"name": "charge_handle",
+			"from": [7.86, 3.85, 12.7],
+			"to": [8.14, 4.2, 12.93],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.9, 8.1, 9.5]},
+			"faces": {
+				"north": {"uv": [6, 8, 7, 9], "rotation": 270, "texture": "#1"},
+				"east": {"uv": [6, 8, 7, 9], "rotation": 270, "texture": "#1"},
+				"south": {"uv": [6, 8, 7, 9], "rotation": 270, "texture": "#1"},
+				"west": {"uv": [6, 8, 7, 9], "rotation": 270, "texture": "#1"},
+				"up": {"uv": [6, 8, 7, 9], "rotation": 270, "texture": "#1"}
+			}
+		}
+	]
+}
