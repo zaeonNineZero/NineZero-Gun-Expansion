@@ -1,0 +1,50 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "nzgexpansion:item/heavy_assault_rifle",
+		"particle": "cgm:item/rifle"
+	},
+	"elements": [
+		{
+			"from": [7.62, 4.765, 8.55],
+			"to": [8.38, 4.97, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 7.67, 1.15]},
+			"faces": {
+				"east": {"uv": [15.5, 0, 16, 13.5], "rotation": 270, "texture": "#2"},
+				"west": {"uv": [14.5, 0, 15, 13.5], "rotation": 90, "texture": "#2"},
+				"up": {"uv": [15, 0, 15.5, 4.5], "texture": "#2"},
+				"down": {"uv": [14.5, 0, 15, 13.5], "rotation": 90, "texture": "#2"}
+			}
+		},
+		{
+			"from": [7.621, 6.86043, 9.3563],
+			"to": [8.379, 7.07243, 9.6683],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.001, 4.67127, 11.64721]},
+			"faces": {
+				"east": {"uv": [15.5, 0, 16, 0.5], "rotation": 270, "texture": "#2"},
+				"west": {"uv": [14.5, 0, 15, 0.5], "rotation": 90, "texture": "#2"},
+				"up": {"uv": [14.5, 0, 15, 0.5], "texture": "#2"}
+			}
+		},
+		{
+			"from": [7.621, 6.86043, 10.8817],
+			"to": [8.379, 7.07256, 11.16446],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8.001, 4.67127, 8.90279]},
+			"faces": {
+				"east": {"uv": [15.5, 0.5, 16, 0], "rotation": 270, "texture": "#2"},
+				"west": {"uv": [14.5, 0.5, 15, 0], "rotation": 90, "texture": "#2"},
+				"up": {"uv": [14.5, 0.5, 15, 0], "texture": "#2"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "top_rail",
+			"origin": [8.001, 4.50127, 11.05279],
+			"color": 0,
+			"nbt": "{}",
+			"children": [0, 1, 2]
+		}
+	]
+}

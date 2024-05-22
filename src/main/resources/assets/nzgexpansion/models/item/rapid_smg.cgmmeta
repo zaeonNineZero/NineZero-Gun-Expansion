@@ -17,7 +17,7 @@
             }
         },
         "ironSight": {
-            "camera": [8.0, 4.7, 21.0],
+            "camera": [8.0, 4.8, 21.0],
             "viewportFov": 60.0
         },
         "muzzleFlash": {
