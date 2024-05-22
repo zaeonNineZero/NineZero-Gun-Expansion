@@ -4,7 +4,6 @@
 	"textures": {
 		"0": "cgm:item/rifle",
 		"1": "nzgexpansion:item/battle_rifle",
-		"2": "nzgexpansion:item/heavy_assault_rifle",
 		"3": "cgm:item/shotgun",
 		"particle": "cgm:item/rifle"
 	},
@@ -784,37 +783,6 @@
 			}
 		},
 		{
-			"from": [7.62, 4.765, 8.55],
-			"to": [8.38, 4.97, 12],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 7.67, 1.15]},
-			"faces": {
-				"east": {"uv": [15.5, 0, 16, 13.5], "rotation": 270, "texture": "#2"},
-				"west": {"uv": [14.5, 0, 15, 13.5], "rotation": 90, "texture": "#2"},
-				"up": {"uv": [15, 0, 15.5, 4.5], "texture": "#2"},
-				"down": {"uv": [14.5, 0, 15, 13.5], "rotation": 90, "texture": "#2"}
-			}
-		},
-		{
-			"from": [7.621, 6.86043, 9.3563],
-			"to": [8.379, 7.07243, 9.6683],
-			"rotation": {"angle": -45, "axis": "x", "origin": [8.001, 4.67127, 11.64721]},
-			"faces": {
-				"east": {"uv": [15.5, 0, 16, 0.5], "rotation": 270, "texture": "#2"},
-				"west": {"uv": [14.5, 0, 15, 0.5], "rotation": 90, "texture": "#2"},
-				"up": {"uv": [14.5, 0, 15, 0.5], "texture": "#2"}
-			}
-		},
-		{
-			"from": [7.621, 6.86043, 10.8817],
-			"to": [8.379, 7.07256, 11.16446],
-			"rotation": {"angle": 45, "axis": "x", "origin": [8.001, 4.67127, 8.90279]},
-			"faces": {
-				"east": {"uv": [15.5, 0.5, 16, 0], "rotation": 270, "texture": "#2"},
-				"west": {"uv": [14.5, 0.5, 15, 0], "rotation": 90, "texture": "#2"},
-				"up": {"uv": [14.5, 0.5, 15, 0], "texture": "#2"}
-			}
-		},
-		{
 			"name": "front_sight",
 			"from": [7.89, 4.63, -4.75],
 			"to": [8.11, 5.2, -3.73],
@@ -1141,41 +1109,34 @@
 				}
 			]
 		},
-		{
-			"name": "top_rail",
-			"origin": [8.001, 4.50127, 11.05279],
-			"color": 0,
-			"nbt": "{}",
-			"children": [75, 76, 77]
-		},
-		78,
+		75,
 		{
 			"name": "rear_sight",
 			"origin": [8, 8, 8],
 			"color": 0,
 			"nbt": "{}",
 			"children": [
-				79,
+				76,
 				{
 					"name": "group",
 					"origin": [7.74645, 5.54497, 13.125],
 					"color": 0,
 					"nbt": "{}",
-					"children": [80, 81, 82, 83, 84, 85, 86, 87]
+					"children": [77, 78, 79, 80, 81, 82, 83, 84]
 				},
 				{
 					"name": "group",
 					"origin": [8, 7.63938, -0.86062],
 					"color": 0,
 					"nbt": "{}",
-					"children": [88, 89, 90, 91]
+					"children": [85, 86, 87, 88]
 				},
 				{
 					"name": "group",
 					"origin": [8, 7.63938, -0.86062],
 					"color": 0,
 					"nbt": "{}",
-					"children": [92, 93, 94, 95]
+					"children": [89, 90, 91, 92]
 				}
 			]
 		}

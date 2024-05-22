@@ -2,6 +2,7 @@ package zaeonninezero.nzgexpansion.client;
 
 import com.mrcrayfish.guns.client.render.gun.ModelOverrides;
 import com.mrcrayfish.guns.client.render.gun.model.SimpleModel;
+import zaeonninezero.nzgexpansion.client.render.gun.model.*;
 import zaeonninezero.nzgexpansion.nzgExpansion;
 import zaeonninezero.nzgexpansion.init.initItems;
 import zaeonninezero.nzgexpansion.client.SpecialModels;

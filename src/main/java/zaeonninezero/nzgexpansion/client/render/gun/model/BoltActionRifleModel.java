@@ -1,7 +1,7 @@
 package zaeonninezero.nzgexpansion.client.render.gun.model;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.math.Vector3f;
+import com.mojang.math.Axis;
 import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.client.GunModel;
 import zaeonninezero.nzgexpansion.client.SpecialModels;
@@ -98,7 +98,7 @@ public class BoltActionRifleModel implements IOverrideModel
         	// Translate the Z-axis for back and forth movement, and the Y-axis to set our pivot point.
         	poseStack.translate(0, -4.15 * 0.0625, (boltMovement * 2.5) * 0.0625);
         	// Rotate the model to represent the bolt being rotated.
-        	poseStack.mulPose(Vector3f.ZN.rotationDegrees(-67.5F * Math.min(boltPivot*2F,1)));
+        	poseStack.mulPose(Axis.ZN.rotationDegrees(-67.5F * Math.min(boltPivot*2F,1)));
 			// Translate the Y-axis back to its original position, without touching the Z-axis.
         	poseStack.translate(0, 4.15 * 0.0625, 0);
         }

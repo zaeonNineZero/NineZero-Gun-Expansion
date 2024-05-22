@@ -1,7 +1,7 @@
 package zaeonninezero.nzgexpansion.client.render.gun.model;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.math.Vector3f;
+import com.mojang.math.Axis;
 import com.mrcrayfish.guns.client.GunModel;
 import zaeonninezero.nzgexpansion.client.SpecialModels;
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
@@ -57,7 +57,7 @@ public class HeavyRevolverModel implements IOverrideModel
 			// First we set the rotation pivot point by translating the model.
         	poseStack.translate(0, -4.27 * 0.0625, 0);
         	// Rotate the model based on the cooldown variable. Here we go in the opposite direction of the standard Revolver's cylinder.
-        	poseStack.mulPose(Vector3f.ZN.rotationDegrees(60F * cooldown));
+        	poseStack.mulPose(Axis.ZN.rotationDegrees(60F * cooldown));
 			// Finally we translate the model back to its intended position.
         	poseStack.translate(0, 4.27 * 0.0625, 0);
     	}

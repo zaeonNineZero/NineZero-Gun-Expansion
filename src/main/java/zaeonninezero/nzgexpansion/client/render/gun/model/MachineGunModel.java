@@ -1,7 +1,7 @@
 package zaeonninezero.nzgexpansion.client.render.gun.model;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.math.Vector3f;
+import com.mojang.math.Axis;
 import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.client.GunModel;
 import zaeonninezero.nzgexpansion.client.SpecialModels;
@@ -120,7 +120,7 @@ public class MachineGunModel implements IOverrideModel
         poseStack.pushPose();
 		// Transformations
         poseStack.translate(0.811 * 0.0625, -3.04 * 0.0625, 0);
-        poseStack.mulPose(Vector3f.ZN.rotationDegrees(24F * cooldown));
+        poseStack.mulPose(Axis.ZN.rotationDegrees(24F * cooldown));
         poseStack.translate(-0.811 * 0.0625, 3.04 * 0.0625, 0);
 		// Render
         RenderUtil.renderModel(SpecialModels.MACHINE_GUN_HANDLE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
