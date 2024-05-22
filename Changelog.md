@@ -1,8 +1,9 @@
 # Changelog (1.18.2 Releases)
 
 
-### 1.4.4 (5/??/23)
+### 1.4.4 (5/22/23)
 * Added a custom Creative Mode inventory tab for NZGE! (Localization keys for the creative tab are all in English pending new translations)
+* Fixed missing rail model and accordingly updated the base model for the Infantry Rifle.
 * Stat modifier tweaks across the board for almost every attachment, generally reducing ADS speed penalties.
   -  Reduced the fire rate penalty of the Marksman Stock to one extra tick - penalty is no longer a multiplier.
 
