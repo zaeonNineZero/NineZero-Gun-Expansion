@@ -6,6 +6,7 @@ import com.mrcrayfish.guns.client.GunModel;
 import zaeonninezero.nzgmaddon.client.SpecialModels;
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
 import com.mrcrayfish.guns.client.util.RenderUtil;
+import com.mrcrayfish.guns.item.GunItem;
 import com.mrcrayfish.guns.item.attachment.IAttachment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -46,15 +47,28 @@ public class InfantryRifleModel implements IOverrideModel
 
 		// Next, we do the animated parts.
 		
-		// Get the item's cooldown from the user entity, then do some math to make a suitable animation.
-		// In this case, we multiply the cooldown value by itself to create a smooth animation.
+        // Get the item's cooldown from the user entity, then process it into a usable animation.
         boolean isPlayer = (entity != null && entity.equals(Minecraft.getInstance().player) ? true : false);
-        float cooldown = 0F;
-        if(isPlayer)
+        boolean correctContext = (transformType == ItemTransforms.TransformType.FIRST_PERSON_RIGHT_HAND || transformType == ItemTransforms.TransformType.THIRD_PERSON_RIGHT_HAND || transformType == ItemTransforms.TransformType.FIRST_PERSON_LEFT_HAND || transformType == ItemTransforms.TransformType.THIRD_PERSON_LEFT_HAND);
+        GunItem gunStack = (GunItem) stack.getItem();
+        Gun gun = gunStack.getModifiedGun(stack);
+        float boltMovement = 0F;
+        if(isPlayer && correctContext)
         {
-            ItemCooldowns tracker = Minecraft.getInstance().player.getCooldowns();
-            cooldown = tracker.getCooldownPercent(stack.getItem(), Minecraft.getInstance().getFrameTime());
-            cooldown*= cooldown;
+            float cooldownDivider = 1.0F*Math.max((float) gun.getGeneral().getRate()/3F,1);
+            float cooldownOffset1 = cooldownDivider - 1.0F;
+            float intensity = 1.0F +1;
+            
+        	ItemCooldowns tracker = Minecraft.getInstance().player.getCooldowns();
+            float cooldown = tracker.getCooldownPercent(stack.getItem(), Minecraft.getInstance().getFrameTime());
+            cooldown *= cooldownDivider;
+            float cooldown_a = cooldown-cooldownOffset1;
+
+            float cooldown_b = Math.min(Math.max(cooldown_a*intensity,0),1);
+            float cooldown_c = Math.min(Math.max((-cooldown_a*intensity)+intensity,0),1);
+            float cooldown_d = Math.min(cooldown_b,cooldown_c);
+            
+            boltMovement = cooldown_d;
         }
 
 		// Infantry Rifle charging handle. This animated part kicks backward on firing, then moves back to its resting position.
@@ -63,7 +77,7 @@ public class InfantryRifleModel implements IOverrideModel
 		// Now we apply our transformations.
 		// All we need to do is move the model based on the cooldown variable.
         if(isPlayer)
-        poseStack.translate(0, 0, (cooldown * 1.9) * 0.0625);
+        poseStack.translate(0, 0, (boltMovement * 1.5) * 0.0625);
 		// Our transformations are done - now we can render the model.
         RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_CHAMBER.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.

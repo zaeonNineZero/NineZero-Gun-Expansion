@@ -7,6 +7,7 @@ import com.mrcrayfish.guns.client.GunModel;
 import zaeonninezero.nzgmaddon.client.SpecialModels;
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
 import com.mrcrayfish.guns.client.util.RenderUtil;
+import com.mrcrayfish.guns.item.GunItem;
 import com.mrcrayfish.guns.item.attachment.IAttachment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -58,11 +59,14 @@ public class BoltActionRifleModel implements IOverrideModel
         
         // Next, we do the animated parts.
 		
-		// Get the item's cooldown from the user entity, then process it into a usable animation.
+		// Get the item's cooldown from the user entity, then process it into a usable animation.boolean isPlayer = (entity != null && entity.equals(Minecraft.getInstance().player) ? true : false);
         boolean isPlayer = (entity != null && entity.equals(Minecraft.getInstance().player) ? true : false);
+        boolean correctContext = (transformType == ItemTransforms.TransformType.FIRST_PERSON_RIGHT_HAND || transformType == ItemTransforms.TransformType.THIRD_PERSON_RIGHT_HAND || transformType == ItemTransforms.TransformType.FIRST_PERSON_LEFT_HAND || transformType == ItemTransforms.TransformType.THIRD_PERSON_LEFT_HAND);
+        GunItem gunStack = (GunItem) stack.getItem();
+        Gun gun = gunStack.getModifiedGun(stack);
         float boltMovement = 0F;
         float boltPivot = 0F;
-        if(isPlayer)
+        if(isPlayer && correctContext)
         {
             float cooldownDivider = 3.0F;
             float cooldownOffset1 = 1.0F;

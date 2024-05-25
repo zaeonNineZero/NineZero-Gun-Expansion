@@ -38,9 +38,10 @@ public class HeavyRevolverModel implements IOverrideModel
 		
 		// Get the item's cooldown from the user entity, then do some math to make a suitable animation.
 		// In this case, we multiply the cooldown value by itself to create a smooth animation.
-        boolean isPlayer = (entity != null && entity.equals(Minecraft.getInstance().player) ? true : false);
+        boolean isPlayer = (entity != null && entity.equals(Minecraft.getInstance().player));
+        boolean correctContext = (transformType == ItemTransforms.TransformType.FIRST_PERSON_RIGHT_HAND || transformType == ItemTransforms.TransformType.THIRD_PERSON_RIGHT_HAND || transformType == ItemTransforms.TransformType.FIRST_PERSON_LEFT_HAND || transformType == ItemTransforms.TransformType.THIRD_PERSON_LEFT_HAND);
         float cooldown = 0F;
-        if(isPlayer)
+        if(isPlayer && correctContext)
         {
             ItemCooldowns tracker = Minecraft.getInstance().player.getCooldowns();
             cooldown = tracker.getCooldownPercent(stack.getItem(), Minecraft.getInstance().getFrameTime());
