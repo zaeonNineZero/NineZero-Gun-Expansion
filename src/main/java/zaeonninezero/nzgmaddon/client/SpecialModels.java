@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 public enum SpecialModels
 {
     //REVOLVER("gun/revolver"),
-    HEAVY_PISTOL("gun/heavy_pistol"),
+    //HEAVY_PISTOL("gun/heavy_pistol"),
     //UZI("gun/uzi"),
     //SUBMACHINE_GUN("gun/submachine_gun"),
     //COMPACT_SMG("gun/compact_smg"),
@@ -36,6 +36,9 @@ public enum SpecialModels
     REVOLVER_BASE("revolver_base"),
     REVOLVER_CYLINDER("revolver_cylinder"),
     REVOLVER_RAIL("revolver_rail"),
+	
+    HEAVY_PISTOL_BASE("heavy_pistol_base"),
+    HEAVY_PISTOL_SLIDE("heavy_pistol_slide"),
 	
     HEAVY_REVOLVER_BASE("heavy_revolver_base"),
     HEAVY_REVOLVER_CYLINDER("heavy_revolver_cylinder"),

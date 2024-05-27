@@ -18,13 +18,14 @@ public class ClientHandler
 	
 	private static void registerModelOverrides()
     {
-        ModelOverrides.register(initItems.HEAVY_PISTOL.get(), new SimpleModel(SpecialModels.HEAVY_PISTOL::getModel));
+        //ModelOverrides.register(initItems.HEAVY_PISTOL.get(), new SimpleModel(SpecialModels.HEAVY_PISTOL::getModel));
 		ModelOverrides.register(initItems.DOUBLE_BARRELED_SHOTGUN.get(), new SimpleModel(SpecialModels.DOUBLE_BARRELED_SHOTGUN::getModel));
 		//ModelOverrides.register(initItems.HEAVY_ASSAULT_RIFLE.get(), new SimpleModel(SpecialModels.HEAVY_ASSAULT_RIFLE::getModel));
 		ModelOverrides.register(initItems.AUTOMATIC_SNIPER_RIFLE.get(), new SimpleModel(SpecialModels.AUTOMATIC_SNIPER_RIFLE::getModel));
 		ModelOverrides.register(initItems.HUNTING_RIFLE.get(), new SimpleModel(SpecialModels.HUNTING_RIFLE::getModel));
 		
         ModelOverrides.register(initItems.REVOLVER.get(), new RevolverModel());
+        ModelOverrides.register(initItems.HEAVY_PISTOL.get(), new HeavyPistolModel());
         ModelOverrides.register(initItems.HEAVY_REVOLVER.get(), new HeavyRevolverModel());
         ModelOverrides.register(initItems.UZI.get(), new MicroSMGModel());
         ModelOverrides.register(initItems.SUBMACHINE_GUN.get(), new SubmachineGunModel());
