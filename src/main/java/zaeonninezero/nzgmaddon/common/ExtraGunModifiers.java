@@ -223,7 +223,7 @@ public class ExtraGunModifiers
         @Override
         public float kickModifier()
         {
-            return 0.35F;
+            return 0.4F;
         }
 
         @Override
@@ -249,19 +249,19 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.25F;
+            return 0.29F;
         }
 
         @Override
         public float kickModifier()
         {
-            return 0.4F;
+            return 0.35F;
         }
 
         @Override
         public float modifyProjectileSpread(float spread)
         {
-            return spread * 0.2F;
+            return spread * 0.25F;
         }
 
         @Override
@@ -270,11 +270,11 @@ public class ExtraGunModifiers
             return speed * 0.75F;
         }
 
-        @Override
+        /*@Override
         public int modifyFireRate(int rate)
         {
             return Math.min(rate + 1, Integer.MAX_VALUE);
-        }
+        }*/
     };
 	
 	
