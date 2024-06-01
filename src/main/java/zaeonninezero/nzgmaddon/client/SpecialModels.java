@@ -48,6 +48,9 @@ public enum SpecialModels
     MICRO_SMG_CHARGEHANDLE("micro_smg_chargehandle"),
 	
     SUBMACHINE_GUN_BASE("submachine_gun_base"),
+    SUBMACHINE_GUN_BASE_1("submachine_gun_base_1"),
+    SUBMACHINE_GUN_RAIL("submachine_gun_rail"),
+    SUBMACHINE_GUN_RAIL_1("submachine_gun_rail_1"),
     SUBMACHINE_GUN_SIGHTS("submachine_gun_sights"),
 	
     COMPACT_SMG_BASE("compact_smg_base"),
