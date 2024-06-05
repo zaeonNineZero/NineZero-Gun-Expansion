@@ -136,6 +136,14 @@ public class ExtraGunModifiers
             return speed * 1.05F;
         }
     };
+    public static final IGunModifier SCOPE_ADS = new IGunModifier()
+    {
+        @Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.8F;
+        }
+    };
 	
 	
 	public static final IGunModifier SLIGHT_BETTER_CONTROL = new IGunModifier()
