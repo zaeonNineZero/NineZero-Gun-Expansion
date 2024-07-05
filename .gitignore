@@ -16,5 +16,7 @@ runGameTestServer.launch
 runServer.launch
 
 # Misc
+deprecated_builds/*
 cgm-1.3.4-1.19.2.jar
+cgm-expanded-fork-1.19.2.jar
 SourceTree.lnk
