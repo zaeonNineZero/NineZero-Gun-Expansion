@@ -12,26 +12,12 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = nzgmAddon.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public enum SpecialModels
 {
-    //REVOLVER("gun/revolver"),
-    //HEAVY_PISTOL("gun/heavy_pistol"),
-    //UZI("gun/uzi"),
-    //SUBMACHINE_GUN("gun/submachine_gun"),
-    //COMPACT_SMG("gun/compact_smg"),
-    //RAPID_SMG("gun/rapid_smg"),
-    //PUMP_SHOTGUN("gun/pump_shotgun"),
-    //HUNTING_SHOTGUN("gun/hunting_shotgun"),
     DOUBLE_BARRELED_SHOTGUN("gun/double_barreled_shotgun"),
-    //AUTOMATIC_SHOTGUN("gun/automatic_shotgun"),
     HEAVY_ASSAULT_RIFLE("gun/heavy_assault_rifle"),
     HEAVY_ASSAULT_RIFLE_1("gun/heavy_assault_rifle_1"),
-    //BATTLE_RIFLE("gun/battle_rifle"),
-    //BULLPUP_RIFLE("gun/bullpup_rifle"),
-    //MACHINE_GUN("gun/machine_gun"),
-    //INFANTRY_RIFLE("gun/infantry_rifle"),
     AUTOMATIC_SNIPER_RIFLE("gun/automatic_sniper_rifle"),
     HUNTING_RIFLE("gun/hunting_rifle"),
-    //BOLT_ACTION_RIFLE("gun/bolt_action_rifle"),
-    //SNIPER_RIFLE("gun/sniper_rifle"),
+
 	
     REVOLVER_BASE("revolver_base"),
     REVOLVER_CYLINDER("revolver_cylinder"),
@@ -39,25 +25,33 @@ public enum SpecialModels
 	
     HEAVY_PISTOL_BASE("heavy_pistol_base"),
     HEAVY_PISTOL_SLIDE("heavy_pistol_slide"),
+    HEAVY_PISTOL_MAGAZINE("heavy_pistol_magazine"),
 	
     HEAVY_REVOLVER_BASE("heavy_revolver_base"),
+    HEAVY_REVOLVER_SWING("heavy_revolver_swing_out"),
     HEAVY_REVOLVER_CYLINDER("heavy_revolver_cylinder"),
+    HEAVY_REVOLVER_CHAMBERS("heavy_revolver_chambers"),
+    HEAVY_REVOLVER_BULLETS("heavy_revolver_bullets"),
 	
     MICRO_SMG_BASE("micro_smg_base"),
     MICRO_SMG_RAIL("micro_smg_rail"),
     MICRO_SMG_CHARGEHANDLE("micro_smg_chargehandle"),
+    MICRO_SMG_MAGAZINE("micro_smg_magazine"),
 	
     SUBMACHINE_GUN_BASE("submachine_gun_base"),
     SUBMACHINE_GUN_BASE_1("submachine_gun_base_1"),
     SUBMACHINE_GUN_RAIL("submachine_gun_rail"),
     SUBMACHINE_GUN_RAIL_1("submachine_gun_rail_1"),
     SUBMACHINE_GUN_SIGHTS("submachine_gun_sights"),
+    SUBMACHINE_GUN_MAGAZINE("submachine_gun_magazine"),
 	
     COMPACT_SMG_BASE("compact_smg_base"),
     COMPACT_SMG_SIGHTS("compact_smg_sights"),
+    COMPACT_SMG_MAGAZINE("compact_smg_magazine"),
 	
     RAPID_SMG_BASE("rapid_smg_base"),
     RAPID_SMG_SIGHTS("rapid_smg_sights"),
+    RAPID_SMG_MAGAZINE("rapid_smg_magazine"),
 	
     PUMP_SHOTGUN_BASE("pump_shotgun_base"),
     PUMP_SHOTGUN_BASE_1("pump_shotgun_base_1"),
@@ -69,12 +63,16 @@ public enum SpecialModels
 	
     AUTOMATIC_SHOTGUN_BASE("automatic_shotgun_base"),
     AUTOMATIC_SHOTGUN_SIGHTS("automatic_shotgun_sights"),
+    AUTOMATIC_SHOTGUN_MAGAZINE("automatic_shotgun_drum"),
 	
     BATTLE_RIFLE_BASE("battle_rifle_base"),
     BATTLE_RIFLE_SIGHTS("battle_rifle_sights"),
+    BATTLE_RIFLE_MAGAZINE("battle_rifle_magazine"),
+    BATTLE_RIFLE_BOLT_HANDLE("battle_rifle_bolt_handle"),
 	
     BULLPUP_RIFLE_BASE("bullpup_rifle_base"),
     BULLPUP_RIFLE_SIGHTS("bullpup_rifle_sights"),
+    BULLPUP_RIFLE_MAGAZINE("bullpup_rifle_magazine"),
 	
     MACHINE_GUN_BASE("machine_gun_base"),
     MACHINE_GUN_SIGHTS("machine_gun_sights"),
@@ -89,6 +87,7 @@ public enum SpecialModels
     INFANTRY_RIFLE_BASE("infantry_rifle_base"),
     INFANTRY_RIFLE_CHAMBER("infantry_rifle_chamber"),
     INFANTRY_RIFLE_RAIL("infantry_rifle_rail"),
+    INFANTRY_RIFLE_MAGAZINE("infantry_rifle_magazine"),
     
     BOLT_ACTION_RIFLE_BASE("bolt_action_rifle_base"),
     BOLT_ACTION_RIFLE_BASE_1("bolt_action_rifle_base_1"),
@@ -100,7 +99,8 @@ public enum SpecialModels
     SNIPER_RIFLE_BASE("sniper_rifle_base"),
     SNIPER_RIFLE_SIGHTS("sniper_rifle_sights"),
     SNIPER_RIFLE_CHAMBER("sniper_rifle_bolt1"),
-    SNIPER_RIFLE_BOLT("sniper_rifle_bolt2");
+    SNIPER_RIFLE_BOLT("sniper_rifle_bolt2"),
+    SNIPER_RIFLE_MAGAZINE("sniper_rifle_magazine");
 
     /**
      * The location of an item model in the [MOD_ID]/models/special/[NAME] folder

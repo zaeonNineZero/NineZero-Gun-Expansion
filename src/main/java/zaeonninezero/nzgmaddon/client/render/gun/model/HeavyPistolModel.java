@@ -49,11 +49,19 @@ public class HeavyPistolModel implements IOverrideModel
         
         Vec3 slideTranslations = Vec3.ZERO;
         
+        Vec3 magTranslations = Vec3.ZERO;
+        Vec3 magRotations = Vec3.ZERO;
+        Vec3 magRotOffset = Vec3.ZERO;
+        
         if(isPlayer && correctContext && !disableAnimations)
         {
         	try {
     				Player player = (Player) entity;
     				slideTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "slide");
+					
+        			magTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "magazine");
+        	        magRotations = GunAnimationHelper.getSmartAnimationRot(stack, player, partialTicks, "magazine");
+        	        magRotOffset = GunAnimationHelper.getSmartAnimationRotOffset(stack, player, partialTicks, "magazine");
         		}
         		catch(Exception e) {
                 	GunMod.LOGGER.error("NZGE encountered an error trying to apply animations.");
@@ -83,7 +91,7 @@ public class HeavyPistolModel implements IOverrideModel
             slideTranslations = slideTranslations.add(0, 0, cooldown_d * 1.5);
         }
 
-		// Pistol slide charging handle. This animated part kicks backward on firing, then moves back to its resting position.
+		// Pistol slide. This animated part kicks backward on firing, then moves back to its resting position.
 		// Push pose so we can make do transformations without affecting the models above.
         poseStack.pushPose();
 		// Now we apply our transformations.

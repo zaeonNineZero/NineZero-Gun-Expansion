@@ -6,6 +6,7 @@ import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.GunMod;
 import com.mrcrayfish.guns.client.GunModel;
 import zaeonninezero.nzgmaddon.client.SpecialModels;
+
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
 import com.mrcrayfish.guns.client.util.GunAnimationHelper;
 import com.mrcrayfish.guns.client.util.RenderUtil;
@@ -63,6 +64,10 @@ public class SniperRifleModel implements IOverrideModel
         Vec3 boltRotations = Vec3.ZERO;
         Vec3 boltRotOffset = new Vec3(0, -4.15, 0);
         
+        Vec3 magTranslations = Vec3.ZERO;
+        Vec3 magRotations = Vec3.ZERO;
+        Vec3 magRotOffset = Vec3.ZERO;
+        
         if(isPlayer && correctContext && !disableAnimations)
         {
         	try {
@@ -70,6 +75,10 @@ public class SniperRifleModel implements IOverrideModel
     				
         			boltTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "bolt");
         	        boltRotations = GunAnimationHelper.getSmartAnimationRot(stack, player, partialTicks, "bolt");
+					
+        			magTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "magazine");
+        	        magRotations = GunAnimationHelper.getSmartAnimationRot(stack, player, partialTicks, "magazine");
+        	        magRotOffset = GunAnimationHelper.getSmartAnimationRotOffset(stack, player, partialTicks, "magazine");
 
         	    	if(!GunAnimationHelper.hasAnimation("fire", stack) && GunAnimationHelper.getSmartAnimationType(stack, player, partialTicks)=="fire")
         	    	useFallbackAnimation = true;
@@ -127,9 +136,9 @@ public class SniperRifleModel implements IOverrideModel
         	}
         	else
         	{
-	        	poseStack.translate(0, -boltRotOffset.y*0.0625, 0);
-	        	poseStack.mulPose(Vector3f.ZN.rotationDegrees((float) boltRotations.z));
 	        	poseStack.translate(0, boltRotOffset.y*0.0625, 0);
+	        	poseStack.mulPose(Vector3f.ZN.rotationDegrees((float) boltRotations.z));
+	        	poseStack.translate(0, -boltRotOffset.y*0.0625, 0);
         	}
         }
 		// Our transformations are done - now we can render the model.
@@ -145,6 +154,21 @@ public class SniperRifleModel implements IOverrideModel
             poseStack.translate(0, 0, boltTranslations.z*0.0625);
 		// Our transformations are done - now we can render the model.
         RenderUtil.renderModel(SpecialModels.SNIPER_RIFLE_CHAMBER.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+		// Pop pose to compile everything in the render matrix.
+        poseStack.popPose();
+        
+        // Magazine for Sniper Rifle
+        poseStack.pushPose();
+		// Now we apply our transformations.
+        if(isPlayer && isFirstPerson && !disableAnimations)
+        {
+        	if(magTranslations!=Vec3.ZERO)
+        	poseStack.translate(magTranslations.x*0.0625, magTranslations.y*0.0625, magTranslations.z*0.0625);
+        	if(magRotations!=Vec3.ZERO)
+               GunAnimationHelper.rotateAroundOffset(poseStack, magRotations, magRotOffset);
+    	}
+		// Our transformations are done - now we can render the model.
+        RenderUtil.renderModel(SpecialModels.SNIPER_RIFLE_MAGAZINE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
     }

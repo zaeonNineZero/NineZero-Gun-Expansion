@@ -1,0 +1,61 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "cgm:items/pistol",
+		"particle": "cgm:items/advanced_bullet"
+	},
+	"elements": [
+		{
+			"from": [7.812, 4.221, 11.795],
+			"to": [8.188, 4.599, 13.805],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.76258, 11.805]},
+			"faces": {
+				"north": {"uv": [1, 2, 2, 3], "texture": "#1"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [1, 2, 2, 3], "texture": "#1"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.812, 2.941, 11.795],
+			"to": [8.188, 3.319, 13.805],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.7797, 11.805]},
+			"faces": {
+				"north": {"uv": [1, 2, 2, 3], "texture": "#1"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [1, 2, 2, 3], "texture": "#1"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0}
+			}
+		}
+	],
+	"display": {},
+	"groups": [
+		{
+			"name": "cylinder",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"nbt": "{}",
+			"children": [
+				{
+					"name": "rotating",
+					"origin": [8, 3.5, 13.3],
+					"color": 0,
+					"nbt": "{}",
+					"children": [
+						{
+							"name": "holes",
+							"origin": [7.99, 3.56, 14.8],
+							"color": 0,
+							"nbt": "{}",
+							"children": [0, 1]
+						}
+					]
+				}
+			]
+		}
+	]
+}
