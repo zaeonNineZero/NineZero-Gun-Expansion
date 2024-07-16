@@ -83,6 +83,9 @@ public class SniperRifleModel implements IOverrideModel
         	    	if(!GunAnimationHelper.hasAnimation("fire", stack) && GunAnimationHelper.getSmartAnimationType(stack, player, partialTicks)=="fire")
         	    	useFallbackAnimation = true;
         		}
+	    		catch(NoClassDefFoundError ignored) {
+	            	disableAnimations = true;
+	    		}
         		catch(Exception e) {
                 	GunMod.LOGGER.error("Redundant Guns encountered an error trying to apply animations.");
                 	e.printStackTrace();
@@ -114,7 +117,7 @@ public class SniperRifleModel implements IOverrideModel
 	            float cooldown_g = Math.min(cooldown_e,cooldown_f);
 	            
     			boltTranslations = new Vec3(0, 0, (cooldown_d * 2.5));
-    	        boltRotations = new Vec3(0, 0, (67.5F * Math.min(cooldown_g*2F,1)));
+    	        boltRotations = new Vec3(0, 0, -(55F * Math.min(cooldown_g*2F,1)));
 	        }
     	}
 

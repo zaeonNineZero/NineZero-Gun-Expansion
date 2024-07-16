@@ -62,6 +62,9 @@ public class HuntingShotgunModel implements IOverrideModel
         	    	if(!GunAnimationHelper.hasAnimation("fire", stack) && GunAnimationHelper.getSmartAnimationType(stack, player, partialTicks)=="fire")
         	    	useFallbackAnimation = true;
         		}
+	    		catch(NoClassDefFoundError ignored) {
+	            	disableAnimations = true;
+	    		}
         		catch(Exception e) {
                 	GunMod.LOGGER.error("NZGE encountered an error trying to apply animations.");
                 	e.printStackTrace();

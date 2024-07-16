@@ -55,7 +55,10 @@ public class HeavyRevolverModel implements IOverrideModel
         Vec3 swingRotations = Vec3.ZERO;
         Vec3 swingRotOffset = Vec3.ZERO;
         
+        Vec3 chamberRotations = Vec3.ZERO;
+        
         Vec3 ammoTranslations = Vec3.ZERO;
+        Vec3 ammoRotations = Vec3.ZERO;
         
         if(isPlayer && correctContext && !disableAnimations)
         {
@@ -66,8 +69,14 @@ public class HeavyRevolverModel implements IOverrideModel
         			swingRotations = GunAnimationHelper.getSmartAnimationRot(stack, player, partialTicks, "swing_out");
         			swingRotOffset = GunAnimationHelper.getSmartAnimationRotOffset(stack, player, partialTicks, "swing_out");
         			
+        			chamberRotations = GunAnimationHelper.getSmartAnimationRot(stack, player, partialTicks, "chambers");
+        			
     				ammoTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "bullets");
+    				ammoRotations = GunAnimationHelper.getSmartAnimationRot(stack, player, partialTicks, "bullets");
         		}
+	    		catch(NoClassDefFoundError ignored) {
+	            	disableAnimations = true;
+	    		}
         		catch(Exception e) {
                 	GunMod.LOGGER.error("NZGE encountered an error trying to apply animations.");
                 	e.printStackTrace();
@@ -115,16 +124,14 @@ public class HeavyRevolverModel implements IOverrideModel
         {
         	if (!disableAnimations)
         	{
-            	if(cylinderRotations!=Vec3.ZERO)
-                GunAnimationHelper.rotateAroundOffset(poseStack, cylinderRotations.scale(-1), cylinderRotOffset);
             	if(swingRotations!=Vec3.ZERO)
                 GunAnimationHelper.rotateAroundOffset(poseStack, swingRotations, swingRotOffset);
         	}
-        	else
+        	if(cylinderRotations!=Vec3.ZERO)
         	{
-	        	poseStack.translate(0, -cylinderRotOffset.y*0.0625, 0);
-	        	poseStack.mulPose(Vector3f.ZN.rotationDegrees((float) -cylinderRotations.z));
 	        	poseStack.translate(0, cylinderRotOffset.y*0.0625, 0);
+	        	poseStack.mulPose(Vector3f.ZN.rotationDegrees((float) cylinderRotations.z));
+	        	poseStack.translate(0, -cylinderRotOffset.y*0.0625, 0);
         	}
         }
 		// Render the transformed model.
@@ -139,15 +146,16 @@ public class HeavyRevolverModel implements IOverrideModel
     		// Apply transformations to this part.
             if(isPlayer)
             {
-            	poseStack.translate(-0.045*0.0625, (cylinderRotOffset.y+0.045)*0.0625, 0);
-    	        poseStack.mulPose(Vector3f.ZN.rotationDegrees((float) cylinderRotations.z + (60*i)));
-    	        poseStack.translate(0, -cylinderRotOffset.y*0.0625, 0);
 
             	if (!disableAnimations)
             	{
                 	if(swingRotations!=Vec3.ZERO)
                     GunAnimationHelper.rotateAroundOffset(poseStack, swingRotations, swingRotOffset);
             	}
+            	
+            	poseStack.translate(-0.045*0.0625, (cylinderRotOffset.y+0.045)*0.0625, 0);
+    	        poseStack.mulPose(Vector3f.ZN.rotationDegrees((float) (cylinderRotations.z + chamberRotations.z) + (60*i)));
+    	        poseStack.translate(0, -cylinderRotOffset.y*0.0625, 0);
             }
     		// Render the transformed model.
             RenderUtil.renderModel(SpecialModels.HEAVY_REVOLVER_CHAMBERS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
@@ -161,16 +169,16 @@ public class HeavyRevolverModel implements IOverrideModel
             {
             	if(ammoTranslations!=Vec3.ZERO && isFirstPerson)
                 poseStack.translate(0, 0, ammoTranslations.z*0.0625);
-            	
-            	poseStack.translate(-0.045*0.0625, (cylinderRotOffset.y+0.045)*0.0625, 0);
-    	        poseStack.mulPose(Vector3f.ZN.rotationDegrees((float) cylinderRotations.z + (60*i)));
-    	        poseStack.translate(0, -cylinderRotOffset.y*0.0625, 0);
     	        
             	if (!disableAnimations)
             	{
                 	if(swingRotations!=Vec3.ZERO)
                     GunAnimationHelper.rotateAroundOffset(poseStack, swingRotations, swingRotOffset);
             	}
+            	
+            	poseStack.translate(-0.045*0.0625, (cylinderRotOffset.y+0.045)*0.0625, 0);
+    	        poseStack.mulPose(Vector3f.ZN.rotationDegrees((float) (cylinderRotations.z + chamberRotations.z) + (60*i)));
+    	        poseStack.translate(0, -cylinderRotOffset.y*0.0625, 0);
             }
     		// Render the transformed model.
             RenderUtil.renderModel(SpecialModels.HEAVY_REVOLVER_BULLETS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);

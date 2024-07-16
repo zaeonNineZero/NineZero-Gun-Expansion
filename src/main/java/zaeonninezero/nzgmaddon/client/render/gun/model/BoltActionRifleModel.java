@@ -88,6 +88,9 @@ public class BoltActionRifleModel implements IOverrideModel
         	    	if(!GunAnimationHelper.hasAnimation("fire", stack) && GunAnimationHelper.getSmartAnimationType(stack, player, partialTicks)=="fire")
         	    	useFallbackAnimation = true;
         		}
+	    		catch(NoClassDefFoundError ignored) {
+	            	disableAnimations = true;
+	    		}
         		catch(Exception e) {
                 	GunMod.LOGGER.error("Redundant Guns encountered an error trying to apply animations.");
                 	e.printStackTrace();
@@ -119,7 +122,7 @@ public class BoltActionRifleModel implements IOverrideModel
 	            float cooldown_g = Math.min(cooldown_e,cooldown_f);
 	            
     			boltTranslations = new Vec3(0, 0, (cooldown_d * 2.5));
-    	        boltRotations = new Vec3(0, 0, (67.5F * Math.min(cooldown_g*2F,1)));
+    	        boltRotations = new Vec3(0, 0, -(67.5F * Math.min(cooldown_g*2F,1)));
 	        }
     	}
 
@@ -141,9 +144,9 @@ public class BoltActionRifleModel implements IOverrideModel
         	}
         	else
         	{
-	        	poseStack.translate(0, -boltRotOffset.y*0.0625, 0);
-	        	poseStack.mulPose(Vector3f.ZN.rotationDegrees((float) boltRotations.z));
 	        	poseStack.translate(0, boltRotOffset.y*0.0625, 0);
+	        	poseStack.mulPose(Vector3f.ZN.rotationDegrees((float) boltRotations.z));
+	        	poseStack.translate(0, -boltRotOffset.y*0.0625, 0);
         	}
         }
 		// Our transformations are done - now we can render the model.

@@ -291,6 +291,20 @@
       "nzgmaddon:item/battle_rifle/enchanted_fire3"
     ]
   },
+"item.battle_rifle.mag_out": {
+    "sounds": [{"name":"nzgmaddon:item/battle_rifle/mag_out"}]
+  },
+"item.battle_rifle.mag_in": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/battle_rifle/mag_in"}]
+  },
+"item.battle_rifle.bolt_back": {
+    "sounds": [{"name":"nzgmaddon:item/battle_rifle/bolt_back"}]
+  },
+"item.battle_rifle.bolt_forward": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/battle_rifle/bolt_forward"}]
+  },
 "item.battle_rifle.cock": {
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/battle_rifle/cock"}]
