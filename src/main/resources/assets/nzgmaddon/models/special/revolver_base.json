@@ -140,36 +140,12 @@
 			}
 		},
 		{
-			"from": [7.89, 3.46, 12],
-			"to": [8.11, 3.68, 14.3],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.57, 13.95]},
-			"faces": {
-				"east": {"uv": [6, 4, 7, 5], "texture": "#1"},
-				"south": {"uv": [6, 4, 7, 5], "texture": "#1"},
-				"west": {"uv": [6, 4, 7, 5], "texture": "#1"},
-				"up": {"uv": [6, 4, 7, 5], "texture": "#1"},
-				"down": {"uv": [6, 4, 7, 5], "texture": "#1"}
-			}
-		},
-		{
-			"from": [7.89, 3.46, 9.6],
-			"to": [8.11, 3.68, 11.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.57, 11.45]},
-			"faces": {
-				"north": {"uv": [5, 4, 6, 5], "texture": "#1"},
-				"east": {"uv": [7, 4, 5.6, 5], "texture": "#1"},
-				"west": {"uv": [5.6, 4, 7, 5], "texture": "#1"},
-				"up": {"uv": [5.6, 4, 7, 5], "rotation": 90, "texture": "#1"},
-				"down": {"uv": [7, 4, 5.6, 5], "rotation": 90, "texture": "#1"}
-			}
-		},
-		{
 			"from": [7.825, 3.985, 12],
-			"to": [8.175, 4.335, 12.3],
+			"to": [8.175, 4.335, 12.325],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.535, 12.355]},
 			"faces": {
 				"east": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
-				"south": {"uv": [2, 12, 3, 13], "texture": "#1"},
+				"south": {"uv": [1, 2, 2, 3], "texture": "#1"},
 				"west": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
 				"up": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
 				"down": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0}
@@ -442,7 +418,7 @@
 		},
 		{
 			"from": [7.6, 2.96, 11.5],
-			"to": [8.4, 4.4, 12.2],
+			"to": [8.4, 4.4, 12.2001],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 1.75, -0.3]},
 			"faces": {
 				"north": {"uv": [3.5, 3, 5.5, 4], "rotation": 90, "texture": "#1", "tintindex": 0},
@@ -820,49 +796,40 @@
 			"name": "revolver",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"nbt": "{}",
 			"children": [
 				{
 					"name": "trigger",
 					"origin": [7.9, 7.3, 7.4],
 					"color": 0,
-					"nbt": "{}",
 					"children": [0, 1, 2, 3, 4, 5]
 				},
 				{
 					"name": "grip",
 					"origin": [8, 8, 8],
 					"color": 0,
-					"nbt": "{}",
 					"children": [6, 7, 8, 9, 10, 11]
 				},
 				{
 					"name": "rear_body",
 					"origin": [8, 8, 8],
 					"color": 0,
-					"nbt": "{}",
 					"children": [
 						{
 							"name": "cylinder",
 							"origin": [8, 8, 8],
 							"color": 0,
-							"nbt": "{}",
 							"children": [
 								{
 									"name": "stationary",
 									"origin": [8, 8, 8],
 									"color": 0,
-									"nbt": "{}",
 									"children": [
 										12,
-										13,
-										14,
 										{
 											"name": "group",
 											"origin": [8, 3.57, 13.3],
 											"color": 0,
-											"nbt": "{}",
-											"children": [15, 16, 17]
+											"children": [13, 14, 15]
 										}
 									]
 								}
@@ -872,16 +839,16 @@
 							"name": "hammer",
 							"origin": [8, 8, 8],
 							"color": 0,
-							"nbt": "{}",
-							"children": [18, 19, 20, 21, 22, 23, 24]
+							"children": [16, 17, 18, 19, 20, 21, 22]
 						},
 						{
 							"name": "rear_sights",
 							"origin": [8, 8, 8],
 							"color": 0,
-							"nbt": "{}",
-							"children": [25, 26, 27, 28]
+							"children": [23, 24, 25, 26]
 						},
+						27,
+						28,
 						29,
 						30,
 						31,
@@ -897,58 +864,49 @@
 						41,
 						42,
 						43,
-						44,
-						45,
-						46
+						44
 					]
 				},
 				{
 					"name": "barrel",
 					"origin": [8, 8, 8],
 					"color": 0,
-					"nbt": "{}",
 					"children": [
 						{
 							"name": "br_body",
 							"origin": [8, 4.16, 9.8501],
 							"color": 0,
-							"nbt": "{}",
-							"children": [47, 48, 49, 50]
+							"children": [45, 46, 47, 48]
 						},
 						{
 							"name": "br_front",
 							"origin": [8, 4.16, 9.8501],
 							"color": 0,
-							"nbt": "{}",
-							"children": [51, 52, 53, 54, 55, 56, 57, 58]
+							"children": [49, 50, 51, 52, 53, 54, 55, 56]
 						},
 						{
 							"name": "br_rear",
 							"origin": [8, 4.16, 10.55],
 							"color": 0,
-							"nbt": "{}",
-							"children": [59, 60, 61]
+							"children": [57, 58, 59]
 						},
 						{
 							"name": "br_muzzle",
 							"origin": [8, 4.16, 9.8501],
 							"color": 0,
-							"nbt": "{}",
-							"children": [62, 63, 64, 65, 66, 67, 68, 69, 70]
+							"children": [60, 61, 62, 63, 64, 65, 66, 67, 68]
 						},
 						{
 							"name": "br_top",
 							"origin": [8, 8, 8],
 							"color": 0,
-							"nbt": "{}",
-							"children": [71, 72, 73]
+							"children": [69, 70, 71]
 						},
 						{
 							"name": "front_sight",
 							"origin": [8, 8, 8],
 							"color": 0,
-							"nbt": "{}",
-							"children": [74]
+							"children": [72]
 						}
 					]
 				}

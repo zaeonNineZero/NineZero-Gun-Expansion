@@ -64,19 +64,6 @@
 			}
 		},
 		{
-			"name": "mag_base",
-			"from": [7.3901, -0.94239, 15.53827],
-			"to": [8.6099, -0.69239, 16.83827],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.9999, -0.39239, 0.08827]},
-			"faces": {
-				"north": {"uv": [1, 10, 0, 11], "texture": "#2"},
-				"east": {"uv": [1, 10, 0, 11], "texture": "#2"},
-				"south": {"uv": [1, 10, 0, 11], "texture": "#2"},
-				"west": {"uv": [1, 10, 0, 11], "texture": "#2"},
-				"down": {"uv": [1, 10, 0, 11], "texture": "#2"}
-			}
-		},
-		{
 			"from": [7.75, 1.025, 13.025],
 			"to": [8.25, 1.475, 14.875],
 			"rotation": {"angle": 0, "axis": "y", "origin": [7.9, 7.45, 7.6]},
@@ -588,47 +575,42 @@
 			"name": "heavy_pistol",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"nbt": "{}",
 			"children": [
 				{
 					"name": "grip",
 					"origin": [7.9, 7.35, 7.8],
 					"color": 0,
-					"nbt": "{}",
-					"children": [0, 1, 2, 3, 4, 5]
+					"children": [0, 1, 2, 3, 4]
 				},
 				{
 					"name": "trigger_well",
 					"origin": [7.9, 7.35, 7.8],
 					"color": 0,
-					"nbt": "{}",
-					"children": [6, 7, 8, 9]
+					"children": [5, 6, 7, 8]
 				},
 				{
 					"name": "frame",
 					"origin": [0, -0.1, 0.5],
 					"color": 0,
-					"nbt": "{}",
 					"children": [
 						{
 							"name": "tail",
 							"origin": [0, -0.1, 0.5],
 							"color": 0,
-							"nbt": "{}",
-							"children": [10, 11, 12, 13]
+							"children": [9, 10, 11, 12]
 						},
+						13,
 						14,
 						15,
-						16,
-						17
+						16
 					]
 				},
 				{
 					"name": "body",
 					"origin": [8, 8, 8],
 					"color": 0,
-					"nbt": "{}",
 					"children": [
+						17,
 						18,
 						19,
 						20,
@@ -648,20 +630,17 @@
 						34,
 						35,
 						36,
-						37,
 						{
 							"name": "rail",
 							"origin": [0, 1.6, -2.15],
 							"color": 0,
-							"nbt": "{}",
-							"children": [38]
+							"children": [37]
 						},
 						{
 							"name": "hammer",
 							"origin": [7.9999, 3.57571, 16.68853],
 							"color": 0,
-							"nbt": "{}",
-							"children": [39, 40, 41, 42, 43]
+							"children": [38, 39, 40, 41, 42]
 						}
 					]
 				},
@@ -669,16 +648,14 @@
 					"name": "barrel",
 					"origin": [8, 7.6, 9.1],
 					"color": 0,
-					"nbt": "{}",
 					"children": [
 						{
 							"name": "group",
 							"origin": [7.6006, 3.95059, -0.051],
 							"color": 0,
-							"nbt": "{}",
-							"children": [44, 45, 46, 47, 48, 49, 50, 51]
+							"children": [43, 44, 45, 46, 47, 48, 49, 50]
 						},
-						52
+						51
 					]
 				}
 			]

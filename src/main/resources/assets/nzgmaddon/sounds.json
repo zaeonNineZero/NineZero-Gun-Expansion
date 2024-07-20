@@ -41,6 +41,20 @@
     "subtitle":"subtitle.cgm.fire.silenced",
     "sounds": [{"name":"nzgmaddon:item/revolver/silenced_fire"}]
   },
+"item.revolver.cylinder_open": {
+    "sounds": [{"name":"nzgmaddon:item/revolver/cylinder_open"}]
+  },
+"item.revolver.cylinder_close": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/revolver/cylinder_close"}]
+  },
+"item.revolver.bullets_unload": {
+    "sounds": [{"name":"nzgmaddon:item/revolver/bullets_unload"}]
+  },
+"item.revolver.bullets_load": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/revolver/bullets_load"}]
+  },
 "item.revolver.cock": {
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/revolver/cock"}]
@@ -64,6 +78,20 @@
     "subtitle":"subtitle.cgm.fire.silenced",
     "sounds": [{"name":"nzgmaddon:item/heavy_pistol/silenced_fire"}]
   },
+"item.heavy_pistol.mag_out": {
+    "sounds": [{"name":"nzgmaddon:item/heavy_pistol/mag_out"}]
+  },
+"item.heavy_pistol.mag_in": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/heavy_pistol/mag_in"}]
+  },
+"item.heavy_pistol.slide_back": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/heavy_pistol/slide_back"}]
+  },
+"item.heavy_pistol.slide_forward": {
+    "sounds": [{"name":"nzgmaddon:item/heavy_pistol/slide_forward"}]
+  },
 "item.heavy_pistol.cock": {
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/heavy_pistol/cock"}]
@@ -86,6 +114,17 @@
 "item.heavy_revolver.silenced_fire": {
     "subtitle":"subtitle.cgm.fire.silenced",
     "sounds": [{"name":"nzgmaddon:item/heavy_revolver/silenced_fire"}]
+  },
+"item.heavy_revolver.cylinder_open": {
+    "sounds": [{"name":"nzgmaddon:item/heavy_revolver/cylinder_open"}]
+  },
+"item.heavy_revolver.cylinder_close": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/heavy_revolver/cylinder_close"}]
+  },
+"item.heavy_revolver.bullets_load": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/heavy_revolver/bullets_load"}]
   },
 "item.heavy_revolver.cock": {
     "subtitle":"subtitle.cgm.cock",

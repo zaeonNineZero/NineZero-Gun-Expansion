@@ -1,0 +1,43 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "cgm:items/pistol",
+		"particle": "cgm:items/pistol"
+	},
+	"elements": [
+		{
+			"from": [7.829, 3.989, 12.345],
+			"to": [8.171, 4.331, 14.205],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.57, 12.355]},
+			"faces": {
+				"north": {"uv": [1, 2, 2, 3], "texture": "#1"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [1, 2, 2, 3], "texture": "#1"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.829, 2.809, 12.345],
+			"to": [8.171, 3.151, 14.205],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.57, 12.355]},
+			"faces": {
+				"north": {"uv": [1, 2, 2, 3], "texture": "#1"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [1, 2, 2, 3], "texture": "#1"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#1", "tintindex": 0}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "chambers",
+			"origin": [7.99, 3.56, 14.8],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

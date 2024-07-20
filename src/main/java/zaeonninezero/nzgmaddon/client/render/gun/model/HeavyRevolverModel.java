@@ -43,7 +43,7 @@ public class HeavyRevolverModel implements IOverrideModel
         BakedModel bakedModel = SpecialModels.HEAVY_REVOLVER_BASE.getModel();
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
 
-     // Special animated segment for compat with the CGM Expanded fork.
+        // Special animated segment for compat with the CGM Expanded fork.
         // First, some variables for animation building
         boolean isPlayer = entity != null && entity.equals(Minecraft.getInstance().player);
         boolean isFirstPerson = (transformType.firstPerson());
@@ -58,7 +58,6 @@ public class HeavyRevolverModel implements IOverrideModel
         Vec3 chamberRotations = Vec3.ZERO;
         
         Vec3 ammoTranslations = Vec3.ZERO;
-        Vec3 ammoRotations = Vec3.ZERO;
         
         if(isPlayer && correctContext && !disableAnimations)
         {
@@ -72,7 +71,6 @@ public class HeavyRevolverModel implements IOverrideModel
         			chamberRotations = GunAnimationHelper.getSmartAnimationRot(stack, player, partialTicks, "chambers");
         			
     				ammoTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "bullets");
-    				ammoRotations = GunAnimationHelper.getSmartAnimationRot(stack, player, partialTicks, "bullets");
         		}
 	    		catch(NoClassDefFoundError ignored) {
 	            	disableAnimations = true;
@@ -138,7 +136,8 @@ public class HeavyRevolverModel implements IOverrideModel
         RenderUtil.renderModel(SpecialModels.HEAVY_REVOLVER_CYLINDER.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
-        
+
+        // Loop for symmetrical chamber and bullet components.
         for (int i=0; i<3; i++)
         {
             // Chamber components.

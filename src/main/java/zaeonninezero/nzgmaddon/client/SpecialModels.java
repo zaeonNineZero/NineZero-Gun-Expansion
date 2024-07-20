@@ -20,8 +20,11 @@ public enum SpecialModels
 
 	
     REVOLVER_BASE("revolver_base"),
-    REVOLVER_CYLINDER("revolver_cylinder"),
     REVOLVER_RAIL("revolver_rail"),
+    REVOLVER_SWING("revolver_swing_out"),
+    REVOLVER_CYLINDER("revolver_cylinder"),
+    REVOLVER_CHAMBERS("revolver_chambers"),
+    REVOLVER_BULLETS("revolver_bullets"),
 	
     HEAVY_PISTOL_BASE("heavy_pistol_base"),
     HEAVY_PISTOL_SLIDE("heavy_pistol_slide"),

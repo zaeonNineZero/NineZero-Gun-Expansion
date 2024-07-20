@@ -94,15 +94,28 @@ public class HeavyPistolModel implements IOverrideModel
             slideTranslations = slideTranslations.add(0, 0, cooldown_d * 1.5);
         }
 
-		// Pistol slide. This animated part kicks backward on firing, then moves back to its resting position.
-		// Push pose so we can make do transformations without affecting the models above.
+		// Heavy Pistol slide. This animated part kicks backward on firing, then moves back to its resting position.
         poseStack.pushPose();
-		// Now we apply our transformations.
-		// All we need to do is move the model based on the cooldown variable.
+		// Apply transformations to this part.
         if(isPlayer)
         poseStack.translate(0, 0, slideTranslations.z * 0.0625);
-		// Our transformations are done - now we can render the model.
+		// Render the transformed model.
         RenderUtil.renderModel(SpecialModels.HEAVY_PISTOL_SLIDE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+		// Pop pose to compile everything in the render matrix.
+        poseStack.popPose();
+        
+        // Magazine for Heavy Pistol
+        poseStack.pushPose();
+		// Apply transformations to this part.
+        if(isPlayer && isFirstPerson && !disableAnimations)
+        {
+        	if(magTranslations!=Vec3.ZERO)
+        	poseStack.translate(magTranslations.x*0.0625, magTranslations.y*0.0625, magTranslations.z*0.0625);
+        	if(magRotations!=Vec3.ZERO)
+               GunAnimationHelper.rotateAroundOffset(poseStack, magRotations, magRotOffset);
+    	}
+		// Render the transformed model.
+        RenderUtil.renderModel(SpecialModels.HEAVY_PISTOL_MAGAZINE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
     }

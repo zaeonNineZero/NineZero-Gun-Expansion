@@ -1,0 +1,64 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "cgm:items/pistol",
+		"2": "nzgmaddon:items/pistol_magazines",
+		"particle": "cgm:items/pistol"
+	},
+	"elements": [
+		{
+			"from": [7.5515, -0.70839, 15.72198],
+			"to": [8.4485, -0.37839, 16.79698],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, -0.49339, 16.60448]},
+			"faces": {
+				"east": {"uv": [1, 9.5, 1.5, 9.75], "texture": "#2"},
+				"south": {"uv": [3.5, 9.5, 2.5, 9.75], "texture": "#2"},
+				"west": {"uv": [1.5, 9.5, 1, 9.75], "texture": "#2"}
+			}
+		},
+		{
+			"from": [7.551, -0.72952, 15.33175],
+			"to": [8.449, 3.19048, 15.80175],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [7.949, 0.61548, 15.68175]},
+			"faces": {
+				"north": {"uv": [5.5, 7.5, 4.5, 9.5], "texture": "#2"},
+				"east": {"uv": [1.5, 7.5, 2.25, 9.625], "texture": "#2"},
+				"west": {"uv": [2.25, 7.5, 1.5, 9.625], "texture": "#2"},
+				"up": {"uv": [1.5, 6.5, 2, 7], "rotation": 90, "texture": "#2"}
+			}
+		},
+		{
+			"from": [7.551, -0.72952, 15.80175],
+			"to": [8.449, 3.19048, 16.33175],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [7.949, 0.61548, 15.68175]},
+			"faces": {
+				"east": {"uv": [1, 7.5, 1.625, 9.625], "texture": "#2"},
+				"south": {"uv": [2.5, 7.5, 3.5, 9.5], "texture": "#2"},
+				"west": {"uv": [1.625, 7.5, 1, 9.625], "texture": "#2"},
+				"up": {"uv": [2, 6.5, 2.5, 7], "rotation": 90, "texture": "#2"}
+			}
+		},
+		{
+			"name": "mag_base",
+			"from": [7.4901, -0.94239, 15.48827],
+			"to": [8.5099, -0.69239, 16.79827],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.9999, -0.39239, 0.08827]},
+			"faces": {
+				"north": {"uv": [8, 8, 7, 9], "texture": "#1"},
+				"east": {"uv": [8, 8, 7, 9], "texture": "#1"},
+				"south": {"uv": [8, 8, 7, 9], "texture": "#1"},
+				"west": {"uv": [8, 8, 7, 9], "texture": "#1"},
+				"up": {"uv": [8, 8, 7, 9], "texture": "#1"},
+				"down": {"uv": [8, 8, 7, 9], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "magazine",
+			"origin": [7.9999, -0.39239, 0.08827],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}
