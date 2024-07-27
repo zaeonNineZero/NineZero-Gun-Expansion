@@ -47,7 +47,7 @@ public class BoltActionRifleModel implements IOverrideModel
         bakedModel = SpecialModels.BOLT_ACTION_RIFLE_BASE_1.getModel();
         else
         if (getVariant(stack) == 2)
-        bakedModel = SpecialModels.BOLT_ACTION_RIFLE_BASE.getModel();
+        bakedModel = SpecialModels.BOLT_ACTION_RIFLE_BASE_2.getModel();
 
         // Render the BakedModel we selected.
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
@@ -56,11 +56,11 @@ public class BoltActionRifleModel implements IOverrideModel
 		// We have to grab the gun's scope attachment slot and check whether it is empty or not.
 		// If the isEmpty function returns true, then we render the iron sights.
 		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
-        if(attachmentStack.isEmpty())
+        if(attachmentStack.isEmpty() && !(getVariant(stack) == 2))
 		{
             RenderUtil.renderModel(SpecialModels.BOLT_ACTION_RIFLE_SIGHTS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
-		else
+        else
 		// Render the top rail element that appears when a scope is attached.
 		{
             RenderUtil.renderModel(SpecialModels.BOLT_ACTION_RIFLE_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);

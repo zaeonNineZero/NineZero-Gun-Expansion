@@ -32,8 +32,8 @@ public class InfantryRifleModel implements IOverrideModel
 	private boolean disableAnimations = false;
 	
     @Override
-	// This class renders a multi-part model that supports animations and removable parts.
-	// We'll render the non-moving/static parts first, then render the animated parts.
+	// This class renders a multi-part model with support for interchangeable parts and animations.
+	// Static parts are rendered first, followed by any moving/animated parts.
 	
 	// We start by declaring our render function that will handle rendering the core baked model (which is a non-moving part).
     public void render(float partialTicks, ItemTransforms.TransformType transformType, ItemStack stack, ItemStack parent, @Nullable LivingEntity entity, PoseStack poseStack, MultiBufferSource buffer, int light, int overlay)
@@ -51,7 +51,7 @@ public class InfantryRifleModel implements IOverrideModel
             RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
 
-     // Special animated segment for compat with the CGM Expanded fork.
+        // Special animated segment for compat with the CGM Expanded fork.
         // First, some variables for animation building
         boolean isPlayer = entity != null && entity.equals(Minecraft.getInstance().player);
         boolean isFirstPerson = (transformType.firstPerson());
@@ -67,7 +67,7 @@ public class InfantryRifleModel implements IOverrideModel
         {
         	try {
     				Player player = (Player) entity;
-    				chamberTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "slide");
+    				chamberTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "bolt_handle");
 					
         			magTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "magazine");
         	        magRotations = GunAnimationHelper.getSmartAnimationRot(stack, player, partialTicks, "magazine");

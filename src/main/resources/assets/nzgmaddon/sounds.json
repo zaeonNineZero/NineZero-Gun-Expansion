@@ -407,6 +407,20 @@
     "subtitle":"subtitle.cgm.enchanted_fire",
     "sounds": [{"name":"nzgmaddon:item/infantry_rifle/enchanted_fire"}]
   },
+"item.infantry_rifle.mag_out": {
+    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/mag_out"}]
+  },
+"item.infantry_rifle.mag_in": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/mag_in"}]
+  },
+"item.infantry_rifle.bolt_back": {
+    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/bolt_back"}]
+  },
+"item.infantry_rifle.bolt_forward": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/bolt_forward"}]
+  },
 "item.infantry_rifle.cock": {
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/infantry_rifle/cock"}]

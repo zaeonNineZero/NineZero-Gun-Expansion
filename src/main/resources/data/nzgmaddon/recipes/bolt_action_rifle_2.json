@@ -15,6 +15,9 @@
     }
   ],
   "result": {
-    "item": "nzgmaddon:bolt_action_rifle"
+    "item": "nzgmaddon:bolt_action_rifle",
+	"nbt": {
+      "CustomModelData":2
+    }
   }
 }
