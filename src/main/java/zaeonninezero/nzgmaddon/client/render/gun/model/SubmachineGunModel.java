@@ -99,6 +99,27 @@ public class SubmachineGunModel implements IOverrideModel
         		}
         }
         
+        // Fire animation is done the old way, and added onto the existing animation.
+        GunItem gunStack = (GunItem) stack.getItem();
+        Gun gun = gunStack.getModifiedGun(stack);
+        if(isPlayer && correctContext)
+        {
+            float cooldownDivider = 1.0F*Math.max((float) gun.getGeneral().getRate()/1F,1);
+            float cooldownOffset1 = cooldownDivider - 1.0F;
+            float intensity = 1.0F +1;
+            
+        	ItemCooldowns tracker = Minecraft.getInstance().player.getCooldowns();
+            float cooldown = tracker.getCooldownPercent(stack.getItem(), Minecraft.getInstance().getFrameTime());
+            cooldown *= cooldownDivider;
+            float cooldown_a = cooldown-cooldownOffset1;
+
+            float cooldown_b = Math.min(Math.max(cooldown_a*intensity,0),1);
+            float cooldown_c = Math.min(Math.max((-cooldown_a*intensity)+intensity,0),1);
+            float cooldown_d = Math.min(cooldown_b,cooldown_c);
+            
+            boltTranslations = boltTranslations.add(0, 0, cooldown_d * 0.25);
+        }
+        
 		// SMG Charging handle
         poseStack.pushPose();
         // Apply transformations to this part.

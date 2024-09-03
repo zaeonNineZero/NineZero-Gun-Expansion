@@ -21,8 +21,8 @@
 		},
 		{
 			"name": "charge_handle_leaf",
-			"from": [7.3, 4.01, 8.25],
-			"to": [7.7, 4.29, 8.6],
+			"from": [7.1, 4.01, 8.2],
+			"to": [7.7, 4.34, 8.6],
 			"rotation": {"angle": 0, "axis": "y", "origin": [7.6, 4.15, 8.45]},
 			"faces": {
 				"north": {"uv": [1.5, 9.5, 2, 8.5], "rotation": 90, "texture": "#1"},

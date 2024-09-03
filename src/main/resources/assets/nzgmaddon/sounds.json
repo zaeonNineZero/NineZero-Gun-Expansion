@@ -158,7 +158,10 @@
 
 "item.smg.fire": {
     "subtitle":"subtitle.cgm.fire",
-    "sounds": [{"name":"nzgmaddon:item/smg/fire"}]
+	"sounds": [
+      "nzgmaddon:item/smg/fire",
+      "nzgmaddon:item/smg/fire2"
+    ]
   },
 "item.smg.silenced_fire": {
     "subtitle":"subtitle.cgm.fire.silenced",
@@ -166,7 +169,25 @@
   },
 "item.smg.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
-    "sounds": [{"name":"nzgmaddon:item/smg/enchanted_fire"}]
+	"sounds": [
+      "nzgmaddon:item/smg/enchanted_fire",
+      "nzgmaddon:item/smg/enchanted_fire2"
+    ]
+  },
+"item.smg.mag_out": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/smg/mag_out"}]
+  },
+"item.smg.mag_in": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/smg/mag_in"}]
+  },
+"item.smg.bolt_back": {
+    "sounds": [{"name":"nzgmaddon:item/smg/bolt_back"}]
+  },
+"item.smg.bolt_forward": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/smg/bolt_forward"}]
   },
 "item.smg.cock": {
     "subtitle":"subtitle.cgm.cock",
@@ -175,16 +196,40 @@
   
 "item.compact_smg.fire": {
     "subtitle":"subtitle.cgm.fire",
-    "sounds": [{"name":"nzgmaddon:item/compact_smg/fire"}]
+	"sounds": [
+      "nzgmaddon:item/compact_smg/fire",
+      "nzgmaddon:item/compact_smg/fire2",
+      "nzgmaddon:item/compact_smg/fire3"
+    ]
   },
 "item.compact_smg.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
-    "sounds": [{"name":"nzgmaddon:item/compact_smg/enchanted_fire"}]
+	"sounds": [
+      "nzgmaddon:item/compact_smg/enchanted_fire",
+      "nzgmaddon:item/compact_smg/enchanted_fire2",
+      "nzgmaddon:item/compact_smg/enchanted_fire3"
+    ]
+  },
+"item.compact_smg.mag_out": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/compact_smg/mag_out"}]
+  },
+"item.compact_smg.mag_in": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/compact_smg/mag_in"}]
+  },
+"item.compact_smg.cock": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/compact_smg/cock"}]
   },
 
 "item.rapid_smg.fire": {
     "subtitle":"subtitle.cgm.fire",
-    "sounds": [{"name":"nzgmaddon:item/rapid_smg/fire"}]
+	"sounds": [
+      "nzgmaddon:item/rapid_smg/fire",
+      "nzgmaddon:item/rapid_smg/fire2",
+      "nzgmaddon:item/rapid_smg/fire3"
+    ]
   },
 "item.rapid_smg.silenced_fire": {
     "subtitle":"subtitle.cgm.fire.silenced",
@@ -192,7 +237,19 @@
   },
 "item.rapid_smg.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
-    "sounds": [{"name":"nzgmaddon:item/rapid_smg/enchanted_fire"}]
+	"sounds": [
+      "nzgmaddon:item/rapid_smg/enchanted_fire",
+      "nzgmaddon:item/rapid_smg/enchanted_fire2",
+      "nzgmaddon:item/rapid_smg/enchanted_fire3"
+    ]
+  },
+"item.rapid_smg.mag_out": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/rapid_smg/mag_out"}]
+  },
+"item.rapid_smg.mag_in": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/rapid_smg/mag_in"}]
   },
 "item.rapid_smg.cock": {
     "subtitle":"subtitle.cgm.cock",
