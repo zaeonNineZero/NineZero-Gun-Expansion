@@ -1,0 +1,42 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "cgm:items/assault_rifle"
+	},
+	"elements": [
+		{
+			"from": [6.399, 3.46, 12.88],
+			"to": [7.099, 3.96, 13.38],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.649, 3.71, 13.13]},
+			"faces": {
+				"north": {"uv": [6.5, 8, 7, 8.5], "rotation": 270, "texture": "#1"},
+				"east": {"uv": [7, 9, 7.5, 9.5], "rotation": 180, "texture": "#1"},
+				"south": {"uv": [6.5, 8, 7, 8.5], "rotation": 90, "texture": "#1"},
+				"west": {"uv": [6.5, 8, 7, 8.5], "texture": "#1"},
+				"up": {"uv": [6.5, 8, 7, 8.5], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [6.5, 8, 7, 8.5], "rotation": 270, "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.099, 3.535, 12.955],
+			"to": [7.999, 3.885, 13.305],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.099, 3.71, 13.13]},
+			"faces": {
+				"north": {"uv": [7, 9, 7.5, 9.5], "rotation": 270, "texture": "#1"},
+				"south": {"uv": [7, 9, 7.5, 9.5], "rotation": 90, "texture": "#1"},
+				"west": {"uv": [7, 9, 7.5, 9.5], "texture": "#1"},
+				"up": {"uv": [7, 9, 7.5, 9.5], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [7, 9, 7.5, 9.5], "rotation": 270, "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "bolt",
+			"origin": [7.499, 4.2, 9.43],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

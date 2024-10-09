@@ -22,18 +22,44 @@ public class ExtraGunModifiers
             return 0.9F;
         }
     };
-    public static final IGunModifier MUZZLE_BRAKE_EFFECT = new IGunModifier()
+    public static final IGunModifier COMPENSATOR_MUZZLE_EFFECT = new IGunModifier()
     {
-        @Override
+    	@Override
         public float recoilModifier()
         {
-            return 0.85F;
+            return 0.8F;
+        }
+		
+		@Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.96F;
+        }
+
+        @Override
+        public double modifyMuzzleFlashScale(double scale)
+        {
+            return 1.15F;
+        }
+    };
+    public static final IGunModifier MUZZLE_BRAKE_EFFECT = new IGunModifier()
+    {
+    	@Override
+        public float modifyProjectileSpread(float spread)
+        {
+            return spread * 0.9F;
+        }
+    	
+    	@Override
+        public float recoilModifier()
+        {
+            return 0.95F;
         }
 
         @Override
         public float kickModifier()
         {
-            return 1.15F;
+            return 0.9F;
         }
 		
 		@Override
@@ -72,6 +98,12 @@ public class ExtraGunModifiers
         public double modifyAimDownSightSpeed(double speed)
         {
             return speed * 0.92F;
+        }
+
+        @Override
+        public double modifyMuzzleFlashScale(double scale)
+        {
+            return 1.05F;
         }
     };
     public static final IGunModifier MUFFLED_IMPROVED = new IGunModifier()

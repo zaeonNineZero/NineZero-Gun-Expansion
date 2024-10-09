@@ -13,8 +13,6 @@ import net.minecraftforge.fml.common.Mod;
 public enum SpecialModels
 {
     DOUBLE_BARRELED_SHOTGUN("gun/double_barreled_shotgun"),
-    HEAVY_ASSAULT_RIFLE("gun/heavy_assault_rifle"),
-    HEAVY_ASSAULT_RIFLE_1("gun/heavy_assault_rifle_1"),
     AUTOMATIC_SNIPER_RIFLE("gun/automatic_sniper_rifle"),
     HUNTING_RIFLE("gun/hunting_rifle"),
 
@@ -69,30 +67,46 @@ public enum SpecialModels
     AUTOMATIC_SHOTGUN_BASE("automatic_shotgun_base"),
     AUTOMATIC_SHOTGUN_SIGHTS("automatic_shotgun_sights"),
     AUTOMATIC_SHOTGUN_MAGAZINE("automatic_shotgun_drum"),
+    
+    HEAVY_AR_BASE("heavy_ar_base"),
+    HEAVY_AR_BASE_1("heavy_ar_base_1"),
+    HEAVY_AR_BOLT_HANDLE("heavy_ar_bolt_handle"),
+    HEAVY_AR_MAGAZINE("heavy_ar_magazine"),
+    HEAVY_AR_LIGHT_MAG("heavy_ar_light_mag"),
+    HEAVY_AR_EXTENDED_MAG("heavy_ar_extended_mag"),
 	
     BATTLE_RIFLE_BASE("battle_rifle_base"),
     BATTLE_RIFLE_SIGHTS("battle_rifle_sights"),
     BATTLE_RIFLE_MAGAZINE("battle_rifle_magazine"),
+    BATTLE_RIFLE_LIGHT_MAG("battle_rifle_light_mag"),
+    BATTLE_RIFLE_EXTENDED_MAG("battle_rifle_extended_mag"),
     BATTLE_RIFLE_BOLT_HANDLE("battle_rifle_bolt_handle"),
 	
     BULLPUP_RIFLE_BASE("bullpup_rifle_base"),
     BULLPUP_RIFLE_SIGHTS("bullpup_rifle_sights"),
+    BULLPUP_RIFLE_BOLT_HANDLE("bullpup_rifle_bolt_handle"),
     BULLPUP_RIFLE_MAGAZINE("bullpup_rifle_magazine"),
+    BULLPUP_RIFLE_LIGHT_MAG("bullpup_rifle_light_mag"),
+    BULLPUP_RIFLE_EXTENDED_MAG("bullpup_rifle_extended_mag"),
 	
     MACHINE_GUN_BASE("machine_gun_base"),
     MACHINE_GUN_SIGHTS("machine_gun_sights"),
-    MACHINE_GUN_BELT("machine_gun_belt"),
+    MACHINE_GUN_BOLT("machine_gun_bolt"),
     MACHINE_GUN_BULLET1("machine_gun_bullet1"),
     MACHINE_GUN_BULLET2("machine_gun_bullet2"),
     MACHINE_GUN_BULLET3("machine_gun_bullet3"),
     MACHINE_GUN_BULLET4("machine_gun_bullet4"),
     MACHINE_GUN_BULLET5("machine_gun_bullet5"),
+    MACHINE_GUN_BOX("machine_gun_box"),
+    MACHINE_GUN_LIGHT_BOX("machine_gun_light_box"),
     MACHINE_GUN_HANDLE("machine_gun_handle"),
 	
     INFANTRY_RIFLE_BASE("infantry_rifle_base"),
     INFANTRY_RIFLE_CHAMBER("infantry_rifle_chamber"),
     INFANTRY_RIFLE_RAIL("infantry_rifle_rail"),
     INFANTRY_RIFLE_MAGAZINE("infantry_rifle_magazine"),
+    INFANTRY_RIFLE_LIGHT_MAG("infantry_rifle_light_mag"),
+    INFANTRY_RIFLE_EXTENDED_MAG("infantry_rifle_extended_mag"),
     
     BOLT_ACTION_RIFLE_BASE("bolt_action_rifle_base"),
     BOLT_ACTION_RIFLE_BASE_1("bolt_action_rifle_base_1"),

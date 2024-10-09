@@ -520,9 +520,16 @@
     "subtitle":"subtitle.cgm.enchanted_fire",
     "sounds": [{"name":"nzgmaddon:item/hunting_rifle/enchanted_fire"}]
   },
+"item.hunting_rifle.breech_open": {
+    "sounds": [{"name":"nzgmaddon:item/hunting_rifle/breech_open"}]
+  },
+"item.hunting_rifle.breech_close": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/hunting_rifle/breech_close"}]
+  },
 "item.hunting_rifle.cock": {
     "subtitle":"subtitle.cgm.cock",
-    "sounds": [{"name":"nzgmaddon:item/hunting_rifle/cock"}]
+    "sounds": [{"name":"nzgmaddon:item/hunting_rifle/breech_close"}]
   },
 
 "item.bolt_action_rifle.fire": {

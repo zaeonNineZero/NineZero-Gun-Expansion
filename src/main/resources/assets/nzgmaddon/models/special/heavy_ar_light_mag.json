@@ -1,0 +1,80 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "cgm:items/assault_rifle",
+		"particle": "cgm:items/assault_rifle"
+	},
+	"elements": [
+		{
+			"from": [7.5, 0.6, 10.2],
+			"to": [8.5, 2.5, 12.7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.69226, 11.48826]},
+			"faces": {
+				"north": {"uv": [0, 8.5, 1, 9], "texture": "#1"},
+				"east": {"uv": [3.5, 8, 1, 8.5], "texture": "#1"},
+				"south": {"uv": [3.5, 8.5, 4.5, 9], "texture": "#1"},
+				"west": {"uv": [1, 8, 3.5, 8.5], "texture": "#1"},
+				"up": {"uv": [9, 8.5, 10.25, 9], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [1, 10, 3.5, 11], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.499, 0.495, 10.7],
+			"to": [8.501, 0.75, 11.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.69226, 11.48826]},
+			"faces": {
+				"east": {"uv": [2, 8.5, 1.5, 9], "texture": "#1"},
+				"west": {"uv": [1.5, 8.5, 2, 9], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.499, 0.4, 11.2],
+			"to": [8.501, 0.75, 11.7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.69226, 11.48826]},
+			"faces": {
+				"east": {"uv": [2.5, 8.5, 2, 9], "texture": "#1"},
+				"west": {"uv": [2, 8.5, 2.5, 9], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.499, 0.3, 11.7],
+			"to": [8.501, 0.75, 12.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.69226, 11.48826]},
+			"faces": {
+				"east": {"uv": [3, 8.5, 2.5, 9], "texture": "#1"},
+				"west": {"uv": [2.5, 8.5, 3, 9], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.499, 0.1, 12.2],
+			"to": [8.501, 0.75, 12.7002],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.69226, 11.48826]},
+			"faces": {
+				"east": {"uv": [3.5, 8.5, 3, 9], "texture": "#1"},
+				"south": {"uv": [3.5, 8.5, 4.5, 9], "texture": "#1"},
+				"west": {"uv": [3, 8.5, 3.5, 9], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.5001, -1.89113, 10.33459],
+			"to": [8.4999, 0.60887, 12.83459],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 0.69226, 11.48826]},
+			"faces": {
+				"north": {"uv": [0, 8.5, 1, 9.75], "texture": "#1"},
+				"east": {"uv": [3.5, 8.5, 1, 9.75], "texture": "#1"},
+				"south": {"uv": [3.5, 8.5, 4.5, 9.75], "texture": "#1"},
+				"west": {"uv": [1, 8.5, 3.5, 9.75], "texture": "#1"},
+				"down": {"uv": [1, 10, 3.5, 11], "rotation": 90, "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "magazine",
+			"origin": [7.5, 0.25, 13.2],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5]
+		}
+	]
+}
