@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
+		"1": "cgm:items/assault_rifle",
 		"4": "nzgmaddon:items/medium_bullet",
 		"particle": "cgm:items/assault_rifle"
 	},
@@ -42,6 +43,17 @@
 				"up": {"uv": [0, 2, 2, 6], "texture": "#4"},
 				"down": {"uv": [0, 2, 2, 6], "rotation": 180, "texture": "#4"}
 			}
+		},
+		{
+			"from": [7.11, 3.76, 11.45],
+			"to": [7.6, 3.94, 12.1],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [7.25, 3.85, 11.775]},
+			"faces": {
+				"north": {"uv": [11.5, 0.5, 12, 1], "rotation": 270, "texture": "#1"},
+				"south": {"uv": [11, 0.5, 11.5, 1], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [11, 0.5, 12, 1], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [12.5, 1.5, 11.5, 2], "rotation": 90, "texture": "#1"}
+			}
 		}
 	],
 	"groups": [
@@ -49,20 +61,17 @@
 			"name": "ammo",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"nbt": "{}",
 			"children": [
 				{
 					"name": "bullets",
 					"origin": [8, 8, 8],
 					"color": 0,
-					"nbt": "{}",
 					"children": [
 						{
-							"name": "group",
+							"name": "bullet4",
 							"origin": [6.75, 2.3, 11.55],
 							"color": 0,
-							"nbt": "{}",
-							"children": [0, 1, 2]
+							"children": [0, 1, 2, 3]
 						}
 					]
 				}

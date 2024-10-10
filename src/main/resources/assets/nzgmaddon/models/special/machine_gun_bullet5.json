@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
+		"1": "cgm:items/assault_rifle",
 		"4": "nzgmaddon:items/medium_bullet",
 		"particle": "cgm:items/assault_rifle"
 	},
@@ -9,7 +10,7 @@
 		{
 			"from": [7.46, 3.81, 10.6],
 			"to": [7.74, 4.09, 10.95],
-			"rotation": {"angle": 0, "axis": "z", "origin": [7.6, 3.95, 11.5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.6, 3.95, 11.5]},
 			"faces": {
 				"north": {"uv": [2, 0, 4, 2], "rotation": 90, "texture": "#4"},
 				"east": {"uv": [2, 0, 0, 1], "rotation": 90, "texture": "#4"},
@@ -21,7 +22,7 @@
 		{
 			"from": [7.43, 3.78, 10.95],
 			"to": [7.77, 4.12, 11.3],
-			"rotation": {"angle": 0, "axis": "z", "origin": [7.6, 3.95, 11.55]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.6, 3.95, 11.55]},
 			"faces": {
 				"north": {"uv": [2, 0, 4, 2], "rotation": 90, "texture": "#4"},
 				"east": {"uv": [2, 1, 0, 2], "rotation": 90, "texture": "#4"},
@@ -33,7 +34,7 @@
 		{
 			"from": [7.4, 3.75, 11.3],
 			"to": [7.8, 4.15, 12.3501],
-			"rotation": {"angle": 0, "axis": "z", "origin": [7.6, 3.95, 11.55]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.6, 3.95, 11.55]},
 			"faces": {
 				"north": {"uv": [2, 2, 4, 4], "rotation": 90, "texture": "#4"},
 				"east": {"uv": [2, 2, 0, 6], "rotation": 90, "texture": "#4"},
@@ -42,6 +43,18 @@
 				"up": {"uv": [0, 2, 2, 6], "texture": "#4"},
 				"down": {"uv": [0, 2, 2, 6], "rotation": 180, "texture": "#4"}
 			}
+		},
+		{
+			"from": [7.66, 3.86, 11.45],
+			"to": [8.15, 4.04, 12.1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.8, 3.95, 11.775]},
+			"faces": {
+				"north": {"uv": [11.5, 0.5, 12, 1], "rotation": 270, "texture": "#1"},
+				"east": {"uv": [11, 0.5, 11.5, 1], "rotation": 90, "texture": "#1"},
+				"south": {"uv": [11, 0.5, 11.5, 1], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [11, 0.5, 12, 1], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [12.5, 1.5, 11.5, 2], "rotation": 90, "texture": "#1"}
+			}
 		}
 	],
 	"groups": [
@@ -49,20 +62,17 @@
 			"name": "ammo",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"nbt": "{}",
 			"children": [
 				{
 					"name": "bullets",
 					"origin": [8, 8, 8],
 					"color": 0,
-					"nbt": "{}",
 					"children": [
 						{
-							"name": "group",
+							"name": "bullet5",
 							"origin": [6.75, 2.3, 11.55],
 							"color": 0,
-							"nbt": "{}",
-							"children": [0, 1, 2]
+							"children": [0, 1, 2, 3]
 						}
 					]
 				}

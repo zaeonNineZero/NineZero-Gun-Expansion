@@ -99,7 +99,7 @@ public class MachineGunModel implements IOverrideModel
         Gun gun = gunStack.getModifiedGun(stack);
         if(isPlayer && correctContext)
         {
-            float cooldownDivider = 1.0F*Math.max((float) gun.getGeneral().getRate()/3F,1);
+            float cooldownDivider = 1.0F*Math.max((float) gun.getGeneral().getRate()/2F,1);
             float cooldownOffset1 = cooldownDivider - 1.0F;
             float intensity = 1.0F +1;
 
@@ -123,6 +123,17 @@ public class MachineGunModel implements IOverrideModel
             if (disableAnimations)
             handleRotations = new Vec3(0,0,cooldown_f*12);
         }
+        
+
+		// Machine Gun Bolt. This animated part kicks backward on firing, then moves back to its resting position.
+        poseStack.pushPose();
+		// Apply transformations to this part.
+        if(isPlayer)
+        poseStack.translate(0, 0, boltTranslations.z * 0.0625);
+		// Render the transformed model.
+        RenderUtil.renderModel(SpecialModels.MACHINE_GUN_BOLT.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+		// Pop pose to compile everything in the render matrix.
+        poseStack.popPose();
 		
 		
 		// Machine Gun Bullets. The bullets move to simulate feeding the belt.
