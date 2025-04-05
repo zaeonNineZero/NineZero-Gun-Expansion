@@ -47,20 +47,29 @@ public class SubmachineGunModel implements IOverrideModel
         // Render the BakedModel we selected.
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
 
-		// Render the rear iron sight element, which is only present when a scope is not attached.
+		// Render the top rail element, which is only present when a scope is attached.
 		// We have to grab the gun's scope attachment slot and check whether it is empty or not.
-		// If the isEmpty function returns true, then we render the rear sight.
-		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
-        if(attachmentStack.isEmpty())
+		// If the isEmpty function returns false, then we render the rail.
+        ItemStack attachmentScopeStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
+        if(!attachmentScopeStack.isEmpty())
 		{
-            RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_SIGHTS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+            RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_TOP_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
-        else
+
+		// Render the bottom rail element, which is only present when an underbarrel attachment is equipped.
+		// Same as above - we check the underbarrel attachment slot.
+        ItemStack attachmentGripStack = Gun.getAttachment(IAttachment.Type.UNDER_BARREL, stack);
+        if(!attachmentGripStack.isEmpty())
 		{
-        	BakedModel railModel = SpecialModels.SUBMACHINE_GUN_RAIL.getModel();
-            if (getVariant(stack) == 1)
-            railModel = SpecialModels.SUBMACHINE_GUN_RAIL_1.getModel();
-            RenderUtil.renderModel(railModel, transformType, null, stack, parent, poseStack, buffer, light, overlay);
+            RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_BOTTOM_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+		}
+
+		// Render the stock adapter element, which is only present when a stock attachment is equipped.
+		// Same as above once again, this time with the stock attachment slot.
+        ItemStack attachmentStockStack = Gun.getAttachment(IAttachment.Type.STOCK, stack);
+        if(!attachmentStockStack.isEmpty())
+		{
+            RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_STOCK_ADAPTER.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
 
         // Special animated segment for compat with the CGM Expanded fork.
@@ -131,7 +140,7 @@ public class SubmachineGunModel implements IOverrideModel
                GunAnimationHelper.rotateAroundOffset(poseStack, boltRotations, boltRotOffset);
     	}
         // Render the transformed model.
-        RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_CHARGEHANDLE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+        RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_BOLT_HANDLE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
         

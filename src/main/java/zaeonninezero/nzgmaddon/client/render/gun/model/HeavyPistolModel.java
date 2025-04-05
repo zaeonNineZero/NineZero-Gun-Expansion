@@ -78,7 +78,7 @@ public class HeavyPistolModel implements IOverrideModel
         Gun gun = gunStack.getModifiedGun(stack);
         if(isPlayer && correctContext)
         {
-            float cooldownDivider = 1.0F*Math.max((float) gun.getGeneral().getRate()/4F,1);
+            float cooldownDivider = 1.0F*Math.max((float) gun.getGeneral().getRate()/3F,1);
             float cooldownOffset1 = cooldownDivider - 1.0F;
             float intensity = 1.0F +1;
             

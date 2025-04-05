@@ -2,15 +2,14 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "cgm:items/machine_pistol",
-		"particle": "cgm:items/machine_pistol"
+		"1": "cgm:items/machine_pistol"
 	},
 	"elements": [
 		{
-			"name": "charge_handle",
-			"from": [7.7, 4.01, 8.3],
-			"to": [8, 4.29, 8.6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.9, 4.15, 8.45]},
+			"name": "handle_rod",
+			"from": [7.6, 4.675, 7.6],
+			"to": [8, 4.92, 7.9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4.81, 7.75]},
 			"faces": {
 				"north": {"uv": [4, 7.5, 4.5, 8], "rotation": 90, "texture": "#1"},
 				"south": {"uv": [4, 7.5, 4.5, 8], "rotation": 90, "texture": "#1"},
@@ -20,10 +19,10 @@
 			}
 		},
 		{
-			"name": "charge_handle_leaf",
-			"from": [7.1, 4.01, 8.2],
-			"to": [7.7, 4.34, 8.6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.6, 4.15, 8.45]},
+			"name": "handle_leaf",
+			"from": [7, 4.665, 7.46],
+			"to": [7.6, 4.96, 7.91],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4.81, 7.75]},
 			"faces": {
 				"north": {"uv": [1.5, 9.5, 2, 8.5], "rotation": 90, "texture": "#1"},
 				"east": {"uv": [4.5, 9, 5, 9.5], "rotation": 90, "texture": "#1"},
@@ -32,6 +31,14 @@
 				"up": {"uv": [2, 9, 1, 9.5], "rotation": 90, "texture": "#1"},
 				"down": {"uv": [1, 9, 2, 9.5], "rotation": 90, "texture": "#1"}
 			}
+		}
+	],
+	"groups": [
+		{
+			"name": "bolt_handle",
+			"origin": [7.6, 4.15, 8.45],
+			"color": 0,
+			"children": [0, 1]
 		}
 	]
 }

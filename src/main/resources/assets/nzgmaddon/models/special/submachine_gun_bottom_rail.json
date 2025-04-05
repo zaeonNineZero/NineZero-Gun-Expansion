@@ -1,0 +1,49 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "nzgmaddon:items/submachine_gun"
+	},
+	"elements": [
+		{
+			"from": [7.65, 2.85, 6.795],
+			"to": [8.35, 3.2, 10.005],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 5.85, -1.925]},
+			"faces": {
+				"east": {"uv": [14, 11.5, 14.5, 16], "rotation": 270, "texture": "#2", "tintindex": 0},
+				"west": {"uv": [13, 11.5, 13.5, 16], "rotation": 90, "texture": "#2", "tintindex": 0},
+				"down": {"uv": [13.5, 11.5, 14, 16], "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.651, 5.04043, 8.8867],
+			"to": [8.349, 5.35243, 9.0987],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8.001, 2.85127, 6.90779]},
+			"faces": {
+				"east": {"uv": [14, 12, 14.5, 11.5], "rotation": 270, "texture": "#2", "tintindex": 0},
+				"south": {"uv": [14, 12, 14.5, 11.5], "rotation": 90, "texture": "#2", "tintindex": 0},
+				"west": {"uv": [13, 11.5, 13.5, 12], "rotation": 90, "texture": "#2", "tintindex": 0},
+				"up": {"uv": [13, 12, 13.5, 11.5], "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.651, 5.04043, 7.7013],
+			"to": [8.349, 5.35243, 7.9133],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.001, 2.85127, 9.89221]},
+			"faces": {
+				"north": {"uv": [14, 11.5, 14.5, 12], "rotation": 90, "texture": "#2", "tintindex": 0},
+				"east": {"uv": [14, 11.5, 14.5, 12], "rotation": 270, "texture": "#2", "tintindex": 0},
+				"west": {"uv": [13, 11.5, 13.5, 12], "rotation": 90, "texture": "#2", "tintindex": 0},
+				"up": {"uv": [13, 11.5, 13.5, 12], "texture": "#2", "tintindex": 0}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "bottom_rail",
+			"origin": [8.001, 4.40127, 10.55279],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

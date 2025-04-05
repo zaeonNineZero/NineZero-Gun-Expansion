@@ -47,10 +47,10 @@ public enum SpecialModels
 	
     SUBMACHINE_GUN_BASE("submachine_gun_base"),
     SUBMACHINE_GUN_BASE_1("submachine_gun_base_1"),
-    SUBMACHINE_GUN_RAIL("submachine_gun_rail"),
-    SUBMACHINE_GUN_RAIL_1("submachine_gun_rail_1"),
-    SUBMACHINE_GUN_SIGHTS("submachine_gun_sights"),
-    SUBMACHINE_GUN_CHARGEHANDLE("submachine_gun_charge_handle"),
+    SUBMACHINE_GUN_TOP_RAIL("submachine_gun_top_rail"),
+    SUBMACHINE_GUN_BOTTOM_RAIL("submachine_gun_bottom_rail"),
+    SUBMACHINE_GUN_STOCK_ADAPTER("submachine_gun_stock_adapter"),
+    SUBMACHINE_GUN_BOLT_HANDLE("submachine_gun_bolt_handle"),
     SUBMACHINE_GUN_MAGAZINE("submachine_gun_magazine"),
 	
     COMPACT_SMG_BASE("compact_smg_base"),
