@@ -126,17 +126,17 @@ public class SubmachineGunModel implements IOverrideModel
             float cooldown_c = Math.min(Math.max((-cooldown_a*intensity)+intensity,0),1);
             float cooldown_d = Math.min(cooldown_b,cooldown_c);
             
-            boltTranslations = boltTranslations.add(0, 0, cooldown_d * 0.25);
+            boltTranslations = boltTranslations.add(0, 0, cooldown_d * 0.125);
         }
         
 		// SMG Charging handle
         poseStack.pushPose();
         // Apply transformations to this part.
-        if(isPlayer && !disableAnimations)
+        if(isPlayer)
         {
         	if(boltTranslations!=Vec3.ZERO)
         	poseStack.translate(0, 0, boltTranslations.z*0.0625);
-        	if(boltRotations!=Vec3.ZERO)
+        	if(boltRotations!=Vec3.ZERO && !disableAnimations)
                GunAnimationHelper.rotateAroundOffset(poseStack, boltRotations, boltRotOffset);
     	}
         // Render the transformed model.

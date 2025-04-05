@@ -647,7 +647,8 @@
 				"east": {"uv": [7.5, 4, 8, 5.5], "texture": "#2", "tintindex": 0},
 				"south": {"uv": [7.5, 4, 8, 5.5], "texture": "#2", "tintindex": 0},
 				"west": {"uv": [7.5, 4, 8, 5.5], "texture": "#2", "tintindex": 0},
-				"up": {"uv": [7.5, 3.5, 8, 4], "texture": "#2", "tintindex": 0}
+				"up": {"uv": [7.5, 3.5, 8, 4], "texture": "#2", "tintindex": 0},
+				"down": {"uv": [7.5, 5, 8, 5.5], "texture": "#2", "tintindex": 0}
 			}
 		},
 		{

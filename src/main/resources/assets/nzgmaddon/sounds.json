@@ -164,7 +164,8 @@
     "subtitle":"subtitle.cgm.fire",
 	"sounds": [
       "nzgmaddon:item/smg/fire",
-      "nzgmaddon:item/smg/fire2"
+      "nzgmaddon:item/smg/fire2",
+      "nzgmaddon:item/smg/fire3"
     ]
   },
 "item.smg.silenced_fire": {
@@ -175,7 +176,8 @@
     "subtitle":"subtitle.cgm.enchanted_fire",
 	"sounds": [
       "nzgmaddon:item/smg/enchanted_fire",
-      "nzgmaddon:item/smg/enchanted_fire2"
+      "nzgmaddon:item/smg/enchanted_fire2",
+      "nzgmaddon:item/smg/enchanted_fire3"
     ]
   },
 "item.smg.mag_out": {
