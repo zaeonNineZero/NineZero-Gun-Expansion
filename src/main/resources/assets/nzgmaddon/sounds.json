@@ -476,7 +476,11 @@
 
 "item.infantry_rifle.fire": {
     "subtitle":"subtitle.cgm.fire",
-    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/fire"}]
+	"sounds": [
+      "nzgmaddon:item/infantry_rifle/fire",
+      "nzgmaddon:item/infantry_rifle/fire2",
+      "nzgmaddon:item/infantry_rifle/fire3"
+    ]
   },
 "item.infantry_rifle.silenced_fire": {
     "subtitle":"subtitle.cgm.fire.silenced",
@@ -484,7 +488,11 @@
   },
 "item.infantry_rifle.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
-    "sounds": [{"name":"nzgmaddon:item/infantry_rifle/enchanted_fire"}]
+	"sounds": [
+      "nzgmaddon:item/infantry_rifle/enchanted_fire",
+      "nzgmaddon:item/infantry_rifle/enchanted_fire2",
+      "nzgmaddon:item/infantry_rifle/enchanted_fire3"
+    ]
   },
 "item.infantry_rifle.mag_out": {
     "sounds": [{"name":"nzgmaddon:item/infantry_rifle/mag_out"}]
