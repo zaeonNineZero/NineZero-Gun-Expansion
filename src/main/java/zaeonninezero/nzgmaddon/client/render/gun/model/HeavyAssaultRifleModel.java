@@ -47,18 +47,20 @@ public class HeavyAssaultRifleModel implements IOverrideModel
         // Render the BakedModel we selected.
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
 
-		// Bottom rail element, which is only rendered if a grip is attached, or if BaseVariant or CustomModelData is equal to 1.
+		// Forward rail elements, which are only rendered if a grip is attached, or if ExtraRails or CustomModelData is equal to 1.
 		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.UNDER_BARREL, stack);
-        if((getVariant(stack) == 1 || getVariant(stack, "BaseVariant") == 1 || getVariant(stack, "ExtraRails") == 1) || !attachmentStack.isEmpty())
+        if((getVariant(stack) == 1 || getVariant(stack, "ExtraRails") == 1) || !attachmentStack.isEmpty())
 		{
-            RenderUtil.renderModel(SpecialModels.HEAVY_AR_BOTTOM_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+            RenderUtil.renderModel(SpecialModels.HEAVY_AR_FORWARD_RAILS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
 
-		// Forward top rail element, which is only rendered if ForwardTopRail or CustomModelData is equal to 1.
-        if(getVariant(stack) == 1 || getVariant(stack, "ExtraRails") == 1)
-		{
-            RenderUtil.renderModel(SpecialModels.HEAVY_AR_FORWARD_TOP_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
-		}
+        // Top rail element, which is only rendered if a scope is attached, or if ForceTopRail is equal to 1.
+        // This is ignored if BaseVariatn is equal to 1, as that variant includes a top rail.
+     	ItemStack scopeStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
+        if((getVariant(stack, "ForceTopRail") == 1 || !scopeStack.isEmpty()) && (getVariant(stack) != 1 && getVariant(stack, "BaseVariant") != 1))
+     	{
+            RenderUtil.renderModel(SpecialModels.HEAVY_AR_TOP_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+     	}
 
 
         // Special animated segment for compat with the CGM Expanded fork.
