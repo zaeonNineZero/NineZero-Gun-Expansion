@@ -5,6 +5,7 @@ import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.GunMod;
 import com.mrcrayfish.guns.client.GunModel;
 import zaeonninezero.nzgmaddon.client.SpecialModels;
+
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
 import com.mrcrayfish.guns.client.util.GunAnimationHelper;
 import com.mrcrayfish.guns.client.util.RenderUtil;
@@ -28,7 +29,7 @@ import javax.annotation.Nullable;
  * Modified by zaeonNineZero for Nine Zero's Gun Expansion
  * Attachment detection logic based off of code from Mo' Guns by Bomb787 and AlanorMiga (MigaMi)
  */
-public class SubmachineGunModel implements IOverrideModel
+public class AutomaticSniperRifleModel implements IOverrideModel
 {
 	private boolean disableAnimations = false;
 	
@@ -40,36 +41,26 @@ public class SubmachineGunModel implements IOverrideModel
     public void render(float partialTicks, ItemTransforms.TransformType transformType, ItemStack stack, ItemStack parent, @Nullable LivingEntity entity, PoseStack poseStack, MultiBufferSource buffer, int light, int overlay)
     {
 		// Select the Baked Model we'll be rendering, based on the value of the CustomModelData tag.
-        BakedModel bakedModel = SpecialModels.SUBMACHINE_GUN_BASE.getModel();
+        BakedModel bakedModel = SpecialModels.AUTO_SNIPER_RIFLE_BASE.getModel();
         if (getVariant(stack) == 1)
-        bakedModel = SpecialModels.SUBMACHINE_GUN_BASE_1.getModel();
+        bakedModel = SpecialModels.AUTO_SNIPER_RIFLE_BASE_1.getModel();
         
         // Render the BakedModel we selected.
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
 
-		// Render the top rail element, which is only present when a scope is attached.
-		// We have to grab the gun's scope attachment slot and check whether it is empty or not.
-		// If the isEmpty function returns false, then we render the rail.
-        ItemStack attachmentScopeStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
-        if(!attachmentScopeStack.isEmpty())
-		{
-            RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_TOP_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
-		}
-
-		// Render the bottom rail element, which is only present when an underbarrel attachment is equipped.
-		// Same as above - we check the underbarrel attachment slot.
-        ItemStack attachmentGripStack = Gun.getAttachment(IAttachment.Type.UNDER_BARREL, stack);
-        if(!attachmentGripStack.isEmpty())
-		{
-            RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_BOTTOM_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
-		}
-
+        // Render a selected model based on the "HandguardVariant" NBT tag.
+    	BakedModel handguardModel = SpecialModels.AUTO_SNIPER_RIFLE_HANDGUARD.getModel();
+        //if (getVariant(stack, "HandguardVariant") == 1)
+        //handguardModel = SpecialModels.SUBMACHINE_GUN_BASE.getModel();
+        RenderUtil.renderModel(handguardModel, transformType, null, stack, parent, poseStack, buffer, light, overlay);
+        
+        
 		// Render the stock adapter element, which is only present when a stock attachment is equipped.
 		// Same as above once again, this time with the stock attachment slot.
         ItemStack attachmentStockStack = Gun.getAttachment(IAttachment.Type.STOCK, stack);
         if(!attachmentStockStack.isEmpty())
 		{
-            RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_STOCK_ADAPTER.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+            RenderUtil.renderModel(SpecialModels.AUTO_SNIPER_RIFLE_STOCK_ADAPTER.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
 
         // Special animated segment for compat with the CGM Expanded fork.
@@ -129,7 +120,7 @@ public class SubmachineGunModel implements IOverrideModel
             boltTranslations = boltTranslations.add(0, 0, cooldown_d * 0.125);
         }
         
-		// SMG Charging handle
+		// Auto Sniper Charging handle
         poseStack.pushPose();
         // Apply transformations to this part.
         if(isPlayer)
@@ -140,7 +131,7 @@ public class SubmachineGunModel implements IOverrideModel
                GunAnimationHelper.rotateAroundOffset(poseStack, boltRotations, boltRotOffset);
     	}
         // Render the transformed model.
-        RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_BOLT_HANDLE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+        RenderUtil.renderModel(SpecialModels.AUTO_SNIPER_RIFLE_BOLT_HANDLE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
         
@@ -155,7 +146,7 @@ public class SubmachineGunModel implements IOverrideModel
                GunAnimationHelper.rotateAroundOffset(poseStack, magRotations, magRotOffset);
     	}
         // Render the transformed model.
-        RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_MAGAZINE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+        RenderUtil.renderModel(SpecialModels.AUTO_SNIPER_RIFLE_MAGAZINE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
     }

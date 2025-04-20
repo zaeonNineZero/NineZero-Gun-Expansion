@@ -18,11 +18,8 @@ public class ClientHandler
 	
 	private static void registerModelOverrides()
     {
-        //ModelOverrides.register(initItems.HEAVY_PISTOL.get(), new SimpleModel(SpecialModels.HEAVY_PISTOL::getModel));
 		ModelOverrides.register(initItems.DOUBLE_BARRELED_SHOTGUN.get(), new SimpleModel(SpecialModels.DOUBLE_BARRELED_SHOTGUN::getModel));
-		//ModelOverrides.register(initItems.HEAVY_ASSAULT_RIFLE.get(), new SimpleModel(SpecialModels.HEAVY_ASSAULT_RIFLE::getModel));
-		ModelOverrides.register(initItems.AUTOMATIC_SNIPER_RIFLE.get(), new SimpleModel(SpecialModels.AUTOMATIC_SNIPER_RIFLE::getModel));
-		//ModelOverrides.register(initItems.HUNTING_RIFLE.get(), new SimpleModel(SpecialModels.HUNTING_RIFLE::getModel));
+		//ModelOverrides.register(initItems.AUTOMATIC_SNIPER_RIFLE.get(), new SimpleModel(SpecialModels.AUTOMATIC_SNIPER_RIFLE::getModel));
 		
         ModelOverrides.register(initItems.REVOLVER.get(), new RevolverModel());
         ModelOverrides.register(initItems.HEAVY_PISTOL.get(), new HeavyPistolModel());
@@ -39,6 +36,7 @@ public class ClientHandler
         ModelOverrides.register(initItems.BULLPUP_RIFLE.get(), new BullpupRifleModel());
         ModelOverrides.register(initItems.MACHINE_GUN.get(), new MachineGunModel());
         ModelOverrides.register(initItems.INFANTRY_RIFLE.get(), new InfantryRifleModel());
+        ModelOverrides.register(initItems.AUTOMATIC_SNIPER_RIFLE.get(), new AutomaticSniperRifleModel());
         ModelOverrides.register(initItems.BOLT_ACTION_RIFLE.get(), new BoltActionRifleModel());
         ModelOverrides.register(initItems.HUNTING_RIFLE.get(), new HuntingRifleModel());
         ModelOverrides.register(initItems.SNIPER_RIFLE.get(), new SniperRifleModel());
