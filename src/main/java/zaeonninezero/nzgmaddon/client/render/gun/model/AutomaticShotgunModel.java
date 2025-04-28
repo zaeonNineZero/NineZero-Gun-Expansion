@@ -131,9 +131,9 @@ public class AutomaticShotgunModel implements IOverrideModel
             {
 	            if (magStack.getItem().builtInRegistryHolder().key().location().getPath().equals("light_magazine"))
 		    		magModel = SpecialModels.AUTOMATIC_SHOTGUN_LIGHT_MAGAZINE;
-	            /*else
+	            else
 	            if (magStack.getItem().builtInRegistryHolder().key().location().getPath().equals("extended_magazine"))
-			    	magModel = SpecialModels.AUTOMATIC_SHOTGUN_MAGAZINE;*/
+			    	magModel = SpecialModels.AUTOMATIC_SHOTGUN_EXTENDED_MAGAZINE;
             }
 		}
 		catch(Error ignored) {} catch(Exception ignored) {}

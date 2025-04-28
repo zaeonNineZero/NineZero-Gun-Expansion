@@ -42,7 +42,7 @@ public class AutomaticSniperRifleModel implements IOverrideModel
     {
 		// Select the Baked Model we'll be rendering, based on the value of the CustomModelData tag.
         BakedModel bakedModel = SpecialModels.AUTO_SNIPER_RIFLE_BASE.getModel();
-        if (getVariant(stack) == 1)
+        if (getVariant(stack) == 1 || getVariant(stack, "BaseVariant") == 1)
         bakedModel = SpecialModels.AUTO_SNIPER_RIFLE_BASE_1.getModel();
         
         // Render the BakedModel we selected.
@@ -50,8 +50,8 @@ public class AutomaticSniperRifleModel implements IOverrideModel
 
         // Render a selected model based on the "HandguardVariant" NBT tag.
     	BakedModel handguardModel = SpecialModels.AUTO_SNIPER_RIFLE_HANDGUARD.getModel();
-        //if (getVariant(stack, "HandguardVariant") == 1)
-        //handguardModel = SpecialModels.SUBMACHINE_GUN_BASE.getModel();
+        if (getVariant(stack, "HandguardVariant") == 1)
+        handguardModel = SpecialModels.AUTO_SNIPER_RIFLE_HANDGUARD_1.getModel();
         RenderUtil.renderModel(handguardModel, transformType, null, stack, parent, poseStack, buffer, light, overlay);
         
         
@@ -117,7 +117,7 @@ public class AutomaticSniperRifleModel implements IOverrideModel
             float cooldown_c = Math.min(Math.max((-cooldown_a*intensity)+intensity,0),1);
             float cooldown_d = Math.min(cooldown_b,cooldown_c);
             
-            boltTranslations = boltTranslations.add(0, 0, cooldown_d * 0.125);
+            boltTranslations = boltTranslations.add(0, 0, cooldown_d * 0.25);
         }
         
 		// Auto Sniper Charging handle
@@ -135,7 +135,7 @@ public class AutomaticSniperRifleModel implements IOverrideModel
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
         
-        // Magazine
+        // Magazine transforms
         poseStack.pushPose();
         // Apply transformations to this part.
         if(isPlayer && isFirstPerson && !disableAnimations)
@@ -145,9 +145,23 @@ public class AutomaticSniperRifleModel implements IOverrideModel
         	if(magRotations!=Vec3.ZERO)
                GunAnimationHelper.rotateAroundOffset(poseStack, magRotations, magRotOffset);
     	}
-        // Render the transformed model.
-        RenderUtil.renderModel(SpecialModels.AUTO_SNIPER_RIFLE_MAGAZINE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
-		// Pop pose to compile everything in the render matrix.
+		// Magazine model selection and rendering
+        SpecialModels magModel = SpecialModels.AUTO_SNIPER_RIFLE_MAGAZINE;
+        try {
+        	ItemStack magStack = Gun.getAttachment(IAttachment.Type.byTagKey("Magazine"), stack);
+            if(!magStack.isEmpty())
+            {
+	            if (magStack.getItem().builtInRegistryHolder().key().location().getPath().equals("light_magazine"))
+		    		magModel = SpecialModels.AUTO_SNIPER_RIFLE_LIGHT_MAG;
+	            else
+	            if (magStack.getItem().builtInRegistryHolder().key().location().getPath().equals("extended_magazine"))
+			    	magModel = SpecialModels.AUTO_SNIPER_RIFLE_EXTENDED_MAG;
+            }
+		}
+		catch(Error ignored) {} catch(Exception ignored) {}
+
+        RenderUtil.renderModel(magModel.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+        // Pop pose to compile everything in the render matrix.
         poseStack.popPose();
     }
     

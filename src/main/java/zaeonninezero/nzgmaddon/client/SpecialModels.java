@@ -71,10 +71,11 @@ public enum SpecialModels
     HUNTING_SHOTGUN_BASE("hunting_shotgun_base"),
     HUNTING_SHOTGUN_PUMP("hunting_shotgun_pump"),
 	
-    AUTOMATIC_SHOTGUN_BASE("automatic_shotgun_base"),
-    AUTOMATIC_SHOTGUN_SIGHTS("automatic_shotgun_sights"),
-    AUTOMATIC_SHOTGUN_MAGAZINE("automatic_shotgun_drum"),
-    AUTOMATIC_SHOTGUN_LIGHT_MAGAZINE("automatic_shotgun_light_mag"),
+    AUTOMATIC_SHOTGUN_BASE("gun/automatic_shotgun/automatic_shotgun_base"),
+    AUTOMATIC_SHOTGUN_SIGHTS("gun/automatic_shotgun/automatic_shotgun_sights"),
+    AUTOMATIC_SHOTGUN_MAGAZINE("gun/automatic_shotgun/automatic_shotgun_drum"),
+    AUTOMATIC_SHOTGUN_LIGHT_MAGAZINE("gun/automatic_shotgun/automatic_shotgun_light_mag"),
+    AUTOMATIC_SHOTGUN_EXTENDED_MAGAZINE("gun/automatic_shotgun/automatic_shotgun_extended_drum"),
     
     HEAVY_AR_BASE("heavy_ar_base"),
     HEAVY_AR_BASE_1("heavy_ar_base_1"),
@@ -121,9 +122,12 @@ public enum SpecialModels
     AUTO_SNIPER_RIFLE_BASE("gun/automatic_sniper_rifle/auto_sniper_rifle_base"),
     AUTO_SNIPER_RIFLE_BASE_1("gun/automatic_sniper_rifle/auto_sniper_rifle_base_1"),
     AUTO_SNIPER_RIFLE_HANDGUARD("gun/automatic_sniper_rifle/auto_sniper_rifle_handguard"),
+    AUTO_SNIPER_RIFLE_HANDGUARD_1("gun/automatic_sniper_rifle/auto_sniper_rifle_handguard_1"),
     AUTO_SNIPER_RIFLE_STOCK_ADAPTER("gun/automatic_sniper_rifle/auto_sniper_rifle_stock_adapter"),
     AUTO_SNIPER_RIFLE_BOLT_HANDLE("gun/automatic_sniper_rifle/auto_sniper_rifle_bolt_handle"),
     AUTO_SNIPER_RIFLE_MAGAZINE("gun/automatic_sniper_rifle/auto_sniper_rifle_magazine"),
+    AUTO_SNIPER_RIFLE_LIGHT_MAG("gun/automatic_sniper_rifle/auto_sniper_rifle_light_mag"),
+    AUTO_SNIPER_RIFLE_EXTENDED_MAG("gun/automatic_sniper_rifle/auto_sniper_rifle_extended_mag"),
     
     HUNTING_RIFLE_BASE("hunting_rifle_base"),
     HUNTING_RIFLE_BREECH("hunting_rifle_breech"),

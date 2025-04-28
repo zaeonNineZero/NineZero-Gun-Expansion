@@ -9,12 +9,12 @@
                 "translation": [8.0, 4.4, 12.5]
             },
             "underBarrel": {
-                "translation": [8.0, 2.549, 8.5],
-                "scale": [1, 1, 0.95]
+                "translation": [8.0, 2.549, 9.0],
+                "scale": [1, 1, 1.0]
             }
         },
         "ironSight": {
-            "camera": [8.0, 5.25, 20.0],
+            "camera": [8.0, 5.25, 22.0],
             "viewportFov": 50.0
         },
         "muzzleFlash": {
