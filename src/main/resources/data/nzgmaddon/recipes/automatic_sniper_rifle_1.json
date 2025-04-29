@@ -7,6 +7,9 @@
     }
   ],
   "result": {
-    "item": "nzgmaddon:automatic_sniper_rifle"
+    "item": "nzgmaddon:automatic_sniper_rifle",
+	"nbt": {
+      "BaseVariant":1
+    }
   }
 }
