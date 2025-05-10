@@ -66,6 +66,9 @@ public enum SpecialModels
     PUMP_SHOTGUN_BASE("pump_shotgun_base"),
     PUMP_SHOTGUN_BASE_1("pump_shotgun_base_1"),
     PUMP_SHOTGUN_SIGHTS("pump_shotgun_sights"),
+    PUMP_SHOTGUN_TOP_RAIL("pump_shotgun_top_rail"),
+    PUMP_SHOTGUN_TOP_RAIL_1("pump_shotgun_top_rail_1"),
+    PUMP_SHOTGUN_HEAT_SHIELD("pump_shotgun_heat_shield"),
     PUMP_SHOTGUN_PUMP("pump_shotgun_pump"),
 	
     HUNTING_SHOTGUN_BASE("hunting_shotgun_base"),
@@ -73,6 +76,7 @@ public enum SpecialModels
 	
     AUTOMATIC_SHOTGUN_BASE("gun/automatic_shotgun/automatic_shotgun_base"),
     AUTOMATIC_SHOTGUN_SIGHTS("gun/automatic_shotgun/automatic_shotgun_sights"),
+    AUTOMATIC_SHOTGUN_BOLT("gun/automatic_shotgun/automatic_shotgun_bolt"),
     AUTOMATIC_SHOTGUN_MAGAZINE("gun/automatic_shotgun/automatic_shotgun_drum"),
     AUTOMATIC_SHOTGUN_LIGHT_MAGAZINE("gun/automatic_shotgun/automatic_shotgun_light_mag"),
     AUTOMATIC_SHOTGUN_EXTENDED_MAGAZINE("gun/automatic_shotgun/automatic_shotgun_extended_drum"),

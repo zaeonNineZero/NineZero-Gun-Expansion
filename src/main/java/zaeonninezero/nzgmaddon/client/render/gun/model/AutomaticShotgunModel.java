@@ -109,7 +109,7 @@ public class AutomaticShotgunModel implements IOverrideModel
         if(isPlayer)
         poseStack.translate(0, 0, boltTranslations.z * 0.0625);
 		// Render the transformed model.
-        RenderUtil.renderModel(SpecialModels.HEAVY_AR_BOLT_HANDLE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+        RenderUtil.renderModel(SpecialModels.AUTOMATIC_SHOTGUN_BOLT.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
         

@@ -43,6 +43,14 @@ public class HuntingShotgunModel implements IOverrideModel
         BakedModel bakedModel = SpecialModels.HUNTING_SHOTGUN_BASE.getModel();
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
         
+        // Render the top rail element, copied from the Pump Shotgun's model.
+        // This element appears when a scope is attached.
+		ItemStack scopeStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
+        if(!scopeStack.isEmpty())
+     	{
+    	 	RenderUtil.renderModel(SpecialModels.PUMP_SHOTGUN_TOP_RAIL_1.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+     	}
+        
         // Special animated segment for compat with the CGM Expanded fork.
         // First, some variables for animation building
         boolean isPlayer = entity != null && entity.equals(Minecraft.getInstance().player);

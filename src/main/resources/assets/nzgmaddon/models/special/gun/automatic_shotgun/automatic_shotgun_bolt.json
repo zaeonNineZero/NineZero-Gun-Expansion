@@ -1,0 +1,44 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "cgm:items/rifle",
+		"particle": "cgm:items/shotgun"
+	},
+	"elements": [
+		{
+			"name": "rod",
+			"from": [8.8, 3.375, 10.16036],
+			"to": [8.95, 3.675, 10.46036],
+			"rotation": {"angle": 45, "axis": "x", "origin": [9, 3.525, 10.31036]},
+			"faces": {
+				"north": {"uv": [1, 9.5, 0.5, 10], "texture": "#0"},
+				"south": {"uv": [0.5, 9.5, 1, 10], "texture": "#0"},
+				"up": {"uv": [0.5, 9.5, 1, 10], "texture": "#0"},
+				"down": {"uv": [0.5, 9.5, 1, 10], "texture": "#0"}
+			}
+		},
+		{
+			"name": "handle",
+			"from": [8.95, 3.325, 10.11036],
+			"to": [9.55, 3.725, 10.51036],
+			"rotation": {"angle": 45, "axis": "x", "origin": [9.3, 3.525, 10.31036]},
+			"faces": {
+				"north": {"uv": [0, 10, 0.5, 9.25], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [0, 8.5, 0.5, 9], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [0, 9.25, 0.5, 10], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [0, 9.5, 0.5, 10], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 9.25, 0.5, 10], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [0, 9.25, 0.5, 10], "rotation": 90, "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "bolt",
+			"origin": [9.5, 3.675, 10.975],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

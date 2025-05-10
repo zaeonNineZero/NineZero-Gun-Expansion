@@ -43,7 +43,7 @@ public class PumpShotgunModel implements IOverrideModel
 		// Render the item's BakedModel, which will serve as the core of our custom model.
     	// We select which model variant to use by fetching the value of the CustomModelData tag.
         BakedModel bakedModel = SpecialModels.PUMP_SHOTGUN_BASE.getModel();
-        if (getVariant(stack) == 1)
+        if (getVariant(stack) == 1 || getVariant(stack, "BaseVariant") == 1)
         bakedModel = SpecialModels.PUMP_SHOTGUN_BASE_1.getModel();
 
         // Render the BakedModel we selected.
@@ -59,6 +59,23 @@ public class PumpShotgunModel implements IOverrideModel
 		{
             RenderUtil.renderModel(SpecialModels.PUMP_SHOTGUN_SIGHTS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
+        
+        // Render the top rail element.
+        // This element appears when a scope is attached.
+        // The actual model element used depends (again) on the base model variant.
+        if(!scopeStack.isEmpty())
+     	{
+        	BakedModel topRailModel = SpecialModels.PUMP_SHOTGUN_TOP_RAIL.getModel();
+            if (getVariant(stack) == 1)
+            topRailModel = SpecialModels.PUMP_SHOTGUN_TOP_RAIL_1.getModel();
+    	 	RenderUtil.renderModel(topRailModel, transformType, null, stack, parent, poseStack, buffer, light, overlay);
+     	}
+
+        // Heat Shield element, an optional part that renders if HeatShield is equal to 1.
+        if(getVariant(stack, "HeatShield") != 0)
+     	{
+            RenderUtil.renderModel(SpecialModels.PUMP_SHOTGUN_HEAT_SHIELD.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+     	}
         
         // Special animated segment for compat with the CGM Expanded fork.
         // First, some variables for animation building
@@ -158,5 +175,12 @@ public class PumpShotgunModel implements IOverrideModel
     {
         CompoundTag tag = gunStack.getOrCreateTag();
         return tag.getInt("CustomModelData");
+    }
+    
+    //NBT fetch code for skin variants - ported from the "hasAmmo" function under common/Gun.java
+    public static int getVariant(ItemStack gunStack, String tag_name)
+    {
+        CompoundTag tag = gunStack.getOrCreateTag();
+        return tag.getInt(tag_name);
     }
 }

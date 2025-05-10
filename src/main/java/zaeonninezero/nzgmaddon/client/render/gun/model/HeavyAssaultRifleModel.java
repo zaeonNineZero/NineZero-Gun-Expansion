@@ -55,7 +55,7 @@ public class HeavyAssaultRifleModel implements IOverrideModel
 		}
 
         // Top rail element, which is only rendered if a scope is attached, or if ForceTopRail is equal to 1.
-        // This is ignored if BaseVariatn is equal to 1, as that variant includes a top rail.
+        // This is ignored if BaseVariant is equal to 1, as that variant includes a top rail built-in.
      	ItemStack scopeStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
         if((getVariant(stack, "ForceTopRail") == 1 || !scopeStack.isEmpty()) && (getVariant(stack) != 1 && getVariant(stack, "BaseVariant") != 1))
      	{

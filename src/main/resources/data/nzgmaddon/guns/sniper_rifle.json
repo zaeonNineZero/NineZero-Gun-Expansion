@@ -20,11 +20,11 @@
     "gravity": true
   },
   "sounds": {
-    "fire": "nzgmaddon:item.sniper_rifle.fire",
+    "fire": "nzgmaddon:item.sniper_rifle.fire_bolt",
     "reload": "nzgmaddon:item.rifle.reload",
     "cock": "nzgmaddon:item.sniper_rifle.cock",
-    "silencedFire": "nzgmaddon:item.sniper_rifle.silenced_fire",
-    "enchantedFire": "nzgmaddon:item.sniper_rifle.enchanted_fire"
+    "silencedFire": "nzgmaddon:item.sniper_rifle.silenced_fire_bolt",
+    "enchantedFire": "nzgmaddon:item.sniper_rifle.enchanted_fire_bolt"
   },
   "display": {
     "flash": {
