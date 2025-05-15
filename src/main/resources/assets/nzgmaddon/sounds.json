@@ -264,7 +264,11 @@
 
 "item.pump_shotgun.fire": {
     "subtitle":"subtitle.cgm.fire",
-    "sounds": [{"name":"nzgmaddon:item/pump_shotgun/fire"}]
+	"sounds": [
+      "nzgmaddon:item/pump_shotgun/fire",
+      "nzgmaddon:item/pump_shotgun/fire2",
+      "nzgmaddon:item/pump_shotgun/fire3"
+    ]
   },
 "item.pump_shotgun.fire_pump": {
     "subtitle":"subtitle.cgm.fire",
@@ -280,7 +284,11 @@
   },
 "item.pump_shotgun.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
-    "sounds": [{"name":"nzgmaddon:item/pump_shotgun/enchanted_fire"}]
+	"sounds": [
+      "nzgmaddon:item/pump_shotgun/enchanted_fire",
+      "nzgmaddon:item/pump_shotgun/enchanted_fire2",
+      "nzgmaddon:item/pump_shotgun/enchanted_fire3"
+    ]
   },
 "item.pump_shotgun.enchanted_fire_pump": {
     "subtitle":"subtitle.cgm.enchanted_fire",
@@ -297,7 +305,11 @@
 
 "item.hunting_shotgun.fire": {
     "subtitle":"subtitle.cgm.fire",
-    "sounds": [{"name":"nzgmaddon:item/hunting_shotgun/fire"}]
+	"sounds": [
+      "nzgmaddon:item/hunting_shotgun/fire",
+      "nzgmaddon:item/hunting_shotgun/fire2",
+      "nzgmaddon:item/hunting_shotgun/fire3"
+    ]
   },
 "item.hunting_shotgun.fire_pump": {
     "subtitle":"subtitle.cgm.fire",
@@ -313,7 +325,11 @@
   },
 "item.hunting_shotgun.enchanted_fire": {
     "subtitle":"subtitle.cgm.enchanted_fire",
-    "sounds": [{"name":"nzgmaddon:item/hunting_shotgun/enchanted_fire"}]
+	"sounds": [
+      "nzgmaddon:item/hunting_shotgun/enchanted_fire",
+      "nzgmaddon:item/hunting_shotgun/enchanted_fire2",
+      "nzgmaddon:item/hunting_shotgun/enchanted_fire3"
+    ]
   },
 "item.hunting_shotgun.enchanted_fire_pump": {
     "subtitle":"subtitle.cgm.enchanted_fire",

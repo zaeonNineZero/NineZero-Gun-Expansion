@@ -45,10 +45,18 @@ public class InfantryRifleModel implements IOverrideModel
 		// Render the top rail element that appears when a scope is attached.
 		// We have to grab the gun's scope attachment slot and check whether it is empty or not.
 		// If the isEmpty function returns false, then we render the attachment rail.
-		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
-        if(!attachmentStack.isEmpty())
+		ItemStack scopeStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
+        if(!scopeStack.isEmpty())
 		{
             RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+		}
+        
+		// Render the bottom rail element that appears when a grip/underbarrel attachment is equipped.
+		// Same as above, just with the underbarrel slot.
+		ItemStack gripStack = Gun.getAttachment(IAttachment.Type.UNDER_BARREL, stack);
+        if(!gripStack.isEmpty())
+		{
+            RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_BOTTOM_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
 
         // Special animated segment for compat with the CGM Expanded fork.

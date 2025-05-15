@@ -100,7 +100,7 @@ public class BullpupRifleModel implements IOverrideModel
             float cooldown_c = Math.min(Math.max((-cooldown_a*intensity)+intensity,0),1);
             float cooldown_d = Math.min(cooldown_b,cooldown_c);
             
-            boltTranslations = boltTranslations.add(0, 0, cooldown_d * 2.1);
+            boltTranslations = boltTranslations.add(0, 0, cooldown_d * 2.2);
         }
 
 		// Assault Rifle charging handle. This animated part kicks backward on firing, then moves back to its resting position.

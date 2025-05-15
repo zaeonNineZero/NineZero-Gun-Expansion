@@ -436,18 +436,18 @@
 		},
 		{
 			"name": "eject_port",
-			"from": [8.45, 3.3, 10.07],
-			"to": [8.8002, 4.2, 12.07],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 2.45, 9.87]},
+			"from": [8.45, 3.3, 10.12],
+			"to": [8.8005, 4.2, 11.87],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 2.45, 9.92]},
 			"faces": {
 				"east": {"uv": [6, 8.5, 8, 9.5], "texture": "#1"}
 			}
 		},
 		{
 			"name": "eject_port2",
-			"from": [8.45, 3.3, 12.07],
-			"to": [8.8002, 3.75, 13.07],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 2.45, 11.87]},
+			"from": [8.45, 3.3, 11.87],
+			"to": [8.8005, 3.75, 12.77],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 2.45, 11.92]},
 			"faces": {
 				"east": {"uv": [7.5, 8, 8.5, 8.5], "texture": "#1"}
 			}
@@ -598,7 +598,6 @@
 			}
 		}
 	],
-	"display": {},
 	"groups": [
 		{
 			"name": "barrel",
@@ -673,7 +672,7 @@
 					]
 				},
 				{
-					"name": "group",
+					"name": "ejection_port",
 					"origin": [8.5, 2.6, 12.57],
 					"color": 0,
 					"children": [42, 43]

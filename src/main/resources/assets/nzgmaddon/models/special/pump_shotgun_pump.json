@@ -3,6 +3,7 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"2": "nzgmaddon:items/pump_shotgun",
+		"3": "cgm:items/shotgun",
 		"particle": "cgm:items/shotgun"
 	},
 	"elements": [
@@ -67,6 +68,19 @@
 				"south": {"uv": [11.5, 3, 12, 3.5], "rotation": 90, "texture": "#2", "tintindex": 0},
 				"west": {"uv": [13, 3.5, 12.375, 0], "rotation": 90, "texture": "#2", "tintindex": 0}
 			}
+		},
+		{
+			"name": "rod",
+			"from": [8.8, 3.465, 10.78],
+			"to": [9.15, 3.895, 11.03],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 3.675, 11.01036]},
+			"faces": {
+				"north": {"uv": [5.5, 1, 5, 1.5], "texture": "#3"},
+				"east": {"uv": [5.5, 1, 5, 1.5], "texture": "#3"},
+				"south": {"uv": [5.5, 1, 5, 1.5], "texture": "#3"},
+				"up": {"uv": [5.5, 1, 5, 1.5], "texture": "#3"},
+				"down": {"uv": [5.5, 1, 5, 1.5], "texture": "#3"}
+			}
 		}
 	],
 	"groups": [
@@ -74,7 +88,15 @@
 			"name": "pump",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"children": [0, 1, 2, 3, 4, 5]
+			"children": [
+				{
+					"name": "group",
+					"origin": [8, 2.85, 3.7],
+					"color": 0,
+					"children": [0, 1, 2, 3, 4, 5]
+				},
+				6
+			]
 		}
 	]
 }

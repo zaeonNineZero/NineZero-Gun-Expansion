@@ -119,6 +119,7 @@ public enum SpecialModels
     INFANTRY_RIFLE_BASE("infantry_rifle_base"),
     INFANTRY_RIFLE_CHAMBER("infantry_rifle_chamber"),
     INFANTRY_RIFLE_RAIL("infantry_rifle_rail"),
+    INFANTRY_RIFLE_BOTTOM_RAIL("infantry_rifle_bottom_rail"),
     INFANTRY_RIFLE_MAGAZINE("infantry_rifle_magazine"),
     INFANTRY_RIFLE_LIGHT_MAG("infantry_rifle_light_mag"),
     INFANTRY_RIFLE_EXTENDED_MAG("infantry_rifle_extended_mag"),
