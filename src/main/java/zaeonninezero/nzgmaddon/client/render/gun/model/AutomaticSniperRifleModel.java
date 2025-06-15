@@ -54,6 +54,17 @@ public class AutomaticSniperRifleModel implements IOverrideModel
         handguardModel = SpecialModels.AUTO_SNIPER_RIFLE_HANDGUARD_1.getModel();
         RenderUtil.renderModel(handguardModel, transformType, null, stack, parent, poseStack, buffer, light, overlay);
         
+        // Render the BakedModel we selected.
+        Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
+
+		// Render the top rail element, which is only present when a scope is attached.
+		// We have to grab the gun's scope attachment slot and check whether it is empty or not.
+		// If the isEmpty function returns false, then we render the rail.
+        ItemStack attachmentScopeStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
+        if(!attachmentScopeStack.isEmpty())
+		{
+            RenderUtil.renderModel(SpecialModels.AUTO_SNIPER_RIFLE_TOP_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+		}
         
 		// Render the stock adapter element, which is only present when a stock attachment is equipped.
 		// Same as above once again, this time with the stock attachment slot.

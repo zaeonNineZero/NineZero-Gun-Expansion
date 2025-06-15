@@ -128,6 +128,7 @@ public enum SpecialModels
     AUTO_SNIPER_RIFLE_BASE_1("gun/automatic_sniper_rifle/auto_sniper_rifle_base_1"),
     AUTO_SNIPER_RIFLE_HANDGUARD("gun/automatic_sniper_rifle/auto_sniper_rifle_handguard"),
     AUTO_SNIPER_RIFLE_HANDGUARD_1("gun/automatic_sniper_rifle/auto_sniper_rifle_handguard_1"),
+    AUTO_SNIPER_RIFLE_TOP_RAIL("gun/automatic_sniper_rifle/auto_sniper_rifle_top_rail"),
     AUTO_SNIPER_RIFLE_STOCK_ADAPTER("gun/automatic_sniper_rifle/auto_sniper_rifle_stock_adapter"),
     AUTO_SNIPER_RIFLE_BOLT_HANDLE("gun/automatic_sniper_rifle/auto_sniper_rifle_bolt_handle"),
     AUTO_SNIPER_RIFLE_MAGAZINE("gun/automatic_sniper_rifle/auto_sniper_rifle_magazine"),

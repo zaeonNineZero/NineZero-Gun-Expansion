@@ -84,6 +84,8 @@ public class BoltActionRifleModel implements IOverrideModel
         Vec3 bulletRotations = Vec3.ZERO;
         Vec3 bulletRotOffset = Vec3.ZERO;
         
+        Vec3 bullet2Translations = Vec3.ZERO;
+        
         Vec3 magTranslations = Vec3.ZERO;
         
         if(isPlayer && correctContext && !disableAnimations)
@@ -99,6 +101,8 @@ public class BoltActionRifleModel implements IOverrideModel
         	        bulletRotOffset = GunAnimationHelper.getSmartAnimationRotOffset(stack, player, partialTicks, "bullet");
         			
         	        magTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "magazine");
+        	        
+        	        bullet2Translations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "bullet2");
 
         	    	if(!GunAnimationHelper.hasAnimation("fire", stack) && GunAnimationHelper.getSmartAnimationType(stack, player, partialTicks)=="fire")
         	    	useFallbackAnimation = true;
@@ -170,25 +174,27 @@ public class BoltActionRifleModel implements IOverrideModel
         poseStack.popPose();
         
         // Part 2: Non-rotating bolt/chamber
-		// Push pose so we can make do transformations without affecting the models above.
+		// Push pose.
         poseStack.pushPose();
-		// Now we apply our transformations.
+		// Apply transformations.
         if(isPlayer)
         poseStack.translate(0, 0, boltTranslations.z*0.0625);
-		// Our transformations are done - now we can render the model.
+		// Render the model.
         RenderUtil.renderModel(SpecialModels.BOLT_ACTION_RIFLE_CHAMBER.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
-		// Pop pose to compile everything in the render matrix.
+		// Pop pose.
         poseStack.popPose();
         
-        // Rifle bullet element, which is only used during custom reload animations.
-        if(!disableAnimations && !useFallbackAnimation)
+        
+        // Rifle Bullets:
+        // Rifle bullet 1 -- used during custom reload animations.
+        if(shouldRenderBullet(stack,0))
         {
-    		// Push pose so we can make do transformations without affecting the models above.
+    		// Push pose.
             poseStack.pushPose();
             // Initial translation to the starting position.
             poseStack.translate(0.0, -4.15*0.0625, 3.1*0.0625);
-            // Apply the transformations
-            if(isPlayer && isFirstPerson)
+            // Apply transformations.
+            if(!disableAnimations && !useFallbackAnimation && isPlayer && isFirstPerson)
             {
             	if(bulletTranslations!=Vec3.ZERO)
                 	poseStack.translate(bulletTranslations.x*0.0625, bulletTranslations.y*0.0625, bulletTranslations.z*0.0625);
@@ -197,7 +203,25 @@ public class BoltActionRifleModel implements IOverrideModel
         	}
     		// Render the model.
             RenderUtil.renderModel(SpecialModels.BOLT_ACTION_RIFLE_BULLET.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
-    		// Pop pose to compile everything in the render matrix.
+    		// Pop pose.
+            poseStack.popPose();
+        }
+        // Rifle bullet 2 -- used during reload and cycling animations.
+        if(!disableAnimations && !useFallbackAnimation && shouldRenderBullet(stack,1))
+        {
+    		// Push pose.
+            poseStack.pushPose();
+            // Initial translation to the starting position.
+            poseStack.translate(0.0, -4.15*0.0625, 3.1*0.0625);
+            // Apply transformations.
+            if(isPlayer)
+            {
+            	if(bulletTranslations!=Vec3.ZERO)
+                	poseStack.translate(bullet2Translations.x*0.0625, bullet2Translations.y*0.0625, bullet2Translations.z*0.0625);
+        	}
+    		// Render the model.
+            RenderUtil.renderModel(SpecialModels.BOLT_ACTION_RIFLE_BULLET.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+    		// Pop pose.
             poseStack.popPose();
         }
     }
@@ -217,8 +241,8 @@ public class BoltActionRifleModel implements IOverrideModel
         try {
         	float progress = (ReloadHandler.get().getReloadTimer()>=0.8 ? GunRenderingHandler.get().getReloadDeltaTime(gunStack) : 0);
         	boolean hasBullet = (Gun.hasInfiniteAmmo(gunStack) || (tag.getInt("AmmoCount") >= bullet));
-        	if ((hasBullet && GunAnimationHelper.getAnimationValue("reload", gunStack, progress, "bullets", "hideBullets")<=0)
-        	|| (GunAnimationHelper.getAnimationValue("reload", gunStack, progress, "bullets", "forceShowBullets")>=1))
+        	if ((bullet>0 && hasBullet)
+        	|| (bullet==0 && GunAnimationHelper.getAnimationValue("reload", gunStack, progress, "bullet", "forceShowBullet")>=1))
         	return true;
         	else
         	return false;
