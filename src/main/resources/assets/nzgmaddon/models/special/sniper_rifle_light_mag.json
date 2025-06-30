@@ -8,7 +8,7 @@
 	"elements": [
 		{
 			"name": "clip",
-			"from": [7.55, 1.6, 10],
+			"from": [7.55, 2.1, 10],
 			"to": [8.45, 3.7, 12.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [15.6, 9.525, 18.1]},
 			"faces": {
@@ -22,9 +22,9 @@
 		},
 		{
 			"name": "clip_base",
-			"from": [7.45, 1.2, 9.9],
-			"to": [8.55, 1.6, 12.6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [15.6, 9.525, 18.1]},
+			"from": [7.45, 1.7, 9.9],
+			"to": [8.55, 2.1, 12.6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15.6, 10.125, 18.1]},
 			"faces": {
 				"north": {"uv": [0.5, 9.5, 1, 10], "texture": "#1"},
 				"east": {"uv": [0.5, 9.5, 3, 10], "texture": "#1"},

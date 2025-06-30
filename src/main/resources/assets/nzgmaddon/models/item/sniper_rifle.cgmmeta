@@ -6,7 +6,7 @@
                 "scale": [0.47, 0.47, 0.47]
             },
             "scope": {
-                "translation": [8.0, 4.32, 11.3]
+                "translation": [8.0, 4.38, 11.3]
             },
             "underBarrel": {
                 "translation": [8.0, 2.8, 6.9],
@@ -14,7 +14,7 @@
             }
         },
         "ironSight": {
-            "camera": [8.0, 5.0, 19.5],
+            "camera": [8.0, 5.48, 19.5],
             "viewportFov": 59.0
         },
         "muzzleFlash": {

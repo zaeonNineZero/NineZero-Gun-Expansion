@@ -74,6 +74,9 @@ public enum SpecialModels
     HUNTING_SHOTGUN_BASE("hunting_shotgun_base"),
     HUNTING_SHOTGUN_PUMP("hunting_shotgun_pump"),
 	
+    DOUBLE_BARRELED_SHOTGUN_BASE("gun/double_barreled_shotgun/double_barreled_shotgun_base"),
+    DOUBLE_BARRELED_SHOTGUN_BREAK("gun/double_barreled_shotgun/double_barreled_shotgun_break"),
+	
     AUTOMATIC_SHOTGUN_BASE("gun/automatic_shotgun/automatic_shotgun_base"),
     AUTOMATIC_SHOTGUN_SIGHTS("gun/automatic_shotgun/automatic_shotgun_sights"),
     AUTOMATIC_SHOTGUN_BOLT("gun/automatic_shotgun/automatic_shotgun_bolt"),
@@ -139,20 +142,24 @@ public enum SpecialModels
     HUNTING_RIFLE_BREECH("hunting_rifle_breech"),
     HUNTING_RIFLE_SIGHTS("hunting_rifle_rear_sight"),
     
-    BOLT_ACTION_RIFLE_BASE("bolt_action_rifle_base"),
-    BOLT_ACTION_RIFLE_BASE_1("bolt_action_rifle_base_1"),
-    BOLT_ACTION_RIFLE_BASE_2("bolt_action_rifle_base_2"),
-    BOLT_ACTION_RIFLE_SIGHTS("bolt_action_rifle_sights"),
-    BOLT_ACTION_RIFLE_RAIL("bolt_action_rifle_rail"),
-    BOLT_ACTION_RIFLE_CHAMBER("bolt_action_rifle_bolt1"),
-    BOLT_ACTION_RIFLE_BOLT("bolt_action_rifle_bolt2"),
-    BOLT_ACTION_RIFLE_BULLET("bolt_action_rifle_bullet"),
+    BOLT_ACTION_RIFLE_BASE("gun/bolt_action_rifle/bolt_action_rifle_base"),
+    BOLT_ACTION_RIFLE_BASE_1("gun/bolt_action_rifle/bolt_action_rifle_base_1"),
+    BOLT_ACTION_RIFLE_BASE_2("gun/bolt_action_rifle/bolt_action_rifle_base_2"),
+    BOLT_ACTION_RIFLE_SIGHTS("gun/bolt_action_rifle/bolt_action_rifle_sights"),
+    BOLT_ACTION_RIFLE_RAIL("gun/bolt_action_rifle/bolt_action_rifle_rail"),
+    BOLT_ACTION_RIFLE_CHAMBER("gun/bolt_action_rifle/bolt_action_rifle_bolt1"),
+    BOLT_ACTION_RIFLE_BOLT("gun/bolt_action_rifle/bolt_action_rifle_bolt2"),
+    BOLT_ACTION_RIFLE_BULLET("gun/bolt_action_rifle/bolt_action_rifle_bullet"),
+    BOLT_ACTION_RIFLE_LIGHT_MAG("gun/bolt_action_rifle/bolt_action_rifle_light_mag"),
+    BOLT_ACTION_RIFLE_EXTENDED_MAG("gun/bolt_action_rifle/bolt_action_rifle_extended_mag"),
 	
     SNIPER_RIFLE_BASE("sniper_rifle_base"),
     SNIPER_RIFLE_SIGHTS("sniper_rifle_sights"),
     SNIPER_RIFLE_CHAMBER("sniper_rifle_bolt1"),
     SNIPER_RIFLE_BOLT("sniper_rifle_bolt2"),
-    SNIPER_RIFLE_MAGAZINE("sniper_rifle_magazine");
+    SNIPER_RIFLE_MAGAZINE("sniper_rifle_magazine"),
+    SNIPER_RIFLE_LIGHT_MAG("sniper_rifle_light_mag"),
+    SNIPER_RIFLE_EXTENDED_MAG("sniper_rifle_extended_mag");
 
     /**
      * The location of an item model in the [MOD_ID]/models/special/[NAME] folder

@@ -563,6 +563,21 @@
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/auto_sniper_rifle/cock"}]
   },
+"item.auto_sniper_rifle.bolt_open": {
+    "sounds": [{"name":"nzgmaddon:item/auto_sniper_rifle/bolt_open"}]
+  },
+"item.auto_sniper_rifle.bolt_close": {
+    "subtitle":"subtitle.cgm.cock",
+    "sounds": [{"name":"nzgmaddon:item/auto_sniper_rifle/bolt_close"}]
+  },
+"item.auto_sniper_rifle.mag_out": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/auto_sniper_rifle/mag_out"}]
+  },
+"item.auto_sniper_rifle.mag_in": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/auto_sniper_rifle/mag_in"}]
+  },
 
 "item.hunting_rifle.fire": {
     "subtitle":"subtitle.cgm.fire",
@@ -580,10 +595,6 @@
     "sounds": [{"name":"nzgmaddon:item/hunting_rifle/breech_open"}]
   },
 "item.hunting_rifle.breech_close": {
-    "subtitle":"subtitle.cgm.cock",
-    "sounds": [{"name":"nzgmaddon:item/hunting_rifle/breech_close"}]
-  },
-"item.hunting_rifle.cock": {
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/hunting_rifle/breech_close"}]
   },
@@ -617,12 +628,19 @@
     "sounds": [{"name":"nzgmaddon:item/bolt_action_rifle/cock"}]
   },
 "item.bolt_action_rifle.bolt_back": {
-    "subtitle":"subtitle.cgm.reload",
     "sounds": [{"name":"nzgmaddon:item/bolt_action_rifle/bolt_back"}]
   },
 "item.bolt_action_rifle.bolt_forward": {
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/bolt_action_rifle/bolt_forward"}]
+  },
+"item.bolt_action_rifle.mag_out": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/bolt_action_rifle/mag_out"}]
+  },
+"item.bolt_action_rifle.mag_in": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/bolt_action_rifle/mag_in"}]
   },
 
 "item.sniper_rifle.fire": {

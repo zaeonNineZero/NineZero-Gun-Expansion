@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
@@ -102,19 +103,6 @@
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.5365, -5.455]},
 			"faces": {
 				"north": {"uv": [11.5, 0, 12, 0.5], "texture": "#0"}
-			}
-		},
-		{
-			"name": "front_sight",
-			"from": [7.9, 4.88, 2.5],
-			"to": [8.1, 5.25, 3.27],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8.2, 6.6]},
-			"faces": {
-				"north": {"uv": [7.5, 15.5, 8, 16], "texture": "#3"},
-				"east": {"uv": [7.5, 15.5, 8, 16], "texture": "#3"},
-				"south": {"uv": [7.5, 15.5, 8, 16], "texture": "#3"},
-				"west": {"uv": [7.5, 15.5, 8, 16], "texture": "#3"},
-				"up": {"uv": [8, 16, 7.5, 15.5], "texture": "#3"}
 			}
 		},
 		{
@@ -615,42 +603,41 @@
 					"origin": [8, 8.35, 3.55],
 					"color": 0,
 					"children": [
-						9,
 						{
 							"name": "group",
 							"origin": [7.55022, 2.69978, 9],
 							"color": 0,
-							"children": [10, 11, 12, 13, 14, 15]
+							"children": [9, 10, 11, 12, 13, 14]
 						},
 						{
 							"name": "group",
 							"origin": [7.55022, 2.69978, 9],
 							"color": 0,
-							"children": [16, 17, 18, 19, 20, 21]
+							"children": [15, 16, 17, 18, 19, 20]
 						},
 						{
 							"name": "group",
 							"origin": [8.19978, 2.04978, 9],
 							"color": 0,
-							"children": [22, 23, 24, 25]
+							"children": [21, 22, 23, 24]
 						},
 						{
 							"name": "group",
 							"origin": [7.55022, 2.69978, 9],
 							"color": 0,
-							"children": [26, 27, 28, 29, 30, 31]
+							"children": [25, 26, 27, 28, 29, 30]
 						},
 						{
 							"name": "group",
 							"origin": [8, 4.5, 0.5],
 							"color": 0,
-							"children": [32, 33]
+							"children": [31, 32]
 						},
 						{
 							"name": "group",
 							"origin": [8, 2.7, 0.5],
 							"color": 0,
-							"children": [34, 35]
+							"children": [33, 34]
 						}
 					]
 				},
@@ -659,15 +646,15 @@
 					"origin": [8.4, 7.75, 6],
 					"color": 0,
 					"children": [
+						35,
 						36,
 						37,
 						38,
-						39,
 						{
 							"name": "group",
 							"origin": [8, 4.5, 12.3],
 							"color": 0,
-							"children": [40, 41]
+							"children": [39, 40]
 						}
 					]
 				},
@@ -675,7 +662,7 @@
 					"name": "ejection_port",
 					"origin": [8.5, 2.6, 12.57],
 					"color": 0,
-					"children": [42, 43]
+					"children": [41, 42]
 				}
 			]
 		},
@@ -683,13 +670,13 @@
 			"name": "grip",
 			"origin": [7.6, 0.85032, 13.46977],
 			"color": 0,
-			"children": [44, 45, 46, 47, 48]
+			"children": [43, 44, 45, 46, 47]
 		},
 		{
 			"name": "pump_grip",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"children": [49, 50, 51, 52, 53, 54, 55, 56]
+			"children": [48, 49, 50, 51, 52, 53, 54, 55]
 		}
 	]
 }

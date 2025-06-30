@@ -87,6 +87,8 @@ public class BoltActionRifleModel implements IOverrideModel
         Vec3 bullet2Translations = Vec3.ZERO;
         
         Vec3 magTranslations = Vec3.ZERO;
+        Vec3 magRotations = Vec3.ZERO;
+        Vec3 magRotOffset = Vec3.ZERO;
         
         if(isPlayer && correctContext && !disableAnimations)
         {
@@ -99,8 +101,10 @@ public class BoltActionRifleModel implements IOverrideModel
         	        bulletTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "bullet");
         	        bulletRotations = GunAnimationHelper.getSmartAnimationRot(stack, player, partialTicks, "bullet");
         	        bulletRotOffset = GunAnimationHelper.getSmartAnimationRotOffset(stack, player, partialTicks, "bullet");
-        			
-        	        magTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "magazine");
+					
+        			magTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "magazine");
+        	        magRotations = GunAnimationHelper.getSmartAnimationRot(stack, player, partialTicks, "magazine");
+        	        magRotOffset = GunAnimationHelper.getSmartAnimationRotOffset(stack, player, partialTicks, "magazine");
         	        
         	        bullet2Translations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "bullet2");
 
@@ -224,6 +228,35 @@ public class BoltActionRifleModel implements IOverrideModel
     		// Pop pose.
             poseStack.popPose();
         }
+        
+        // Magazine transforms
+        poseStack.pushPose();
+		// Apply transformations to this part.
+        if(isPlayer && isFirstPerson && !disableAnimations)
+        {
+        	if(magTranslations!=Vec3.ZERO)
+        	poseStack.translate(magTranslations.x*0.0625, magTranslations.y*0.0625, magTranslations.z*0.0625);
+        	if(magRotations!=Vec3.ZERO)
+               GunAnimationHelper.rotateAroundOffset(poseStack, magRotations, magRotOffset);
+    	}
+		// Magazine model selection and rendering
+        boolean hasMag = false;
+        SpecialModels magModel = SpecialModels.BOLT_ACTION_RIFLE_EXTENDED_MAG;
+        try {
+        	ItemStack magStack = Gun.getAttachment(IAttachment.Type.byTagKey("Magazine"), stack);
+            if(!magStack.isEmpty())
+            {
+            	hasMag = true;
+	            if (magStack.getItem().builtInRegistryHolder().key().location().getPath().equals("light_magazine"))
+		    		magModel = SpecialModels.BOLT_ACTION_RIFLE_LIGHT_MAG;
+            }
+		}
+		catch(Error ignored) {} catch(Exception ignored) {}
+        
+        if (hasMag)
+        RenderUtil.renderModel(magModel.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+		// Pop pose to compile everything in the render matrix.
+        poseStack.popPose();
     }
     
     //NBT fetch code for skin variants - ported from the "hasAmmo" function under common/Gun.java
@@ -241,7 +274,7 @@ public class BoltActionRifleModel implements IOverrideModel
         try {
         	float progress = (ReloadHandler.get().getReloadTimer()>=0.8 ? GunRenderingHandler.get().getReloadDeltaTime(gunStack) : 0);
         	boolean hasBullet = (Gun.hasInfiniteAmmo(gunStack) || (tag.getInt("AmmoCount") >= bullet));
-        	if ((bullet>0 && hasBullet)
+        	if ((bullet>0 && (hasBullet || GunAnimationHelper.getAnimationValue("reload", gunStack, progress, "bullet2", "forceShowBullet")>=1))
         	|| (bullet==0 && GunAnimationHelper.getAnimationValue("reload", gunStack, progress, "bullet", "forceShowBullet")>=1))
         	return true;
         	else

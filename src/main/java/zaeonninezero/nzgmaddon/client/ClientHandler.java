@@ -1,7 +1,7 @@
 package zaeonninezero.nzgmaddon.client;
 
 import com.mrcrayfish.guns.client.render.gun.ModelOverrides;
-import com.mrcrayfish.guns.client.render.gun.model.SimpleModel;
+//import com.mrcrayfish.guns.client.render.gun.model.SimpleModel;
 import zaeonninezero.nzgmaddon.client.render.gun.model.*;
 import zaeonninezero.nzgmaddon.nzgmAddon;
 import zaeonninezero.nzgmaddon.init.initItems;
@@ -18,10 +18,7 @@ public class ClientHandler
 	
 	private static void registerModelOverrides()
     {
-		ModelOverrides.register(initItems.DOUBLE_BARRELED_SHOTGUN.get(), new SimpleModel(SpecialModels.DOUBLE_BARRELED_SHOTGUN::getModel));
-		//ModelOverrides.register(initItems.AUTOMATIC_SNIPER_RIFLE.get(), new SimpleModel(SpecialModels.AUTOMATIC_SNIPER_RIFLE::getModel));
-		
-        ModelOverrides.register(initItems.REVOLVER.get(), new RevolverModel());
+		ModelOverrides.register(initItems.REVOLVER.get(), new RevolverModel());
         ModelOverrides.register(initItems.HEAVY_PISTOL.get(), new HeavyPistolModel());
         ModelOverrides.register(initItems.HEAVY_REVOLVER.get(), new HeavyRevolverModel());
         ModelOverrides.register(initItems.UZI.get(), new MicroSMGModel());
@@ -30,6 +27,7 @@ public class ClientHandler
         ModelOverrides.register(initItems.RAPID_SMG.get(), new RapidSMGModel());
         ModelOverrides.register(initItems.PUMP_SHOTGUN.get(), new PumpShotgunModel());
         ModelOverrides.register(initItems.HUNTING_SHOTGUN.get(), new HuntingShotgunModel());
+        ModelOverrides.register(initItems.DOUBLE_BARRELED_SHOTGUN.get(), new DoubleBarreledShotgunModel());
         ModelOverrides.register(initItems.AUTOMATIC_SHOTGUN.get(), new AutomaticShotgunModel());;
 		ModelOverrides.register(initItems.HEAVY_ASSAULT_RIFLE.get(), new HeavyAssaultRifleModel());
         ModelOverrides.register(initItems.BATTLE_RIFLE.get(), new BattleRifleModel());

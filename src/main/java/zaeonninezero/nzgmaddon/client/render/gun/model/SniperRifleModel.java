@@ -160,9 +160,10 @@ public class SniperRifleModel implements IOverrideModel
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
         
-        // Magazine for Sniper Rifle
+        
+        // Magazines for the Sniper Rifle
         poseStack.pushPose();
-		// Now we apply our transformations.
+		// Apply transformations to this part.
         if(isPlayer && isFirstPerson && !disableAnimations)
         {
         	if(magTranslations!=Vec3.ZERO)
@@ -170,8 +171,22 @@ public class SniperRifleModel implements IOverrideModel
         	if(magRotations!=Vec3.ZERO)
                GunAnimationHelper.rotateAroundOffset(poseStack, magRotations, magRotOffset);
     	}
-		// Our transformations are done - now we can render the model.
-        RenderUtil.renderModel(SpecialModels.SNIPER_RIFLE_MAGAZINE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+		// Magazine model selection and rendering
+        SpecialModels magModel = SpecialModels.SNIPER_RIFLE_MAGAZINE;
+        try {
+        	ItemStack magStack = Gun.getAttachment(IAttachment.Type.byTagKey("Magazine"), stack);
+            if(!magStack.isEmpty())
+            {
+	            if (magStack.getItem().builtInRegistryHolder().key().location().getPath().equals("light_magazine"))
+		    		magModel = SpecialModels.SNIPER_RIFLE_LIGHT_MAG;
+	            else
+	            if (magStack.getItem().builtInRegistryHolder().key().location().getPath().equals("extended_magazine"))
+			    	magModel = SpecialModels.SNIPER_RIFLE_EXTENDED_MAG;
+            }
+		}
+		catch(Error ignored) {} catch(Exception ignored) {}
+        
+        RenderUtil.renderModel(magModel.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
     }
