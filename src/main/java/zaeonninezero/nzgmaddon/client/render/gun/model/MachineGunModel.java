@@ -41,7 +41,6 @@ import javax.annotation.Nullable;
 public class MachineGunModel implements IOverrideModel
 {
 	private boolean disableAnimations = false;
-	private boolean checkInfiniteAmmo = true;
 	
     @Override
 	// This class renders a multi-part model that supports animations and removeable parts.
@@ -315,20 +314,13 @@ public class MachineGunModel implements IOverrideModel
         	else
         	return false;
 		}
-        
-        boolean displayBullet = tag.getInt("AmmoCount") >= bullet;
-        if(checkInfiniteAmmo)
-        try {
-        	if (Gun.hasInfiniteAmmo(gunStack))
-        	displayBullet = true;
-		}
-		catch(Error ignored) {checkInfiniteAmmo = false;} catch(Exception ignored) {checkInfiniteAmmo = false;}
         else
         {
-        	if (tag.getBoolean("IgnoreAmmo"))
-        	displayBullet = true;
-		}
-        
-        return displayBullet;
+	        boolean displayBullet = tag.getInt("AmmoCount") >= bullet;
+	        if (tag.getBoolean("IgnoreAmmo"))
+	        displayBullet = true;
+	        
+	        return displayBullet;
+        }
     }
 }

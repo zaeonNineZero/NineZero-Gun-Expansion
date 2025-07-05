@@ -4,6 +4,7 @@ import com.mrcrayfish.guns.GunMod;
 
 public class CGMExpandedHelper
 {
+	private static boolean expandedInstalled = false;
 	private static boolean detectFail = false;
 	
     public static boolean isExpandedInstalled()
@@ -13,13 +14,18 @@ public class CGMExpandedHelper
     	
     	try
     	{
-    		return GunMod.hasCGMExpanded();
+    		if (GunMod.hasCGMExpanded())
+    		{
+    			expandedInstalled = true;
+    			return expandedInstalled;
+    		}
+    		else
+    		return false; //Fallback return line that shouldn't occur; hasCGMExpanded() always returns true.
     	}
     	catch (NoSuchMethodError ignored)
     	{
     		detectFail = true;
+        	return false;
     	}
-    	
-    	return false;
     }
 }
