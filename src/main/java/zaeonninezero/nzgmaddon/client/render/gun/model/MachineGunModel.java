@@ -10,6 +10,8 @@ import com.mrcrayfish.guns.client.handler.GunRenderingHandler;
 import com.mrcrayfish.guns.client.handler.ReloadHandler;
 
 import zaeonninezero.nzgmaddon.client.SpecialModels;
+import zaeonninezero.nzgmaddon.util.CGMExpandedHelper;
+
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
 import com.mrcrayfish.guns.client.util.GunAnimationHelper;
 import com.mrcrayfish.guns.client.util.RenderUtil;
@@ -303,8 +305,8 @@ public class MachineGunModel implements IOverrideModel
     public boolean shouldRenderBullet(ItemStack gunStack, int bullet)
     {
         CompoundTag tag = gunStack.getOrCreateTag();
-        if(!disableAnimations)
-        try {
+        if(CGMExpandedHelper.isExpandedInstalled())
+        {
         	float progress = (ReloadHandler.get().getReloadTimer()>=0.8 ? GunRenderingHandler.get().getReloadDeltaTime(gunStack) : 0);
         	boolean hasBullet = (Gun.hasInfiniteAmmo(gunStack) || (tag.getInt("AmmoCount") >= bullet));
         	if ((hasBullet && GunAnimationHelper.getAnimationValue("reload", gunStack, progress, "bullets", "hideBullets")<=0)
@@ -313,7 +315,6 @@ public class MachineGunModel implements IOverrideModel
         	else
         	return false;
 		}
-		catch(Error ignored) {disableAnimations = true;} catch(Exception ignored) {disableAnimations = true;}
         
         boolean displayBullet = tag.getInt("AmmoCount") >= bullet;
         if(checkInfiniteAmmo)
