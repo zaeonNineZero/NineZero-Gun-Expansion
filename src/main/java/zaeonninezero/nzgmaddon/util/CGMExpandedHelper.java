@@ -13,9 +13,9 @@ public class CGMExpandedHelper
     	
     	try
     	{
-    		GunMod.hasCGMExpanded();
+    		return GunMod.hasCGMExpanded();
     	}
-    	catch (NoClassDefFoundError ignored)
+    	catch (NoSuchMethodError ignored)
     	{
     		detectFail = true;
     	}
