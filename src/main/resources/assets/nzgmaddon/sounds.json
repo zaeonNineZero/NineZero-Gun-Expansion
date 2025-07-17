@@ -670,5 +670,13 @@
 "item.sniper_rifle.cock": {
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/sniper_rifle/cock"}]
+  },
+"item.sniper_rifle.mag_out": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/sniper_rifle/mag_out"}]
+  },
+"item.sniper_rifle.mag_in": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/sniper_rifle/mag_in"}]
   }
 }

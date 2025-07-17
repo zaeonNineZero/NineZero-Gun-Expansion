@@ -5,14 +5,12 @@ import com.mojang.math.Vector3f;
 import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.GunMod;
 import com.mrcrayfish.guns.client.GunModel;
-import com.mrcrayfish.guns.client.handler.GunRenderingHandler;
 import com.mrcrayfish.guns.client.handler.ReloadHandler;
 
 import zaeonninezero.nzgmaddon.client.SpecialModels;
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
 import com.mrcrayfish.guns.client.util.GunAnimationHelper;
 import com.mrcrayfish.guns.client.util.RenderUtil;
-import com.mrcrayfish.guns.item.GunItem;
 import com.mrcrayfish.guns.item.attachment.IAttachment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -128,12 +126,12 @@ public class HuntingRifleModel implements IOverrideModel
         poseStack.popPose();
         
         // Advanced Bullet, which is only used during custom reload animations.
-        if(!disableAnimations && !useFallbackAnimation && (isPlayer && isFirstPerson))
+        if(!disableAnimations && !useFallbackAnimation && (isPlayer && isFirstPerson && ReloadHandler.get().getReloadTimer()>=0.99))
         {
     		// Push pose so we can make do transformations without affecting the models above.
             poseStack.pushPose();
             // Initial translation to the starting position.
-            poseStack.translate(0.0, -3.85*0.0625, 4.8*0.0625);
+            poseStack.translate(0.0, -3.9*0.0625, 3.8*0.0625);
             // Apply the transformations
             {
             	if(bulletTranslations!=Vec3.ZERO)

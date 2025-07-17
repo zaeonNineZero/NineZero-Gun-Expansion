@@ -274,7 +274,7 @@ public class BoltActionRifleModel implements IOverrideModel
         CompoundTag tag = gunStack.getOrCreateTag();
         if(CGMExpandedHelper.isExpandedInstalled())
         {
-        	float progress = (ReloadHandler.get().getReloadTimer()>=0.8 ? GunRenderingHandler.get().getReloadDeltaTime(gunStack) : 0);
+        	float progress = (ReloadHandler.get().getReloadTimer()>=0.9 ? GunRenderingHandler.get().getReloadDeltaTime(gunStack) : 0);
         	boolean hasBullet = (Gun.hasInfiniteAmmo(gunStack) || (tag.getInt("AmmoCount") >= bullet));
         	if ((bullet>0 && (hasBullet || GunAnimationHelper.getAnimationValue("reload", gunStack, progress, "bullet2", "forceShowBullet")>=1))
         	|| (bullet==0 && GunAnimationHelper.getAnimationValue("reload", gunStack, progress, "bullet", "forceShowBullet")>=1))
