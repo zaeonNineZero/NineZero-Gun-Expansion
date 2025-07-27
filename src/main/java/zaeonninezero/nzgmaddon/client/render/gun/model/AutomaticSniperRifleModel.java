@@ -115,7 +115,7 @@ public class AutomaticSniperRifleModel implements IOverrideModel
         Gun gun = gunStack.getModifiedGun(stack);
         if(isPlayer && correctContext)
         {
-            float cooldownDivider = 1.0F*Math.max((float) gun.getGeneral().getRate()/1F,1);
+            float cooldownDivider = 1.0F*Math.max((float) gun.getGeneral().getRate()/3.2F,1);
             float cooldownOffset1 = cooldownDivider - 1.0F;
             float intensity = 1.0F +1;
             
@@ -128,7 +128,7 @@ public class AutomaticSniperRifleModel implements IOverrideModel
             float cooldown_c = Math.min(Math.max((-cooldown_a*intensity)+intensity,0),1);
             float cooldown_d = Math.min(cooldown_b,cooldown_c);
             
-            boltTranslations = boltTranslations.add(0, 0, cooldown_d * 0.1);
+            boltTranslations = boltTranslations.add(0, 0, cooldown_d * 1.2);
         }
         
 		// Auto Sniper Charging handle
