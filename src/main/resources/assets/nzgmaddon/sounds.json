@@ -405,8 +405,7 @@
     "sounds": [
       "nzgmaddon:item/battle_rifle/fire",
       "nzgmaddon:item/battle_rifle/fire2",
-      "nzgmaddon:item/battle_rifle/fire3",
-      "nzgmaddon:item/battle_rifle/fire4"
+      "nzgmaddon:item/battle_rifle/fire3"
     ]
   },
 "item.battle_rifle.silenced_fire": {
@@ -418,8 +417,7 @@
 	"sounds": [
       "nzgmaddon:item/battle_rifle/enchanted_fire",
       "nzgmaddon:item/battle_rifle/enchanted_fire2",
-      "nzgmaddon:item/battle_rifle/enchanted_fire3",
-      "nzgmaddon:item/battle_rifle/enchanted_fire4"
+      "nzgmaddon:item/battle_rifle/enchanted_fire3"
     ]
   },
 "item.battle_rifle.mag_out": {
