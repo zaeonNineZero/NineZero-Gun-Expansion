@@ -5,6 +5,7 @@ import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.GunMod;
 import com.mrcrayfish.guns.client.GunModel;
 import zaeonninezero.nzgmaddon.client.SpecialModels;
+
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
 import com.mrcrayfish.guns.client.util.GunAnimationHelper;
 import com.mrcrayfish.guns.client.util.RenderUtil;
@@ -14,6 +15,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.resources.model.BakedModel;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemCooldowns;
@@ -48,7 +50,11 @@ public class BattleRifleModel implements IOverrideModel
 		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
         if(attachmentStack.isEmpty())
 		{
-            RenderUtil.renderModel(SpecialModels.BATTLE_RIFLE_SIGHTS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+        	// There are two iron sight variants that can be rendered.
+        	BakedModel sightModel = SpecialModels.BATTLE_RIFLE_SIGHTS.getModel();
+            if (getVariant(stack, "SightVariant") == 1)
+            sightModel = SpecialModels.BATTLE_RIFLE_SIGHTS_1.getModel();
+            RenderUtil.renderModel(sightModel, transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
         
         // Special animated segment for compat with the CGM Expanded fork.
@@ -142,5 +148,10 @@ public class BattleRifleModel implements IOverrideModel
         RenderUtil.renderModel(magModel.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
+    }
+    public static int getVariant(ItemStack gunStack, String tag_name)
+    {
+        CompoundTag tag = gunStack.getOrCreateTag();
+        return tag.getInt(tag_name);
     }
 }

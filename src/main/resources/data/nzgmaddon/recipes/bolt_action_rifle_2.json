@@ -17,7 +17,7 @@
   "result": {
     "item": "nzgmaddon:bolt_action_rifle",
 	"nbt": {
-      "CustomModelData":2
+      "BaseVariant":2
     }
   }
 }

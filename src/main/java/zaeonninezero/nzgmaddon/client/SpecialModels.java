@@ -95,6 +95,7 @@ public enum SpecialModels
 	
     BATTLE_RIFLE_BASE("battle_rifle_base"),
     BATTLE_RIFLE_SIGHTS("battle_rifle_sights"),
+    BATTLE_RIFLE_SIGHTS_1("battle_rifle_sights_1"),
     BATTLE_RIFLE_MAGAZINE("battle_rifle_magazine"),
     BATTLE_RIFLE_LIGHT_MAG("battle_rifle_light_mag"),
     BATTLE_RIFLE_EXTENDED_MAG("battle_rifle_extended_mag"),

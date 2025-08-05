@@ -41,7 +41,7 @@ public class SubmachineGunModel implements IOverrideModel
     {
 		// Select the Baked Model we'll be rendering, based on the value of the CustomModelData tag.
         BakedModel bakedModel = SpecialModels.SUBMACHINE_GUN_BASE.getModel();
-        if (getVariant(stack) == 1)
+        if (getVariant(stack) == 1 || getVariant(stack, "BaseVariant") == 1)
         bakedModel = SpecialModels.SUBMACHINE_GUN_BASE_1.getModel();
         
         // Render the BakedModel we selected.

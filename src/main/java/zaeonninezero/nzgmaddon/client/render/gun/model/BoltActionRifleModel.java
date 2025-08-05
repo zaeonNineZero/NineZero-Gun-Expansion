@@ -48,10 +48,10 @@ public class BoltActionRifleModel implements IOverrideModel
     	// Render the item's BakedModel, which will serve as the core of our custom model.
     	// We select which model variant to use by fetching the value of the CustomModelData tag.
         BakedModel bakedModel = SpecialModels.BOLT_ACTION_RIFLE_BASE.getModel();
-        if (getVariant(stack) == 1)
+        if (getVariant(stack) == 1 || getVariant(stack, "BaseVariant") == 1)
         bakedModel = SpecialModels.BOLT_ACTION_RIFLE_BASE_1.getModel();
         else
-        if (getVariant(stack) == 2)
+        if (getVariant(stack) == 2 || getVariant(stack, "BaseVariant") == 2)
         bakedModel = SpecialModels.BOLT_ACTION_RIFLE_BASE_2.getModel();
 
         // Render the BakedModel we selected.
@@ -61,7 +61,7 @@ public class BoltActionRifleModel implements IOverrideModel
 		// We have to grab the gun's scope attachment slot and check whether it is empty or not.
 		// If the isEmpty function returns true, then we render the iron sights.
 		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
-        if(attachmentStack.isEmpty() && !(getVariant(stack) == 2))
+        if(attachmentStack.isEmpty() && !(getVariant(stack) == 2 || getVariant(stack, "BaseVariant") == 2))
 		{
             RenderUtil.renderModel(SpecialModels.BOLT_ACTION_RIFLE_SIGHTS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
@@ -266,6 +266,11 @@ public class BoltActionRifleModel implements IOverrideModel
     {
         CompoundTag tag = gunStack.getOrCreateTag();
         return tag.getInt("CustomModelData");
+    }
+    public static int getVariant(ItemStack gunStack, String tag_name)
+    {
+        CompoundTag tag = gunStack.getOrCreateTag();
+        return tag.getInt(tag_name);
     }
     
     //Code check for whether a bullet should be rendered.

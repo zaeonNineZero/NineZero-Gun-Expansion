@@ -3,15 +3,11 @@
   "materials": [
     {
       "tag": "forge:ingots/iron",
-      "count": 25
-    },
-	{
-      "tag": "minecraft:planks",
-      "count": 5
+      "count": 22
     }
   ],
   "result": {
-    "item": "nzgmaddon:heavy_assault_rifle",
+    "item": "nzgmaddon:submachine_gun",
 	"nbt": {
       "BaseVariant":1
     }
