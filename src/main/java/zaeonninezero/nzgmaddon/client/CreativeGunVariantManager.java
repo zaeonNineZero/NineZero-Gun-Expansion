@@ -48,6 +48,16 @@ public class CreativeGunVariantManager
     	items.add(heavyar_1);
     	
     	
+    	// Battle Rifle, Variant 1
+    	ItemStack battlerifle_1 = new ItemStack(initItems.BATTLE_RIFLE.get());
+    	{
+    		CompoundTag tag = battlerifle_1.getOrCreateTag();
+        	tag.putInt("AmmoCount", initItems.BATTLE_RIFLE.get().getGun().getGeneral().getMaxAmmo());
+    		tag.putInt("SightVariant", 1);
+    	}
+    	items.add(battlerifle_1);
+    	
+    	
     	// Automatic Sniper Rifle, Variant 1
     	ItemStack autosniper_1 = new ItemStack(initItems.AUTOMATIC_SNIPER_RIFLE.get());
     	{
