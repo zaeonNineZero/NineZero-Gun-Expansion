@@ -1,6 +1,5 @@
 package zaeonninezero.nzgmaddon.init;
 
-import com.mrcrayfish.guns.GunMod;
 import com.mrcrayfish.guns.item.GunItem;
 import com.mrcrayfish.guns.item.AmmoItem;
 import com.mrcrayfish.guns.item.BarrelItem;

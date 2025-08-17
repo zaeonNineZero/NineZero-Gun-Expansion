@@ -78,7 +78,7 @@ public class HeavyPistolModel implements IOverrideModel
         Gun gun = gunStack.getModifiedGun(stack);
         if(isPlayer && correctContext)
         {
-            float cooldownDivider = 1.0F*Math.max((float) gun.getGeneral().getRate()/2.7F,1);
+            float cooldownDivider = 1.0F*Math.max((float) gun.getGeneral().getRate()/2.8F,1);
             float cooldownOffset1 = cooldownDivider - 1.0F;
             float intensity = 1.0F +1;
             
@@ -91,7 +91,7 @@ public class HeavyPistolModel implements IOverrideModel
             float cooldown_c = Math.min(Math.max((-cooldown_a*intensity)+intensity,0),1);
             float cooldown_d = Math.min(cooldown_b,cooldown_c);
             
-            slideTranslations = slideTranslations.add(0, 0, cooldown_d * 1.5);
+            slideTranslations = slideTranslations.add(0, 0, cooldown_d * 1.7);
         }
 
 		// Heavy Pistol slide. This animated part kicks backward on firing, then moves back to its resting position.

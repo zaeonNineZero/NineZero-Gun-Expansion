@@ -56,6 +56,15 @@ public class BattleRifleModel implements IOverrideModel
             sightModel = SpecialModels.BATTLE_RIFLE_SIGHTS_1.getModel();
             RenderUtil.renderModel(sightModel, transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
+        else
+        if((getVariant(stack, "FlipSights") == 1))
+    	{
+            // There are two iron sight variants that can be rendered.
+            BakedModel sightModel = SpecialModels.BATTLE_RIFLE_SIGHTS_FOLDED.getModel();
+            if (getVariant(stack, "SightVariant") == 1)
+            sightModel = SpecialModels.BATTLE_RIFLE_SIGHTS_1_FOLDED.getModel();
+            RenderUtil.renderModel(sightModel, transformType, null, stack, parent, poseStack, buffer, light, overlay);
+    	}
         
         // Special animated segment for compat with the CGM Expanded fork.
         // First, some variables for animation building
