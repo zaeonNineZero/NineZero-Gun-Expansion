@@ -1,0 +1,42 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "nzgmaddon:items/micro_smg"
+	},
+	"elements": [
+		{
+			"from": [7.6, 2, 9.315],
+			"to": [8.4, 2.3, 12.615],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 5, 9.45]},
+			"faces": {
+				"north": {"uv": [14.5, 0.5, 15, 0], "texture": "#1", "tintindex": 0},
+				"east": {"uv": [15.5, 0, 16, 3.5], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [15.5, 0.5, 16, 0], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [14.5, 0, 15, 3.5], "rotation": 90, "texture": "#1", "tintindex": 0},
+				"up": {"uv": [14.5, 0, 15, 3.5], "texture": "#1", "tintindex": 0},
+				"down": {"uv": [15, 0, 15.5, 3.5], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.8, 2.3, 9.325],
+			"to": [8.2, 2.7, 11.615],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 5.3, 8.45]},
+			"faces": {
+				"north": {"uv": [13.5, 5, 14, 4.5], "texture": "#1", "tintindex": 0},
+				"east": {"uv": [14, 7, 14.5, 4.5], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [13.5, 7, 14, 4.5], "rotation": 90, "texture": "#1", "tintindex": 0},
+				"up": {"uv": [13.5, 4.5, 14, 7], "texture": "#1", "tintindex": 0}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "bottom_rail_mount",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}
