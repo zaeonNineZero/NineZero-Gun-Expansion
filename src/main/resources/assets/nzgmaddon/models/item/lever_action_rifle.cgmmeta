@@ -3,10 +3,11 @@
         "attachments": {
             "barrel": {
                 "translation": [8.0, 3.7, 0.3],
-                "scale": [0.48, 0.48, 0.48]
+                "scale": [0.47, 0.47, 0.47]
             },
             "scope": {
-                "translation": [8.0, 4.45, 12.7]
+                "translation": [8.0, 4.2, 12.7],
+                "scale": [0.9, 0.9, 0.9]
             },
             "underBarrel": {
                 "translation": [8.0, 2.599, 8.8],

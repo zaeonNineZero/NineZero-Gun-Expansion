@@ -36,7 +36,8 @@ import javax.annotation.Nullable;
  */
 public class LeverActionRifleModel implements IOverrideModel
 {
-	private boolean disableAnimations = false;
+	private boolean hasExpanded = CGMExpandedHelper.isExpandedInstalled();
+	private boolean disableAnimations = !hasExpanded;
 	
     @Override
 	// This class renders a model with support for NBT and attachment based part variations,
@@ -54,22 +55,21 @@ public class LeverActionRifleModel implements IOverrideModel
         // Render the BakedModel we selected.
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
 
-		// Render the iron sights element, which is only present when a scope is not attached.
-		// We have to grab the gun's scope attachment slot and check whether it is empty or not.
-		// If the isEmpty function returns true, then we render the iron sights.
-		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
-        if(attachmentStack.isEmpty())
+		// Render the iron sights element. One of two models can be used depending on NBT
 		{
         	BakedModel sightBakedModel = SpecialModels.LEVER_ACTION_RIFLE_SIGHTS.getModel();
             if (getVariant(stack, "SightVariant") == 1)
             sightBakedModel = SpecialModels.LEVER_ACTION_RIFLE_SIGHTS_1.getModel();
             RenderUtil.renderModel(sightBakedModel, transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
-        else
-		// Render the top rail element that appears when a scope is attached.
+		// Render the top rail element, which is only present when a scope is attached.
+		// We have to grab the gun's scope attachment slot and check whether it is empty or not.
+		// If the isEmpty function returns false, then we render the rail.
+		ItemStack attachmentStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
+        if(!attachmentStack.isEmpty() || getVariant(stack, "ForceShowRail") == 1)
 		{
         	BakedModel railBakedModel = SpecialModels.LEVER_ACTION_RIFLE_RAIL.getModel();
-            if (getVariant(stack, "RailVariant") == 1)
+            if (getVariant(stack, "BaseVariant") == 1)
             railBakedModel = SpecialModels.LEVER_ACTION_RIFLE_RAIL_1.getModel();
             RenderUtil.renderModel(railBakedModel, transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
@@ -93,7 +93,7 @@ public class LeverActionRifleModel implements IOverrideModel
         Vec3 bulletRotations = Vec3.ZERO;
         Vec3 bulletRotOffset = Vec3.ZERO;
         
-        if(isPlayer && correctContext && !disableAnimations)
+        if(isPlayer && correctContext && hasExpanded && !disableAnimations)
         {
         	try {
     				Player player = (Player) entity;
@@ -152,7 +152,7 @@ public class LeverActionRifleModel implements IOverrideModel
 		// Now we apply our transformations.
         if(isPlayer)
         {
-        	if (!disableAnimations)
+        	if (hasExpanded)
         	{
             	if(leverRotations!=Vec3.ZERO)
                 GunAnimationHelper.rotateAroundOffset(poseStack, leverRotations, leverRotOffset);
@@ -160,9 +160,9 @@ public class LeverActionRifleModel implements IOverrideModel
         	else
             if(leverRotations!=Vec3.ZERO)
         	{
-	        	poseStack.translate(0, leverRotOffset.y*0.0625, 0);
-	        	poseStack.mulPose(Vector3f.ZN.rotationDegrees((float) leverRotations.z));
-	        	poseStack.translate(0, -leverRotOffset.y*0.0625, 0);
+	        	poseStack.translate(0, leverRotOffset.y*0.0625, leverRotOffset.z*0.0625);
+	        	poseStack.mulPose(Vector3f.XN.rotationDegrees((float) -leverRotations.x));
+	        	poseStack.translate(0, -leverRotOffset.y*0.0625, -leverRotOffset.z*0.0625);
         	}
         }
 		// Our transformations are done - now we can render the model.
@@ -176,15 +176,15 @@ public class LeverActionRifleModel implements IOverrideModel
 		// Now we apply our transformations.
 	    if(isPlayer)
 	    {
-	    	if (!disableAnimations)
+	    	if (hasExpanded)
 	    	{
 	            GunAnimationHelper.rotateAroundOffset(poseStack, hammerRotations.add(45,0,0), hammerRotOffset);
 	    	}
 	    	else
 	    	{
-	        	poseStack.translate(0, hammerRotOffset.y*0.0625, 0);
-	        	poseStack.mulPose(Vector3f.XN.rotationDegrees((float) hammerRotations.x+45));
-	        	poseStack.translate(0, -hammerRotOffset.y*0.0625, 0);
+	        	poseStack.translate(0, hammerRotOffset.y*0.0625, hammerRotOffset.z*0.0625);
+	        	poseStack.mulPose(Vector3f.XN.rotationDegrees((float) -hammerRotations.x-45));
+	        	poseStack.translate(0, -hammerRotOffset.y*0.0625, -hammerRotOffset.z*0.0625);
 	    	}
 	    }
 		// Our transformations are done - now we can render the model.
