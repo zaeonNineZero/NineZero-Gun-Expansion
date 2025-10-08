@@ -33,6 +33,7 @@ public class ClientHandler
         ModelOverrides.register(initItems.BATTLE_RIFLE.get(), new BattleRifleModel());
         ModelOverrides.register(initItems.BULLPUP_RIFLE.get(), new BullpupRifleModel());
         ModelOverrides.register(initItems.MACHINE_GUN.get(), new MachineGunModel());
+        ModelOverrides.register(initItems.LEVER_ACTION_RIFLE.get(), new LeverActionRifleModel());
         ModelOverrides.register(initItems.INFANTRY_RIFLE.get(), new InfantryRifleModel());
         ModelOverrides.register(initItems.AUTOMATIC_SNIPER_RIFLE.get(), new AutomaticSniperRifleModel());
         ModelOverrides.register(initItems.BOLT_ACTION_RIFLE.get(), new BoltActionRifleModel());

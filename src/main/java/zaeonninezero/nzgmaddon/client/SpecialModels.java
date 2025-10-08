@@ -125,6 +125,16 @@ public enum SpecialModels
     MACHINE_GUN_LIGHT_BOX("machine_gun_light_box"),
     MACHINE_GUN_HANDLE("machine_gun_handle"),
 	
+    LEVER_ACTION_RIFLE_BASE("gun/lever_action_rifle/lever_action_rifle_base"),
+    LEVER_ACTION_RIFLE_BASE_1("gun/lever_action_rifle/lever_action_rifle_base_1"),
+    LEVER_ACTION_RIFLE_LEVER("gun/lever_action_rifle/lever_action_rifle_lever"),
+    LEVER_ACTION_RIFLE_HAMMER("gun/lever_action_rifle/lever_action_rifle_hammer"),
+    LEVER_ACTION_RIFLE_BOLT("gun/lever_action_rifle/lever_action_rifle_bolt"),
+    LEVER_ACTION_RIFLE_SIGHTS("gun/lever_action_rifle/lever_action_rifle_rear_sights"),
+    LEVER_ACTION_RIFLE_SIGHTS_1("gun/lever_action_rifle/lever_action_rifle_rear_sights_1"),
+    LEVER_ACTION_RIFLE_RAIL("gun/lever_action_rifle/lever_action_rifle_rail"),
+    LEVER_ACTION_RIFLE_RAIL_1("gun/lever_action_rifle/lever_action_rifle_rail_1"),
+	
     INFANTRY_RIFLE_BASE("infantry_rifle_base"),
     INFANTRY_RIFLE_CHAMBER("infantry_rifle_chamber"),
     INFANTRY_RIFLE_RAIL("infantry_rifle_rail"),

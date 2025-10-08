@@ -1,0 +1,61 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "nzgmaddon:items/lever_action_rifle"
+	},
+	"elements": [
+		{
+			"from": [7.6, 4.2, 10.35],
+			"to": [8.4, 4.45, 14.55],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4.325, 11.85]},
+			"faces": {
+				"east": {"uv": [15.5, 6.5, 15, 11], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [15, 6.5, 15.5, 11], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"up": {"uv": [15.5, 6.5, 16, 11], "texture": "#1", "tintindex": 0},
+				"down": {"uv": [15, 6.5, 15.5, 11], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.8, 4.15, 10.275],
+			"to": [8.2, 4.325, 11.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4.275, 11.85]},
+			"faces": {
+				"north": {"uv": [15, 6.5, 15.5, 7], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"east": {"uv": [15.5, 6.5, 15, 7.5], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [15, 6.5, 15.5, 7.5], "rotation": 270, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.601, 4.22145, 10.29822],
+			"to": [8.399, 4.39822, 10.475],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 4.27322, 10.35]},
+			"faces": {
+				"north": {"uv": [15, 6.5, 15.5, 7], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"east": {"uv": [15.5, 6.5, 15, 7], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [15, 6.5, 15.5, 7], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"up": {"uv": [15.5, 11, 16, 10.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.601, 4.22145, 14.49822],
+			"to": [8.399, 4.39822, 14.675],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 4.27322, 14.55]},
+			"faces": {
+				"east": {"uv": [15.5, 6.5, 15, 7], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [15.5, 6.5, 16, 7], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [15, 6.5, 15.5, 7], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"down": {"uv": [15, 6.5, 15.5, 7], "rotation": 270, "texture": "#1", "tintindex": 0}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "rail_1",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}
