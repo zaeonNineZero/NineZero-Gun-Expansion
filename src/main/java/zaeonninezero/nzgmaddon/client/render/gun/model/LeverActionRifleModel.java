@@ -118,7 +118,6 @@ public class LeverActionRifleModel implements IOverrideModel
         		}
         }
         
-        // Fire animation is done the old way, and added onto the existing animation.
         GunItem gunStack = (GunItem) stack.getItem();
         Gun gun = gunStack.getModifiedGun(stack);
 		
@@ -128,14 +127,14 @@ public class LeverActionRifleModel implements IOverrideModel
         {
 	        if(isPlayer && correctContext)
 	        {
-	            float cooldownDivider = 1.0F*Math.max((float) gun.getGeneral().getRate()/11F,1);;
-	            float cooldownOffset1 = 0.65F;
+	            float cooldownDivider = 2.0F*Math.max((float) gun.getGeneral().getRate()/11F,1);;
+	            float cooldownOffset1 = cooldownDivider - 1.5F;
 	            float intensity = 1.3F +1;
 	            
 	        	ItemCooldowns tracker = Minecraft.getInstance().player.getCooldowns();
 	            float cooldown = tracker.getCooldownPercent(stack.getItem(), Minecraft.getInstance().getFrameTime());
-	            float cooldown_divided = cooldown * cooldownDivider;
-	            float cooldown_a = cooldown_divided-cooldownOffset1;
+	            cooldown *= cooldownDivider;
+	            float cooldown_a = cooldown-cooldownOffset1;
 	
 	            float cooldown_b = Math.min(Math.max(cooldown_a*intensity,0),1);
 	            float cooldown_c = Math.min(Math.max((-cooldown_a*intensity)+intensity,0),1);
