@@ -205,6 +205,34 @@ public class LeverActionRifleModel implements IOverrideModel
 	    RenderUtil.renderModel(SpecialModels.LEVER_ACTION_RIFLE_BOLT.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
 	    poseStack.popPose();
+        
+        
+        // Basic Bullet -- used during custom reload animations.
+        if(shouldRenderBullet(stack) && !disableAnimations && isPlayer && isFirstPerson)
+        {
+    		// Push pose.
+            poseStack.pushPose();
+            // Initial translation to the starting position.
+            poseStack.translate(0.0, -4.15*0.0625, 3.1*0.0625);
+            // Apply transformations.
+            if(bulletTranslations!=Vec3.ZERO)
+            	poseStack.translate(bulletTranslations.x*0.0625, bulletTranslations.y*0.0625, bulletTranslations.z*0.0625);
+            if(bulletRotations!=Vec3.ZERO)
+            	GunAnimationHelper.rotateAroundOffset(poseStack, bulletRotations, bulletRotOffset);
+            // Select the bullet model to render
+            BakedModel bulletModel = SpecialModels.MEDIUM_BULLET_LOADED.getModel();
+            String itemString = gun.getProjectile().getItem().toString();
+	        if (itemString.equals("cgm:basic_bullet"))
+	        bulletModel = SpecialModels.BASIC_BULLET_LOADED.getModel();
+	        else
+	        if (itemString.equals("cgm:advanced_bullet"))
+	        bulletModel = SpecialModels.ADVANCED_BULLET_LOADED.getModel();
+            
+    		// Render the model.
+            RenderUtil.renderModel(bulletModel, transformType, null, stack, parent, poseStack, buffer, light, overlay);
+    		// Pop pose.
+            poseStack.popPose();
+        }
     }
     
     //NBT fetch code for skin variants - ported from the "hasAmmo" function under common/Gun.java
@@ -220,20 +248,15 @@ public class LeverActionRifleModel implements IOverrideModel
     }
     
     //Code check for whether a bullet should be rendered.
-    public boolean shouldRenderBullet(ItemStack gunStack, int bullet)
+    public boolean shouldRenderBullet(ItemStack gunStack)
     {
-        CompoundTag tag = gunStack.getOrCreateTag();
-        if(CGMExpandedHelper.isExpandedInstalled())
+        if(hasExpanded)
         {
-        	float progress = (ReloadHandler.get().getReloadTimer()>=0.9 ? GunRenderingHandler.get().getReloadDeltaTime(gunStack) : 0);
-        	boolean hasBullet = (Gun.hasInfiniteAmmo(gunStack) || (tag.getInt("AmmoCount") >= bullet));
-        	if ((bullet>0 && (hasBullet || GunAnimationHelper.getAnimationValue("reload", gunStack, progress, "bullet2", "forceShowBullet")>=1))
-        	|| (bullet==0 && GunAnimationHelper.getAnimationValue("reload", gunStack, progress, "bullet", "forceShowBullet")>=1))
+        	float progress = (ReloadHandler.get().getReloadTimer()>=0.95 ? GunRenderingHandler.get().getReloadCycleProgress(gunStack) : 0);
+        	if (GunAnimationHelper.getAnimationValue("reload", gunStack, progress, "bullet", "renderBullet")>=1)
         	return true;
-        	else
-        	return false;
 		}
         
-        return (tag.getBoolean("IgnoreAmmo")) || (tag.getInt("AmmoCount") >= bullet);
+        return false;
     }
 }
