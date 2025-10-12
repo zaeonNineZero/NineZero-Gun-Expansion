@@ -12,10 +12,6 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = nzgmAddon.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public enum SpecialModels
 {
-    DOUBLE_BARRELED_SHOTGUN("gun/double_barreled_shotgun"),
-    AUTOMATIC_SNIPER_RIFLE("gun/automatic_sniper_rifle"),
-    HUNTING_RIFLE("gun/hunting_rifle"),
-
     BASIC_BULLET_LOADED("bullets/basic_bullet_loaded"),
     MEDIUM_BULLET_LOADED("bullets/medium_bullet_loaded"),
     ADVANCED_BULLET_LOADED("bullets/advanced_bullet_loaded"),
@@ -175,7 +171,10 @@ public enum SpecialModels
     SNIPER_RIFLE_BOLT("sniper_rifle_bolt2"),
     SNIPER_RIFLE_MAGAZINE("sniper_rifle_magazine"),
     SNIPER_RIFLE_LIGHT_MAG("sniper_rifle_light_mag"),
-    SNIPER_RIFLE_EXTENDED_MAG("sniper_rifle_extended_mag");
+    SNIPER_RIFLE_EXTENDED_MAG("sniper_rifle_extended_mag"),
+    
+    BIPOD_FOLDED("attachments/bipod/bipod_folded"),
+    BIPOD_UNFOLDED("attachments/bipod/bipod_unfolded");
 
     /**
      * The location of an item model in the [MOD_ID]/models/special/[NAME] folder

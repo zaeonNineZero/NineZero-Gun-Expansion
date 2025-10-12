@@ -99,6 +99,7 @@ public class initSounds {
 	public static final RegistryObject<SoundEvent> ITEM_LEVER_ACTION_RIFLE_SILENCED_FIRE = register("item.lever_action_rifle.silenced_fire");
 	public static final RegistryObject<SoundEvent> ITEM_LEVER_ACTION_RIFLE_SILENCED_FIRE_LEVER = register("item.lever_action_rifle.silenced_fire_lever");
 	public static final RegistryObject<SoundEvent> ITEM_LEVER_ACTION_RIFLE_COCK = register("item.lever_action_rifle.cock");
+	public static final RegistryObject<SoundEvent> ITEM_LEVER_ACTION_RIFLE_BULLET_LOAD = register("item.lever_action_rifle.bullet_load");
 	public static final RegistryObject<SoundEvent> ITEM_LEVER_ACTION_RIFLE_LEVER_OPEN = register("item.lever_action_rifle.lever_open");
 	public static final RegistryObject<SoundEvent> ITEM_LEVER_ACTION_RIFLE_LEVER_CLOSE = register("item.lever_action_rifle.lever_close");
 
@@ -120,7 +121,9 @@ public class initSounds {
 	public static final RegistryObject<SoundEvent> ITEM_BOLT_ACTION_RIFLE_FIRE = register("item.bolt_action_rifle.fire");
 	public static final RegistryObject<SoundEvent> ITEM_BOLT_ACTION_RIFLE_ENCHANTED_FIRE = register("item.bolt_action_rifle.enchanted_fire");
 	public static final RegistryObject<SoundEvent> ITEM_BOLT_ACTION_RIFLE_SILENCED_FIRE = register("item.bolt_action_rifle.silenced_fire");
-	public static final RegistryObject<SoundEvent> ITEM_BOLT_ACTION_RIFLE_COCK = register("item.bolt_action_rifle.cock");
+	public static final RegistryObject<SoundEvent> ITEM_BOLT_ACTION_RIFLE_BULLET_LOAD = register("item.bolt_action_rifle.bullet_load");
+	public static final RegistryObject<SoundEvent> ITEM_BOLT_ACTION_RIFLE_BOLT_BACK = register("item.bolt_action_rifle.bolt_back");
+	public static final RegistryObject<SoundEvent> ITEM_BOLT_ACTION_RIFLE_BOLT_FORWARD = register("item.bolt_action_rifle.bolt_forward");
 	
 	public static final RegistryObject<SoundEvent> ITEM_SNIPER_RIFLE_FIRE = register("item.sniper_rifle.fire");
 	public static final RegistryObject<SoundEvent> ITEM_SNIPER_RIFLE_ENCHANTED_FIRE = register("item.sniper_rifle.enchanted_fire");

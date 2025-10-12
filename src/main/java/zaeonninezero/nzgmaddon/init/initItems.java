@@ -81,4 +81,5 @@ public class initItems {
 	
 	//Grips / Under Barrel
     public static final RegistryObject<Item> HORIZONTAL_GRIP  = ITEMS.register("horizontal_grip", () -> new UnderBarrelItem(UnderBarrel.create(ExtraGunModifiers.HORIZONTAL_CONTROL), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
+    public static final RegistryObject<Item> BIPOD  = ITEMS.register("bipod", () -> new UnderBarrelItem(UnderBarrel.create(ExtraGunModifiers.BIPOD), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
 }

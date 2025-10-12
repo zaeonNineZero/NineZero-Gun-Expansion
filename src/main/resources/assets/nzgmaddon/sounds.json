@@ -533,6 +533,10 @@
       "nzgmaddon:item/lever_action_rifle/enchanted_fire_lever"
     ]
   },
+"item.lever_action_rifle.bullet_load": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/lever_action_rifle/bullet_load"}]
+  },
 "item.lever_action_rifle.lever_open": {
     "sounds": [{"name":"nzgmaddon:item/lever_action_rifle/lever_open"}]
   },
@@ -682,6 +686,10 @@
 "item.bolt_action_rifle.bolt_forward": {
     "subtitle":"subtitle.cgm.cock",
     "sounds": [{"name":"nzgmaddon:item/bolt_action_rifle/bolt_forward"}]
+  },
+"item.bolt_action_rifle.bullet_load": {
+    "subtitle":"subtitle.cgm.reload",
+    "sounds": [{"name":"nzgmaddon:item/bolt_action_rifle/bullet_load"}]
   },
 "item.bolt_action_rifle.mag_out": {
     "subtitle":"subtitle.cgm.reload",

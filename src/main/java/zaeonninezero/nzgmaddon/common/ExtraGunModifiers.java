@@ -338,4 +338,25 @@ public class ExtraGunModifiers
             return spread * 0.6F;
         }
     };
+	
+    public static final IGunModifier BIPOD = new IGunModifier()
+    {
+        @Override
+        public float recoilModifier()
+        {
+            return 0.5F;
+        }
+
+        @Override
+        public float modifyProjectileSpread(float spread)
+        {
+            return spread * 0.7F;
+        }
+
+        @Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.9F;
+        }
+    };
 }
