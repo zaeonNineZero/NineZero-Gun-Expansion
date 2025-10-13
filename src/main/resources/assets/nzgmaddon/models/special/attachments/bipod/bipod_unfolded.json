@@ -1,7 +1,6 @@
 {
-	"format_version": "1.21.6",
-	"credit": "Model by MrCrayfish (https://twitter.com/MrCraayfish) using Blockbench",
-	"parent": "builtin/entity",
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
 	"textures": {
 		"3": "nzgmaddon:items/bipod",
 		"particle": "cgm:items/assault_rifle"
@@ -80,7 +79,7 @@
 			}
 		},
 		{
-			"from": [6.26173, 4.7662, 6.601],
+			"from": [6.26173, 3.7662, 6.601],
 			"to": [6.86173, 6.8662, 7.201],
 			"rotation": {"angle": -22.5, "axis": "z", "origin": [6.56173, 6.1287, 6.901]},
 			"faces": {
@@ -92,8 +91,8 @@
 			}
 		},
 		{
-			"from": [6.16173, 4.1162, 6.501],
-			"to": [6.96173, 4.7662, 7.301],
+			"from": [6.16173, 3.1162, 6.501],
+			"to": [6.96173, 3.7662, 7.301],
 			"rotation": {"angle": -22.5, "axis": "z", "origin": [6.56173, 6.1287, 6.901]},
 			"faces": {
 				"north": {"uv": [6, 12, 8, 13.75], "texture": "#3"},
@@ -118,7 +117,7 @@
 			}
 		},
 		{
-			"from": [9.13827, 4.7662, 6.601],
+			"from": [9.13827, 3.7662, 6.601],
 			"to": [9.73827, 6.8662, 7.201],
 			"rotation": {"angle": 22.5, "axis": "z", "origin": [9.43827, 6.1287, 6.901]},
 			"faces": {
@@ -130,8 +129,8 @@
 			}
 		},
 		{
-			"from": [9.03827, 4.1162, 6.501],
-			"to": [9.83827, 4.7662, 7.301],
+			"from": [9.03827, 3.1162, 6.501],
+			"to": [9.83827, 3.7662, 7.301],
 			"rotation": {"angle": 22.5, "axis": "z", "origin": [9.43827, 6.1287, 6.901]},
 			"faces": {
 				"north": {"uv": [8, 12, 6, 13.75], "texture": "#3"},
@@ -143,7 +142,6 @@
 			}
 		}
 	],
-	"display": {},
 	"groups": [
 		{
 			"name": "bipod",

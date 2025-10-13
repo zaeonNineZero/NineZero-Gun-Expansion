@@ -31,7 +31,7 @@ public class BipodModel implements IOverrideModel
         
     	BakedModel bipodModel = SpecialModels.BIPOD_FOLDED.getModel();
         boolean isPlayer = entity != null && entity instanceof Player;
-        if (isPlayer)
+        if (isPlayer && correctContext(transformType))
         {
 	        //boolean isThisPlayer = entity != null && entity.equals(Minecraft.getInstance().player);
         	Player player = (Player) entity;
@@ -41,5 +41,9 @@ public class BipodModel implements IOverrideModel
         
         //RenderUtil.renderModel(bipodModel, transformType, null, stack, parent, poseStack, renderTypeBuffer, light, overlay);
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, renderTypeBuffer, light, overlay, GunModel.wrap(bipodModel));
+    }
+    private boolean correctContext(ItemTransforms.TransformType transformType)
+    {
+    	return (transformType.firstPerson() || transformType == ItemTransforms.TransformType.THIRD_PERSON_RIGHT_HAND || transformType == ItemTransforms.TransformType.THIRD_PERSON_LEFT_HAND);
     }
 }
