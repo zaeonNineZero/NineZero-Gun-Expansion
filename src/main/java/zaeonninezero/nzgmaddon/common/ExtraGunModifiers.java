@@ -27,7 +27,7 @@ public class ExtraGunModifiers
     	@Override
         public float recoilModifier()
         {
-            return 0.8F;
+            return 0.75F;
         }
 		
 		@Override
@@ -53,7 +53,7 @@ public class ExtraGunModifiers
     	@Override
         public float recoilModifier()
         {
-            return 0.95F;
+            return 0.9F;
         }
 
         @Override
@@ -199,7 +199,33 @@ public class ExtraGunModifiers
         }
     };
 	
-	
+
+    public static final IGunModifier SKELETON_STOCK_EFFECT = new IGunModifier()
+    {
+        @Override
+        public float recoilModifier()
+        {
+            return 0.35F;
+        }
+
+        @Override
+        public float kickModifier()
+        {
+            return 0.35F;
+        }
+
+        @Override
+        public float modifyProjectileSpread(float spread)
+        {
+            return spread * 0.55F;
+        }
+
+        @Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.9F;
+        }
+    };
     public static final IGunModifier SOLIDLY_STABILISED = new IGunModifier()
     {
         @Override
@@ -339,7 +365,7 @@ public class ExtraGunModifiers
         }
     };
 	
-    public static final IGunModifier BIPOD = new IGunModifier()
+    public static final IGunModifier BIPOD_EFFECT = new IGunModifier()
     {
         @Override
         public float recoilModifier()

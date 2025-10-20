@@ -67,6 +67,7 @@ public class initItems {
 	//Barrels
     public static final RegistryObject<Item> FLASH_HIDER  = ITEMS.register("flash_hider", () -> new BarrelItem(Barrel.create(4,ExtraGunModifiers.FLASH_HIDER_EFFECT), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
     public static final RegistryObject<Item> MUZZLE_BRAKE  = ITEMS.register("muzzle_brake", () -> new BarrelItem(Barrel.create(5.3f,ExtraGunModifiers.MUZZLE_BRAKE_EFFECT), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
+    public static final RegistryObject<Item> COMPENSATOR_MUZZLE  = ITEMS.register("compensator_muzzle", () -> new BarrelItem(Barrel.create(5.3f,ExtraGunModifiers.COMPENSATOR_MUZZLE_EFFECT), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
     public static final RegistryObject<Item> EXTENDED_BARREL  = ITEMS.register("extended_barrel", () -> new BarrelItem(Barrel.create(6,ExtraGunModifiers.EXTENDED_BARREL_EFFECT), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
     public static final RegistryObject<Item> IMPROVED_SILENCER = ITEMS.register("improved_silencer", () -> new BarrelItem(Barrel.create(12.2F, GunModifiers.SILENCED, ExtraGunModifiers.MUFFLED_IMPROVED), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
     public static final RegistryObject<Item> PERFORMANCE_SILENCER = ITEMS.register("performance_silencer", () -> new BarrelItem(Barrel.create(12.2F, GunModifiers.SILENCED, ExtraGunModifiers.MUFFLED_PERFORMANCE), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
@@ -77,9 +78,10 @@ public class initItems {
     public static final RegistryObject<Item> SOLID_STOCK = ITEMS.register("solid_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.SOLIDLY_STABILISED), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
     public static final RegistryObject<Item> STABILIZING_STOCK = ITEMS.register("stabilizing_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.EXTRA_STABILISED), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
     public static final RegistryObject<Item> CARBINE_STOCK  = ITEMS.register("carbine_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.CARBINE_STABILISED), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
+    public static final RegistryObject<Item> SKELETON_STOCK = ITEMS.register("skeleton_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.SKELETON_STOCK_EFFECT), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
     public static final RegistryObject<Item> MARKSMAN_STOCK  = ITEMS.register("marksman_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.MARKSMAN_STABILISED), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
 	
 	//Grips / Under Barrel
     public static final RegistryObject<Item> HORIZONTAL_GRIP  = ITEMS.register("horizontal_grip", () -> new UnderBarrelItem(UnderBarrel.create(ExtraGunModifiers.HORIZONTAL_CONTROL), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
-    public static final RegistryObject<Item> BIPOD  = ITEMS.register("bipod", () -> new UnderBarrelItem(UnderBarrel.create(ExtraGunModifiers.BIPOD), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
+    public static final RegistryObject<Item> BIPOD  = ITEMS.register("bipod", () -> new UnderBarrelItem(UnderBarrel.create(ExtraGunModifiers.BIPOD_EFFECT), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
 }
