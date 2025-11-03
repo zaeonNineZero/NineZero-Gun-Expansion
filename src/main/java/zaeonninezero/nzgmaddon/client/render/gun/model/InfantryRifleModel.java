@@ -14,6 +14,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.resources.model.BakedModel;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemCooldowns;
@@ -32,8 +33,8 @@ public class InfantryRifleModel implements IOverrideModel
 	private boolean disableAnimations = false;
 	
     @Override
-	// This class renders a multi-part model with support for interchangeable parts and animations.
-	// Static parts are rendered first, followed by any moving/animated parts.
+	// This class renders a model with support for NBT and attachment based part variations,
+	// and custom animations from CGM Expanded.
 	
 	// We start by declaring our render function that will handle rendering the core baked model (which is a non-moving part).
     public void render(float partialTicks, ItemTransforms.TransformType transformType, ItemStack stack, ItemStack parent, @Nullable LivingEntity entity, PoseStack poseStack, MultiBufferSource buffer, int light, int overlay)
@@ -42,19 +43,47 @@ public class InfantryRifleModel implements IOverrideModel
         BakedModel bakedModel = SpecialModels.INFANTRY_RIFLE_BASE.getModel();
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
 
-		// Render the top rail element that appears when a scope is attached.
-		// We have to grab the gun's scope attachment slot and check whether it is empty or not.
-		// If the isEmpty function returns false, then we render the attachment rail.
+		// Barrel cover and forward rails -- these have two variants each that correspond to one another.
+        if (getVariant(stack, "BaseVariant") != 1)
+        {
+        	// Render the barrel cover. (Variant 0)
+        	RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_BARREL_COVER_0.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+            
+    		// Render the forward rails elements, which render when the "ExtraRails" NBT tag is set to 1. (Variant 0)
+            if(getVariant(stack, "ExtraRails") == 1)
+    		{
+                RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_FORWARD_RAILS_0.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+    		}
+        }
+        else
+        {
+        	// Render the barrel cover. (Variant 1)
+        	RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_BARREL_COVER_1.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+            
+    		// Render the forward rails elements, which render when the "ExtraRails" NBT tag is set to 1. (Variant 1)
+            if(getVariant(stack, "ExtraRails") == 1)
+    		{
+                RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_FORWARD_RAILS_1.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+    		}
+        }
+        
+        
+        // Render the top rail element that appears when a scope is attached.
+		// This rail can also be rendered with the "ForceTopRail" NBT tag.
 		ItemStack scopeStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
-        if(!scopeStack.isEmpty())
+        if(scopeStack.isEmpty() || getVariant(stack, "ForceTopRail") == 1)
 		{
-            RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+            RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_REAR_SIGHT.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
+        else
+        {
+        	RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_SCOPE_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+        }
         
 		// Render the bottom rail element that appears when a grip/underbarrel attachment is equipped.
-		// Same as above, just with the underbarrel slot.
+		// This rail also renderes when the "ExtraRails" NBT tag is set to 1.
 		ItemStack gripStack = Gun.getAttachment(IAttachment.Type.UNDER_BARREL, stack);
-        if(!gripStack.isEmpty())
+        if(!gripStack.isEmpty() || getVariant(stack, "ExtraRails") == 1)
 		{
             RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_BOTTOM_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
@@ -96,7 +125,7 @@ public class InfantryRifleModel implements IOverrideModel
         Gun gun = gunStack.getModifiedGun(stack);
         if(isPlayer && correctContext)
         {
-        	float cooldownDivider = 1.0F*Math.max((float) gun.getGeneral().getRate()/2.6F,1);
+        	float cooldownDivider = 1.0F*Math.max((float) gun.getGeneral().getRate()/3F,1);
             float cooldownOffset1 = cooldownDivider - 1.0F;
             float intensity = 1.0F +1;
             
@@ -109,7 +138,7 @@ public class InfantryRifleModel implements IOverrideModel
             float cooldown_c = Math.min(Math.max((-cooldown_a*intensity)+intensity,0),1);
             float cooldown_d = Math.min(cooldown_b,cooldown_c);
             
-            chamberTranslations = chamberTranslations.add(0, 0, cooldown_d * 1.5);
+            chamberTranslations = chamberTranslations.add(0, 0, cooldown_d * 2);
         }
 
 		// Infantry Rifle charging handle. This animated part kicks backward on firing, then moves back to its resting position.
@@ -118,7 +147,7 @@ public class InfantryRifleModel implements IOverrideModel
         if(isPlayer)
         poseStack.translate(0, 0, chamberTranslations.z * 0.0625);
         // Render the transformed model.
-        RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_CHAMBER.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+        RenderUtil.renderModel(SpecialModels.INFANTRY_RIFLE_BOLT.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
         
@@ -150,5 +179,12 @@ public class InfantryRifleModel implements IOverrideModel
         RenderUtil.renderModel(magModel.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
+    }
+    
+    //NBT fetch code for skin variants - ported from the "hasAmmo" function under common/Gun.java
+    public static int getVariant(ItemStack gunStack, String tag_name)
+    {
+        CompoundTag tag = gunStack.getOrCreateTag();
+        return tag.getInt(tag_name);
     }
 }
