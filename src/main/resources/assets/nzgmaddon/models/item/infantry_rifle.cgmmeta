@@ -14,6 +14,15 @@
                 "scale": [1, 1, 1]
             }
         },
+		"hands": {
+			"animScalar": 0.8,
+            "forward": {
+                "offset": [0.0, -0.1, 0.0]
+            },
+            "rear": {
+                "offset": [0.0, 0.0, 0.5]
+            }
+        },
 		"viewmodel": {
             "offset": [-0.1, 0.2, 0]
         },
