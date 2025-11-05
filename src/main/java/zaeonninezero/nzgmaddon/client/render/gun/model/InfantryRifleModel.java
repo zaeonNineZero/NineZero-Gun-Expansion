@@ -5,6 +5,8 @@ import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.GunMod;
 import com.mrcrayfish.guns.client.GunModel;
 import zaeonninezero.nzgmaddon.client.SpecialModels;
+import zaeonninezero.nzgmaddon.util.CGMExpandedHelper;
+
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
 import com.mrcrayfish.guns.client.util.GunAnimationHelper;
 import com.mrcrayfish.guns.client.util.RenderUtil;
@@ -30,6 +32,7 @@ import javax.annotation.Nullable;
  */
 public class InfantryRifleModel implements IOverrideModel
 {
+	private boolean hasExpanded = CGMExpandedHelper.isExpandedInstalled();
 	private boolean disableAnimations = false;
 	
     @Override
@@ -81,7 +84,7 @@ public class InfantryRifleModel implements IOverrideModel
         }
         
 		// Render the bottom rail element that appears when a grip/underbarrel attachment is equipped.
-		// This rail also renderes when the "ExtraRails" NBT tag is set to 1.
+		// This rail also renders when the "ExtraRails" NBT tag is set to 1.
 		ItemStack gripStack = Gun.getAttachment(IAttachment.Type.UNDER_BARREL, stack);
         if(!gripStack.isEmpty() || getVariant(stack, "ExtraRails") == 1)
 		{
@@ -100,7 +103,7 @@ public class InfantryRifleModel implements IOverrideModel
         Vec3 magRotations = Vec3.ZERO;
         Vec3 magRotOffset = Vec3.ZERO;
         
-        if(isPlayer && correctContext && !disableAnimations)
+        if(hasExpanded && !disableAnimations && isPlayer && correctContext)
         {
         	try {
     				Player player = (Player) entity;
@@ -154,7 +157,7 @@ public class InfantryRifleModel implements IOverrideModel
         // Magazine transforms
         poseStack.pushPose();
 		// Apply transformations to this part.
-        if(isPlayer && isFirstPerson && !disableAnimations)
+        if(hasExpanded && !disableAnimations && isPlayer && isFirstPerson)
         {
         	if(magTranslations!=Vec3.ZERO)
         	poseStack.translate(magTranslations.x*0.0625, magTranslations.y*0.0625, magTranslations.z*0.0625);
@@ -163,6 +166,7 @@ public class InfantryRifleModel implements IOverrideModel
     	}
 		// Magazine model selection and rendering
         SpecialModels magModel = SpecialModels.INFANTRY_RIFLE_MAGAZINE;
+        if(hasExpanded)
         try {
         	ItemStack magStack = Gun.getAttachment(IAttachment.Type.byTagKey("Magazine"), stack);
             if(!magStack.isEmpty())

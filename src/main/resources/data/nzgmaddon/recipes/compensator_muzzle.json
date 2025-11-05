@@ -2,11 +2,11 @@
   "type": "cgm:workbench",
   "materials": [
     {
-      "count": 1,
+      "count": 5,
       "tag": "forge:nuggets/iron"
     }
   ],
   "result": {
-    "item": "nzgmaddon:flash_hider"
+    "item": "nzgmaddon:compensator_muzzle"
   }
 }

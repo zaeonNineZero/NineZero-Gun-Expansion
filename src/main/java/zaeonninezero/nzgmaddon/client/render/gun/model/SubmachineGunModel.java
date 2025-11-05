@@ -5,6 +5,8 @@ import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.GunMod;
 import com.mrcrayfish.guns.client.GunModel;
 import zaeonninezero.nzgmaddon.client.SpecialModels;
+import zaeonninezero.nzgmaddon.util.CGMExpandedHelper;
+
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
 import com.mrcrayfish.guns.client.util.GunAnimationHelper;
 import com.mrcrayfish.guns.client.util.RenderUtil;
@@ -30,11 +32,12 @@ import javax.annotation.Nullable;
  */
 public class SubmachineGunModel implements IOverrideModel
 {
+	private boolean hasExpanded = CGMExpandedHelper.isExpandedInstalled();
 	private boolean disableAnimations = false;
 	
     @Override
-	// This class renders a multi-part model with support for interchangeable parts and animations.
-	// Static parts are rendered first, followed by any moving/animated parts.
+	// This class renders a model with support for NBT and attachment based part variations,
+	// and custom animations from CGM Expanded.
 	
 	// We start by declaring our render function that will handle rendering the core baked model (which is a non-moving part).
     public void render(float partialTicks, ItemTransforms.TransformType transformType, ItemStack stack, ItemStack parent, @Nullable LivingEntity entity, PoseStack poseStack, MultiBufferSource buffer, int light, int overlay)
@@ -48,24 +51,34 @@ public class SubmachineGunModel implements IOverrideModel
         Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, buffer, light, overlay, GunModel.wrap(bakedModel));
 
 		// Render the top rail element, which is only present when a scope is attached.
-		// We have to grab the gun's scope attachment slot and check whether it is empty or not.
-		// If the isEmpty function returns false, then we render the rail.
         ItemStack attachmentScopeStack = Gun.getAttachment(IAttachment.Type.SCOPE, stack);
         if(!attachmentScopeStack.isEmpty())
 		{
             RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_TOP_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
 
+		// Render the side rails element, which is only present when an underbarrel attachment is equipped.
+		// This also renders when the "ExtraRails" NBT tag is set to 1.
+        boolean renderExtraRails = getVariant(stack, "ExtraRails") == 1;
+        if (hasExpanded && renderExtraRails == false)
+        {
+        	ItemStack attachmentTacticalStack = Gun.getAttachment(IAttachment.Type.TACTICAL, stack);
+        	renderExtraRails = !attachmentTacticalStack.isEmpty();
+    	}
+        if(renderExtraRails)
+		{
+            RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_SIDE_RAILS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+		}
+
 		// Render the bottom rail element, which is only present when an underbarrel attachment is equipped.
-		// Same as above - we check the underbarrel attachment slot.
+		// This also renders when the "ExtraRails" NBT tag is set to 1.
         ItemStack attachmentGripStack = Gun.getAttachment(IAttachment.Type.UNDER_BARREL, stack);
-        if(!attachmentGripStack.isEmpty())
+        if(!attachmentGripStack.isEmpty() || renderExtraRails)
 		{
             RenderUtil.renderModel(SpecialModels.SUBMACHINE_GUN_BOTTOM_RAIL.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
 
 		// Render the stock adapter element, which is only present when a stock attachment is equipped.
-		// Same as above once again, this time with the stock attachment slot.
         ItemStack attachmentStockStack = Gun.getAttachment(IAttachment.Type.STOCK, stack);
         if(!attachmentStockStack.isEmpty())
 		{
@@ -86,7 +99,7 @@ public class SubmachineGunModel implements IOverrideModel
         Vec3 magRotations = Vec3.ZERO;
         Vec3 magRotOffset = Vec3.ZERO;
         
-        if(isPlayer && correctContext && !disableAnimations)
+        if(hasExpanded && !disableAnimations && isPlayer && correctContext)
         {
         	try {
     				Player player = (Player) entity;
@@ -147,7 +160,7 @@ public class SubmachineGunModel implements IOverrideModel
         // Magazine
         poseStack.pushPose();
         // Apply transformations to this part.
-        if(isPlayer && isFirstPerson && !disableAnimations)
+        if(hasExpanded && !disableAnimations && isPlayer && isFirstPerson)
         {
         	if(magTranslations!=Vec3.ZERO)
         	poseStack.translate(magTranslations.x*0.0625, magTranslations.y*0.0625, magTranslations.z*0.0625);
