@@ -1,0 +1,50 @@
+{
+    "cgm:animations": {
+        "reload": {
+			"frames": 32,
+			"progressOffset": 0.2,
+			"viewModel": {
+				"rotOffset": [0, 0.0, 3.0],
+				"startEasing": "linear",
+				"endEasing": "linear",
+				"0": {
+					"rotation": [45.0, 0, 0]
+				}
+			},
+			"break": {
+				"rotOffset": [0.0, -5.05, 1.25],
+				"0": {
+					"rotation": [-35.0, 0, 0]
+				}
+			},
+			"forwardHand": {
+				"rotOffset": [-4.0, 6.0, 0.0],
+				"0": {
+					"translation": [-5, -25, 20]
+				}
+			},
+			"bullet": {
+				"1": {
+					"translation": [0, 0, 0]
+				},
+				"14": {
+					"translation": [0, 11, 16]
+				},
+				"28": {
+					"translation": [0, 0, 0]
+				}
+			},
+			"bullet2": {
+				"1": {
+					"translation": [0, 0, 0]
+				},
+				"14": {
+					"translation": [0, 11, 16]
+				},
+				"28": {
+					"translation": [0, 0, 0]
+				}
+			}
+		}
+    }
+}

@@ -1,0 +1,96 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 2,
+    "gripType": "cgm:two_handed_short",
+    "maxAmmo": 30,
+    "lightMagAmmo": 20,
+    "extendedMagAmmo": 50,
+	
+    "reloadAmount": 10,
+	"useMagReload": true,
+	"magReloadTime": 33,
+	"magReloadFromEmptyTime": 50,
+    "reloadStartDelay": 0,
+    "reloadInterruptDelay": 8,
+    "reloadEndDelay": 8,
+	"reloadAllowedCooldown": 0.0,
+	
+    "recoilAngle": 2.5,
+    "recoilKick": 0.4,
+    "recoilAdsReduction": 0.35,
+    "spread": 7.0,
+    "restingSpread": 3.0,
+    "spreadAdsReduction": 0.4,
+	"adsSpeed": 1.2
+  },
+  "fireModes": {
+    "useFireModes": true
+  },
+  "projectile": {
+    "item": "cgm:basic_bullet",
+    "damage": 4.0,
+    "size": 0.2,
+    "speed": 12.0,
+    "life": 12,
+    "gravity": true
+  },
+  "sounds": {
+    "fire": "nzgmaddon:item.smg.fire",
+    "reload": "cgm:item.pistol.reload",
+    "reloadFrames": 33,
+    "reloadClipOut": "nzgmaddon:item.smg.mag_out",
+    "reloadClipOutThreshold": 10,
+    "reloadClipIn": "nzgmaddon:item.smg.mag_in",
+    "reloadClipInThreshold": 28,
+    "cock": "nzgmaddon:item.smg.cock",
+    "silencedFire": "nzgmaddon:item.smg.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.smg.enchanted_fire"
+  },
+  "emptyReloadSounds": {
+	"reloadFrames": 41,
+    "reloadClipOut": "nzgmaddon:item.smg.mag_out",
+    "reloadClipOutThreshold": 15.0,
+    "reloadClipIn": "nzgmaddon:item.smg.mag_in",
+    "reloadClipInThreshold": 29.4,
+    "reloadMid": "nzgmaddon:item.smg.bolt_back",
+    "reloadMidThreshold": 2.9,
+    "reloadLate": "nzgmaddon:item.smg.bolt_forward",
+    "reloadLateThreshold": 37.5
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.2,
+      "zOffset": -1.75,
+      "size": 0.35
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 4.8,
+      "zOffset": 2.6,
+      "fovModifier": 0.7
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 4.0,
+        "zOffset": 5.5,
+		"scale": 0.9
+      },
+      "barrel": {
+        "yOffset": 3.2,
+        "zOffset": -1.25,
+        "scale": 0.45
+      },
+      "stock": {
+        "yOffset": 3.15,
+        "zOffset": 8.2
+      },
+      "underBarrel": {
+        "yOffset": 2.349,
+        "zOffset": 1.25,
+        "scale": 0.89
+      }
+    }
+  }
+}

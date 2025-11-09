@@ -1,0 +1,87 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 3,
+    "gripType": "cgm:two_handed",
+    "maxAmmo": 30,
+    "lightMagAmmo": 25,
+    "extendedMagAmmo": 45,
+	
+    "reloadAmount": 8,
+	"useMagReload": true,
+	"magReloadTime": 45,
+	"magReloadFromEmptyTime": 55,
+    "reloadStartDelay": 0,
+    "reloadInterruptDelay": 8,
+    "reloadEndDelay": 5,
+	"reloadAllowedCooldown": 0.0,
+	
+    "recoilAngle": 4.8,
+    "recoilKick": 1.0,
+    "recoilAdsReduction": 0.3,
+    "spread": 10.7,
+    "restingSpread": 2.7,
+	"adsSpeed": 1.1
+  },
+  "projectile": {
+    "item": "nzgmaddon:medium_bullet",
+    "damage": 6.8,
+	"damageReduceOverLife": false,
+    "size": 0.2,
+    "speed": 23.0,
+    "life": 21,
+    "gravity": true
+  },
+  "fireModes": {
+    "useFireModes": true
+  },
+  "sounds": {
+    "fire": "nzgmaddon:item.heavy_ar.fire",
+    "reload": "nzgmaddon:item.assault_rifle.reload",
+    "reloadFrames": 4,
+    "reloadClipOut": "nzgmaddon:item.heavy_ar.mag_out",
+    "reloadClipOutThreshold": 0.9,
+    "reloadClipIn": "nzgmaddon:item.heavy_ar.mag_in",
+    "reloadClipInThreshold": 2.8,
+    "reloadLate": "nzgmaddon:item.heavy_ar.cock",
+    "reloadLateThreshold": 4,
+    "cock": "nzgmaddon:item.heavy_ar.cock",
+    "silencedFire": "nzgmaddon:item.heavy_ar.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.heavy_ar.enchanted_fire"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.0,
+      "zOffset": -8.11
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 5.0,
+      "zOffset": 3.08,
+      "fovModifier": 0.6
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 4.3,
+        "zOffset": 4.0,
+        "scale": 1.0
+      },
+      "barrel": {
+        "yOffset": 3.0,
+        "zOffset": -7.5,
+        "scale": 0.5
+      },
+      "stock": {
+        "yOffset": 3.05,
+        "zOffset": 8.36
+      },
+      "underBarrel": {
+        "yOffset": 2.499,
+        "zOffset": -1.0
+      },
+      "magazine": {
+      }
+    }
+  }
+}

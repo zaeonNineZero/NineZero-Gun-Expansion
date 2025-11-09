@@ -1,0 +1,79 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 2,
+    "gripType": "cgm:two_handed",
+    "maxAmmo": 35,
+    "lightMagAmmo": 20,
+    "extendedMagAmmo": 45,
+	
+    "reloadAmount": 10,
+	"useMagReload": true,
+	"magReloadTime": 50,
+	"magReloadFromEmptyTime": 50,
+    "reloadStartDelay": 0,
+	"reloadAllowedCooldown": 0.0,
+	
+    "recoilAngle": 1.25,
+    "recoilKick": 0.5,
+    "recoilAdsReduction": 0.4,
+    "spread": 3.2,
+    "restingSpread": 0.85,
+	"adsSpeed": 0.9
+  },
+  "projectile": {
+    "item": "nzgmaddon:medium_bullet",
+    "damage": 4.7,
+    "size": 0.2,
+    "speed": 25.5,
+    "life": 20,
+    "gravity": true
+  },
+  "fireModes": {
+    "useFireModes": true
+  },
+  "sounds": {
+    "fire": "nzgmaddon:item.bullpup_rifle.fire",
+    "reload": "nzgmaddon:item.assault_rifle.reload",
+    "reloadFrames": 4,
+    "reloadClipOut": "nzgmaddon:item.bullpup_rifle.mag_out",
+    "reloadClipOutThreshold": 0.9,
+    "reloadClipIn": "nzgmaddon:item.bullpup_rifle.mag_in",
+    "reloadClipInThreshold": 2.9,
+    "reloadLate": "nzgmaddon:item.bullpup_rifle.cock",
+    "reloadLateThreshold": 4,
+    "cock": "nzgmaddon:item.bullpup_rifle.cock",
+    "silencedFire": "nzgmaddon:item.bullpup_rifle.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.bullpup_rifle.enchanted_fire"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.475,
+      "zOffset": -3.5
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 5.25,
+      "zOffset": 3.2,
+      "fovModifier": 0.6
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 4.4,
+        "zOffset": 4.5
+      },
+      "barrel": {
+        "yOffset": 3.475,
+        "zOffset": -2.9,
+        "scale": 0.5
+      },
+      "underBarrel": {
+        "yOffset": 2.549,
+        "zOffset": -0.2
+      },
+      "magazine": {
+      }
+    }
+  }
+}

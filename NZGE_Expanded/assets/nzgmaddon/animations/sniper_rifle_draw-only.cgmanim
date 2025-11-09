@@ -1,0 +1,69 @@
+{
+    "cgm:animations": {
+		"draw": {
+			"animationSpeed": 0.9,
+			"frames": 27,
+			"viewModel": {
+				"0": {
+					"translation": [-0.65, -7, 0],
+					"rotation": [-32, 18, 0]
+				},
+				"7": {
+					"translation": [-0.52, -1.1, 0],
+					"rotation": [-6, 12, 3.5]
+				},
+				"9": {
+					"translation": [-0.41, -0.2, 0],
+					"rotation": [2.5, 10.8, 5.5]
+				},
+				"10": {
+					"rotation": [3.9, 9, 6.1]
+				},
+				"11": {
+					"translation": [-0.32, 0.04, 0],
+					"rotation": [4.7, 6.7, 6.3]
+				},
+				"13": {
+					"translation": [-0.24, 0.1, 0],
+					"rotation": [4.1, 4.5, 5.8]
+				},
+				"15": {
+					"translation": [-0.17, 0.08, 0],
+					"rotation": [2.9, 3.0, 4.0]
+				},
+				"17": {
+					"translation": [-0.06, 0.03, 0],
+					"rotation": [0.9, 1.7, 1.9]
+				},
+				"20": {
+					"rotation": [0.2, 0.7, 0.6],
+					"easing": "linear"
+				},
+				"22": {
+					"rotation": [-0.25, 0.05, -0.3],
+					"easing": "linear"
+				},
+				"24": {
+					"translation": [0, 0, 0],
+					"transEasing": "ease_out_quad"
+				},
+				"27": {
+					"rotation": [0, 0, 0],
+					"rotEasing": "ease_out_cubic"
+				}
+			},
+			"forwardHand": {
+				"0": {
+					"translation": [0, 0, 1.0]
+				},
+				"14": {
+					"translation": [0, 0, 1.0]
+				},
+				"27": {
+					"translation": [0, 0, 0],
+					"transEasing": "ease_out_quad"
+				}
+			}
+		}
+    }
+}

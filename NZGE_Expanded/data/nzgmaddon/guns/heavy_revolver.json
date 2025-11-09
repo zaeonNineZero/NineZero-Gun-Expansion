@@ -1,0 +1,83 @@
+{
+  "general": {
+    "rate": 11,
+    "gripType": "cgm:pistol_custom",
+    "maxAmmo": 6,
+	
+    "reloadAmount": 2,
+	"useMagReload": true,
+	"magReloadTime": 54,
+    "reloadStartDelay": 0,
+    "reloadInterruptDelay": 6,
+    "reloadEndDelay": 1,
+	"reloadAllowedCooldown": 0.1,
+	
+    "recoilAngle": 9.0,
+	"recoilKick": 0.6,
+    "recoilAdsReduction": 0.05,
+	
+    "alwaysSpread": false,
+    "spread": 5.0,
+    "restingSpread": 1.5,
+    "spreadAdsReduction": 0.7,
+	"adsSpeed": 1.3
+  },
+  "projectile": {
+    "item": "cgm:advanced_bullet",
+    "damage": 13.5,
+    "headshotMultiplierMin": 1.5,
+    "size": 0.2,
+    "speed": 15.0,
+    "life": 25,
+    "gravity": true
+  },
+  "sounds": {
+    "fire": "nzgmaddon:item.heavy_revolver.fire",
+    "reload": "cgm:item.pistol.reload",
+    "reloadFrames": 17,
+    "reloadEarly": "nzgmaddon:item.heavy_revolver.cylinder_open",
+    "reloadEarlyThreshold": 0,
+    "reloadClipOut": "nzgmaddon:item.revolver.bullets_unload",
+    "reloadClipOutThreshold": 3.7,
+    "reloadClipIn": "nzgmaddon:item.heavy_revolver.bullets_load",
+    "reloadClipInThreshold": 9.5,
+    "reloadLate": "nzgmaddon:item.heavy_revolver.cylinder_close",
+    "reloadLateThreshold": 13.4,
+    "cock": "nzgmaddon:item.heavy_revolver.cock",
+    "silencedFire": "nzgmaddon:item.heavy_revolver.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.heavy_revolver.enchanted_fire"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.85,
+      "zOffset": -0.31
+    },
+    "forwardHand": {
+      "yOffset": 0.4,
+      "zOffset": 0.1
+    },
+    "rearHand": {
+      "yOffset": 0.4,
+      "zOffset": 0.1
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 4.6,
+      "zOffset": 1.5,
+      "fovModifier": 0.7
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 4.2,
+        "zOffset": 4.7,
+        "scale": 0.79
+      },
+      "barrel": {
+        "yOffset": 3.3,
+        "zOffset": 3.75,
+        "scale": 0.5
+      }
+    }
+  }
+}

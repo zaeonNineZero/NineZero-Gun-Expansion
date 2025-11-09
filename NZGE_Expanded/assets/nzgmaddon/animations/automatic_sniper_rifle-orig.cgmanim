@@ -1,0 +1,150 @@
+{
+    "cgm:animations": {
+        "draw": {
+			"animationSpeed": 1.04,
+			"frames": 22,
+			"sounds": {
+				"count": 2,
+				"0": {
+					"id": "cgm:item.foley.rifle2_draw",
+					"playAt": 0.0
+				},
+				"1": {
+					"id": "nzgmaddon:item.auto_sniper_rifle.cock",
+					"playAt": 8.0
+				}
+			},
+			"viewModel": {
+				"rotOffset": [0.0, -1.0, 4.0],
+				"0": {
+					"translation": [-2, -4, 0],
+					"rotation": [-35, 0, 0]
+				},
+				"8": {
+					"translation": [0.1, -0.3, -0.1],
+					"transEasing": "ease_out_cubic",
+					"rotation": [16, 15, 8],
+					"rotEasing": "ease_out_quad"
+				},
+				"11": {
+					"translation": [0.2, -0.5, 0.0],
+					"rotation": [20, 17, 8],
+					"easing": "ease_out_quad"
+				},
+				"14": {
+					"translation": [0.1, -0.3, -0.1],
+					"rotation": [15, 12, 8],
+					"easing": "ease_in_quad"
+				},
+				"22": {
+					"translation": [0, 0, 0],
+					"transEasing": "ease_in_out_cubic",
+					"rotation": [0, 0, 0],
+					"rotEasing": "ease_out_cubic"
+				}
+			},
+			"forwardHand": {
+				"0": {
+					"translation": [-3, -6, 2]
+				},
+				"8": {
+					"translation": [-2, 3, -2],
+					"easing": "ease_in_out_quad"
+				},
+				"10": {
+					"translation": [-2, 3, 2],
+					"easing": "ease_out_quad"
+				},
+				"12": {
+					"translation": [-2, 3, 2]
+				},
+				"14": {
+					"translation": [-2, 3, -2],
+					"easing": "linear"
+				},
+				"17": {
+					"translation": [-2, -1, 0],
+					"easing": "ease_in_out_quad"
+				},
+				"21": {
+					"translation": [0, 0, 0],
+					"easing": "ease_in_out_quad"
+				}
+			},
+			"bolt_handle": {
+				"8": {
+					"translation": [0, 0, 0]
+				},
+				"10": {
+					"translation": [0, 0, 2.5],
+					"easing": "linear"
+				},
+				"12": {
+					"translation": [0, 0, 2.5]
+				},
+				"14": {
+					"translation": [0, 0, 0],
+					"easing": "ease_out_quad"
+				}
+			}
+		},
+        "reload": {
+			"frames": 32,
+			"progressOffset": 0.2,
+			"viewModel": {
+				"rotOffset": [0, 0.0, 3.0],
+				"startEasing": "ease_in_cubic",
+				"endEasing": "ease_in_out_cubic",
+				"0": {
+					"translation": [0.0, 0.0, 0.0],
+					"rotation": [0.0, 0, 0]
+				},
+				"8": {
+					"rotation": [45.0, 0, -20]
+				},
+				"24": {
+					"rotation": [45.0, 0, -20]
+				},
+				"32": {
+					"rotation": [0.0, 0, 0]
+				}
+			},
+			"forwardHand": {
+				"rotOffset": [-4.0, 6.0, 0.0],
+				"0": {
+					"translation": [0.0, 0.0, 0.0],
+					"rotation": [0.0, 0, 0]
+				},
+				"5": {
+					"translation": [-10, -20, 20]
+				},
+				"27": {
+					"translation": [-10, -20, 20]
+				},
+				"32": {
+					"translation": [0, 0, 0]
+				}
+			},
+			"magazine": {
+				"rotOffset": [0, -4.0, 10.0],
+				"8": {
+					"translation": [0.0, 0.0, 0.0]
+				},
+				"9": {
+					"translation": [0.0, -1.5, 0.0],
+					"rotation": [0.0, 0, 0]
+				},
+				"16": {
+					"rotation": [-135.0, 0, 0]
+				},
+				"23": {
+					"translation": [0.0, -1.5, 0.0],
+					"rotation": [0.0, 0, 0]
+				},
+				"24": {
+					"translation": [0.0, 0, 0.0]
+				}
+			}
+		}
+    }
+}

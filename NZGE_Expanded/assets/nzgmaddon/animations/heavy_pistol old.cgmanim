@@ -1,0 +1,287 @@
+{
+    "cgm:animations": {
+        "draw": {
+			"animationSpeed": 1.9,
+			"frames": 30,
+			"sounds": {
+				"count": 3,
+				"0": {
+					"id": "minecraft:item.armor.equip_leather",
+					"pitch": 1.3,
+					"playAt": 1.0
+				},
+				"1": {
+					"id": "minecraft:item.armor.equip_leather",
+					"pitch": 1.5,
+					"playAt": 12.0
+				},
+				"2": {
+					"id": "cgm:item.foley.pistol1_draw",
+					"pitch": 0.95,
+					"playAt": 18.0
+				}
+			},
+			"viewModel": {
+				"rotOffset": [0, 0.0, 1.0],
+				"0": {
+					"translation": [-1, -5, -1],
+					"rotation": [-60, 20, -30]
+				},
+				"12": {
+					"rotation": [20, 10, -30],
+					"rotEasing": "ease_in_out_quad"
+				},
+				"14": {
+					"translation": [-0.1, 0.4, -0.5],
+					"transEasing": "ease_out_cubic"
+				},
+				"25": {
+					"rotation": [0, 0, 0],
+					"rotEasing": "ease_in_out_quad"
+				},
+				"27": {
+					"translation": [0, 0, 0],
+					"transEasing": "ease_in_out_cubic"
+				}
+			},
+			"gunModel": {
+				"rotOffset": [-1, -9.5, 2.0],
+				"0": {
+					"rotation": [-360, 0, 0]
+				},
+				"2": {
+					"rotation": [-360, 0, 0]
+				},
+				"25": {
+					"rotation": [0, 0, 0],
+					"rotEasing": "ease_in_out_quad"
+				}
+			},
+			"forwardHand": {
+				"rotOffset": [0, 0.0, -2.0],
+				"0": {
+					"translation": [5, -6, 2]
+				},
+				"10": {
+					"translation": [5, -6, 2]
+				},
+				"15": {
+					"translation": [-1, -4, 2],
+					"transEasing": "ease_in_quad"
+				},
+				"27": {
+					"translation": [0, 0, 0],
+					"transEasing": "ease_out_cubic"
+				}
+			},
+			"rearHand": {
+				"rotOffset": [1.0, 4.0, 12.0],
+				"0": {
+					"translation": [1, -0.4, 0.2],
+					"rotation": [0, 10, -5]
+				},
+				"12": {
+					"translation": [1, -0.4, 0.2]
+				},
+				"14": {
+					"rotation": [0, 10, -5]
+				},
+				"18": {
+					"translation": [1.4, 0, 0],
+					"transEasing": "ease_in_out_quad"
+				},
+				"27": {
+					"translation": [0, 0, 0],
+					"transEasing": "ease_out_cubic",
+					"rotation": [0, 0, 0],
+					"rotEasing": "ease_in_out_cubic"
+				}
+			}
+		},
+		"reload": {
+			"frames": 29,
+			"progressOffset": 0.0,
+			"viewModel": {
+				"rotOffset": [0, 0.0, 3.0],
+				"endEasing": "ease_out_cubic",
+				"4": {
+					"translation": [-0.3, 2.6, 0],
+					"transEasing": "ease_in_out_cubic",
+					"rotation": [5.0, 5.0, -2.0],
+					"rotEasing": "ease_in_out_quad"
+				},
+				"6": {
+					"translation": [-0.4, 2.4, 0],
+					"transEasing": "linear",
+					"rotation": [5.5, 4.5, -2.7],
+					"rotEasing": "ease_in_cubic"
+				},
+				"10": {
+					"translation": [-0.4, 1.9, 0],
+					"transEasing": "ease_out_quad",
+					"rotation": [7.0, 3.0, -4.0],
+					"rotEasing": "ease_out_cubic"
+				},
+				"15": {
+					"translation": [-0.2, 2.3, 0],
+					"transEasing": "ease_in_cubic",
+					"rotation": [10.0, 4.0, -6.0],
+					"rotEasing": "ease_in_cubic"
+				},
+				"16": {
+					"translation": [-0.2, 2.4, 0],
+					"transEasing": "ease_out_cubic",
+					"rotation": [8.5, 4.0, -7],
+					"rotEasing": "ease_out_quad"
+				},
+				"22": {
+					"translation": [-1.0, 0.0, -0.2],
+					"transEasing": "ease_in_out_cubic",
+					"rotation": [24.0, 2.0, -2],
+					"rotEasing": "ease_in_quad"
+				},
+				"23": {
+					"translation": [-1.0, -0.4, -0.1],
+					"rotation": [30.0, 1.5, -1],
+					"easing": "linear"
+				},
+				"24": {
+					"translation": [-1.0, -0.4, -0.1],
+					"rotation": [30.0, 1.5, -1]
+				},
+				"25": {
+					"translation": [-1.0, 0.0, -0.2],
+					"rotation": [20.0, 2.0, -2]
+				},
+				"29": {
+					"translation": [0, 0, 0],
+					"transEasing": "ease_in_out_quad",
+					"rotation": [0, 0, 0],
+					"rotEasing": "ease_in_out_cubic"
+				}
+			},
+			"forwardHand": {
+				"rotOffset": [-4.5, 1.0, 4.0],
+				"3": {
+					"translation": [1.2, -2.0, 2.5],
+					"rotation": [0.0, 0.0, -12.0],
+					"easing": "ease_in_out_quad"
+				},
+				"5": {
+					"translation": [1.2, -3.8, 2.9],
+					"easing": "linear"
+				},
+				"9": {
+					"translation": [1.2, -13.8, 6.5]
+				},
+				"10": {
+					"translation": [1.2, -13.2, 6.5]
+				},
+				"14": {
+					"translation": [1.2, -2.8, 2.7],
+					"rotation": [0.0, 0.0, -12.0],
+					"rotEasing": "linear"
+				},
+				"15": {
+					"translation": [0.6, -1.6, 2.4],
+					"rotation": [0.0, 0.0, 0.0],
+					"rotEasing": "linear"
+				},
+				"16": {
+					"rotation": [0.0, 0.0, 0.0]
+				},
+				"17": {
+					"translation": [0.4, -1.6, 2.3],
+					"easing": "ease_out_cubic"
+				},
+				"20": {
+					"translation": [-0.4, 5.7, 2.0],
+					"easing": "ease_in_quad"
+				},
+				"22": {
+					"translation": [0.9, 5.8, 1.5],
+					"transEasing": "ease_out_cubic",
+					"rotation": [15.0, 5.0, 0.0],
+					"rotEasing": "ease_in_out_quad"
+				},
+				"23": {
+					"translation": [0.9, 5.8, 3.8],
+					"rotation": [20.0, 3.0, 0.0],
+					"easing": "linear"
+				},
+				"24": {
+					"translation": [0.9, 5.8, 3.8],
+					"rotation": [20.0, 3.0, 0.0],
+					"easing": "linear"
+				},
+				"25": {
+					"translation": [0.8, 6.5, 6.0],
+					"rotation": [15.0, 5.0, 0.0],
+					"easing": "ease_out_quad"
+				},
+				"27": {
+					"translation": [-0.4, 3.5, 4.0],
+					"transEasing": "ease_in_quad"
+				},
+				"29": {
+					"translation": [0, 0, 0],
+					"transEasing": "ease_out_quad",
+					"rotation": [0, 0, 0],
+					"rotEasing": "ease_in_out_quad"
+				}
+			},
+			"rearHand": {
+				"endEasing": "ease_out_circ",
+				"3": {
+					"translation": [1.3, 0.0, 0.0],
+					"easing": "ease_in_out_quad"
+				},
+				"16": {
+					"translation": [1.3, 0.0, 0.0]
+				},
+				"19": {
+					"translation": [1.0, 0.0, 0.0],
+					"easing": "ease_in_quad"
+				},
+				"22": {
+					"translation": [0, 0.0, 0.0],
+					"easing": "ease_out_cubic"
+				}
+			},
+			"magazine": {
+				"3": {
+					"translation": [0, 0, 0]
+				},
+				"5": {
+					"translation": [0, -1, 0.4]
+				},
+				"9": {
+					"translation": [0, -10, 4]
+				},
+				"10": {
+					"translation": [0, -10, 4]
+				},
+				"14": {
+					"translation": [0, -0.5, 0.2]
+				},
+				"15": {
+					"translation": [0, 0, 0]
+				}
+			},
+			"slide": {
+				"22": {
+					"translation": [0, 0, 0]
+				},
+				"23": {
+					"translation": [0, 0, 1.35]
+				},
+				"24": {
+					"translation": [0, 0, 1.35]
+				},
+				"25": {
+					"translation": [0, 0, 0]
+				}
+			}
+		}
+    }
+}

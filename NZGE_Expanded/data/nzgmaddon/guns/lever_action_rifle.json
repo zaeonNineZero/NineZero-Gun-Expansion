@@ -1,0 +1,70 @@
+{
+  "general": {
+    "rate": 11,
+    "gripType": "cgm:two_handed",
+    "maxAmmo": 8,
+	
+    "reloadAmount": 1,
+    "reloadRate": 12,
+    "reloadStartDelay": 6,
+    "reloadInterruptDelay": 10,
+    "reloadEndDelay": 16,
+	"reloadAllowedCooldown": 0.2,
+	"drawTime": 9,
+	
+    "recoilAngle": 3.0,
+    "recoilKick": 0.6,
+    "recoilDurationOffset": 0.1,
+    "recoilAdsReduction": 0.4,
+    "alwaysSpread": false,
+    "spread": 4.0,
+    "restingSpread": 1,
+    "spreadAdsReduction": 0.6
+  },
+  "projectile": {
+    "item": "cgm:basic_bullet",
+    "damage": 10.5,
+    "headshotMultiplierMin": 1.7,
+    "size": 0.0625,
+    "speed": 25.0,
+    "life": 25,
+    "gravity": true
+  },
+  "sounds": {
+    "fire": "nzgmaddon:item.lever_action_rifle.fire",
+    "reload": "nzgmaddon:item.lever_action_rifle.bullet_load",
+    "cock": "nzgmaddon:item.lever_action_rifle.cock",
+    "cycle": "nzgmaddon:item.lever_action_rifle.cock",
+    "cycleDelay": 3,
+    "silencedFire": "nzgmaddon:item.lever_action_rifle.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.lever_action_rifle.enchanted_fire"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.8365,
+      "zOffset": -10.21
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 4.7,
+      "zOffset": 4.0,
+      "fovModifier": 0.7
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 4.32,
+        "zOffset": 3.3
+      },
+      "barrel": {
+        "yOffset": 3.8365,
+        "zOffset": -10.2,
+        "scale": 0.46
+      },
+      "underBarrel": {
+        "yOffset": 2.599,
+        "zOffset": -1.0
+      }
+    }
+  }
+}

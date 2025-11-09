@@ -1,0 +1,76 @@
+{
+  "general": {
+    "rate": 44,
+    "gripType": "cgm:two_handed",
+	"defaultColor": 12755302,
+    "maxAmmo": 1,
+	
+    "reloadAmount": 1,
+	"useMagReload": true,
+	"magReloadTime": 70,
+    "reloadRate": 70,
+	"reloadAllowedCooldown": 0.75,
+    "reloadStartDelay": 0,
+    "reloadInterruptDelay": 10,
+    "reloadEndDelay": 1,
+	"drawTime": 14,
+	
+    "recoilAngle": 9.0,
+    "recoilKick": 1.0,
+    "recoilDurationOffset": 0.63,
+    "recoilAdsReduction": 0.3,
+    "spread": 2.0,
+	"alwaysSpread": true,
+    "spreadAdsReduction": 0.96,
+	"adsSpeed": 0.9
+  },
+  "projectile": {
+    "item": "cgm:advanced_bullet",
+    "damage": 18.0,
+    "headshotMultiplierMin": 1.25,
+    "size": 0.0625,
+    "speed": 32.0,
+    "life": 24,
+    "gravity": true
+  },
+  "sounds": {
+    "fire": "nzgmaddon:item.hunting_rifle.fire",
+    "reload": "nzgmaddon:item.rifle.reload",
+    "cock": "nzgmaddon:item.hunting_rifle.breech_close",
+    "silencedFire": "nzgmaddon:item.hunting_rifle.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.hunting_rifle.enchanted_fire"
+  },
+  "reloadSounds": {
+    "reloadFrames": 110,
+	"reloadEarly": "nzgmaddon:item.hunting_rifle.breech_open",
+	"reloadEarlyThreshold": 9,
+	"reloadClipIn": "nzgmaddon:item.rifle.reload",
+	"reloadClipInThreshold": 53,
+	"reloadLate": "nzgmaddon:item.hunting_rifle.breech_close",
+	"reloadLateThreshold": 80
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.94,
+      "zOffset": -13.8
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 4.8,
+      "zOffset": 4.0,
+      "fovModifier": 0.6
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 4.49,
+        "zOffset": -0.1
+      },
+      "barrel": {
+        "yOffset": 3.94,
+        "zOffset": -13.6,
+        "scale": 0.46
+      }
+    }
+  }
+}

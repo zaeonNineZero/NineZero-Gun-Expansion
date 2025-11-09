@@ -1,0 +1,51 @@
+{
+    "cgm:weapon": {
+        "animation": {
+			"cooldownDivider": 3.0,
+			"cooldownOffset": 1.0,
+			"animIntensity": 1.9,
+			"boltLeadTime": 0.4,
+			
+			"viewModel": {
+                "boltLeadTime": 0.8,
+				"boltAnimTranslate": [0.0, -0.2, -0.3],
+				"boltAnimRotation": [2.8, 0.3, 1.0]
+			}
+		},
+        "attachments": {
+            "barrel": {
+                "translation": [8.0, 3.8365, -2.2],
+                "scale": [0.46, 0.46, 0.46]
+            },
+            "scope": {
+                "translation": [8.0, 4.38, 11.3]
+            },
+            "underBarrel": {
+                "translation": [8.0, 2.9, 7.4],
+                "scale": [0.9, 0.9, 0.9]
+            }
+        },
+		"hands": {
+			"animScalar": 0.8,
+            "forward": {
+                "offset": [0.0, 0.2, 0.0],
+                "boltLeadTime": 0.8,
+                "boltAnimTranslate": [0.1, 1, 0]
+            },
+			"rear": {
+                "offset": [0.0, 0.6, 0.0],
+                "boltLeadTime": 0.8,
+				"animTranslate": [0, 0, 2.5],
+                "boltAnimTranslate": [2.1, 2.15, -0.3]
+            }
+        },
+        "ironSight": {
+            "camera": [8.0, 4.7, 19.0],
+            "viewportFov": 60.0
+        },
+        "muzzleFlash": {
+            "translation": [8.0, 3.8365, -2.7],
+            "scale": [0.6, 0.6, 0.6]
+        }
+    }
+}

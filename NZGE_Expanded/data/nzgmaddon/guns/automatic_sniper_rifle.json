@@ -1,0 +1,100 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 5,
+    "gripType": "cgm:two_handed",
+    "maxAmmo": 16,
+    "lightMagAmmo": 10,
+    "extendedMagAmmo": 20,
+	
+    "reloadAmount": 4,
+	"useMagReload": true,
+	"magReloadTime": 55,
+	"magReloadFromEmptyTime": 60,
+    "reloadStartDelay": 0,
+    "reloadInterruptDelay": 8,
+    "reloadEndDelay": 5,
+	"reloadAllowedCooldown": 0.1,
+	"drawTime": 17,
+	
+    "recoilAngle": 6.5,
+    "recoilKick": 1.5,
+    "recoilAdsReduction": 0.3,
+    "spread": 12,
+    "restingSpread": 2.0,
+    "spreadAdsReduction": 0.8,
+	"adsSpeed": 1.1
+  },
+  "projectile": {
+    "item": "nzgmaddon:medium_bullet",
+    "damage": 9.0,
+    "headshotMultiplierMin": 2.4,
+    "size": 0.2,
+    "speed": 28.0,
+    "life": 24,
+    "gravity": true
+  },
+  "fireModes": {
+    "useFireModes": true,
+    "hasSemiMode": true,
+	"defaultFireMode": 1,
+    "hasAutoMode": true
+  },
+  "sounds": {
+    "fire": "nzgmaddon:item.auto_sniper_rifle.fire",
+    "reload": "nzgmaddon:item.assault_rifle.reload",
+    "cock": "nzgmaddon:item.auto_sniper_rifle.cock",
+    "silencedFire": "nzgmaddon:item.auto_sniper_rifle.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.auto_sniper_rifle.enchanted_fire"
+  },
+  "magReloadSounds": {
+	"reloadClipOut": "nzgmaddon:item.auto_sniper_rifle.mag_out",
+	"reloadClipOutThreshold": 0.25,
+	"reloadClipIn": "nzgmaddon:item.auto_sniper_rifle.mag_in",
+	"reloadClipInThreshold": 0.71
+  },
+  "emptyReloadSounds": {
+	"reloadStart": "nzgmaddon:item.auto_sniper_rifle.bolt_open",
+    "reloadStartDelay": 0,
+	"reloadClipOut": "nzgmaddon:item.auto_sniper_rifle.mag_out",
+	"reloadClipOutThreshold": 0.25,
+	"reloadClipIn": "nzgmaddon:item.auto_sniper_rifle.mag_in",
+	"reloadClipInThreshold": 0.71,
+    "reloadLate": "nzgmaddon:item.auto_sniper_rifle.bolt_close",
+    "reloadLateThreshold": 0.98
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.4,
+      "zOffset": -8.91
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 5.2,
+      "zOffset": 3.2,
+      "fovModifier": 0.6
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 4.4,
+        "zOffset": 4.0
+      },
+      "barrel": {
+        "yOffset": 3.4,
+        "zOffset": -7.9,
+        "scale": 0.5
+      },
+      "stock": {
+        "yOffset": 3.6,
+        "zOffset": 8.2
+      },
+      "underBarrel": {
+        "yOffset": 2.599,
+        "zOffset": -1.0
+      },
+      "magazine": {
+      }
+    }
+  }
+}

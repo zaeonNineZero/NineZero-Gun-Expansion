@@ -1,0 +1,84 @@
+{
+  "general": {
+    "auto": false,
+    "rate": 5,
+    "gripType": "cgm:two_handed",
+    "maxAmmo": 14,
+    "lightMagAmmo": 10,
+    "extendedMagAmmo": 20,
+	
+    "reloadAmount": 5,
+	"useMagReload": true,
+	"magReloadTime": 53,
+    "reloadStartDelay": 0,
+    "reloadInterruptDelay": 8,
+    "reloadEndDelay": 9,
+	"reloadAllowedCooldown": 0.0,
+	
+    "recoilAngle": 3.5,
+    "recoilKick": 1.1,
+    "recoilAdsReduction": 0.5,
+    "spread": 4,
+    "restingSpread": 0.7,
+    "spreadAdsReduction": 0.7,
+	"adsSpeed": 0.9
+  },
+  "projectile": {
+    "item": "nzgmaddon:medium_bullet",
+    "damage": 10.5,
+    "headshotMultiplierMin": 1.8,
+    "size": 0.2,
+    "speed": 28.0,
+    "life": 24,
+    "gravity": true
+  },
+  "fireModes": {
+    "useFireModes": true
+  },
+  "sounds": {
+    "fire": "nzgmaddon:item.infantry_rifle.fire",
+    "reload": "nzgmaddon:item.assault_rifle.reload",
+    "reloadFrames": 38,
+    "reloadClipOut": "nzgmaddon:item.infantry_rifle.mag_out",
+    "reloadClipOutThreshold": 5.9,
+    "reloadClipIn": "nzgmaddon:item.infantry_rifle.mag_in",
+    "reloadClipInThreshold": 18.0,
+    "reloadMid": "nzgmaddon:item.infantry_rifle.bolt_back",
+    "reloadMidThreshold": 29.5,
+    "reloadLate": "nzgmaddon:item.infantry_rifle.bolt_forward",
+    "reloadLateThreshold": 34.2,
+    "cock": "nzgmaddon:item.infantry_rifle.cock",
+    "silencedFire": "nzgmaddon:item.infantry_rifle.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.infantry_rifle.enchanted_fire"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.4,
+      "zOffset": -8.91
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 5.2,
+      "zOffset": 3.2,
+      "fovModifier": 0.6
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 4.4,
+        "zOffset": 4.0
+      },
+      "barrel": {
+        "yOffset": 3.4,
+        "zOffset": -7.9,
+        "scale": 0.5
+      },
+      "underBarrel": {
+        "yOffset": 2.599,
+        "zOffset": -1.0
+      },
+      "magazine": {
+      }
+    }
+  }
+}

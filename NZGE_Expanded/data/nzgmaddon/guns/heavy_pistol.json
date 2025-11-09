@@ -1,0 +1,90 @@
+{
+  "general": {
+    "rate": 7,
+    "gripType": "cgm:pistol_custom",
+    "maxAmmo": 8,
+    "lightMagAmmo": 7,
+    "extendedMagAmmo": 11,
+	
+    "reloadAmount": 4,
+	"useMagReload": true,
+	"magReloadTime": 38,
+	"magReloadFromEmptyTime": 45,
+    "reloadStartDelay": 0,
+    "reloadInterruptDelay": 8,
+    "reloadEndDelay": 1,
+	"reloadAllowedCooldown": 0.1,
+	
+    "recoilAngle": 5.0,
+    "recoilKick": 1.0,
+    "recoilAdsReduction": 0.15,
+	
+    "alwaysSpread": true,
+    "spread": 7.0,
+    "restingSpread": 1.2,
+	"adsSpeed": 1.4
+  },
+  "projectile": {
+    "item": "cgm:advanced_bullet",
+    "damage": 10.5,
+    "headshotMultiplierMin": 2.0,
+    "size": 0.2,
+    "speed": 12.0,
+    "life": 25,
+    "gravity": true
+  },
+  "fireModes": {
+    "useFireModes": true
+  },
+  "sounds": {
+    "fire": "nzgmaddon:item.heavy_pistol.fire",
+    "reload": "cgm:item.pistol.reload",
+    "reloadFrames": 29,
+    "reloadClipOut": "nzgmaddon:item.heavy_pistol.mag_out",
+    "reloadClipOutThreshold": 3.5,
+    "reloadClipIn": "nzgmaddon:item.heavy_pistol.mag_in",
+    "reloadClipInThreshold": 12.5,
+    "reloadMid": "nzgmaddon:item.heavy_pistol.slide_back",
+    "reloadMidThreshold": 21.0,
+    "reloadLate": "nzgmaddon:item.heavy_pistol.slide_forward",
+    "reloadLateThreshold": 23.5,
+    "cock": "nzgmaddon:item.heavy_pistol.cock",
+    "silencedFire": "nzgmaddon:item.heavy_pistol.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.heavy_pistol.enchanted_fire"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.3,
+      "zOffset": 2.14
+    },
+    "forwardHand": {
+      "yOffset": 0.4,
+      "zOffset": 0.1
+    },
+    "rearHand": {
+      "yOffset": 0.4,
+      "zOffset": 0.1
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 4.4,
+      "zOffset": 0.0,
+      "fovModifier": 0.75
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 3.9,
+        "zOffset": 7.9,
+        "scale": 0.75
+      },
+      "barrel": {
+        "yOffset": 3.35,
+        "zOffset": 0.8,
+        "scale": 0.42
+      },
+      "magazine": {
+      }
+    }
+  }
+}

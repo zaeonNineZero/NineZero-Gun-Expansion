@@ -1,0 +1,321 @@
+{
+    "cgm:animations": {
+        "draw": {
+			"animationSpeed": 1.5,
+			"frames": 13,
+			"sounds": {
+				"count": 1,
+				"0": {
+					"id": "cgm:item.foley.pistol1_draw",
+					"volume": 0.95,
+					"playAt": 1.0
+				}
+			},
+			"viewModel": {
+				"rotOffset": [0, 0.0, 0.0],
+				"0": {
+					"translation": [1, -3, 9],
+					"rotation": [0, 0, 50]
+				},
+				"2": {
+					"rotation": [10, -10, 50],
+					"transEasing": "ease_out_sin"
+				},
+				"11": {
+					"rotation": [0, 0, 0],
+					"rotEasing": "ease_in_out_cubic"
+				},
+				"12": {
+					"translation": [0, 0, 0],
+					"transEasing": "ease_out_cubic"
+				}
+			},
+			"forwardHand": {
+				"rotOffset": [0, 0.0, -2.0],
+				"0": {
+					"translation": [6, -6, 4],
+					"rotation": [0, 0, 0]
+				},
+				"2": {
+					"translation": [5, -6, 4],
+					"rotation": [0, 0, 0]
+				},
+				"6": {
+					"translation": [-2, -1, 1],
+					"rotation": [-10, -5, 0]
+				},
+				"10": {
+					"translation": [0, 0, 0],
+					"transEasing": "ease_out_quad",
+					"rotation": [0, 0, 0],
+					"rotEasing": "ease_out_cubic"
+				}
+			},
+			"rearHand": {
+				"rotOffset": [4, 0.0, 12.0],
+				"0": {
+					"rotation": [0, -10, 0]
+				},
+				"5": {
+					"rotation": [0, -10, 0]
+				},
+				"10": {
+					"rotation": [0, 0, 0],
+					"rotEasing": "ease_in_out_quad"
+				}
+			}
+		},
+		"recoil": {
+			"frames": 32,
+			"animationSpeed": 2.6,
+			"viewModel": {
+				"rotOffset": [0, -0.2, 3.0],
+				"0": {
+					"translation": [0.0, 0.0, 0.0],
+					"rotation": [0, 0, 0]
+				},
+				"7": {
+					"rotation": [15.0, 0, 0],
+					"easing": "ease_in_out_quad"
+				},
+				"8": {
+					"translation": [0.0, 0.0, 1.4],
+					"easing": "ease_out_quad"
+				},
+				"19": {
+					"rotation": [-2.0, 0, 0],
+					"rotEasing": "ease_in_out_sin"
+				},
+				"26": {
+					"translation": [0.0, 0.0, 0.0],
+					"easing": "ease_in_out_quad"
+				},
+				"31": {
+					"rotation": [0.0, 0, 0],
+					"rotEasing": "ease_in_out_sin"
+				}
+			},
+			"gunModel": {
+				"rotOffset": [-2, -11.0, 3.3],
+				"0": {
+					"rotation": [1, 0, 0]
+				},
+				"3": {
+					"rotation": [10.0, -0.5, -1.0],
+					"easing": "ease_out_cubic"
+				},
+				"13": {
+					"rotation": [-2.0, 0.3, 0.5],
+					"rotEasing": "ease_in_out_sin"
+				},
+				"27": {
+					"rotation": [0.0, 0, 0],
+					"rotEasing": "ease_in_out_sin"
+				}
+			}
+		},
+		"reload": {
+			"frames": 19,
+			"progressOffset": 0.1,
+			"viewModel": {
+				"rotOffset": [0, 1.0, 3.0],
+				"0": {
+					"translation": [0, 0.0, 0],
+					"rotation": [0, 0, 0]
+				},
+				"2": {
+					"translation": [0, -0.5, 1],
+					"rotation": [14, 12, 6],
+					"easing": "ease_in_out_quad"
+				},
+				"3": {
+					"translation": [-0.5, -0.5, 1],
+					"rotation": [12, 10, 15],
+					"easing": "linear"
+				},
+				"6": {
+					"translation": [-0.92, -2.0, 1.8],
+					"transEasing": "ease_in_out_quad",
+					"rotation": [27, 11, 4],
+					"rotEasing": "ease_in_out_cubic"
+				},
+				"7": {
+					"translation": [-0.85, -2.2, 2.3],
+					"rotation": [27, 11.1, 4],
+					"easing": "ease_out_cubic"
+				},
+				"8": {
+					"translation": [-0.9, -2.06, 1.9],
+					"rotation": [27, 11, 4],
+					"easing": "ease_out_quad"
+				},
+				"11": {
+					"translation": [-0.8, -0.6, 1.0],
+					"transEasing": "ease_in_out_cubic",
+					"rotation": [12, 6, 3],
+					"rotEasing": "ease_in_out_quad"
+				},
+				"12": {
+					"translation": [-0.8, -0.5, 1.0],
+					"transEasing": "ease_in_quad",
+					"rotation": [11.5, 7, 3.6],
+					"rotEasing": "ease_in_cubic"
+				},
+				"13": {
+					"translation": [-0.8, -0.5, 0.7],
+					"transEasing": "ease_out_cubic",
+					"rotation": [10, 6.5, 6],
+					"rotEasing": "ease_out_quad"
+				},
+				"15": {
+					"translation": [-0.5, -0.4, 0.7],
+					"rotation": [7, 8, 4],
+					"easing": "ease_in_out_quad"
+				},
+				"16": {
+					"translation": [-0.5, -0.4, 0.7],
+					"transEasing": "linear",
+					"rotation": [9, 0, -6],
+					"rotEasing": "ease_in_out_quad"
+				},
+				"19": {
+					"translation": [0, 0.0, 0],
+					"transEasing": "ease_in_out_cubic",
+					"rotation": [0, 0, 0],
+					"rotEasing": "ease_in_out_quad"
+				}
+			},
+			"forwardHand": {
+				"rotOffset": [-4.5, 1.0, 4.0],
+				"0": {
+					"translation": [0.0, 0.0, 0.0],
+					"rotation": [0.0, 0, 0]
+				},
+				"2": {
+					"translation": [-1.3, 5.0, -1.5],
+					"rotation": [0.0, -10, 0],
+					"easing": "ease_in_out_quad"
+				},
+				"3": {
+					"translation": [-3.7, 3.0, -2.0],
+					"rotation": [0.0, 10, -20],
+					"easing": "linear"
+				},
+				"4": {
+					"translation": [-4.0, 3.4, -6.0],
+					"transEasing": "ease_in_quad"
+				},
+				"6": {
+					"translation": [-2.5, 4.2, -10.0],
+					"transEasing": "ease_out_cubic",
+					"rotation": [0.0, -10, -30],
+					"rotEasing": "ease_in_out_cubic"
+				},
+				"7": {
+					"translation": [-2.5, 4.2, -7.0],
+					"easing": "ease_out_circ"
+				},
+				"8": {
+					"translation": [-2.6, 4.2, -9.0],
+					"rotation": [0.0, -10, -30],
+					"easing": "ease_out_quad"
+				},
+				"10": {
+					"translation": [-3.4, -5, 4.0],
+					"rotation": [0.0, 0, 0],
+					"easing": "ease_in_quad"
+				},
+				"11": {
+					"translation": [-1.8, 3.5, 12.0],
+					"rotation": [0.0, 30, 0],
+					"easing": "linear"
+				},
+				"12": {
+					"translation": [-1.8, 3.6, 0.0],
+					"rotation": [0.0, 25, -10],
+					"easing": "linear"
+				},
+				"13": {
+					"translation": [-1.9, 3.5, -0.1],
+					"rotation": [0.0, 25, -10],
+					"easing": "ease_out_quad"
+				},
+				"15": {
+					"translation": [-3.5, 3.0, -0.5],
+					"rotation": [0.0, 10, -25],
+					"easing": "ease_in_out_cubic"
+				},
+				"16": {
+					"translation": [-1.3, 5.0, -0.5],
+					"rotation": [0.0, -10, -10],
+					"easing": "linear"
+				},
+				"19": {
+					"translation": [0.0, 0.0, 0.0],
+					"rotation": [0.0, 0, 0],
+					"easing": "ease_in_out_cubic"
+				}
+			},
+			"swing_out": {
+				"rotOffset": [0.5, -5.74, 0.0],
+				"2": {
+					"rotation": [0, 0, 0]
+				},
+				"3": {
+					"rotation": [0, 0, 75]
+				},
+				"15": {
+					"rotation": [0, 0, 75]
+				},
+				"16": {
+					"rotation": [0, 0, 0]
+				}
+			},
+			"cylinder": {
+				"2": {
+					"rotation": [0, 0, 0]
+				},
+				"3": {
+					"rotation": [0, 0, 30]
+				},
+				"15": {
+					"rotation": [0, 0, 30]
+				},
+				"16": {
+					"rotation": [0, 0, 0]
+				}
+			},
+			"chambers": {
+				"2": {
+					"rotation": [0, 0, 0]
+				},
+				"3": {
+					"rotation": [0, 0, -15]
+				},
+				"15": {
+					"rotation": [0, 0, -15]
+				},
+				"16": {
+					"rotation": [0, 0, 0]
+				}
+			},
+			"bullets": {
+				"6": {
+					"translation": [0, 0, 0]
+				},
+				"7": {
+					"translation": [0, 0, 2]
+				},
+				"8": {
+					"translation": [0, 0, 18]
+				},
+				"11": {
+					"translation": [0, 0, 4.5]
+				},
+				"12": {
+					"translation": [0, 0, 0]
+				}
+			}
+		}
+    }
+}

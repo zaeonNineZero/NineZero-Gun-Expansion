@@ -1,0 +1,75 @@
+{
+    "cgm:animations": {
+        "reload": {
+			"frames": 32,
+			"progressOffset": 0.2,
+			"viewModel": {
+				"rotOffset": [0, 0.0, 3.0],
+				"startEasing": "ease_in_cubic",
+				"endEasing": "ease_in_out_cubic",
+				"0": {
+					"translation": [0.0, 0.0, 0.0],
+					"rotation": [0.0, 0, 0]
+				},
+				"8": {
+					"rotation": [45.0, 0, -20]
+				},
+				"24": {
+					"rotation": [45.0, 0, -20]
+				},
+				"32": {
+					"rotation": [0.0, 0, 0]
+				}
+			},
+			"forwardHand": {
+				"rotOffset": [-4.0, 6.0, 0.0],
+				"0": {
+					"translation": [0.0, 0.0, 0.0],
+					"rotation": [0.0, 0, 0]
+				},
+				"5": {
+					"translation": [-10, -20, 20]
+				},
+				"27": {
+					"translation": [-10, -20, 20]
+				},
+				"32": {
+					"translation": [0, 0, 0]
+				}
+			},
+			"magazine": {
+				"rotOffset": [0, -4.0, 10.0],
+				"8": {
+					"translation": [0.0, 0.0, 0.0]
+				},
+				"9": {
+					"translation": [0.0, -1.5, 0.0],
+					"rotation": [0.0, 0, 0]
+				},
+				"16": {
+					"rotation": [-135.0, 0, 0]
+				},
+				"23": {
+					"translation": [0.0, -1.5, 0.0],
+					"rotation": [0.0, 0, 0]
+				},
+				"24": {
+					"translation": [0.0, 0, 0.0]
+				}
+			},
+			"bullets": {
+				"0": {
+					"hideBullets": 0,
+					"forceShowBullets": 0
+				},
+				"8": {
+					"hideBullets": 1
+				},
+				"24": {
+					"hideBullets": 0,
+					"forceShowBullets": 1
+				}
+			}
+		}
+    }
+}

@@ -1,0 +1,95 @@
+{
+  "general": {
+    "rate": 31,
+    "gripType": "cgm:two_handed",
+	
+    "maxAmmo": 4,
+    "lightMagAmmo": 5,
+    "extendedMagAmmo": 8,
+	
+    "reloadAmount": 1,
+    "reloadRate": 12,
+    "magReloadWithMagAttach": true,
+    "magReloadTime": 46,
+	"lightMagReloadTimeModifier": 1,
+    "reloadStartDelay": 12,
+    "reloadInterruptDelay": 10,
+    "reloadEndDelay": 19,
+	"reloadAllowedCooldown": 0.2,
+	"drawTime": 15,
+	
+    "recoilAngle": 6.0,
+    "recoilKick": 0.6,
+    "recoilDurationOffset": 0.3,
+    "recoilAdsReduction": 0.45,
+	
+    "alwaysSpread": false,
+    "spread": 5.0,
+    "restingSpread": 1.6,
+    "spreadAdsReduction": 1.0
+  },
+  "projectile": {
+    "item": "nzgmaddon:medium_bullet",
+    "damage": 15,
+    "headshotMultiplierMin": 1.5,
+    "size": 0.0625,
+    "speed": 27.0,
+    "life": 20,
+    "gravity": true
+  },
+  "sounds": {
+    "fire": "nzgmaddon:item.bolt_action_rifle.fire",
+    "reload": "nzgmaddon:item.bolt_action_rifle.bullet_load",
+    "cock": "nzgmaddon:item.bolt_action_rifle.cock",
+    "cycle": "nzgmaddon:item.bolt_action_rifle.cock",
+    "cycleDelay": 11,
+    "weaponSelectDelay": 4,
+    "silencedFire": "nzgmaddon:item.bolt_action_rifle.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.bolt_action_rifle.enchanted_fire"
+  },
+  "reloadSounds": {
+	"reloadStart": "nzgmaddon:item.bolt_action_rifle.bolt_back",
+    "reloadStartDelay": 6,
+	"reloadClipIn": "nzgmaddon:item.bolt_action_rifle.bullet_load",
+	"reloadClipInThreshold": 0.8,
+    "reloadEnd": "nzgmaddon:item.bolt_action_rifle.bolt_forward",
+    "reloadEndDelay": 6
+  },
+  "magReloadSounds": {
+	"reloadFrames": 1,
+	"reloadStart": "nzgmaddon:item.bolt_action_rifle.bolt_back",
+    "reloadStartDelay": 6,
+	"reloadClipOut": "nzgmaddon:item.bolt_action_rifle.mag_out",
+	"reloadClipOutThreshold": 0.3,
+	"reloadClipIn": "nzgmaddon:item.bolt_action_rifle.mag_in",
+	"reloadClipInThreshold": 0.75,
+    "reloadEnd": "nzgmaddon:item.bolt_action_rifle.bolt_forward",
+    "reloadEndDelay": 6
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.8365,
+      "zOffset": -10.21
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 4.7,
+      "zOffset": 4.0,
+      "fovModifier": 0.6
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 4.32,
+        "zOffset": 3.3
+      },
+      "barrel": {
+        "yOffset": 3.8365,
+        "zOffset": -10.2,
+        "scale": 0.46
+      },
+      "magazine": {
+      }
+    }
+  }
+}

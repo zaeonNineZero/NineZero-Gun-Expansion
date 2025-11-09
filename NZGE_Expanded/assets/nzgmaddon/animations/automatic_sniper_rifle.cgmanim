@@ -1,0 +1,194 @@
+{
+    "cgm:animations": {
+        "draw": {
+			"animationSpeed": 1.04,
+			"frames": 22,
+			"sounds": {
+				"count": 2,
+				"0": {
+					"id": "cgm:item.foley.rifle3_draw",
+					"volume": 0.9,
+					"playAt": 0.9
+				},
+				"1": {
+					"id": "nzgmaddon:item.auto_sniper_rifle.cock",
+					"playAt": 8.0
+				}
+			},
+			"viewModel": {
+				"rotOffset": [0.0, -1.0, 3.0],
+				"0": {
+					"translation": [-1.8, -5.0, 0.7],
+					"rotation": [-30, -3, -4]
+				},
+				"7": {
+					"translation": [-0.2, -2.2, -0.5],
+					"transEasing": "linear",
+					"rotation": [6, 10, 7],
+					"rotEasing": "linear"
+				},
+				"11": {
+					"translation": [0.1, -0.7, -0.2],
+					"transEasing": "ease_out_quad",
+					"rotation": [16, 16, 8],
+					"rotEasing": "ease_out_sin"
+				},
+				"14": {
+					"translation": [0.0, -0.5, -0.3],
+					"rotation": [8, 10, 8],
+					"easing": "ease_in_quad"
+				},
+				"22": {
+					"translation": [0, 0, 0],
+					"transEasing": "ease_in_out_cubic",
+					"rotation": [0, 0, 0],
+					"rotEasing": "ease_out_cubic"
+				}
+			},
+			"forwardHand": {
+				"rotOffset": [-4.0, 6.0, 0.0],
+				"2": {
+					"translation": [-4, -6, 2]
+				},
+				"8": {
+					"translation": [-2.5, 4.1, -3.2],
+					"rotation": [5, -9, -7],
+					"easing": "ease_in_out_quad"
+				},
+				"10": {
+					"translation": [-2.3, 4.2, 2.0],
+					"easing": "ease_out_quad"
+				},
+				"12": {
+					"translation": [-2.3, 4.2, 2.0]
+				},
+				"14": {
+					"translation": [-3.0, 3.6, -3.2],
+					"rotation": [5, -9, -7],
+					"easing": "linear"
+				},
+				"18": {
+					"translation": [-1, 0, 0],
+					"rotation": [0, 0, 0],
+					"easing": "ease_in_quad"
+				},
+				"21": {
+					"translation": [0, 0, 0],
+					"easing": "ease_out_quad"
+				}
+			},
+			"bolt_handle": {
+				"8": {
+					"translation": [0, 0, 0]
+				},
+				"10": {
+					"translation": [0, 0, 2.5],
+					"easing": "linear"
+				},
+				"12": {
+					"translation": [0, 0, 2.5]
+				},
+				"14": {
+					"translation": [0, 0, 0],
+					"easing": "ease_out_quad"
+				}
+			}
+		},
+		"recoil": {
+			"frames": 32,
+			"animationSpeed": 2.3,
+			"progressOffset": 0.0,
+			"viewModel": {
+				"rotOffset": [0, -0.3, 0.9],
+				"0": {
+					"translation": [0.0, 0.0, 0.0],
+					"rotation": [0.5, 0, 0]
+				},
+				"2": {
+					"translation": [0.1, -0.05, 0.7],
+					"easing": "ease_out_quad"
+				},
+				"4": {
+					"rotation": [11, -1, 0],
+					"easing": "ease_in_out_sin"
+				},
+				"9": {
+					"translation": [0.3, 0.6, 0.8],
+					"easing": "ease_in_out_sin"
+				},
+				"14": {
+					"translation": [0.2, 0.3, 0.4],
+					"easing": "ease_in_quad"
+				},
+				"15": {
+					"rotation": [-2.8, 0, 0],
+					"easing": "ease_in_out_sin"
+				},
+				"30": {
+					"translation": [0.0, 0.0, 0.0],
+					"transEasing": "ease_out_cubic",
+					"rotation": [0.0, 0, 0],
+					"rotEasing": "ease_in_out_sin"
+				}
+			}
+		},
+        "reload": {
+			"frames": 32,
+			"progressOffset": 0.2,
+			"viewModel": {
+				"rotOffset": [0, 0.0, 3.0],
+				"startEasing": "ease_in_cubic",
+				"endEasing": "ease_in_out_cubic",
+				"0": {
+					"translation": [0.0, 0.0, 0.0],
+					"rotation": [0.0, 0, 0]
+				},
+				"8": {
+					"rotation": [45.0, 0, -20]
+				},
+				"24": {
+					"rotation": [45.0, 0, -20]
+				},
+				"32": {
+					"rotation": [0.0, 0, 0]
+				}
+			},
+			"forwardHand": {
+				"rotOffset": [-4.0, 6.0, 0.0],
+				"0": {
+					"translation": [0.0, 0.0, 0.0],
+					"rotation": [0.0, 0, 0]
+				},
+				"5": {
+					"translation": [-10, -20, 20]
+				},
+				"27": {
+					"translation": [-10, -20, 20]
+				},
+				"32": {
+					"translation": [0, 0, 0]
+				}
+			},
+			"magazine": {
+				"rotOffset": [0, -4.0, 10.0],
+				"8": {
+					"translation": [0.0, 0.0, 0.0]
+				},
+				"9": {
+					"translation": [0.0, -1.5, 0.0],
+					"rotation": [0.0, 0, 0]
+				},
+				"16": {
+					"rotation": [-135.0, 0, 0]
+				},
+				"23": {
+					"translation": [0.0, -1.5, 0.0],
+					"rotation": [0.0, 0, 0]
+				},
+				"24": {
+					"translation": [0.0, 0, 0.0]
+				}
+			}
+		}
+    }
+}

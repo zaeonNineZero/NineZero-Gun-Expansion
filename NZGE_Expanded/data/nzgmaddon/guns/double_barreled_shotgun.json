@@ -1,0 +1,69 @@
+{
+  "general": {
+    "rate": 5,
+    "gripType": "cgm:two_handed",
+	"defaultColor": 12755302,
+    "maxAmmo": 2,
+    "reloadAmount": 1,
+	"useMagReload": true,
+	"magReloadTime": 36,
+	"reloadAllowedCooldown": 0.0,
+    "recoilAngle": 7.0,
+    "recoilKick": 0.9,
+    "recoilAdsReduction": 0.2,
+    "projectileAmount": 10,
+    "alwaysSpread": true,
+    "spread": 6.0,
+    "useShotgunSpread": true,
+    "spreadAdsReduction": 0.2
+  },
+  "fireModes": {
+    "useFireModes": true,
+	"defaultFireMode": 0,
+    "hasSemiMode": true,
+    "hasBurstMode": true,
+	"burstCount": 2
+  },
+  "projectile": {
+    "item": "cgm:shell",
+    "damage": 14.0,
+    "size": 1.0,
+    "speed": 14.0,
+    "life": 5,
+    "gravity": true
+  },
+  "sounds": {
+    "fire": "nzgmaddon:item.double_barreled.fire",
+    "reload": "nzgmaddon:item.shotgun.reload",
+    "cock": "nzgmaddon:item.double_barreled.cock",
+    "silencedFire": "nzgmaddon:item.hunting_shotgun.silenced_fire",
+    "enchantedFire": "nzgmaddon:item.double_barreled.enchanted_fire"
+  },
+  "magReloadSounds": {
+    "reloadFrames": 32,
+	"reloadClipOut": "nzgmaddon:item.shotgun.reload",
+	"reloadClipOutThreshold": 1,
+	"reloadClipIn": "nzgmaddon:item.shotgun.reload",
+	"reloadClipInThreshold": 26,
+    "reloadEnd": "nzgmaddon:item.double_barreled.cock"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.74,
+      "zOffset": -9
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 4.7,
+      "zOffset": 3.2,
+      "fovModifier": 0.85
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 4.34,
+        "zOffset": 2.0
+      }
+    }
+  }
+}

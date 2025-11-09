@@ -1,0 +1,35 @@
+{
+    "cgm:animations": {
+        "draw": {
+			"animationSpeed": 1.0,
+			"frames": 18,
+			"viewModel": {
+				"0": {
+					"translation": [-2, -11, 0],
+					"rotation": [-55, 45, 0]
+				},
+				"16": {
+					"translation": [0, 0, 0],
+					"easing": "ease_out_cubic"
+				},
+				"18": {
+					"translation": [0, 0, 0],
+					"rotation": [0, 0, 0],
+					"easing": "ease_in_out_cubic"
+				}
+			},
+			"forwardHand": {
+				"0": {
+					"translation": [0, 0, 7]
+				},
+				"18": {
+					"translation": [0, 0, 0],
+					"transEasing": "ease_in_out_cubic"
+				}
+			},
+			"rearHand": {
+				"rotOffset": [4.0, 1.5, 10.0]
+			}
+		}
+    }
+}
