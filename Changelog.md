@@ -1,20 +1,44 @@
 # Changelog (1.19.2 Releases -- Developer Edition)
 
 
-### 1.4.4 (5/22/23)
+### 1.5.0 (TBD)
+The long anticipated 1.5 update to NZGE, bringing many changes, improvements, and even a few new items to play with.
+This update has been over a year in the making, and I hope the wait has been well worth it.
+
+* Full model overhauls of the Submachine Gun, Micro SMG, Infantry Rifle, Automatic Sniper Rifle, and Chevron Scope. These models are more detailed than previous versions and (with the exception of the Chevron Scope) feature animated parts and removeable elements.
+* General improvements to many of the models in the mod.
+  -  Guns received improved iron sights, animated parts, and/or removeable elements.
+  -  Various attachments received minor improvements and adjustments.
+  -  The Flash Hider, Solid Stock, and Marksman Stock all received partial overhauls to their models.
+* All gun models now have support for CGM Expanded's animation system. (CGM Expanded is an in-development fork of CGM, which includes a custom keyframe-based animation system)
+
+* Added the following new items:
+  -  Lever Action Rifle: Fast-firing rifle chambered in Basic Bullets. Similar in power and performance to the Infantry Rifle, with a slower fire rate.
+  -  Bipod: Underbarrel attachment that reduces recoil and spread, at the cost of ADS speed. Bipod visually deploys when sneaking or crawling.
+  -  Folding Stock: Lightweight stock attachment, fitting between the Light Stock and Tactical Stock.
+  -  Skeleton Stock: Lighter version of the Solid Stock, with less spread and recoil reduction, and a reduced ADS speed penalty.
+  -  Compensator Muzzle: Barrel attachment that reduces recoil by a fair amount, with a slight ADS speed penalty. No effect on projectile spread.
+
+* Improvements and overhauls to the sound mixing of various guns, mainly affecting fire sounds.
+* Removed the Marksman Stock's fire rate penalty entirely.
+* Minor rebalancing of various guns' stats.
+* Various small fixes and under-the-hood changes.
+
+
+### 1.4.4 (5/22/24)
 * Added a custom Creative Mode inventory tab for NZGE! (Localization keys for the creative tab are all in English pending new translations)
 * Stat modifier tweaks across the board for almost every attachment, generally reducing ADS speed penalties.
   -  Reduced the fire rate penalty of the Marksman Stock to one extra tick - penalty is no longer a multiplier.
 
-### 1.4.3 (5/11/23)
+### 1.4.3 (5/11/24)
 * Changed the fire rate of the Pump Shotgun and Hunting Shotgun to match up the animations to the new fire sounds. This change was supposed to have been part of v1.4.2 but was overlooked during development by mistake. (Whoops!)
 * Implemented another change to the Infantry Rifle model: the top rail now only appears when a scope is attached. Credit to GrechHerald for the idea!
 
-### 1.4.2 Main Release (5/9/23)
+### 1.4.2 Main Release (5/9/24)
 * Added a model variant for the Bolt Action Rifle based on the Kar 98k and Springfield M1903.
 * Added survival-compatible recipes for the newly added model variants. They cost the same as their standard counterparts.
 
-### 1.4.2 Pre-Release 1 (5/6/23)
+### 1.4.2 Pre-Release 1 (5/6/24)
 * Added some basic animations to the Pump Shotgun, Hunting Shotgun, Bolt Action Rifle, and Sniper Rifle.
   -  The shotguns' slide grips move back and forth after firing.
   -  The rifles' bolts rotate and move back and forth after firing. The models also received some touch-ups with this patch.
@@ -29,7 +53,7 @@
 * As part of the model touch-ups, fixed an issue where a small part of the Bolt Action Rifle's model was inadvertently being tinted by dyes.
 * Fixed the Bullpup Rifle having an invalid reload sound. Whoops!
 
-### 1.4.1 (4/24/23)
+### 1.4.1 (4/24/24)
 * Added working recipes for the Improved Silencer and the Performance Silencer, which I forgot for v1.4.0. Whoops!
 * Overhauled the fire sounds for the Revolver, using a new set of sound samples.
 * Model adjustments to the Sniper Rifle and Bolt Action Rifle, reducing the thickness of the bolt and chamber assemblies.
@@ -37,7 +61,7 @@
 * Slightly buffed the Stabilizing Stock's spread reduction.
 * Updated ru_ru localization with more accurate translations. Courtesy of mpustovoi.
 
-### 1.4.0 'Gunslingers' (4/15/23)
+### 1.4.0 'Gunslingers' (4/15/24)
 This is a relatively big update for NZGE, with several new guns and a multitude of changes and tweaks.
 
 * Added model overrides for many of the guns in the addon, adding removable iron sights to many of them.
