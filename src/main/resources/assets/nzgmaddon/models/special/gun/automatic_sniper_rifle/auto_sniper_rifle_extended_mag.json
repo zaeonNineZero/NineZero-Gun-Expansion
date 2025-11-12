@@ -1,15 +1,15 @@
 {
-	"credit": "Made with Blockbench",
+	"loader": "framework:open_model",
 	"texture_size": [32, 32],
 	"textures": {
 		"1": "nzgmaddon:items/automatic_sniper_rifle",
 		"particle": "cgm:items/weighted_stock"
 	},
-	"elements": [
+	"components": [
 		{
-			"from": [7.45, -1.15, 9.45],
-			"to": [8.55, 4.02, 11.95],
-			"rotation": {"angle": 0, "axis": "y", "origin": [0, 1.6, -0.5]},
+			"from": [7.45, -1.13812, 9.35686],
+			"to": [8.55, 4.03188, 11.85686],
+			"rotation": {"angle": 5, "axis": "x", "origin": [8, 1.44688, 10.60686]},
 			"faces": {
 				"north": {"uv": [7, 8, 8, 13], "texture": "#1"},
 				"east": {"uv": [10.5, 8, 8, 13], "texture": "#1"},

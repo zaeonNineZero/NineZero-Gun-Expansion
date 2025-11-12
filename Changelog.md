@@ -7,7 +7,8 @@ This update has been over a year in the making, and I hope the wait has been wel
 
 * Full model overhauls of the Submachine Gun, Micro SMG, Infantry Rifle, Automatic Sniper Rifle, and Chevron Scope. These models are more detailed than previous versions and (with the exception of the Chevron Scope) feature animated parts and removeable elements.
 * General improvements to many of the models in the mod.
-  -  Guns received improved iron sights, animated parts, and/or removeable elements.
+  -  Guns in general received improved iron sights, animated parts, and/or removeable elements.
+  -  The Bolt Action Rifle's first model variant has been changed, and it has received a second model variant based on the M40A3.
   -  Various attachments received minor improvements and adjustments.
   -  The Flash Hider, Solid Stock, and Marksman Stock all received partial overhauls to their models.
 * All gun models now have support for CGM Expanded's animation system. (CGM Expanded is an in-development fork of CGM, which includes a custom keyframe-based animation system)
