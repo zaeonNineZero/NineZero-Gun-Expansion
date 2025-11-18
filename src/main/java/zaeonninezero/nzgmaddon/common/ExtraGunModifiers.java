@@ -370,7 +370,7 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.5F;
+            return 0.4F;
         }
 
         @Override
