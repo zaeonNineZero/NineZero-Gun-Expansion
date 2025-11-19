@@ -689,7 +689,11 @@
   },
 "item.bolt_action_rifle.bullet_load": {
     "subtitle":"subtitle.cgm.reload",
-    "sounds": [{"name":"nzgmaddon:item/bolt_action_rifle/bullet_load"}]
+	"sounds": [
+      "nzgmaddon:item/bolt_action_rifle/bullet_load",
+      "nzgmaddon:item/bolt_action_rifle/bullet_load2",
+      "nzgmaddon:item/bolt_action_rifle/bullet_load3"
+    ]
   },
 "item.bolt_action_rifle.mag_out": {
     "subtitle":"subtitle.cgm.reload",
