@@ -26,15 +26,13 @@ public class BipodModel implements IOverrideModel
     @Override
     public void render(float partialTicks, ItemTransforms.TransformType transformType, ItemStack stack, ItemStack parent, @Nullable LivingEntity entity, PoseStack poseStack, MultiBufferSource renderTypeBuffer, int light, int overlay)
     {
-    	//BakedModel bakedModel = Minecraft.getInstance().getItemRenderer().getItemModelShaper().getItemModel(stack);
-        //Minecraft.getInstance().getItemRenderer().render(stack, ItemTransforms.TransformType.NONE, false, poseStack, renderTypeBuffer, light, overlay, GunModel.wrap(bakedModel));
-        
+    	// Set the default model for the Bipod.
     	BakedModel bipodModel = SpecialModels.BIPOD_FOLDED.getModel();
         boolean isPlayer = entity != null && entity instanceof Player;
         if (isPlayer && correctContext(transformType))
         {
-	        //boolean isThisPlayer = entity != null && entity.equals(Minecraft.getInstance().player);
         	Player player = (Player) entity;
+        	// If the player is crouching, or crawling on the ground, switch to the 'deployed' bipod model.
 	    	if (player.isCrouching() || (player.isVisuallyCrawling() && player.isOnGround()))
 	    	bipodModel = SpecialModels.BIPOD_UNFOLDED.getModel();
     	}

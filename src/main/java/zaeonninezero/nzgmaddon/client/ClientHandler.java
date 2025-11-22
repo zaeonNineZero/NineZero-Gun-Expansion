@@ -39,7 +39,9 @@ public class ClientHandler
         ModelOverrides.register(initItems.BOLT_ACTION_RIFLE.get(), new BoltActionRifleModel());
         ModelOverrides.register(initItems.HUNTING_RIFLE.get(), new HuntingRifleModel());
         ModelOverrides.register(initItems.SNIPER_RIFLE.get(), new SniperRifleModel());
-        
+
+		ModelOverrides.register(initItems.SOLID_STOCK.get(), new SolidStockModel());
+		ModelOverrides.register(initItems.MARKSMAN_STOCK.get(), new MarksmanStockModel());
 		ModelOverrides.register(initItems.BIPOD.get(), new BipodModel());
     }
 }

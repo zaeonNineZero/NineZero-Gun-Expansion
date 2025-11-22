@@ -179,6 +179,14 @@ public enum SpecialModels
     SNIPER_RIFLE_LIGHT_MAG("sniper_rifle_light_mag"),
     SNIPER_RIFLE_EXTENDED_MAG("sniper_rifle_extended_mag"),
     
+    SOLID_STOCK("attachments/stocks/solid_stock"),
+    SOLID_STOCK_RAISED("attachments/stocks/solid_stock_raised"),
+    SOLID_STOCK_SLIM("attachments/stocks/solid_stock_slim"),
+    
+    MARKSMAN_STOCK("attachments/stocks/marksman_stock"),
+    MARKSMAN_STOCK_RAISED("attachments/stocks/marksman_stock_raised"),
+    MARKSMAN_STOCK_SLIM("attachments/stocks/marksman_stock_slim"),
+    
     BIPOD_FOLDED("attachments/bipod/bipod_folded"),
     BIPOD_UNFOLDED("attachments/bipod/bipod_unfolded");
 
