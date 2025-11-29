@@ -76,10 +76,11 @@ public class initItems {
     public static final RegistryObject<Item> SHORT_STOCK  = ITEMS.register("short_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.SLIGHT_BETTER_CONTROL), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
     public static final RegistryObject<Item> DYEABLE_TACTICAL_STOCK  = ITEMS.register("dyeable_tactical_stock", () -> new StockItem(Stock.create(GunModifiers.STABILISED), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
     public static final RegistryObject<Item> SOLID_STOCK = ITEMS.register("solid_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.SOLIDLY_STABILISED), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
-    public static final RegistryObject<Item> STABILIZING_STOCK = ITEMS.register("stabilizing_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.EXTRA_STABILISED), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
-    public static final RegistryObject<Item> CARBINE_STOCK  = ITEMS.register("carbine_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.CARBINE_STABILISED), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
     public static final RegistryObject<Item> SKELETON_STOCK = ITEMS.register("skeleton_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.SKELETON_STOCK_EFFECT), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
     public static final RegistryObject<Item> MARKSMAN_STOCK  = ITEMS.register("marksman_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.MARKSMAN_STABILISED), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
+    public static final RegistryObject<Item> STABILIZING_STOCK = ITEMS.register("stabilizing_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.EXTRA_STABILISED), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
+    public static final RegistryObject<Item> CARBINE_STOCK  = ITEMS.register("carbine_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.CARBINE_STABILISED), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
+    public static final RegistryObject<Item> FOLDING_STOCK = ITEMS.register("folding_stock", () -> new StockItem(Stock.create(ExtraGunModifiers.FOLDING_STOCK_EFFECT), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));
 	
 	//Grips / Under Barrel
     public static final RegistryObject<Item> HORIZONTAL_GRIP  = ITEMS.register("horizontal_grip", () -> new UnderBarrelItem(UnderBarrel.create(ExtraGunModifiers.HORIZONTAL_CONTROL), new Item.Properties().stacksTo(1).tab(nzgmAddon.GROUP)));

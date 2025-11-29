@@ -226,6 +226,32 @@ public class ExtraGunModifiers
             return speed * 0.9F;
         }
     };
+    public static final IGunModifier FOLDING_STOCK_EFFECT = new IGunModifier()
+    {
+        @Override
+        public float recoilModifier()
+        {
+            return 0.45F;
+        }
+
+        @Override
+        public float kickModifier()
+        {
+            return 0.4F;
+        }
+
+        @Override
+        public float modifyProjectileSpread(float spread)
+        {
+            return spread * 0.6F;
+        }
+
+        @Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.92F;
+        }
+    };
     public static final IGunModifier SOLIDLY_STABILISED = new IGunModifier()
     {
         @Override
