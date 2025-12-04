@@ -13,7 +13,7 @@
   },
   "projectile": {
     "item": "nzgmaddon:medium_bullet",
-    "damage": 4.8,
+    "damage": 4.5,
     "size": 0.2,
     "speed": 10.0,
     "life": 25

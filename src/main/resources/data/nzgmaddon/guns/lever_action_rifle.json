@@ -4,7 +4,7 @@
     "gripType": "cgm:two_handed",
     "maxAmmo": 8,
     "reloadAmount": 1,
-    "recoilAngle": 3.0,
+    "recoilAngle": 2.0,
     "recoilKick": 0.6,
     "recoilDurationOffset": 0.1,
     "recoilAdsReduction": 0.4,
@@ -13,7 +13,7 @@
   },
   "projectile": {
     "item": "cgm:basic_bullet",
-    "damage": 11.5,
+    "damage": 12,
     "size": 0.0625,
     "speed": 25.0,
     "life": 25,
