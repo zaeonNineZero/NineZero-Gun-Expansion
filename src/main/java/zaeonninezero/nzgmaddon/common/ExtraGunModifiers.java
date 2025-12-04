@@ -205,7 +205,7 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.35F;
+            return 0.4F;
         }
 
         @Override
@@ -217,7 +217,7 @@ public class ExtraGunModifiers
         @Override
         public float modifyProjectileSpread(float spread)
         {
-            return spread * 0.55F;
+            return spread * 0.5F;
         }
 
         @Override
@@ -249,7 +249,7 @@ public class ExtraGunModifiers
         @Override
         public double modifyAimDownSightSpeed(double speed)
         {
-            return speed * 0.92F;
+            return speed * 0.95F;
         }
     };
     public static final IGunModifier SOLIDLY_STABILISED = new IGunModifier()
@@ -257,7 +257,7 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.3F;
+            return 0.35F;
         }
 
         @Override
@@ -283,7 +283,7 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.35F;
+            return 0.45F;
         }
 
         @Override
@@ -295,7 +295,7 @@ public class ExtraGunModifiers
         @Override
         public float modifyProjectileSpread(float spread)
         {
-            return spread * 0.5F;
+            return spread * 0.45F;
         }
 
         @Override
@@ -309,7 +309,7 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.25F;
+            return 0.3F;
         }
 
         @Override
@@ -341,7 +341,7 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.29F;
+            return 0.3F;
         }
 
         @Override
@@ -353,7 +353,7 @@ public class ExtraGunModifiers
         @Override
         public float modifyProjectileSpread(float spread)
         {
-            return spread * 0.25F;
+            return spread * 0.3F;
         }
 
         @Override
