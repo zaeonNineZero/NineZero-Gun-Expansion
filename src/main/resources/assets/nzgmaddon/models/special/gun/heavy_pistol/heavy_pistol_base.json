@@ -569,55 +569,11 @@
 			}
 		},
 		{
-			"from": [7.75, 3.24924, 16.0387],
-			"to": [8.25, 3.58413, 16.56736],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.9999, 3.48288, 16.3087]},
+			"from": [7.6, 2.5, 15.8],
+			"to": [8.4, 3.7, 15.951],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0.5, -0.1]},
 			"faces": {
-				"east": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"},
-				"west": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"},
-				"up": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"},
-				"down": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"}
-			}
-		},
-		{
-			"from": [7.7501, 2.92938, 16.42806],
-			"to": [8.2499, 3.57338, 16.76556],
-			"rotation": {"angle": 22.5, "axis": "x", "origin": [7.9999, 3.43563, 16.36945]},
-			"faces": {
-				"east": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"},
-				"south": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"},
-				"west": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"}
-			}
-		},
-		{
-			"from": [7.75, 2.49049, 16.17986],
-			"to": [8.25, 3.24924, 16.56736],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.9999, 2.84424, 16.17126]},
-			"faces": {
-				"east": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"},
-				"south": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"},
-				"west": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"}
-			}
-		},
-		{
-			"from": [7.7499, 3.50451, 16.48314],
-			"to": [8.2501, 3.68951, 17.00064],
-			"rotation": {"angle": -22.5, "axis": "x", "origin": [7.9999, 3.57201, 16.76439]},
-			"faces": {
-				"east": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"},
-				"south": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"},
-				"west": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"},
-				"up": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"}
-			}
-		},
-		{
-			"from": [7.75, 3.45108, 16.64632],
-			"to": [8.25, 3.60633, 16.98632],
-			"rotation": {"angle": -45, "axis": "x", "origin": [7.9999, 3.55233, 16.81757]},
-			"faces": {
-				"east": {"uv": [8, 12, 9, 13], "texture": "#2"},
-				"west": {"uv": [8, 12, 9, 13], "rotation": 180, "texture": "#2"},
-				"down": {"uv": [8, 12, 9, 13], "rotation": 90, "texture": "#2"}
+				"south": {"uv": [0, 10, 1, 11], "texture": "#1", "tintindex": 0}
 			}
 		}
 	],
@@ -702,14 +658,9 @@
 						},
 						51
 					]
-				}
+				},
+				52
 			]
-		},
-		{
-			"name": "hammer",
-			"origin": [7.9999, 3.57571, 16.68853],
-			"color": 0,
-			"children": [52, 53, 54, 55, 56]
 		}
 	]
 }

@@ -26,6 +26,7 @@ public enum SpecialModels
 	
     HEAVY_PISTOL_BASE("gun/heavy_pistol/heavy_pistol_base"),
     HEAVY_PISTOL_SLIDE("gun/heavy_pistol/heavy_pistol_slide"),
+    HEAVY_PISTOL_HAMMER("gun/heavy_pistol/heavy_pistol_hammer"),
     HEAVY_PISTOL_MAGAZINE("gun/heavy_pistol/heavy_pistol_magazine"),
 	
     HEAVY_REVOLVER_BASE("gun/heavy_revolver/heavy_revolver_base"),

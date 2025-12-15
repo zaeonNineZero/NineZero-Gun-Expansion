@@ -79,6 +79,7 @@ public class LeverActionRifleModel implements IOverrideModel
         boolean isPlayer = entity != null && entity.equals(Minecraft.getInstance().player);
         boolean isFirstPerson = (transformType.firstPerson());
         boolean correctContext = (isFirstPerson || transformType == ItemTransforms.TransformType.THIRD_PERSON_RIGHT_HAND || transformType == ItemTransforms.TransformType.THIRD_PERSON_LEFT_HAND);
+        boolean isDisplayed = (transformType == ItemTransforms.TransformType.FIXED);
         boolean useFallbackAnimation = false;
         
         Vec3 leverRotations = Vec3.ZERO;
@@ -150,7 +151,7 @@ public class LeverActionRifleModel implements IOverrideModel
 		// Push pose so we can make do transformations without affecting the models above.
         poseStack.pushPose();
 		// Now we apply our transformations.
-        if(isPlayer)
+        if(isPlayer && correctContext)
         {
         	if (hasExpanded)
         	{
@@ -170,11 +171,11 @@ public class LeverActionRifleModel implements IOverrideModel
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
 
-	    // Lever-Action Rifle hammer. This part rotates backwards along the x-axis and locks in during the animation.
+	    // Lever-Action Rifle hammer. This part rotates backwards along the x-axis, then locks in place during the animation.
 		// Push pose so we can make do transformations without affecting the models above.
 	    poseStack.pushPose();
 		// Now we apply our transformations.
-	    if(isPlayer)
+	    if(isPlayer && !isDisplayed)
 	    {
 	    	if (hasExpanded)
 	    	{

@@ -1,10 +1,13 @@
 package zaeonninezero.nzgmaddon.client.render.gun.model;
 
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.math.Vector3f;
 import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.GunMod;
 import com.mrcrayfish.guns.client.GunModel;
 import zaeonninezero.nzgmaddon.client.SpecialModels;
+import zaeonninezero.nzgmaddon.util.CGMExpandedHelper;
+
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
 import com.mrcrayfish.guns.client.util.GunAnimationHelper;
 import com.mrcrayfish.guns.client.util.RenderUtil;
@@ -28,6 +31,7 @@ import javax.annotation.Nullable;
  */
 public class HeavyPistolModel implements IOverrideModel
 {
+	private boolean hasExpanded = CGMExpandedHelper.isExpandedInstalled();
 	private boolean disableAnimations = false;
 	
     @Override
@@ -46,18 +50,27 @@ public class HeavyPistolModel implements IOverrideModel
         boolean isPlayer = entity != null && entity.equals(Minecraft.getInstance().player);
         boolean isFirstPerson = (transformType.firstPerson());
         boolean correctContext = (transformType.firstPerson() || transformType == ItemTransforms.TransformType.THIRD_PERSON_RIGHT_HAND || transformType == ItemTransforms.TransformType.THIRD_PERSON_LEFT_HAND);
+        boolean isDisplayed = (transformType == ItemTransforms.TransformType.FIXED);
+        boolean isGUI = (transformType == ItemTransforms.TransformType.GUI);
+        
         
         Vec3 slideTranslations = Vec3.ZERO;
+        
+        Vec3 hammerRotations = Vec3.ZERO;
+        float hammerBaseRotation = 65;
+        Vec3 hammerRotOffset = new Vec3(0, 2.52-8, 8.5);
         
         Vec3 magTranslations = Vec3.ZERO;
         Vec3 magRotations = Vec3.ZERO;
         Vec3 magRotOffset = Vec3.ZERO;
         
-        if(isPlayer && correctContext && !disableAnimations)
+        if(isPlayer && correctContext && hasExpanded && !disableAnimations)
         {
         	try {
     				Player player = (Player) entity;
     				slideTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "slide");
+    				
+    				hammerRotations = GunAnimationHelper.getSmartAnimationRot(stack, player, partialTicks, "hammer");
 					
         			magTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "magazine");
         	        magRotations = GunAnimationHelper.getSmartAnimationRot(stack, player, partialTicks, "magazine");
@@ -73,9 +86,11 @@ public class HeavyPistolModel implements IOverrideModel
         		}
         }
         
-        // Fire animation is done the old way, and added onto the existing animation.
         GunItem gunStack = (GunItem) stack.getItem();
         Gun gun = gunStack.getModifiedGun(stack);
+		
+		// Slide and hammer animation logic.
+        // This is particularly complex logic since we have multiple moving parts.
         if(isPlayer && correctContext)
         {
             float cooldownDivider = 1.0F*Math.max((float) gun.getGeneral().getRate()/2.8F,1);
@@ -92,6 +107,7 @@ public class HeavyPistolModel implements IOverrideModel
             float cooldown_d = Math.min(cooldown_b,cooldown_c);
             
             slideTranslations = slideTranslations.add(0, 0, cooldown_d * 1.7);
+            hammerRotations = hammerRotations.add(((cooldown_c-1) * hammerBaseRotation), 0, 0);
         }
 
 		// Heavy Pistol slide. This animated part kicks backward on firing, then moves back to its resting position.
@@ -103,6 +119,28 @@ public class HeavyPistolModel implements IOverrideModel
         RenderUtil.renderModel(SpecialModels.HEAVY_PISTOL_SLIDE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		// Pop pose to compile everything in the render matrix.
         poseStack.popPose();
+        
+        // Hammer. This part rotates backwards along the x-axis, then locks in place during the animation.
+     	// Push pose so we can make do transformations without affecting the models above.
+     	poseStack.pushPose();
+     	// Now we apply our transformations.
+     	if(isPlayer && !isDisplayed && !isGUI)
+     	{
+     	    if (hasExpanded)
+     	    {
+     	    	GunAnimationHelper.rotateAroundOffset(poseStack, hammerRotations.add(hammerBaseRotation,0,0), hammerRotOffset);
+     	    }
+     	    else
+     	    {
+     	    	poseStack.translate(0, hammerRotOffset.y*0.0625, hammerRotOffset.z*0.0625);
+     	    	poseStack.mulPose(Vector3f.XN.rotationDegrees((float) -hammerRotations.x-hammerBaseRotation));
+     	    	poseStack.translate(0, -hammerRotOffset.y*0.0625, -hammerRotOffset.z*0.0625);
+     	    }
+     	}
+     	// Our transformations are done - now we can render the model.
+     	RenderUtil.renderModel(SpecialModels.HEAVY_PISTOL_HAMMER.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+     	// Pop pose to compile everything in the render matrix.
+     	poseStack.popPose();
         
         // Magazine for Heavy Pistol
         poseStack.pushPose();
