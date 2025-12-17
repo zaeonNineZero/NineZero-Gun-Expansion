@@ -1,13 +1,13 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
+	"loader": "framework:open_model",
 	"textures": {
 		"0": "cgm:items/rifle",
 		"2": "nzgmaddon:items/pump_shotgun",
 		"3": "cgm:items/shotgun",
 		"particle": "nzgmaddon:items/pump_shotgun"
 	},
-	"elements": [
+	"components": [
 		{
 			"from": [7.4, 3.83939, -4.9],
 			"to": [7.7, 4.33361, 10.2],
@@ -97,9 +97,10 @@
 			}
 		},
 		{
-			"from": [7.85289, 4.6465, -4.1498],
-			"to": [8.14711, 4.9365, 9.82],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4.4365, 4.2]},
+			"name": "sight_track",
+			"from": [7.85, 4.65, -4.36],
+			"to": [8.15, 4.99, 10.3098],
+			"rotation": {"angle": 0.94435, "axis": "x", "origin": [7.85, 4.99, -4.36]},
 			"faces": {
 				"north": {"uv": [0, 8.5, 0.5, 9], "texture": "#0"},
 				"east": {"uv": [0.5, 10, 10, 10.5], "rotation": 90, "texture": "#0"},
@@ -108,19 +109,9 @@
 			}
 		},
 		{
-			"from": [7.853, 4.52551, 9.73825],
-			"to": [8.147, 4.81551, 10.22825],
-			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 4.67051, 10.08325]},
-			"faces": {
-				"east": {"uv": [0.5, 10, 1.25, 10.5], "rotation": 90, "texture": "#0"},
-				"west": {"uv": [0.5, 10, 1.25, 10.5], "rotation": 90, "texture": "#0"},
-				"up": {"uv": [0.5, 9.5, 1.25, 10], "rotation": 90, "texture": "#0"}
-			}
-		},
-		{
-			"from": [7.9, 4.85, -3.95],
-			"to": [8.1, 5.25, -3],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5.05, -3.7]},
+			"from": [7.9, 4.85, -4.25],
+			"to": [8.1, 5.15, -3.45],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5.05, -4.05]},
 			"faces": {
 				"north": {"uv": [7.5, 15.5, 8, 16], "texture": "#2"},
 				"east": {"uv": [7.5, 15.5, 8, 16], "texture": "#2"},
@@ -550,8 +541,7 @@
 				},
 				8,
 				9,
-				10,
-				11
+				10
 			]
 		},
 		{
@@ -559,6 +549,7 @@
 			"origin": [7.2, 4, 10.5],
 			"color": 0,
 			"children": [
+				11,
 				12,
 				13,
 				14,
@@ -568,12 +559,11 @@
 				18,
 				19,
 				20,
-				21,
 				{
 					"name": "ejection_port",
 					"origin": [8.5, 2.6, 12.57],
 					"color": 0,
-					"children": [22, 23]
+					"children": [21, 22]
 				}
 			]
 		},
@@ -581,36 +571,36 @@
 			"name": "stock",
 			"origin": [8, 3.85, 16.2],
 			"color": 0,
-			"children": [24, 25, 26, 27, 28, 29, 30, 31]
+			"children": [23, 24, 25, 26, 27, 28, 29, 30]
 		},
 		{
 			"name": "trigger",
 			"origin": [7.6, 0.85032, 13.46977],
 			"color": 0,
-			"children": [32, 33, 34, 35]
+			"children": [31, 32, 33, 34]
 		},
 		{
 			"name": "tube",
 			"origin": [8, 8, 8],
 			"color": 0,
 			"children": [
+				35,
 				36,
 				37,
 				38,
 				39,
 				40,
-				41,
 				{
 					"name": "group",
 					"origin": [8.0006, 2.8506, 2.1],
 					"color": 0,
-					"children": [42, 43]
+					"children": [41, 42]
 				},
 				{
 					"name": "group",
 					"origin": [7.6006, 2.5006, 1.7],
 					"color": 0,
-					"children": [44, 45, 46, 47, 48, 49]
+					"children": [43, 44, 45, 46, 47, 48]
 				}
 			]
 		}
