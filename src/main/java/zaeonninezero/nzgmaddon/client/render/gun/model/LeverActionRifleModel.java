@@ -129,8 +129,8 @@ public class LeverActionRifleModel implements IOverrideModel
 	        if(isPlayer && correctContext)
 	        {
 	            float cooldownDivider = 2.0F*Math.max((float) gun.getGeneral().getRate()/11F,1);;
-	            float cooldownOffset1 = cooldownDivider - 1.5F;
-	            float intensity = 1.3F +1;
+	            float cooldownOffset1 = cooldownDivider - 1.6F;
+	            float intensity = 1.25F +1;
 	            
 	        	ItemCooldowns tracker = Minecraft.getInstance().player.getCooldowns();
 	            float cooldown = tracker.getCooldownPercent(stack.getItem(), Minecraft.getInstance().getFrameTime());
