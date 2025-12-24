@@ -14,10 +14,10 @@
 	"reloadAllowedCooldown": 0.2,
 	"drawTime": 21,
 	
-    "recoilAngle": 8.0,
+    "recoilAngle": 7.0,
     "recoilKick": 1.0,
     "recoilDurationOffset": 0.35,
-    "recoilAdsReduction": 0.5,
+    "recoilAdsReduction": 0.4,
 	
     "spread": 5.0,
     "restingSpread": 2.0,

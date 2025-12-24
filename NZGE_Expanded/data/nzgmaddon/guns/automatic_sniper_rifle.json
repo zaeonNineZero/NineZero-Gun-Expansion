@@ -20,9 +20,9 @@
     "recoilAngle": 6.5,
     "recoilKick": 1.5,
     "recoilAdsReduction": 0.3,
-    "spread": 12,
-    "restingSpread": 2.0,
-    "spreadAdsReduction": 0.8,
+    "spread": 14,
+    "restingSpread": 4.0,
+    "spreadAdsReduction": 0.9,
 	"adsSpeed": 1.1
   },
   "projectile": {

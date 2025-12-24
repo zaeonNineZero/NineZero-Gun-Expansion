@@ -75,7 +75,7 @@
 					"rotation": [0, 0, 0]
 				},
 				"7": {
-					"rotation": [15.0, 0, 0],
+					"rotation": [10.0, 0, 0],
 					"easing": "ease_in_out_quad"
 				},
 				"8": {

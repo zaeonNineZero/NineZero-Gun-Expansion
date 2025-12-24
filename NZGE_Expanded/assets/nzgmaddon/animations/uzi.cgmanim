@@ -10,8 +10,8 @@
 					"translation": [0.0, 0.0, 0.0],
 					"rotation": [0, 0, 0]
 				},
-				"2": {
-					"translation": [0.0, 0.0, 1.0],
+				"3": {
+					"translation": [0.0, 0.0, 0.75],
 					"easing": "ease_out_quad"
 				},
 				"4": {

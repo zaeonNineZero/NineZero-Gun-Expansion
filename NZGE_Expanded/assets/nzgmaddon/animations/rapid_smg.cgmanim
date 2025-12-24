@@ -1,6 +1,40 @@
 {
     "cgm:animations": {
-        "reload": {
+        "recoil": {
+			"frames": 27,
+			"animationSpeed": 2.6,
+			"progressOffset": 0.0,
+			"viewModel": {
+				"rotOffset": [0, 0.0, 2.0],
+				"0": {
+					"translation": [0.0, 0.0, 0.3],
+					"rotation": [0.8, 0, 0]
+				},
+				"2": {
+					"translation": [0.0, -0.06, 0.9],
+					"tranEasing": "ease_out_sin",
+					"rotation": [2.5, 0, 0],
+					"rotEasing": "ease_out_quad"
+				},
+				"9": {
+					"translation": [0.0, -0.03, 0.4],
+					"easing": "ease_in_sin"
+				},
+				"10": {
+					"rotation": [-0.7, 0, 0],
+					"rotEasing": "ease_in_out_quad"
+				},
+				"22": {
+					"rotation": [0.0, 0, 0],
+					"easing": "ease_in_out_sin"
+				},
+				"26": {
+					"translation": [0.0, 0.0, 0.0],
+					"easing": "ease_out_cubic"
+				}
+			}
+		},
+		"reload": {
 			"frames": 34,
 			"progressOffset": -0.5,
 			"viewModel": {

@@ -2,7 +2,7 @@
     "cgm:animations": {
 		"recoil": {
 			"frames": 28,
-			"animationSpeed": 2.1,
+			"animationSpeed": 1.9,
 			"progressOffset": 0.0,
 			"viewModel": {
 				"rotOffset": [0, 0.0, 1.2],
@@ -11,23 +11,23 @@
 					"rotation": [1.0, 0, 0]
 				},
 				"2": {
-					"rotation": [5.0, 0, -1],
+					"rotation": [4.0, 0, -1],
 					"rotEasing": "ease_in_out_quad"
 				},
 				"4": {
-					"translation": [0.1, 0.24, 2.0],
+					"translation": [0.0, 0.05, 1.35],
 					"easing": "ease_out_sin"
 				},
 				"9": {
-					"translation": [0.2, 0.2, 0.9],
+					"translation": [0.1, 0.0, 0.6],
 					"tranEasing": "ease_in_quad"
 				},
 				"10": {
-					"rotation": [-4.4, 0, 0],
+					"rotation": [-1.6, 0, 0],
 					"rotEasing": "ease_in_out_quad"
 				},
 				"24": {
-					"rotation": [0.2, 0, 0],
+					"rotation": [0.1, 0, 0],
 					"easing": "ease_in_out_quad"
 				},
 				"26": {

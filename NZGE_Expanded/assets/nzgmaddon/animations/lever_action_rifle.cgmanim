@@ -6,8 +6,9 @@
 			"sounds": {
 				"count": 1,
 				"0": {
-					"id": "cgm:item.foley.rifle3_draw",
-					"volume": 0.8,
+					"id": "cgm:item.foley.ar2_draw",
+					"volume": 0.7,
+					"pitch": 1.05,
 					"playAt": 2.0
 				}
 			},
@@ -142,6 +143,38 @@
 				}
 			}
 		},
+        "recoil": {
+			"frames": 32,
+			"animationSpeed": 2.0,
+			"progressOffset": 0.0,
+			"viewModel": {
+				"rotOffset": [0, 4.0, 0.0],
+				"0": {
+					"translation": [0.0, 0.0, 0.0],
+					"rotation": [0.5, 0, 0]
+				},
+				"4": {
+					"rotation": [4.0, -1, -0.6],
+					"rotEasing": "ease_out_quad"
+				},
+				"6": {
+					"translation": [0.0, 0.0, 2.0],
+					"transEasing": "ease_out_cubic"
+				},
+				"16": {
+					"rotation": [-1.0, 0, 0],
+					"rotEasing": "ease_in_out_sin"
+				},
+				"30": {
+					"rotation": [0.0, 0, 0],
+					"rotEasing": "ease_in_out_quad"
+				},
+				"31": {
+					"translation": [0.0, 0.0, 0.0],
+					"transEasing": "ease_in_out_sin"
+				}
+			}
+		},
 		"fire": {
 			"frames": 36,
 			"maxRate": 10,
@@ -155,7 +188,7 @@
 				"1": {
 					"id": "nzgmaddon:item.lever_action_rifle.lever_close",
 					"volume": 1.0,
-					"playAt": 23.0
+					"playAt": 24.0
 				}
 			},
 			"viewModel": {
@@ -164,94 +197,94 @@
 					"translation": [0, 0, 0],
 					"rotation": [0, 0, 0]
 				},
-				"7": {
+				"8": {
 					"translation": [0, 0, 0],
 					"rotation": [0, 0, 0]
 				},
-				"19": {
+				"20": {
 					"translation": [0, 0, 0],
-					"rotation": [2, 0, 4],
+					"rotation": [1, 0, 3],
 					"easing": "ease_in_out_sin"
 				},
-				"22": {
+				"23": {
 					"translation": [0, 0, 0],
-					"rotation": [2, 0, 4]
+					"rotation": [1, 0, 3]
 				},
-				"35": {
+				"36": {
 					"translation": [0, 0, 0],
 					"rotation": [0, 0, 0],
 					"easing": "ease_in_out_sin"
 				}
 			},
 			"forwardHand": {
-				"8": {
+				"9": {
 					"translation": [0, 0, 0]
 				},
-				"19": {
+				"20": {
 					"translation": [0, 0, 0.1],
 					"easing": "ease_in_quad"
 				},
-				"23": {
+				"24": {
 					"translation": [0, 0, 0.1]
 				},
-				"34": {
+				"35": {
 					"translation": [0, 0, 0],
 					"easing": "ease_out_quad"
 				}
 			},
 			"rearHand": {
 				"rotOffset": [4.0, 1.5, 10.0],
-				"3": {
+				"4": {
 					"translation": [0, 0, 0],
 					"rotation": [0, 0, 0],
 					"easing": "ease_in_sin"
 				},
-				"8": {
+				"9": {
 					"translation": [0, 0, 0.5],
 					"rotation": [0, 0, 0]
 				},
-				"13": {
+				"14": {
 					"translation": [0.1, -2.0, 0.0],
 					"rotation": [0, 0, 0],
 					"easing": "linear"
 				},
-				"19": {
+				"20": {
 					"translation": [0.1, -3.0, -2.0],
 					"rotation": [0, 0, 0],
 					"easing": "ease_out_sin"
 				},
-				"23": {
+				"24": {
 					"translation": [0.1, -3.0, -2.0],
 					"rotation": [0, 0, 0]
 				},
-				"28": {
+				"29": {
 					"translation": [0.1, -2.0, 0.0],
 					"rotation": [0, 0, 0],
 					"easing": "linear"
 				},
-				"34": {
+				"35": {
 					"translation": [0, 0, 0.5],
 					"rotation": [0, 0, 0],
 					"easing": "ease_in_sin"
 				},
-				"35": {
+				"36": {
 					"translation": [0, 0, 0],
 					"rotation": [0, 0, 0],
 					"easing": "ease_in_out_sin"
 				}
 			},
 			"lever": {
-				"8": {
+				"9": {
 					"rotation": [0, 0, 0]
 				},
-				"19": {
+				"20": {
 					"rotation": [50, 0, 0],
 					"easing": "ease_out_sin"
 				},
-				"23": {
+				"24": {
 					"rotation": [50, 0, 0]
 				},
-				"34": {
+				"35": {
 					"rotation": [0, 0, 0],
 					"easing": "ease_in_sin"
 				}
@@ -263,26 +296,26 @@
 				"2": {
 					"rotation": [-45, 0, 0]
 				},
-				"8": {
+				"9": {
 					"rotation": [-45, 0, 0]
 				},
-				"19": {
+				"20": {
 					"rotation": [0, 0, 0],
 					"easing": "ease_out_sin"
 				}
 			},
 			"bolt": {
-				"8": {
+				"9": {
 					"translation": [0, 0, 0]
 				},
-				"19": {
+				"20": {
 					"translation": [0, 0, 2],
 					"easing": "ease_out_sin"
 				},
-				"23": {
+				"24": {
 					"translation": [0, 0, 2]
 				},
-				"34": {
+				"35": {
 					"translation": [0, 0, 0],
 					"easing": "ease_in_sin"
 				}

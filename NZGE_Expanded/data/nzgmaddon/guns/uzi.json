@@ -10,7 +10,7 @@
 	"magReloadTime": 28,
 	"reloadAllowedCooldown": 0.0,
 	
-    "recoilAngle": 1.7,
+    "recoilAngle": 2.0,
     "recoilKick": 0.4,
     "recoilAdsReduction": 0.2,
     "spread": 6.0,

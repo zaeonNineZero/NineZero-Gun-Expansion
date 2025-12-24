@@ -109,19 +109,19 @@
 		},
 		"recoil": {
 			"frames": 32,
-			"animationSpeed": 2.2,
+			"animationSpeed": 2.0,
 			"viewModel": {
 				"rotOffset": [0, -0.2, 3.0],
 				"0": {
 					"translation": [0.0, 0.0, 0.0],
-					"rotation": [0, 0, 0]
+					"rotation": [0.4, 0, 0]
 				},
 				"6": {
-					"rotation": [22.0, 0, 0],
+					"rotation": [25.0, 0, 0],
 					"easing": "ease_in_out_quad"
 				},
 				"8": {
-					"translation": [0.0, -0.3, 2.0],
+					"translation": [0.0, -0.3, 2.5],
 					"easing": "ease_out_quad"
 				},
 				"19": {
@@ -140,7 +140,7 @@
 			"gunModel": {
 				"rotOffset": [-2, -11.0, 3.3],
 				"0": {
-					"rotation": [2, 0, 0]
+					"rotation": [2.6, 0, 0]
 				},
 				"3": {
 					"rotation": [10.0, -1, -1.7],

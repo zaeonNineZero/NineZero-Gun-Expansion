@@ -14,6 +14,7 @@
     "reloadInterruptDelay": 8,
     "reloadEndDelay": 1,
 	"reloadAllowedCooldown": 0.1,
+	"drawTime": 10,
 	
     "recoilAngle": 5.0,
     "recoilKick": 1.0,
@@ -22,7 +23,7 @@
     "alwaysSpread": true,
     "spread": 7.0,
     "restingSpread": 1.2,
-	"adsSpeed": 1.4
+	"adsSpeed": 1.3
   },
   "projectile": {
     "item": "cgm:advanced_bullet",

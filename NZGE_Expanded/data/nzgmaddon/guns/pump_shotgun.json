@@ -12,7 +12,7 @@
 	"reloadAllowedCooldown": 0.2,
 	"drawTime": 15,
 	
-    "recoilAngle": 12.0,
+    "recoilAngle": 9.0,
     "recoilKick": 1.5,
     "recoilDurationOffset": 0.2,
     "recoilAdsReduction": 0.2,
@@ -20,7 +20,7 @@
     "projectileAmount": 8,
     "alwaysSpread": true,
     "spread": 6.0,
-    "useShotgunSpread": true,
+    "restingSpread": 5.0,
     "spreadAdsReduction": 0.2,
 	
 	"adsSpeed": 1.1
@@ -68,17 +68,19 @@
         "yOffset": 3.6506,
         "zOffset": -3.8,
         "scale": 0.5,
-        "spreadScale": 0.8
+        "spreadModScale": 0.8
       },
       "stock": {
         "yOffset": 3.6506,
         "zOffset": 8.4,
-        "spreadScale": 0.2
+        "recoilModScale": 0.6,
+        "spreadModScale": 0.2
       },
       "underBarrel": {
         "yOffset": 1.8,
         "zOffset": -0.5,
-        "spreadScale": 0.2
+        "recoilModScale": 0.6,
+        "spreadModScale": 0.2
       }
     }
   }

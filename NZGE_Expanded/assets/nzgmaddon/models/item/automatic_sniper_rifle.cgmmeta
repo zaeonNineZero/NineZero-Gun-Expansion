@@ -9,7 +9,8 @@
                 "translation": [8.0, 5.21, 12.2]
             },
             "stock": {
-                "translation": [8.0, 3.79, 16.5]
+                "translation": [8.0, 3.79, 16.55],
+                "scale": [0.95, 0.95, 0.95]
             },
             "underBarrel": {
                 "translation": [8.0, 3.099, 6.6]

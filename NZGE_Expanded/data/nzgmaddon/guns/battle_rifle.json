@@ -16,10 +16,10 @@
     "reloadEndDelay": 10,
 	"reloadAllowedCooldown": 0.0,
 	
-    "recoilAngle": 4.75,
+    "recoilAngle": 5.2,
     "recoilKick": 1.2,
-    "recoilAdsReduction": 0.5,
-    "spread": 10.0,
+    "recoilAdsReduction": 0.4,
+    "spread": 9.0,
     "restingSpread": 2.0,
 	"adsSpeed": 1.1
   },
