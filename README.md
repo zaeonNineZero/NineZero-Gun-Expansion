@@ -1,5 +1,5 @@
 # NineZero's Gun Expansion
-NineZero's Gun Expansion (NZGE) is an addon mod for MrCrayfish's Gun Mod that adds additional weapons and attachments in an aesthetically simple style. These weapons are designed and modeled to fit in with the weapons from the Gun Mod, with a greater level of model detail to make each weapon well-defined and recognizable.
+NineZero's Gun Expansion (NZGE) is an addon mod for MrCrayfish's Gun Mod that adds additional weapons and attachments in an aesthetically simple style. These weapons are designed and modeled to complement the weapons from the Gun Mod, featuring a greater level of model detail to make each weapon well-defined and recognizable.
 
 **This is the source code for the 1.19.2 Development Branch, which will not reflect the state of the latest stable build for 1.19.2.** Source code for stable branches of the mod -- including for other versions of Minecraft Java Edition -- can be found in the branch dropdown menu.
 
