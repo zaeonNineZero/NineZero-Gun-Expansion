@@ -13,7 +13,7 @@
   "result": {
     "item": "nzgmaddon:heavy_assault_rifle",
 	"nbt": {
-      "CustomModelData":1
+      "BaseVariant":1
     }
   }
 }

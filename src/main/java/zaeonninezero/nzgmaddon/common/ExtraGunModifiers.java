@@ -22,18 +22,44 @@ public class ExtraGunModifiers
             return 0.9F;
         }
     };
-    public static final IGunModifier MUZZLE_BRAKE_EFFECT = new IGunModifier()
+    public static final IGunModifier COMPENSATOR_MUZZLE_EFFECT = new IGunModifier()
     {
-        @Override
+    	@Override
         public float recoilModifier()
         {
-            return 0.85F;
+            return 0.75F;
+        }
+		
+		@Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.96F;
+        }
+
+        @Override
+        public double modifyMuzzleFlashScale(double scale)
+        {
+            return 1.15F;
+        }
+    };
+    public static final IGunModifier MUZZLE_BRAKE_EFFECT = new IGunModifier()
+    {
+    	@Override
+        public float modifyProjectileSpread(float spread)
+        {
+            return spread * 0.9F;
+        }
+    	
+    	@Override
+        public float recoilModifier()
+        {
+            return 0.9F;
         }
 
         @Override
         public float kickModifier()
         {
-            return 1.15F;
+            return 0.9F;
         }
 		
 		@Override
@@ -72,6 +98,12 @@ public class ExtraGunModifiers
         public double modifyAimDownSightSpeed(double speed)
         {
             return speed * 0.92F;
+        }
+
+        @Override
+        public double modifyMuzzleFlashScale(double scale)
+        {
+            return 1.05F;
         }
     };
     public static final IGunModifier MUFFLED_IMPROVED = new IGunModifier()
@@ -136,6 +168,14 @@ public class ExtraGunModifiers
             return speed * 1.05F;
         }
     };
+    public static final IGunModifier SCOPE_ADS = new IGunModifier()
+    {
+        @Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.8F;
+        }
+    };
 	
 	
 	public static final IGunModifier SLIGHT_BETTER_CONTROL = new IGunModifier()
@@ -159,13 +199,65 @@ public class ExtraGunModifiers
         }
     };
 	
-	
+
+    public static final IGunModifier SKELETON_STOCK_EFFECT = new IGunModifier()
+    {
+        @Override
+        public float recoilModifier()
+        {
+            return 0.4F;
+        }
+
+        @Override
+        public float kickModifier()
+        {
+            return 0.35F;
+        }
+
+        @Override
+        public float modifyProjectileSpread(float spread)
+        {
+            return spread * 0.5F;
+        }
+
+        @Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.9F;
+        }
+    };
+    public static final IGunModifier FOLDING_STOCK_EFFECT = new IGunModifier()
+    {
+        @Override
+        public float recoilModifier()
+        {
+            return 0.5F;
+        }
+
+        @Override
+        public float kickModifier()
+        {
+            return 0.45F;
+        }
+
+        @Override
+        public float modifyProjectileSpread(float spread)
+        {
+            return spread * 0.6F;
+        }
+
+        @Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.95F;
+        }
+    };
     public static final IGunModifier SOLIDLY_STABILISED = new IGunModifier()
     {
         @Override
         public float recoilModifier()
         {
-            return 0.3F;
+            return 0.35F;
         }
 
         @Override
@@ -191,7 +283,7 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.35F;
+            return 0.45F;
         }
 
         @Override
@@ -203,7 +295,7 @@ public class ExtraGunModifiers
         @Override
         public float modifyProjectileSpread(float spread)
         {
-            return spread * 0.5F;
+            return spread * 0.45F;
         }
 
         @Override
@@ -217,13 +309,13 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.25F;
+            return 0.3F;
         }
 
         @Override
         public float kickModifier()
         {
-            return 0.35F;
+            return 0.4F;
         }
 
         @Override
@@ -249,19 +341,19 @@ public class ExtraGunModifiers
         @Override
         public float recoilModifier()
         {
-            return 0.25F;
+            return 0.3F;
         }
 
         @Override
         public float kickModifier()
         {
-            return 0.4F;
+            return 0.35F;
         }
 
         @Override
         public float modifyProjectileSpread(float spread)
         {
-            return spread * 0.2F;
+            return spread * 0.3F;
         }
 
         @Override
@@ -270,11 +362,11 @@ public class ExtraGunModifiers
             return speed * 0.75F;
         }
 
-        @Override
+        /*@Override
         public int modifyFireRate(int rate)
         {
             return Math.min(rate + 1, Integer.MAX_VALUE);
-        }
+        }*/
     };
 	
 	
@@ -296,6 +388,27 @@ public class ExtraGunModifiers
         public float modifyProjectileSpread(float spread)
         {
             return spread * 0.6F;
+        }
+    };
+	
+    public static final IGunModifier BIPOD_EFFECT = new IGunModifier()
+    {
+        @Override
+        public float recoilModifier()
+        {
+            return 0.6F;
+        }
+
+        @Override
+        public float modifyProjectileSpread(float spread)
+        {
+            return spread * 0.4F;
+        }
+
+        @Override
+        public double modifyAimDownSightSpeed(double speed)
+        {
+            return speed * 0.9F;
         }
     };
 }

@@ -1,0 +1,61 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "nzgmaddon:items/lever_action_rifle"
+	},
+	"elements": [
+		{
+			"from": [7.6, 4.2, 10.35],
+			"to": [8.4, 4.45, 14.55],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4.325, 11.85]},
+			"faces": {
+				"east": {"uv": [15.5, 0, 15, 4.5], "rotation": 270, "texture": "#1"},
+				"west": {"uv": [15, 0, 15.5, 4.5], "rotation": 270, "texture": "#1"},
+				"up": {"uv": [15.5, 0, 16, 4.5], "texture": "#1"},
+				"down": {"uv": [15, 0, 15.5, 4.5], "rotation": 180, "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.8, 4.15, 10.275],
+			"to": [8.2, 4.325, 11.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4.275, 11.85]},
+			"faces": {
+				"north": {"uv": [15, 0, 15.5, 0.5], "rotation": 270, "texture": "#1"},
+				"east": {"uv": [15.5, 0, 15, 1], "rotation": 270, "texture": "#1"},
+				"west": {"uv": [15, 0, 15.5, 1], "rotation": 270, "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.601, 4.22145, 10.29822],
+			"to": [8.399, 4.39822, 10.475],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 4.27322, 10.35]},
+			"faces": {
+				"north": {"uv": [15, 0, 15.5, 0.5], "rotation": 270, "texture": "#1"},
+				"east": {"uv": [15.5, 0, 15, 0.5], "rotation": 270, "texture": "#1"},
+				"west": {"uv": [15, 0, 15.5, 0.5], "rotation": 270, "texture": "#1"},
+				"up": {"uv": [15.5, 4.5, 16, 4], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.601, 4.22145, 14.49822],
+			"to": [8.399, 4.39822, 14.675],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 4.27322, 14.55]},
+			"faces": {
+				"east": {"uv": [15.5, 0, 15, 0.5], "rotation": 270, "texture": "#1"},
+				"south": {"uv": [15.5, 0, 16, 0.5], "rotation": 270, "texture": "#1"},
+				"west": {"uv": [15, 0, 15.5, 0.5], "rotation": 270, "texture": "#1"},
+				"down": {"uv": [15, 0, 15.5, 0.5], "rotation": 270, "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "rail_0",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

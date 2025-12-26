@@ -2,7 +2,7 @@
     "cgm:weapon": {
         "attachments": {
             "barrel": {
-                "translation": [8.0, 3.4, 8.3],
+                "translation": [8.0, 3.4, 8.8],
                 "scale": [0.5, 0.5, 0.5]
             },
             "scope": {
@@ -13,7 +13,7 @@
                 "scale": [1, 1, 0.85]
             },
             "underBarrel": {
-                "translation": [8.0, 2.549, 11.3],
+                "translation": [8.0, 2.549, 11.5],
                 "scale": [0.91, 0.91, 0.91]
             }
         },
@@ -22,7 +22,7 @@
             "viewportFov": 60.0
         },
         "muzzleFlash": {
-            "translation": [8.0, 3.4, 7.8],
+            "translation": [8.0, 3.4, 8.3],
             "scale": [0.5, 0.5, 0.5]
         }
     }

@@ -1,6 +1,31 @@
 # Changelog (1.19.2 Releases)
 
 
+### 1.5.0-RC1 (TBD)
+The long anticipated 1.5 update to NZGE, bringing many changes, improvements, new attachments, and a much-anticipated new weapon.
+This update has been over a year in the making. I hope the wait has been well worth it.
+
+* Added the following new items:
+  -  Lever Action Rifle: Fast-firing rifle chambered in Basic Bullets. Similar in power and performance to the Infantry Rifle, with a slower fire rate.
+  -  Bipod: Underbarrel attachment that reduces recoil and spread, at the cost of ADS speed. Bipod visually deploys when sneaking or crawling.
+  -  Skeleton Stock: Lighter version of the Solid Stock, sharing its stats with the Tactical Stock.
+  -  Folding Stock: Lightweight stock attachment with similar stats to the Light Stock, with better spread reduction but worse recoil reduction.
+  -  Compensator Muzzle: Barrel attachment that reduces recoil by a fair amount, with a slight ADS speed penalty. No effect on projectile spread.
+* All new items have working survival mode recipes.
+
+* Full model overhauls of the Submachine Gun, Micro SMG, Infantry Rifle, Automatic Sniper Rifle, and Chevron Scope. These models are more detailed than previous versions and (with the exception of the Chevron Scope) feature animated parts and removeable elements.
+* General improvements to many of the models in the mod.
+  -  Guns in general received improved iron sights, animated parts, and/or removeable elements.
+  -  The Bolt Action Rifle's first model variant has been changed, and it has received a second model variant based on the M40A3.
+  -  Various attachments received minor improvements and adjustments.
+  -  The Flash Hider, Solid Stock, and Marksman Stock all received partial overhauls to their models.
+* All gun models now have support for CGM Expanded's animation system. (CGM Expanded is an in-development fork of CGM, which includes a custom keyframe-based animation system)
+
+* Improvements and overhauls to the sound mixing of various guns, mainly affecting fire sounds.
+* Adjustments to the stat modifiers of stock attachments. Removed the Marksman Stock's fire rate penalty entirely.
+* Balance pass over most guns in the mod, slightly adjusting damage and a few other stats.
+* Various small fixes and under-the-hood changes.
+
 ### 1.4.4 (5/22/23)
 * Added a custom Creative Mode inventory tab for NZGE! (Localization keys for the creative tab are all in English pending new translations)
 * Stat modifier tweaks across the board for almost every attachment, generally reducing ADS speed penalties.

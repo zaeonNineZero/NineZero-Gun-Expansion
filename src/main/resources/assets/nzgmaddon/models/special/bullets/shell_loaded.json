@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "cgm:items/shell",
+		"particle": "cgm:items/shell"
+	},
+	"elements": [
+		{
+			"from": [7.7, 7.7, 7.0625],
+			"to": [8.3, 8.3, 8.9375],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [2, 2, 4, 4], "rotation": 180, "texture": "#1"},
+				"east": {"uv": [0, 0, 2, 5], "rotation": 270, "texture": "#1"},
+				"south": {"uv": [2, 0, 4, 2], "texture": "#1"},
+				"west": {"uv": [0, 0, 2, 5], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [2, 0, 0, 5], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [2, 0, 0, 5], "texture": "#1"}
+			}
+		}
+	]
+}

@@ -1,0 +1,91 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "cgm:items/assault_rifle",
+		"particle": "cgm:items/assault_rifle"
+	},
+	"elements": [
+		{
+			"from": [7.65, 4.45, 4.65],
+			"to": [8.35, 4.75, 7.85],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 7.45, -0.05]},
+			"faces": {
+				"east": {"uv": [15.5, 0, 16, 5.5], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [14.5, 0, 15, 5.5], "rotation": 90, "texture": "#1", "tintindex": 0},
+				"up": {"uv": [15, 0, 15.5, 3.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.651, 4.15, 4.56],
+			"to": [8.349, 4.45, 4.7742],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 4.45, 4.35]},
+			"faces": {
+				"east": {"uv": [15.5, 0, 16, 0.5], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [14.5, 0, 15, 0.5], "rotation": 90, "texture": "#1", "tintindex": 0},
+				"up": {"uv": [14.5, 0, 15, 0.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.651, 6.55416, 6.72996],
+			"to": [8.349, 6.85416, 6.94416],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 4.45, 4.75]},
+			"faces": {
+				"east": {"uv": [15.5, 0.5, 16, 0], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [14.5, 0.5, 15, 0], "rotation": 90, "texture": "#1", "tintindex": 0},
+				"up": {"uv": [14.5, 0.5, 15, 0], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.65, 2, 4.66],
+			"to": [8.35, 2.3, 9.35],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 6.9, 4.3]},
+			"faces": {
+				"east": {"uv": [15.5, 0, 16, 0.5], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [14.5, 0, 15, 0.5], "rotation": 90, "texture": "#1", "tintindex": 0},
+				"down": {"uv": [15, 0, 15.5, 5.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.641, 4.93604, 15.62396],
+			"to": [8.349, 5.14604, 15.83816],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 11.3, 9.05]},
+			"faces": {
+				"east": {"uv": [16, 0, 15.5, 0.5], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [14.5, 0.5, 15, 0], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [15, 0, 14.5, 0.5], "rotation": 90, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.641, 4.93604, 10.93396],
+			"to": [8.349, 5.23604, 11.14816],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 11.3, 4.36]},
+			"faces": {
+				"east": {"uv": [16, 0, 15.5, 0.5], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [15, 0, 14.5, 0.5], "rotation": 90, "texture": "#1", "tintindex": 0},
+				"down": {"uv": [14.5, 0.5, 15, 0], "texture": "#1", "tintindex": 0}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "heavy_assault_rifle",
+			"origin": [7.5, 0.25, 13.2],
+			"color": 0,
+			"children": [
+				{
+					"name": "forward_top_rail",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [0, 1, 2]
+				},
+				{
+					"name": "bottom_rail",
+					"origin": [8, 4.35, 3],
+					"color": 0,
+					"children": [3, 4, 5]
+				}
+			]
+		}
+	]
+}

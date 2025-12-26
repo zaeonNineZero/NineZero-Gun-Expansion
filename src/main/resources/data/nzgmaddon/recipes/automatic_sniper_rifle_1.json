@@ -1,0 +1,15 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 29
+    }
+  ],
+  "result": {
+    "item": "nzgmaddon:automatic_sniper_rifle",
+	"nbt": {
+      "BaseVariant":1
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "nzgmaddon:items/heavy_assault_rifle",
+		"particle": "cgm:items/assault_rifle"
+	},
+	"elements": [
+		{
+			"from": [7.655, 4.5, 10.75],
+			"to": [8.345, 4.551, 15.4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.4, 7.3, 6]},
+			"faces": {
+				"up": {"uv": [15, 0, 15.5, 5.5], "texture": "#2"}
+			}
+		}
+	]
+}

@@ -2,9 +2,11 @@ package zaeonninezero.nzgmaddon.client.render.gun.model;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mrcrayfish.guns.common.Gun;
+import com.mrcrayfish.guns.GunMod;
 import com.mrcrayfish.guns.client.GunModel;
 import zaeonninezero.nzgmaddon.client.SpecialModels;
 import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
+import com.mrcrayfish.guns.client.util.GunAnimationHelper;
 import com.mrcrayfish.guns.client.util.RenderUtil;
 import com.mrcrayfish.guns.item.attachment.IAttachment;
 import net.minecraft.client.Minecraft;
@@ -12,7 +14,9 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.phys.Vec3;
 
 import javax.annotation.Nullable;
 
@@ -23,9 +27,11 @@ import javax.annotation.Nullable;
  */
 public class CompactSMGModel implements IOverrideModel
 {
+	private boolean disableAnimations = false;
+	
     @Override
-	// This class renders a multi-part model that supports animations and removeable parts.
-	// We only need to render removeable parts for this model, so we can skip the animation portion.
+	// This class renders a multi-part model with support for interchangeable parts and animations.
+	// Static parts are rendered first, followed by any moving/animated parts.
 	
 	// We start by declaring our render function that will handle rendering the core baked model (which is a non-moving part).
     public void render(float partialTicks, ItemTransforms.TransformType transformType, ItemStack stack, ItemStack parent, @Nullable LivingEntity entity, PoseStack poseStack, MultiBufferSource buffer, int light, int overlay)
@@ -43,6 +49,47 @@ public class CompactSMGModel implements IOverrideModel
             RenderUtil.renderModel(SpecialModels.COMPACT_SMG_SIGHTS.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
 		}
 
-		// Since this model doesn't have animations, our code can end here.
+        // Special animated segment for compat with the CGM Expanded fork.
+        // First, some variables for animation building
+        boolean isPlayer = entity != null && entity.equals(Minecraft.getInstance().player);
+        boolean isFirstPerson = (transformType.firstPerson());
+        boolean correctContext = (transformType.firstPerson() || transformType == ItemTransforms.TransformType.THIRD_PERSON_RIGHT_HAND || transformType == ItemTransforms.TransformType.THIRD_PERSON_LEFT_HAND);
+        
+        Vec3 magTranslations = Vec3.ZERO;
+        Vec3 magRotations = Vec3.ZERO;
+        Vec3 magRotOffset = Vec3.ZERO;
+        
+        if(isPlayer && correctContext && !disableAnimations)
+        {
+        	try {
+    				Player player = (Player) entity;
+					
+        			magTranslations = GunAnimationHelper.getSmartAnimationTrans(stack, player, partialTicks, "magazine");
+        	        magRotations = GunAnimationHelper.getSmartAnimationRot(stack, player, partialTicks, "magazine");
+        	        magRotOffset = GunAnimationHelper.getSmartAnimationRotOffset(stack, player, partialTicks, "magazine");
+        		}
+	    		catch(NoClassDefFoundError ignored) {
+	            	disableAnimations = true;
+	    		}
+        		catch(Exception e) {
+                	GunMod.LOGGER.error("NZGE encountered an error trying to apply animations.");
+                	e.printStackTrace();
+                	disableAnimations = true;
+        		}
+        }
+        // Magazine
+        poseStack.pushPose();
+        // Apply transformations to this part.
+        if(isPlayer && isFirstPerson && !disableAnimations)
+        {
+        	if(magTranslations!=Vec3.ZERO)
+        	poseStack.translate(magTranslations.x*0.0625, magTranslations.y*0.0625, magTranslations.z*0.0625);
+        	if(magRotations!=Vec3.ZERO)
+               GunAnimationHelper.rotateAroundOffset(poseStack, magRotations, magRotOffset);
+    	}
+        // Render the transformed model.
+        RenderUtil.renderModel(SpecialModels.COMPACT_SMG_MAGAZINE.getModel(), transformType, null, stack, parent, poseStack, buffer, light, overlay);
+		// Pop pose to compile everything in the render matrix.
+        poseStack.popPose();
     }
 }

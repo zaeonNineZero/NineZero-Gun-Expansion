@@ -6,15 +6,15 @@
                 "scale": [0.47, 0.47, 0.47]
             },
             "scope": {
-                "translation": [8.0, 4.32, 11.3]
+                "translation": [8.0, 4.38, 11.3]
             },
             "underBarrel": {
-                "translation": [8.0, 2.8, 6.7],
-                "scale": [0.95, 0.95, 0.95]
+                "translation": [8.0, 2.8, 6.8],
+                "scale": [0.97, 0.97, 0.97]
             }
         },
         "ironSight": {
-            "camera": [8.0, 5.0, 19.5],
+            "camera": [8.0, 5.5, 20.0],
             "viewportFov": 59.0
         },
         "muzzleFlash": {

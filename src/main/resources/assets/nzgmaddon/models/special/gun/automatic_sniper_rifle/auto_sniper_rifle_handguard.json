@@ -1,0 +1,80 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "nzgmaddon:items/automatic_sniper_rifle",
+		"2": "nzgmaddon:items/submachine_gun",
+		"particle": "cgm:items/weighted_stock"
+	},
+	"elements": [
+		{
+			"from": [7.50411, 4.03086, 2.6501],
+			"to": [8.49589, 4.7309, 9.2499],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.89088, 5.55]},
+			"faces": {
+				"north": {"uv": [8, 2, 8.5, 2.625], "texture": "#2", "tintindex": 0},
+				"south": {"uv": [8, 2, 8.5, 3.5], "texture": "#2", "tintindex": 0},
+				"up": {"uv": [11.5, 2, 16, 2.5], "rotation": 90, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.30657, 3.1513, 2.6503],
+			"to": [7.9033, 4.4366, 9.2497],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8.14513, 4.08719, 5.5499]},
+			"faces": {
+				"north": {"uv": [9, 2, 9.5, 3], "rotation": 90, "texture": "#2", "tintindex": 0},
+				"south": {"uv": [9, 2, 9.5, 3.5], "rotation": 270, "texture": "#2", "tintindex": 0},
+				"west": {"uv": [11.5, 2.75, 16, 3.75], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.247, 2.66842, 2.6502],
+			"to": [7.94373, 3.48971, 9.2498],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8.18556, 3.39031, 5.5498]},
+			"faces": {
+				"north": {"uv": [9, 2.875, 9.5, 3.5], "rotation": 90, "texture": "#2", "tintindex": 0},
+				"south": {"uv": [9, 2, 9.5, 3.5], "rotation": 270, "texture": "#2", "tintindex": 0},
+				"down": {"uv": [16, 4.25, 11.5, 3.75], "rotation": 90, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [8.0967, 3.1513, 2.6503],
+			"to": [8.69343, 4.4366, 9.2497],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [7.85487, 4.08719, 5.5499]},
+			"faces": {
+				"north": {"uv": [9, 3, 9.5, 2], "rotation": 90, "texture": "#2", "tintindex": 0},
+				"east": {"uv": [16, 2.75, 11.5, 3.75], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [9, 3.5, 9.5, 2], "rotation": 270, "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [8.05627, 2.66842, 2.6502],
+			"to": [8.753, 3.48971, 9.2498],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.81444, 3.39031, 5.5498]},
+			"faces": {
+				"north": {"uv": [9, 3.5, 9.5, 2.875], "rotation": 90, "texture": "#2", "tintindex": 0},
+				"south": {"uv": [9, 3.5, 9.5, 2], "rotation": 270, "texture": "#2", "tintindex": 0},
+				"down": {"uv": [16, 3.75, 11.5, 4.25], "rotation": 90, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.50411, 3.05086, 2.6501],
+			"to": [8.49589, 4.0309, 9.2499],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.89088, 5.55]},
+			"faces": {
+				"north": {"uv": [8, 2.625, 8.5, 3.5], "texture": "#2", "tintindex": 0},
+				"south": {"uv": [8, 2, 8.5, 3.5], "texture": "#2", "tintindex": 0},
+				"up": {"uv": [11.5, 2, 16, 2.5], "rotation": 90, "texture": "#1", "tintindex": 0},
+				"down": {"uv": [16, 4, 11.5, 4.5], "rotation": 90, "texture": "#1", "tintindex": 0}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "handguard_1",
+			"origin": [8, 3.95, 12.6],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5]
+		}
+	]
+}

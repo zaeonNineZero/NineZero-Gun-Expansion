@@ -2,8 +2,7 @@ package zaeonninezero.nzgmaddon;
 
 import zaeonninezero.nzgmaddon.init.*;
 import zaeonninezero.nzgmaddon.client.ClientHandler;
-
-import com.mrcrayfish.guns.client.CustomGunManager;
+import zaeonninezero.nzgmaddon.client.CreativeGunVariantManager;
 
 import net.minecraft.core.NonNullList;
 import net.minecraft.world.item.CreativeModeTab;
@@ -32,7 +31,7 @@ public class nzgmAddon {
         public void fillItemList(NonNullList<ItemStack> items)
         {
             super.fillItemList(items);
-            CustomGunManager.fill(items);
+            CreativeGunVariantManager.addItemVariants(items);
         }
     };
 	

@@ -6,21 +6,20 @@
 			"scale": [1.1, 1.1, 1.1]
 		},
 		"firstperson_righthand": {
-			"translation": [-5.0, 8.5, 0],
+			"translation": [-5, 8.2, 0],
 			"scale": [0.8, 0.8, 0.8]
 		},
 		"ground": {
-			"translation": [0, 5, -1]
+			"translation": [0, 5, -4]
 		},
 		"gui": {
 			"rotation": [30, 225, 0],
-			"translation": [0.5, 4, 0],
-			"scale": [0.9, 0.9, 0.9]
+			"translation": [1, 3.5, 0]
 		},
 		"fixed": {
 			"rotation": [0, 90, 0],
-			"translation": [-3.25, 11.25, -2],
-			"scale": [1.93, 1.93, 1.93]
+			"translation": [-4.5, 9.25, -0.5],
+			"scale": [1.5, 1.5, 1.5]
 		}
 	}
 }

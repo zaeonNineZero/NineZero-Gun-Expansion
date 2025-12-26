@@ -1,0 +1,31 @@
+{
+	"loader": "framework:open_model",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "nzgmaddon:items/automatic_sniper_rifle",
+		"particle": "cgm:items/weighted_stock"
+	},
+	"components": [
+		{
+			"from": [7.45, -1.13812, 9.35686],
+			"to": [8.55, 4.03188, 11.85686],
+			"rotation": {"angle": 5, "axis": "x", "origin": [8, 1.44688, 10.60686]},
+			"faces": {
+				"north": {"uv": [7, 8, 8, 13], "texture": "#1"},
+				"east": {"uv": [10.5, 8, 8, 13], "texture": "#1"},
+				"south": {"uv": [10.5, 8, 11.5, 13], "texture": "#1"},
+				"west": {"uv": [8, 8, 10.5, 13], "texture": "#1"},
+				"up": {"uv": [12.5, 10, 15, 11], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [12.5, 15, 15, 16], "rotation": 90, "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "extended_mag",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

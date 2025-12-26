@@ -1,0 +1,46 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "nzgmaddon:items/sniper_rifle"
+	},
+	"elements": [
+		{
+			"name": "clip",
+			"from": [7.55, 2.1, 10],
+			"to": [8.45, 3.7, 12.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15.6, 9.525, 18.1]},
+			"faces": {
+				"north": {"uv": [4.5, 3, 5.5, 3.615], "texture": "#1"},
+				"east": {"uv": [5.5, 3, 8, 3.615], "texture": "#1"},
+				"south": {"uv": [8, 3, 9, 3.615], "texture": "#1"},
+				"west": {"uv": [5.5, 3, 8, 3.5], "texture": "#1"},
+				"up": {"uv": [7, 3, 8.25, 3.5], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [5.5, 4, 8, 5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "clip_base",
+			"from": [7.45, 1.7, 9.9],
+			"to": [8.55, 2.1, 12.6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15.6, 10.125, 18.1]},
+			"faces": {
+				"north": {"uv": [0.5, 9.5, 1, 10], "texture": "#1"},
+				"east": {"uv": [0.5, 9.5, 3, 10], "texture": "#1"},
+				"south": {"uv": [2.5, 9.5, 3, 10], "texture": "#1"},
+				"west": {"uv": [0.5, 9.5, 3, 10], "texture": "#1"},
+				"up": {"uv": [0.5, 9.5, 3, 10], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0.5, 9.5, 3, 10], "rotation": 90, "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [15.6, 9.525, 18.1],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

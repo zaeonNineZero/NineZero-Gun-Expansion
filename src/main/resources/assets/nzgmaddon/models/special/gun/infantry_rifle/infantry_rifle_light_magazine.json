@@ -1,0 +1,43 @@
+{
+	"credit": "Made with Blockbench",
+	"loader": "framework:open_model",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "nzgmaddon:items/magazines_common",
+		"particle": "cgm:items/rifle"
+	},
+	"components": [
+		{
+			"from": [7.55, 1.6, 9.55],
+			"to": [8.45, 3.3, 11.85],
+			"rotation": {"angle": 7.5, "axis": "x", "origin": [8, 2.175, 10.7]},
+			"faces": {
+				"north": {"uv": [9, 1, 10, 3], "texture": "#1"},
+				"east": {"uv": [12.5, 1, 10, 3], "texture": "#1"},
+				"south": {"uv": [12.5, 1, 13.5, 3], "texture": "#1"},
+				"west": {"uv": [10, 1, 12.5, 3], "texture": "#1"},
+				"up": {"uv": [10, 0, 12.5, 1], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.55, 0.74273, 9.66095],
+			"to": [8.45, 1.59273, 11.96095],
+			"rotation": {"angle": 7.5, "axis": "x", "origin": [8, 3.01773, 10.81095]},
+			"faces": {
+				"north": {"uv": [9, 4, 10, 5], "texture": "#1"},
+				"east": {"uv": [12.5, 4, 10, 5], "texture": "#1"},
+				"south": {"uv": [12.5, 4, 13.5, 5], "texture": "#1"},
+				"west": {"uv": [10, 4, 12.5, 5], "texture": "#1"},
+				"down": {"uv": [10, 5, 12.5, 6], "rotation": 270, "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "light_magazine",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

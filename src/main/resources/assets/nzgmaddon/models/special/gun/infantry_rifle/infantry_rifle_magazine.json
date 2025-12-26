@@ -1,0 +1,25 @@
+{
+	"credit": "Made with Blockbench",
+	"loader": "framework:open_model",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "nzgmaddon:items/magazines_common",
+		"particle": "cgm:items/rifle"
+	},
+	"components": [
+		{
+			"name": "magazine",
+			"from": [7.55, -0.1, 9.55],
+			"to": [8.45, 3.3, 11.85],
+			"rotation": {"angle": 7.5, "axis": "x", "origin": [8, 2.175, 10.7]},
+			"faces": {
+				"north": {"uv": [9, 1, 10, 5], "texture": "#1"},
+				"east": {"uv": [12.5, 1, 10, 5], "texture": "#1"},
+				"south": {"uv": [12.5, 1, 13.5, 5], "texture": "#1"},
+				"west": {"uv": [10, 1, 12.5, 5], "texture": "#1"},
+				"up": {"uv": [10, 0, 12.5, 1], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [10, 5, 12.5, 6], "rotation": 270, "texture": "#1"}
+			}
+		}
+	]
+}

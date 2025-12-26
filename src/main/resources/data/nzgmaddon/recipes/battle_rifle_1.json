@@ -1,0 +1,15 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 28
+    }
+  ],
+  "result": {
+    "item": "nzgmaddon:battle_rifle",
+	"nbt": {
+      "SightVariant":1
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "cgm:items/assault_rifle",
+		"particle": "cgm:items/shotgun"
+	},
+	"elements": [
+		{
+			"name": "mag",
+			"from": [7.312, -1.35, 9.9],
+			"to": [8.688, 3.4, 12.4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1.6, 1.65, -0.8]},
+			"faces": {
+				"north": {"uv": [0, 7.75, 1, 9.75], "texture": "#1"},
+				"east": {"uv": [2.5, 7.75, 0.5, 9.75], "texture": "#1"},
+				"south": {"uv": [3.5, 7.75, 4.5, 9.75], "texture": "#1"},
+				"west": {"uv": [0.5, 7.75, 2.5, 9.75], "texture": "#1"},
+				"up": {"uv": [9, 8.5, 10.5, 9], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [1, 10, 3.5, 11], "rotation": 90, "texture": "#1"}
+			}
+		}
+	]
+}

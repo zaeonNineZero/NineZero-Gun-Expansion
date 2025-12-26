@@ -1,0 +1,135 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "nzgmaddon:items/iron_sights_common",
+		"particle": "cgm:items/rifle"
+	},
+	"elements": [
+		{
+			"name": "octagon",
+			"from": [7.92282, 4.654, 13.14],
+			"to": [8.08753, 4.7308, 13.3],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.008, 4.846, 13.3505]},
+			"faces": {
+				"north": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"south": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"up": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"down": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [7.91647, 4.65, 13.1395],
+			"to": [8.08353, 4.7268, 13.3005],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4.842, 13.35]},
+			"faces": {
+				"north": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"south": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"up": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"down": {"uv": [0.5, 15.5, 1, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [7.91082, 4.9732, 13.14],
+			"to": [8.07553, 5.05, 13.3],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.996, 4.858, 13.3505]},
+			"faces": {
+				"north": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"south": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"up": {"uv": [0.5, 13.5, 1, 14], "texture": "#2"},
+				"down": {"uv": [0.5, 15.5, 1, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [7.91647, 4.9732, 13.1395],
+			"to": [8.08353, 5.05, 13.3005],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4.858, 13.35]},
+			"faces": {
+				"north": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"south": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"up": {"uv": [0.5, 13.5, 1, 14], "texture": "#2"},
+				"down": {"uv": [0.5, 15.5, 1, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [7.8, 4.76082, 13.14],
+			"to": [7.8768, 4.92553, 13.3],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.992, 4.846, 13.3505]},
+			"faces": {
+				"north": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"east": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"south": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"west": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [7.8, 4.76647, 13.1395],
+			"to": [7.8768, 4.93353, 13.3005],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.992, 4.85, 13.35]},
+			"faces": {
+				"north": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"east": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"south": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"west": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [8.1232, 4.77447, 13.14],
+			"to": [8.2, 4.93918, 13.3],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.008, 4.854, 13.3505]},
+			"faces": {
+				"north": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"east": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"south": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"west": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"}
+			}
+		},
+		{
+			"name": "octagon",
+			"from": [8.1232, 4.76647, 13.1395],
+			"to": [8.2, 4.93353, 13.3005],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.008, 4.85, 13.35]},
+			"faces": {
+				"north": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"east": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"south": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"},
+				"west": {"uv": [0.5, 14.5, 1, 15], "texture": "#2"}
+			}
+		},
+		{
+			"name": "ring_support",
+			"from": [7.885, 4.55, 13.141],
+			"to": [8.115, 4.69, 13.299],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.4, 11.7]},
+			"faces": {
+				"north": {"uv": [0.5, 15, 1, 15.5], "texture": "#2"},
+				"east": {"uv": [0.5, 15, 1, 15.5], "texture": "#2"},
+				"south": {"uv": [0.5, 15, 1, 15.5], "texture": "#2"},
+				"west": {"uv": [0.5, 15, 1, 15.5], "texture": "#2"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "rear_sight",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "rear_sight_ring",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [0, 1, 2, 3, 4, 5, 6, 7]
+				},
+				8
+			]
+		}
+	]
+}

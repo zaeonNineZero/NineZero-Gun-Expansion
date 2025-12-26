@@ -1,6 +1,6 @@
 {
   "general": {
-    "rate": 24,
+    "rate": 21,
     "gripType": "cgm:two_handed",
     "maxAmmo": 4,
     "reloadAmount": 1,
@@ -14,17 +14,17 @@
   },
   "projectile": {
     "item": "cgm:shell",
-    "damage": 25.0,
+    "damage": 24.0,
     "size": 1.0,
     "speed": 10.0,
     "life": 10
   },
   "sounds": {
-    "fire": "nzgmaddon:item.hunting_shotgun.fire",
+    "fire": "nzgmaddon:item.hunting_shotgun.fire_pump",
     "reload": "nzgmaddon:item.shotgun.reload",
     "cock": "nzgmaddon:item.pump_shotgun.cock",
-    "silencedFire": "nzgmaddon:item.hunting_shotgun.silenced_fire",
-    "enchantedFire": "nzgmaddon:item.hunting_shotgun.enchanted_fire"
+    "silencedFire": "nzgmaddon:item.hunting_shotgun.silenced_fire_pump",
+    "enchantedFire": "nzgmaddon:item.hunting_shotgun.enchanted_fire_pump"
   },
   "display": {
     "flash": {

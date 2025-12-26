@@ -1,0 +1,93 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "cgm:items/assault_rifle",
+		"particle": "cgm:items/shotgun"
+	},
+	"elements": [
+		{
+			"from": [7.312, 2.15, 9.9],
+			"to": [8.688, 3.4, 12.4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1.6, 1.65, -0.8]},
+			"faces": {
+				"north": {"uv": [0, 7.5, 1, 8], "texture": "#1"},
+				"east": {"uv": [2, 8.25, 3.5, 8.75], "texture": "#1"},
+				"south": {"uv": [8.5, 9, 9, 10], "texture": "#1"},
+				"west": {"uv": [1, 8.25, 2.5, 8.75], "texture": "#1"},
+				"up": {"uv": [9, 8.5, 10.5, 9], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [1, 10, 3.5, 11], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [6.2, -0.38683, 9.7498],
+			"to": [9.8, 1.09583, 12.4002],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.3545, 13.75]},
+			"faces": {
+				"north": {"uv": [8, 9.5, 9, 10], "rotation": 90, "texture": "#1"},
+				"east": {"uv": [3.5, 8, 2, 8.5], "texture": "#1"},
+				"south": {"uv": [8, 9.5, 9, 10], "rotation": 90, "texture": "#1"},
+				"west": {"uv": [2, 8, 3.5, 8.5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [6.2, -0.3928, 9.75],
+			"to": [7.13, 1.1018, 12.4],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 0.3545, 13.75]},
+			"faces": {
+				"north": {"uv": [8.5, 9.5, 9, 10], "texture": "#1"},
+				"south": {"uv": [8.5, 9.5, 9, 10], "texture": "#1"},
+				"west": {"uv": [2, 8.5, 3.5, 9], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8.87, -0.3928, 9.75],
+			"to": [9.8, 1.1018, 12.4],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0.3545, 13.75]},
+			"faces": {
+				"north": {"uv": [8.5, 9.5, 9, 10], "texture": "#1"},
+				"east": {"uv": [3.5, 8.5, 2, 9], "texture": "#1"},
+				"south": {"uv": [8.5, 9.5, 9, 10], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.2497, 1.3445, 9.75],
+			"to": [8.7473, 2.1545, 12.4],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 0.3545, 13.75]},
+			"faces": {
+				"north": {"uv": [8.5, 9.5, 9, 10], "texture": "#1"},
+				"south": {"uv": [8.5, 9.5, 9, 10], "texture": "#1"},
+				"up": {"uv": [2, 7.5, 3.5, 8], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.2527, 1.3445, 9.75],
+			"to": [8.7503, 2.1545, 12.4],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0.3545, 13.75]},
+			"faces": {
+				"north": {"uv": [8.5, 9.5, 9, 10], "texture": "#1"},
+				"south": {"uv": [8.5, 9.5, 9, 10], "texture": "#1"},
+				"up": {"uv": [2, 7.5, 3.5, 8], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.25867, -1.4455, 9.7499],
+			"to": [8.74133, 2.1545, 12.4001],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.3545, 13.75]},
+			"faces": {
+				"north": {"uv": [8.5, 9, 9, 10], "texture": "#1"},
+				"south": {"uv": [8.5, 9, 9, 10], "texture": "#1"},
+				"up": {"uv": [2, 7.5, 3.5, 8], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [3.5, 9, 2, 9.5], "rotation": 90, "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "drum",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5, 6]
+		}
+	]
+}
