@@ -10,7 +10,8 @@
 			"scale": [0.8, 0.8, 0.8]
 		},
 		"ground": {
-			"translation": [0, 5, -4]
+			"translation": [0, 5, -4],
+			"scale": [1.05, 1.05, 1.05]
 		},
 		"gui": {
 			"rotation": [30, 225, 0],
@@ -18,8 +19,8 @@
 		},
 		"fixed": {
 			"rotation": [0, 90, 0],
-			"translation": [-4.5, 9.25, -0.5],
-			"scale": [1.5, 1.5, 1.5]
+			"translation": [-7.5, 10, -0.5],
+			"scale": [2, 2, 2]
 		}
 	}
 }
