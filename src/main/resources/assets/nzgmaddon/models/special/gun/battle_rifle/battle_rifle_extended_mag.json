@@ -1,26 +1,27 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
+	"loader": "framework:open_model",
 	"textures": {
 		"1": "nzgmaddon:items/battle_rifle",
 		"particle": "nzgmaddon:items/battle_rifle"
 	},
-	"elements": [
+	"components": [
 		{
 			"name": "lower",
-			"from": [7.5, -3.05, 10.45],
-			"to": [8.5, 0.5, 12.95],
+			"from": [7.499, -2.93525, 10.32184],
+			"to": [8.501, 0.11475, 12.82184],
+			"rotation": {"angle": 5, "axis": "x", "origin": [8, -1.41025, 11.57184]},
 			"faces": {
-				"north": {"uv": [0, 7.5, 1, 9.825], "texture": "#1"},
-				"east": {"uv": [3.5, 7.5, 1, 9.825], "texture": "#1"},
-				"south": {"uv": [3.5, 7.5, 4.5, 9.825], "texture": "#1"},
-				"west": {"uv": [1, 7.5, 3.5, 9.825], "texture": "#1"},
+				"north": {"uv": [0, 8, 1, 9.825], "texture": "#1"},
+				"east": {"uv": [3.5, 8, 1, 9.825], "texture": "#1"},
+				"south": {"uv": [3.5, 8, 4.5, 9.825], "texture": "#1"},
+				"west": {"uv": [1, 8, 3.5, 9.825], "texture": "#1"},
 				"down": {"uv": [1, 10, 3.5, 11], "rotation": 90, "texture": "#1"}
 			}
 		},
 		{
 			"name": "upper",
-			"from": [7.5, 0.5, 10.45],
+			"from": [7.5, 0, 10.45],
 			"to": [8.5, 2.65, 12.95],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 2.3, 0]},
 			"faces": {

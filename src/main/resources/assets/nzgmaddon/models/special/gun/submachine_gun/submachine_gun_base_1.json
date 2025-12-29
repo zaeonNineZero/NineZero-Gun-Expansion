@@ -1,13 +1,12 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
+	"loader": "framework:open_model",
 	"textures": {
 		"1": "cgm:items/machine_pistol",
 		"2": "nzgmaddon:items/submachine_gun",
-		"3": "nzgmaddon:items/smg_alt",
-		"particle": "nzgmaddon:items/smg_alt"
+		"3": "nzgmaddon:items/smg_alt"
 	},
-	"elements": [
+	"components": [
 		{
 			"name": "trigger",
 			"from": [7.8, 1.525, 14.275],
@@ -593,9 +592,9 @@
 			}
 		},
 		{
-			"from": [7.35, 2.45, 10.9],
-			"to": [8.65, 3.85, 12.6],
-			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 2.85, 11.75]},
+			"from": [7.35, 2.4, 10.9],
+			"to": [8.65, 3.8, 12.6],
+			"rotation": {"angle": 15, "axis": "x", "origin": [8, 2.85, 11.75]},
 			"faces": {
 				"north": {"uv": [2, 10, 3.5, 12], "texture": "#2"},
 				"east": {"uv": [2, 10, 0, 12], "texture": "#2"},

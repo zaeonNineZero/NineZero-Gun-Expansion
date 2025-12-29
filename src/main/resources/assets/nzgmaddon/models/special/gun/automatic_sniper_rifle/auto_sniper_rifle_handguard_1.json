@@ -8,9 +8,9 @@
 	},
 	"elements": [
 		{
-			"from": [7.15998, 3.54499, 2.65],
-			"to": [8.84002, 4.23677, 9.25],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.89088, 5.55]},
+			"from": [7.11798, 3.52474, 2.65],
+			"to": [8.88202, 4.25111, 9.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.88792, 5.55]},
 			"faces": {
 				"north": {"uv": [7.5, 2.5, 9, 3], "texture": "#2", "tintindex": 0},
 				"east": {"uv": [16, 3, 11.5, 3.5], "texture": "#1", "tintindex": 0},
@@ -19,9 +19,9 @@
 			}
 		},
 		{
-			"from": [7.65411, 3.05086, 2.6501],
-			"to": [8.34589, 4.7309, 9.2499],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.89088, 5.55]},
+			"from": [7.63682, 3.0059, 2.6501],
+			"to": [8.36318, 4.76995, 9.2499],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.88792, 5.55]},
 			"faces": {
 				"north": {"uv": [8, 2, 8.5, 3.5], "texture": "#2", "tintindex": 0},
 				"south": {"uv": [8, 2, 8.5, 3.5], "texture": "#2", "tintindex": 0},
@@ -30,9 +30,9 @@
 			}
 		},
 		{
-			"from": [7.6506, 3.05232, 2.6502],
-			"to": [8.3494, 4.72944, 9.2498],
-			"rotation": {"angle": 45, "axis": "z", "origin": [8, 3.89088, 5.55]},
+			"from": [7.63313, 3.00744, 2.6502],
+			"to": [8.36687, 4.76841, 9.2498],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 3.88792, 5.55]},
 			"faces": {
 				"north": {"uv": [9, 2, 9.5, 3.5], "texture": "#2", "tintindex": 0},
 				"south": {"uv": [9, 2, 9.5, 3.5], "texture": "#2", "tintindex": 0},
@@ -41,9 +41,9 @@
 			}
 		},
 		{
-			"from": [7.16144, 3.54148, 2.6502],
-			"to": [8.83856, 4.24028, 9.2498],
-			"rotation": {"angle": 45, "axis": "z", "origin": [8, 3.89088, 5.55]},
+			"from": [7.11951, 3.52105, 2.6502],
+			"to": [8.88049, 4.25479, 9.2498],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 3.88792, 5.55]},
 			"faces": {
 				"north": {"uv": [9, 2, 9.5, 3.5], "rotation": 90, "texture": "#2", "tintindex": 0},
 				"east": {"uv": [16, 2.5, 11.5, 3], "texture": "#1", "tintindex": 0},
@@ -52,10 +52,9 @@
 			}
 		}
 	],
-	"display": {},
 	"groups": [
 		{
-			"name": "handguard_0",
+			"name": "handguard_1_thicker",
 			"origin": [8, 3.95, 12.6],
 			"color": 0,
 			"children": [0, 1, 2, 3]
