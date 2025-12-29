@@ -1,9 +1,13 @@
 # Changelog (1.19.2 Releases -- Developer Edition)
 
 
-### 1.5.0-RC1 (TBD)
-The long anticipated 1.5 update to NZGE, bringing many changes, improvements, new attachments, and a much-anticipated new weapon.
-This update has been over a year in the making. I hope the wait has been well worth it.
+### 1.5.0-RC2 (12/28/25)
+Release candidate 2 for NZGE v1.5.0, with hotfixes to the previous RC.
+* Properly added the Chevron Scope's overhauled model. It was not added in the previous release candidate.
+* Fixed improper scaling of the Automatic Sniper Rifle's item frame transform.
+
+### 1.5.0-RC1 (12/28/25)
+Release candidate for the long anticipated 1.5 update to NZGE, bringing many changes, improvements, new attachments, and a much-anticipated new weapon.
 
 * Added the following new items:
   -  Lever Action Rifle: Fast-firing rifle chambered in Basic Bullets. Similar in power and performance to the Infantry Rifle, with a slower fire rate.
@@ -13,7 +17,7 @@ This update has been over a year in the making. I hope the wait has been well wo
   -  Compensator Muzzle: Barrel attachment that reduces recoil by a fair amount, with a slight ADS speed penalty. No effect on projectile spread.
 * All new items have working survival mode recipes.
 
-* Full model overhauls of the Submachine Gun, Micro SMG, Infantry Rifle, Automatic Sniper Rifle, and Chevron Scope. These models are more detailed than previous versions and (with the exception of the Chevron Scope) feature animated parts and removeable elements.
+* Full model overhauls of the Submachine Gun, Micro SMG, Infantry Rifle, Automatic Sniper Rifle, and Chevron Scope. These models are more detailed than previous versions and (with the exception of the Chevron Scope) feature animated parts and removable elements.
 * General improvements to many of the models in the mod.
   -  Guns in general received improved iron sights, animated parts, and/or removeable elements.
   -  The Bolt Action Rifle's first model variant has been changed, and it has received a second model variant based on the M40A3.
@@ -25,6 +29,7 @@ This update has been over a year in the making. I hope the wait has been well wo
 * Adjustments to the stat modifiers of stock attachments. Removed the Marksman Stock's fire rate penalty entirely.
 * Balance pass over most guns in the mod, slightly adjusting damage and a few other stats.
 * Various small fixes and under-the-hood changes.
+
 
 
 ### 1.4.4 (5/22/24)
