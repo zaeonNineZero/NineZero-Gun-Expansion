@@ -27,6 +27,13 @@ This update has been over a year in the making. I hope the wait has been well wo
 * Various small fixes and under-the-hood changes.
 
 
+### 1.5.0-RC3 (12/29/25)
+Release candidate 3 for NZGE v1.5.0.
+* Properly implemented the open model format gun models into the main mod source.
+* Changed the item frame transforms of the Submachine Gun to more closely match the other guns.
+* Added working recipes for the Lever Action Rifle (+1 cosmetic variation) and the Bipod.
+* Added the Lever Action Rifle's cosmetic variation to the creative mode tab.
+
 ### 1.5.0-RC2 (12/28/25)
 Release candidate 2 for NZGE v1.5.0, with hotfixes to the previous RC.
 * Properly added the Chevron Scope's overhauled model. It was not added in the previous release candidate.
