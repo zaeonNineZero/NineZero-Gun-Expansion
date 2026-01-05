@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
@@ -251,7 +252,7 @@
 		{
 			"name": "main_grip",
 			"from": [7.4, -1.1, 13.8],
-			"to": [8.6, 2.6, 15.1],
+			"to": [8.6, 2.6, 15.25],
 			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 4.5, 15.1]},
 			"faces": {
 				"north": {"uv": [8, 0.5, 9, 4], "texture": "#2", "tintindex": 0},
