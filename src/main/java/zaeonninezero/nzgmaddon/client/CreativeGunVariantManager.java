@@ -68,6 +68,17 @@ public class CreativeGunVariantManager
     	items.add(leverrifle_1);
     	
     	
+    	// Infantry Rifle, Variant 1
+    	ItemStack infantryrifle_1 = new ItemStack(initItems.INFANTRY_RIFLE.get());
+    	{
+    		CompoundTag tag = leverrifle_1.getOrCreateTag();
+        	tag.putInt("AmmoCount", initItems.INFANTRY_RIFLE.get().getGun().getGeneral().getMaxAmmo());
+    		tag.putInt("BaseVariant", 1);
+    		tag.putInt("ExtraRails", 1);
+    	}
+    	items.add(infantryrifle_1);
+    	
+    	
     	// Automatic Sniper Rifle, Variant 1
     	ItemStack autosniper_1 = new ItemStack(initItems.AUTOMATIC_SNIPER_RIFLE.get());
     	{
