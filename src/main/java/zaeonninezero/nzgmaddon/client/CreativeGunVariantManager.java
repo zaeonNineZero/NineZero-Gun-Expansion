@@ -71,7 +71,7 @@ public class CreativeGunVariantManager
     	// Infantry Rifle, Variant 1
     	ItemStack infantryrifle_1 = new ItemStack(initItems.INFANTRY_RIFLE.get());
     	{
-    		CompoundTag tag = leverrifle_1.getOrCreateTag();
+    		CompoundTag tag = infantryrifle_1.getOrCreateTag();
         	tag.putInt("AmmoCount", initItems.INFANTRY_RIFLE.get().getGun().getGeneral().getMaxAmmo());
     		tag.putInt("BaseVariant", 1);
     		tag.putInt("ExtraRails", 1);
