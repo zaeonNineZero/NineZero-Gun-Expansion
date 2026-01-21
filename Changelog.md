@@ -27,6 +27,11 @@ This update has been over a year in the making. I hope the wait has been well wo
 * Various small fixes and under-the-hood changes.
 
 
+### 1.5.0-RC4 (1/17/25)
+Release candidate 4 for NZGE v1.5.0.
+* Added the 'infantry_rifle_1' variant to the creative tab.
+* Fixed the Pump Action's default pistol grip being affected by dye coloring, and adjusted its size and position.
+
 ### 1.5.0-RC3 (12/29/25)
 Release candidate 3 for NZGE v1.5.0.
 * Properly implemented the open model format gun models into the main mod source.
