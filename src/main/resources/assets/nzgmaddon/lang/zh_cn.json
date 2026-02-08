@@ -41,5 +41,15 @@
 	"item.nzgmaddon.solid_stock": "实心枪托",
 	"item.nzgmaddon.stabilizing_stock": "稳定枪托",
 	
-	"item.nzgmaddon.horizontal_grip": "水平握把"
+	"item.nzgmaddon.horizontal_grip": "水平握把",
+	
+	
+	"machine_translation_note": "The following lines use machine translation, which may be inaccurate",
+	
+	"item.nzgmaddon.lever_action_rifle": "杠杆式步枪",
+	
+	"item.nzgmaddon.folding_stock": "折叠枪托",
+	"item.nzgmaddon.skeleton_stock": "骨骼库存",
+	
+	"item.nzgmaddon.bipod": "两脚架"
 }

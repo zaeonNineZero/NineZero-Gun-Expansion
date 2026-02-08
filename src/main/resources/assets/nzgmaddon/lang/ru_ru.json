@@ -41,5 +41,15 @@
 	"item.nzgmaddon.solid_stock": "Цельная ложа",
 	"item.nzgmaddon.stabilizing_stock": "Стабилизирующая ложа",
 
-	"item.nzgmaddon.horizontal_grip": "Горизонтальная рукоять"
+	"item.nzgmaddon.horizontal_grip": "Горизонтальная рукоять",
+	
+	
+	"machine_translation_note": "The following lines use machine translation, which may be inaccurate",
+	
+	"item.nzgmaddon.lever_action_rifle": "Винтовка с рычажным механизмом",
+	
+	"item.nzgmaddon.folding_stock": "Складной приклад",
+	"item.nzgmaddon.skeleton_stock": "Скелетный приклад",
+	
+	"item.nzgmaddon.bipod": "сошка пулемета"
 }
