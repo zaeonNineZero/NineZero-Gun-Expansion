@@ -1,8 +1,8 @@
 # Changelog (1.19.2 Releases)
 
 
-### 1.5.0 (TBD)
-The full release of the long anticipated 1.5 update to NZGE, bringing many changes, improvements, new attachments, and a much-anticipated new weapon.
+### 1.5.0 (2/8/26)
+The full release of the long-awaited 1.5 update to NZGE, bringing many changes, improvements, new attachments, and a much-anticipated new weapon.
 This update has been over a year in the making. I hope the wait has been well worth it.
 
 * Added the following new items:
@@ -13,16 +13,16 @@ This update has been over a year in the making. I hope the wait has been well wo
   -  Compensator Muzzle: Barrel attachment that reduces recoil by a fair amount, with a slight ADS speed penalty. No effect on projectile spread.
 * All new items have working survival mode recipes.
 
-* Full model overhauls of the Submachine Gun, Micro SMG, Infantry Rifle, Automatic Sniper Rifle, and Chevron Scope. These models are more detailed than previous versions and (with the exception of the Chevron Scope) feature animated parts and removeable elements.
+* Full model overhauls of the Submachine Gun, Micro SMG, Infantry Rifle, Automatic Sniper Rifle, and Chevron Scope. These models are more detailed than previous versions and (with the exception of the Chevron Scope) feature animated parts and removable elements.
 * General improvements to many of the models in the mod.
-  -  Guns in general received improved iron sights, animated parts, and/or removeable elements.
+  -  Guns in general received improved iron sights, animated parts, and/or removable elements.
   -  The Bolt Action Rifle's first model variant has been changed, and it has received a second model variant based on the M40A3.
   -  Various attachments received minor improvements and adjustments.
   -  The Flash Hider, Solid Stock, and Marksman Stock all received partial overhauls to their models.
 * All gun models now have support for CGM Expanded's animation system. (CGM Expanded is an in-development fork of CGM for 1.19.2, which includes a custom keyframe-based animation system)
 
 * Added en_au and en_uk localization, reusing the entries from en_us.
-* Added the missing localization entries to ko_kr, ja_jp, ru_ru, and zh_cn localization. These entries use machine translation, which may be inaccurate compared to volunteer translated entries. As always, I accept feedback and corrections on all localization.
+* Added the missing localization entries to ko_kr, ja_jp, ru_ru, and zh_cn localization. These entries use machine translation, which may be inaccurate compared to volunteer-translated entries. As always, I accept feedback and corrections on all localizations.
 
 * Improvements and overhauls to the sound mixing of various guns, mainly affecting fire sounds.
 * Adjustments to the stat modifiers of stock attachments. Removed the Marksman Stock's fire rate penalty entirely.
