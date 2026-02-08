@@ -1,7 +1,7 @@
 # Changelog (1.19.2 Releases -- Developer Edition)
 
 
-### 1.5.0 (TBD)
+### 1.5.0 (2/8/26)
 Full release of NZGE v1.5.0. Includes the following changes from the last release candidate:
 * en_au and en_uk localization: Changed the spelling of the Stabilizing Stock (to Stabilising Stock).
 * ja_jp, ko_kr, ru_ru, and zh_cn localization: Added the missing localization entries using machine translation, which may be inaccurate compared to volunteer translated entries.
