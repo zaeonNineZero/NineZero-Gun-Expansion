@@ -35,5 +35,23 @@
 	"item.nzgmaddon.short_stock": "소형 개머리판",
 	"item.nzgmaddon.stabilizing_stock": "안정화 개머리판",
 
-	"item.nzgmaddon.horizontal_grip": "수평 손잡이"
+	"item.nzgmaddon.horizontal_grip": "수평 손잡이",
+	
+	
+	"machine_translation_note": "The following lines use machine translation, which may be inaccurate",
+	
+	"item.nzgmaddon.bullpup_rifle": "불펍 소총",
+	"item.nzgmaddon.compact_smg": "소형 기관단총",
+	"item.nzgmaddon.heavy_pistol": "헤비 피스톨",
+	"item.nzgmaddon.heavy_revolver": "헤비 리볼버",
+	"item.nzgmaddon.lever_action_rifle": "레버액션 소총",
+	
+	"item.nzgmaddon.compensator_muzzle": "보정기 머즐",
+	"item.nzgmaddon.improved_silencer": "개선된 소음기",
+	"item.nzgmaddon.performance_silencer": "성능 소음기",
+	
+	"item.nzgmaddon.folding_stock": "접이식 스톡",
+	"item.nzgmaddon.skeleton_stock": "스켈레톤 스톡",
+	
+	"item.nzgmaddon.bipod": "양각대"
 }

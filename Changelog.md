@@ -19,7 +19,10 @@ This update has been over a year in the making. I hope the wait has been well wo
   -  The Bolt Action Rifle's first model variant has been changed, and it has received a second model variant based on the M40A3.
   -  Various attachments received minor improvements and adjustments.
   -  The Flash Hider, Solid Stock, and Marksman Stock all received partial overhauls to their models.
-* All gun models now have support for CGM Expanded's animation system. (CGM Expanded is an in-development fork of CGM, which includes a custom keyframe-based animation system)
+* All gun models now have support for CGM Expanded's animation system. (CGM Expanded is an in-development fork of CGM for 1.19.2, which includes a custom keyframe-based animation system)
+
+* Added en_au and en_uk localization, reusing the entries from en_us.
+* Added the missing localization entries to ko_kr, ja_jp, ru_ru, and zh_cn localization. These entries use machine translation, which may be inaccurate compared to volunteer translated entries. As always, I accept feedback and corrections on all localization.
 
 * Improvements and overhauls to the sound mixing of various guns, mainly affecting fire sounds.
 * Adjustments to the stat modifiers of stock attachments. Removed the Marksman Stock's fire rate penalty entirely.

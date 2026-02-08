@@ -35,5 +35,23 @@
 	"item.nzgmaddon.solid_stock": "ソリッドストック",
 	"item.nzgmaddon.stabilizing_stock": "スタビライズストック",
 	
-	"item.nzgmaddon.horizontal_grip": "水平グリップ"
+	"item.nzgmaddon.horizontal_grip": "水平グリップ",
+	
+	
+	"machine_translation_note": "The following lines use machine translation, which may be inaccurate",
+	
+	"item.nzgmaddon.bullpup_rifle": "ブルパップライフル",
+	"item.nzgmaddon.compact_smg": "コンパクトサブマシンガン",
+	"item.nzgmaddon.heavy_pistol": "ヘビーピストル",
+	"item.nzgmaddon.heavy_revolver": "ヘビー・リボルバー",
+	"item.nzgmaddon.lever_action_rifle": "レバーアクション式ライフル",
+	
+	"item.nzgmaddon.compensator_muzzle": "コンペンセイターマズル",
+	"item.nzgmaddon.improved_silencer": "改良型サイレンサー",
+	"item.nzgmaddon.performance_silencer": "パフォーマンスサイレンサー",
+	
+	"item.nzgmaddon.folding_stock": "折りたたみ式ストック",
+	"item.nzgmaddon.skeleton_stock": "スケルトンストック",
+	
+	"item.nzgmaddon.bipod": "バイポッド"
 }
